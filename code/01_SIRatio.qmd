@@ -1,0 +1,20 @@
+---
+title: 'Fig1: SI Ratio & Time in IZ Zone'
+format:
+    html:
+        code-fold: true
+editor:
+    render-on-save: true
+---
+
+## Overview Figure 1
+
+Figure 1 demonstrates that social interaction ratio is a sensitive metric of stress effect in males but not females. This code generates Fig 1.
+
+### Config
+
+```{r}
+library(here)
+source(here('styles.R'))
+data_path <- here('data')
+```
