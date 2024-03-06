@@ -1,20 +1,164 @@
 ---
-title: 'Fig1: SI Ratio & Time in IZ Zone'
+title: 'Figure 1: SI Ratio & Time in IZ Zone'
 format:
     html:
-        code-fold: true
+        code-fold: false
+        self-contained: true
 editor:
-    render-on-save: true
+    render-on-save: false
 ---
 
-## Overview Figure 1
+Figure 1 demonstrates that social interaction ratio is a sensitive metric of stress effect in males but not females. This code generates Fig 1b and Fig 1c as well as statistics for the results section \*\***SI ratio identifies marginal stress effects in females**\*\*.
 
-Figure 1 demonstrates that social interaction ratio is a sensitive metric of stress effect in males but not females. This code generates Fig 1.
-
-### Config
+### Libraries & Config
 
 ```{r}
+#| label: libraries
+#| message: false
+
 library(here)
+library(glue)
+library(dplyr)
+library(tidyr)
+library(knitr)
+library(pander)
+library(ggplot2)
+library(ggpubr)
+library(pwr)
+library(effectsize)
+library(grid)
+library(cowplot)
+library(emmeans)
+```
+
+```{r}
+#| label: config + paths + data
+
 source(here('styles.R'))
 data_path <- here('data')
+SIT_diff <- readRDS(glue('{data_path}/SIT_diff_primary.rds'))
+SIT_raw <- readRDS(glue('{data_path}/SIT_raw_primary.rds'))
 ```
+
+## Figure 1B
+
+Following exposure to CSW/DS, SI ratio is reduced in males and females compared to non-stressed controls.
+
+```{r}
+#| code-fold: true
+
+# PLOT ----
+
+point <- ggplot(SIT_diff, aes(Condition, IZ_time, color = full_cond, fill = full_cond)) + 
+              geom_hline(yintercept = 1) + 
+              geom_jitter(width = 0.2, alpha = 0.2, height = 0, size = 0.5) +
+              stat_summary(fun = 'mean', geom = 'point', size = 0.5) + 
+              stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
+                           linewidth = 1, width = 0.4) + 
+              scale_y_continuous(name = 'SI Ratio', expand = c(0,0,0.3,0)) + 
+              facet_wrap(Sex ~ ., nrow = 2) + 
+              scale_color_manual(values = col_full) + 
+              scale_fill_manual(values = col_full) + 
+              plot_theme + 
+              theme(legend.position = 'None',
+                    axis.title.x = element_blank(),
+                    plot.margin = unit(c(0,0,0,0), 'cm'))
+
+hist <- ggplot(SIT_diff, aes(y=IZ_time, color = full_cond, fill = full_cond)) + 
+              geom_hline(yintercept = 1) + 
+              geom_density(alpha = 0.4) +
+              scale_x_continuous(expand = c(0,0), limits = c(0,1.2),
+                                 breaks = c(0,0.5,1),  name = c('Density')) + 
+              scale_y_continuous(name = 'SI Ratio', expand = c(0,0,0.3,0)) + 
+              scale_color_manual(values = col_full) + 
+              scale_fill_manual(values = col_full) + 
+              plot_theme + 
+              facet_wrap(Sex ~ ., nrow = 2) + 
+              theme(legend.position = 'None',
+                    axis.line = element_blank(),
+                    axis.ticks = element_blank(),
+                    axis.title = element_blank(),
+                    axis.text = element_blank(),
+                    strip.text = element_blank(),
+                    plot.margin = unit(c(0,0,0,0), 'cm'))
+
+# STATS ----
+
+# ANOVA
+aov_SIratio <- aov(IZ_time ~ Condition * Sex + cohort, SIT_diff) 
+sum_aov_SIratio <- summary(aov_SIratio)
+
+sidak_cond_sex <- pairs(emmeans(aov_SIratio, ~ Condition | Sex, adjust = 'sidak'))
+sidak_sex_cond <- pairs(emmeans(aov_SIratio, ~ Sex | Condition, adjust = 'sidak'))
+
+
+
+```
+
+:::: {layout="[28, -2, 70]"}
+::: {plot}
+``` {r}
+#| label: Fig 1b plot
+#| fig-width: 3
+#| fig-asp: 2.1
+#| fig-align: center
+#| code-fold: true
+
+plot_grid(point, hist + clean_theme(), 
+          ncol = 2, nrow = 1, align = 'hv', rel_widths = c(1.5,1))
+```       
+:::
+
+::: {table}
+``` {r}
+#| code-fold: true
+
+pander(sum_aov_SIratio)
+kable(rbind(sidak_cond_sex[1],
+            sidak_cond_sex[2],
+            sidak_sex_cond[1],
+            sidak_sex_cond[2]), digits = 2, align='c', caption = 'Sidak Post-Hoc Planned Contrasts')
+```
+:::
+::::
+
+
+We then calculated effect sizes for males and females. For this, we performed a t-test for male and female data separately as a basis to calculate hedge's *g*. This value was then used to calculate the sample size required for an adequately powered experiment (*power* = 0.8), as well as to calculate the power currently achieved when using sample sizes ranging from 8-15 animals per group.
+
+```{r}
+#| label: effect sizes
+#| code-fold: true
+
+# ES
+m_data <- SIT_diff[SIT_diff$Sex == 'Male',]
+t_SIratio_m <- t.test(IZ_time ~ Condition, data = m_data) # t-test
+g_t_SIratio_m <- hedges_g(IZ_time ~ Condition, data = m_data)$Hedges_g # hedge's g
+n_t_m <- pwr.t.test(d = g_t_SIratio_m, power = 0.8,
+                    sig.level = 0.05, type = "two.sample") # sample size for power = 0.8
+pwr_t_low_m <- pwr.t.test(d = g_t_SIratio_m, n = 8,
+                          sig.level = 0.05, type = "two.sample") # power with n = 8
+pwr_t_high_m <- pwr.t.test(d = g_t_SIratio_m, n = 15,
+                           sig.level = 0.05, type = "two.sample") # power with n = 15
+
+f_data <- SIT_diff[SIT_diff$Sex == 'Female',]
+t_SIratio_f <- t.test(IZ_time ~ Condition, data = f_data) # t-test
+g_t_SIratio_f <- hedges_g(IZ_time ~ Condition, data = f_data)$Hedges_g # hedge's ge
+n_t_f <- pwr.t.test(d = g_t_SIratio_f, power = 0.8,
+                    sig.level = 0.05, type = "two.sample") # sample size for power = 0.8
+pwr_t_low_f <- pwr.t.test(d = g_t_SIratio_f, n = 8,
+                          sig.level = 0.05, type = "two.sample") # power with n = 8
+pwr_t_high_f <- pwr.t.test(d = g_t_SIratio_f, n = 15,
+                           sig.level = 0.05, type = "two.sample") # power with n = 15
+
+es <- tibble("Sex" = c('Male', 'Female'),
+             "t Value" = c(round(t_SIratio_m$statistic, 2), round(t_SIratio_f$statistic, 2)),
+             "df" = c(round(t_SIratio_m$parameter, 2), round(t_SIratio_f$parameter, 2)),
+             "Hedge's g" = c(round(g_t_SIratio_m, 2), round(g_t_SIratio_f, 2)),
+             "n (pwr = 0.8)" = c(ceiling(n_t_m$n), ceiling(n_t_f$n)),
+             "pwr (n = 8)" = c(round(pwr_t_low_m$power, 2), round(pwr_t_low_f$power, 2)),
+             "pwr (n = 15)" = c(round(pwr_t_high_m$power, 2), round(pwr_t_high_f$power, 2)))
+
+kable(es)
+```
+
+## Figure 1C
