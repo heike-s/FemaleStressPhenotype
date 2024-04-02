@@ -19,6 +19,7 @@ plot_theme <- theme(axis.title=element_text(size=15,color='gray30'),
 
 # Color palettes ----
 
-col_full = c('orange','orangered','royalblue','navy')
+col_full = c('#FFA500','#FF4500','#4169E1','#000080')
 col_syls = c('#610C9F', '#940B92', '#DA0C81', '#E95793')
-
+col_stress_f = c('#FFA500','#76A100','#007561')
+col_stress_m = c('#4169E1','#925DC8','#C3549C')
