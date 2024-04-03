@@ -114,7 +114,7 @@ plot_grid(point, hist + clean_theme(),
 ::: {table}
 ``` {r}
 #| label: Fig 1b stats
-#| echo: falsec 
+#| echo: false
 
 pander(sum_aov_SIratio)
 kable(rbind(sidak_cond_sex[1],

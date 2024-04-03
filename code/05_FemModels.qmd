@@ -1,0 +1,59 @@
+---
+title: 'Figure 5: $\Delta$Velocity and SI Ratio in other Female Stress Models'
+format:
+    html:
+        code-fold: false
+        self-contained: true
+        toc: true
+editor:
+    render-on-save: false
+---
+
+In Figure 5 we show that $\Delta$Velocity changes are observed in Chronic Social Non-Discriminatory Defeat (CSNDS) as well as Urine Model Defeat. This code generates Fig 5b and Fig 5c as well as statistics for the results section **Decreased** $\Delta$**Velocity generalizes to stressed females in different defeat models**.
+
+### Libraries & Config
+
+```{r}
+#| label: libraries
+#| message: false
+#| code-fold: true
+
+library(here)
+library(glue)
+library(dplyr)
+library(ggplot2)
+
+```
+
+```{r}
+#| label: config + paths + data
+#| code-fold: true
+
+source(here('styles.R'))
+data_path <- here('data')
+primary_diff <- readRDS(glue('{data_path}/SIT_diff_primary.rds'))
+secondary_diff <- readRDS(glue('{data_path}/SIT_diff_secondary.rds'))
+
+# Bind primary and secondary DFs 
+SIT_diff <- bind_rows(primary_diff, secondary_diff)
+```
+
+## Figure 5b
+
+SI ratio is significantly lower in stressed females following CSW/DS and Urine model defeat, but not following CSNDS. Both CSW/DS and Urine model defeat induce similar effect sizes and produce a similar percentage of susceptible females.
+
+```{r}
+#| label: Fig 5b prep
+#| code-fold: true
+```
+
+## Figure 5c
+
+## Session Info
+
+```{r}
+#| label: session info
+#| echo: false
+
+sessionInfo()
+```

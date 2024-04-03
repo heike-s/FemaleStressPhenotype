@@ -1,0 +1,147 @@
+---
+title: 'Figure 7: mPFC->NAc FIP Evaluation'
+format:
+    html:
+        code-fold: false
+        self-contained: true
+        toc: true
+editor:
+    render-on-save: false
+---
+
+Figure 7 demonstrates that a classification based on $\Delta$Velocity *and* SI ratio identifies meaningful neurobiological differences between resilient and susceptible female mice. This code generates Fig 7b and Fig 7c as well as statistics for the results section **Resilient and susceptible females show differences in mPFC to NAc pathway responses during SIT**.
+
+### Libraries & Config
+
+```{r}
+#| label: libraries
+#| message: false
+#| code-fold: true
+
+library(here)
+library(glue)
+library(emmeans)
+library(nlme)
+library(ggplot2)
+library(knitr)
+library(pander)
+```
+
+```{r}
+#| label: config + paths + data
+#| code-fold: true
+
+source(here('styles.R'))
+data_path <- here('data')
+FIP_data <- readRDS(glue('{data_path}/FIP_data.rds'))
+```
+
+## Figure 7b
+
+We show that FIP recordings in the mPFC to NAc pathway in resilient mice is different in the No Target and Target trial across the whole arena. In contrast, susceptible mice do not show differences between No Target and Targe trials, which matches the observation of non-adaptation on the behavioral level. Controls also do not show discrimination between trial types on the level of neuronal recordings.
+
+```{r}
+#| label: Fig 7b prep
+#| code-fold: true
+
+# PLOT ----
+FIP_Arena <- ggplot(FIP_data, aes(Trial_type, z_Arena)) + 
+                      geom_hline(yintercept = 0) + 
+                      geom_jitter(
+                        data = FIP_data[FIP_data$Group_combined != 'ResSus',],
+                        aes(alpha = Trial_type, color = Group), 
+                        width = 0.2, size = 5.5, height = 0) + 
+                      geom_jitter(
+                        data = FIP_data[FIP_data$Group_combined == 'ResSus',],
+                        aes(alpha = Trial_type), color = '#C1292E', 
+                        shape = 17, width = 0.2, size = 5.5, height = 0) + 
+                      stat_summary(fun = 'mean', geom = 'point', size = 5, 
+                                   color = 'gray50') + 
+                      stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
+                                   linewidth = 1.5, width = 0.5, color = 'gray50') + 
+                      facet_grid(. ~ Group) + 
+                      ylim(c(-1,.5)) + ylab('Mean Z-Score') +
+                      plot_theme + 
+                      scale_color_manual(values = col_stress_f) + 
+                      scale_alpha_manual(values = c(0.8,0.5)) + 
+                      theme(axis.title.x = element_blank(),
+                            legend.position = 'none')
+
+# STATS ----
+
+lme_arena_f <- lme(z_Arena ~ Group * Trial_type, 
+                     data = FIP_data, random = list(applied_ID = ~ 1))
+mm_ttype_arena_f <- pairs(emmeans(lme_arena_f, ~ Trial_type | Group), adjust = 'sidak')
+```
+
+```{r}
+#| label: Fig 7b plot and stats
+#| echo: false
+#| fig-width: 7
+#| fig-asp: 0.75
+#| fig-align: center
+
+FIP_Arena
+
+pander(lme_arena_f, caption = 'LME in Whole Arena')
+kable(mm_ttype_arena_f, align='c', caption = 'Sidak Post-Hoc Planned Contrasts in Whole Arena')
+```
+
+## Figure 7c
+
+We further show that the same effect is observed when animals are in the interaction zone.
+
+```{r}
+#| label: Fig 7c prep
+#| code-fold: true
+
+# PLOT ----
+FIP_IZ <- ggplot(FIP_data, aes(Trial_type, z_IZ)) + 
+                      geom_hline(yintercept = 0) + 
+                      geom_jitter(
+                        data = FIP_data[FIP_data$Group_combined != 'ResSus',],
+                        aes(alpha = Trial_type, color = Group), 
+                        width = 0.2, size = 5.5, height = 0) + 
+                      geom_jitter(
+                        data = FIP_data[FIP_data$Group_combined == 'ResSus',],
+                        aes(alpha = Trial_type), color = '#C1292E', 
+                        shape = 17, width = 0.2, size = 5.5, height = 0) + 
+                      stat_summary(fun = 'mean', geom = 'point', size = 5, 
+                                   color = 'gray50') + 
+                      stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
+                                   linewidth = 1.5, width = 0.5, color = 'gray50') + 
+                      facet_grid(. ~ Group) + 
+                      ylim(c(-1.5,.5)) + ylab('Mean Z-Score') +
+                      plot_theme + 
+                      scale_color_manual(values = col_stress_f) + 
+                      scale_alpha_manual(values = c(0.8,0.5)) + 
+                      theme(axis.title.x = element_blank(),
+                            legend.position = 'none')
+
+# STATS ----
+
+lme_IZ_f <- lme(z_IZ ~ Group * Trial_type, 
+                     data = FIP_data, random = list(applied_ID = ~ 1))
+mm_ttype_IZ_f <- pairs(emmeans(lme_IZ_f, ~ Trial_type | Group), adjust = 'sidak')
+```
+
+```{r}
+#| label: Fig 7c plot and stats
+#| echo: false
+#| fig-width: 7
+#| fig-asp: 0.75
+#| fig-align: center
+
+FIP_IZ
+
+pander(lme_IZ_f, caption = 'LME in Interaction Zone', )
+kable(mm_ttype_IZ_f, align='c', caption = 'Sidak Post-Hoc Planned Contrasts in Interaction Zone')
+```
+
+## Session Info
+
+```{r}
+#| label: Session Info
+#| echo: False
+sessionInfo()
+```
