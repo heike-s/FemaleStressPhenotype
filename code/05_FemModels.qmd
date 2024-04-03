@@ -21,8 +21,11 @@ In Figure 5 we show that $\Delta$Velocity changes are observed in Chronic Social
 library(here)
 library(glue)
 library(dplyr)
+library(magrittr)
 library(ggplot2)
-
+library(effectsize)
+library(pander)
+library(knitr)
 ```
 
 ```{r}
@@ -35,19 +38,140 @@ primary_diff <- readRDS(glue('{data_path}/SIT_diff_primary.rds'))
 secondary_diff <- readRDS(glue('{data_path}/SIT_diff_secondary.rds'))
 
 # Bind primary and secondary DFs 
-SIT_diff <- bind_rows(primary_diff, secondary_diff)
+primary_diff %<>%
+    filter(Sex == 'Female') %>%
+    mutate(model = 'CSW/DS',
+           lab = 'bagot') %>%
+    select(names(secondary_diff)) 
+SIT_diff <- bind_rows(primary_diff, secondary_diff) %>%
+                mutate(model = factor(model, levels = c('CSW/DS', 'CSNDS', 'Urine')))
 ```
 
 ## Figure 5b
 
-SI ratio is significantly lower in stressed females following CSW/DS and Urine model defeat, but not following CSNDS. Both CSW/DS and Urine model defeat induce similar effect sizes and produce a similar percentage of susceptible females.
+SI ratio is significantly lower in stressed females following CSW/DS and Urine model defeat, but not following CSNDS.
 
 ```{r}
 #| label: Fig 5b prep
 #| code-fold: true
+
+# PLOT ----
+SI_ratio <- ggplot(SIT_diff, aes(Condition, IZ_time, color = Condition, fill = Condition)) + 
+                geom_hline(yintercept = 1, color = 'gray10') + 
+                geom_jitter(width = 0.2, alpha = 0.2, height = 0) + 
+                stat_summary(fun = 'mean', geom = 'point', size = 2) + 
+                stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
+                             linewidth = 1, width = 0.4) + 
+                facet_grid(. ~ model) + 
+                scale_y_continuous(name = 'SI Ratio',
+                                   breaks = c(0,1,2,3,4), limits = c(0,4),
+                                   expand = c(0,0)) + 
+                scale_color_manual(values = col_full[c(1,2)]) + 
+                scale_fill_manual(values = col_full) + 
+                plot_theme + 
+                theme(legend.position = 'None',
+                      axis.title.x = element_blank(),
+                      panel.spacing.x = unit(3, 'lines'),
+                      strip.text = element_blank())
+
+# STATS ----
+
+# ANOVAs & ES
+CSWDS_data <- SIT_diff[SIT_diff$model == 'CSW/DS',]
+aov_SIratio_CSWDS <- summary(aov(IZ_time ~ Condition + cohort, CSWDS_data))
+g_CSWDS <- hedges_g(IZ_time ~ Condition, data = CSWDS_data)$Hedges_g
+
+CSNDS_data <- SIT_diff[SIT_diff$model == 'CSNDS',] 
+aov_SIratio_CSNDS <- summary(aov(IZ_time ~ Condition, CSNDS_data)) # Single cohort only
+g_CSNDS <- hedges_g(IZ_time ~ Condition, data = CSNDS_data)$Hedges_g
+
+Urine_data <- SIT_diff[SIT_diff$model == 'Urine',]
+aov_SIratio_Urine <- summary(aov(IZ_time ~ Condition + cohort, Urine_data))
+g_Urine <- hedges_g(IZ_time ~ Condition, data = Urine_data)$Hedges_g
+
+# %Sus
+SIT_diff %>%
+    group_by(model) %>%
+    filter(Condition == 'Stress') %>%
+    count(IZ_time < 1) %>%
+    mutate(percent_sus = n / sum(n) * 100) %>%
+    filter(`IZ_time < 1` == 'TRUE') %>%
+    select(!c(`IZ_time < 1`,'n')) %>%
+    rename(Model = model, `% Susceptible` = percent_sus) -> pct_sus
+pct_sus$`Hedge's g` <- c(g_CSWDS, g_CSNDS, g_Urine)
+```
+
+```{r}
+#| label: Fig 5b plot and stats
+#| echo: false
+#| fig-width: 10
+#| fig-asp: 0.6
+#| fig-align: center
+
+SI_ratio
+
+pander(aov_SIratio_CSWDS, caption = 'ANOVA: SI ratio in CSWDS')
+pander(aov_SIratio_CSNDS, caption = 'ANOVA: SI ratio in CSNDS')
+pander(aov_SIratio_Urine, caption = 'ANOVA: SI ratio in Urine Defeat')
+```
+
+Both CSW/DS and Urine model defeat induce similar effect sizes and produce a similar percentage of susceptible females, with a slightly larger effect observed in Urine model defeat.
+
+```{r}
+#| label: Fig 5b extra stats
+#| echo: false
+
+kable(pct_sus)
 ```
 
 ## Figure 5c
+
+As shown in *Figure 4,* $\Delta$Velocity is significantly lower in CSW/DS stressed females. Here, we demonstrate that $\Delta$Velocity shows a significant and trending reduction following CSNDS and Urine model defeat, respectively. The lower effect size after Urine model defeat could relate to the more extreme SI ratio values observed in this model, which are incompatible with low $\Delta$Velocity values, as shown in *Figure 6.*
+
+```{r}
+#| label: Fig 5c prep
+#| warning: false
+#| code-fold: true
+
+DelVel <- ggplot(SIT_diff, aes(Condition, Velocity, color = Condition, fill = Condition)) + 
+              geom_hline(yintercept = 0, color = 'gray80') + 
+              geom_jitter(width = 0.2, alpha = 0.2, height = 0) +
+              stat_summary(fun = 'mean', geom = 'point', size = 2) + 
+              stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
+                           linewidth = 1, width = 0.4) + 
+              facet_grid(. ~ model) + 
+              scale_y_continuous(name = expression(Delta*' Velocity')) + 
+              scale_color_manual(values = col_full[c(1,2)]) + 
+              scale_fill_manual(values = col_full) + 
+              plot_theme + 
+              theme(legend.position = 'None',
+                    axis.title.x = element_blank(),
+                    panel.spacing.x = unit(3, 'lines'),
+                    strip.text = element_blank())
+
+# STATS ----
+
+# ANOVAs
+aov_SIratio_CSWDS <- summary(aov(Velocity ~ Condition + cohort, CSWDS_data))
+aov_SIratio_CSNDS <- summary(aov(Velocity ~ Condition, CSNDS_data)) # Single cohort only
+aov_SIratio_Urine <- summary(aov(Velocity ~ Condition + cohort, Urine_data))
+
+```
+
+```{r}
+#| label: Fig 5c plot and stats
+#| echo: false
+#| fig-width: 10
+#| fig-asp: 0.6
+#| fig-align: center
+
+
+DelVel
+
+pander(aov_SIratio_CSWDS, caption = 'ANOVA: Delta Velocity in CSWDS')
+pander(aov_SIratio_CSNDS, caption = 'ANOVA: Delta Velocity in CSNDS')
+pander(aov_SIratio_Urine, caption = 'ANOVA: Delta Velocity in Urine Defeat')
+```
 
 ## Session Info
 
