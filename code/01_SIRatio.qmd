@@ -117,10 +117,9 @@ plot_grid(point, hist + clean_theme(),
 #| echo: false
 
 pander(sum_aov_SIratio)
-kable(rbind(sidak_cond_sex[1],
-            sidak_cond_sex[2],
-            sidak_sex_cond[1],
-            sidak_sex_cond[2]), digits = 2, align='c', caption = 'Sidak Post-Hoc Planned Contrasts')
+kable(rbind(sidak_cond_sex, sidak_sex_cond), 
+            digits = 2, align='c', 
+            caption = 'Sidak Post-Hoc Planned Contrasts')
 ```
 :::
 ::::
