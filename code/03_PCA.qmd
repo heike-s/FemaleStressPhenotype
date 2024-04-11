@@ -1,0 +1,27 @@
+---
+title: 'Figure 3: PCA; Changes in Up- and Downregulated syllables'
+format:
+    html:
+        code-fold: false
+        self-contained: true
+        toc: true
+editor:
+    render-on-save: false
+---
+
+Figure 3 demonstrates that female mice show behavioral variability distinct of that observed in males as a result of CSW/DS, and that this behavioral variability is driven by an attenuated behavioral regulation in response to target presence. This code generates Fig 3 and Fig. S2 as well as statistics for the results section **Dimensionality reduction identifies distinct sources of stress-related variance in males and females**.
+
+### Libraries & Config
+```{r}
+#| label: libraries
+#| message: false
+#| code-fold: true
+
+library(here)
+library(glue)
+library(dplyr)
+library(tidyr)
+library(knitr)
+library(pander)
+library(ggplot2)
+```
