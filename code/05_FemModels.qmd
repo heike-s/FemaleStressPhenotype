@@ -47,7 +47,7 @@ SIT_diff <- bind_rows(primary_diff, secondary_diff) %>%
                 mutate(model = factor(model, levels = c('CSW/DS', 'CSNDS', 'Urine')))
 ```
 
-## Figure 5b
+### Fig. 5b
 
 SI ratio is significantly lower in stressed females following CSW/DS and Urine model defeat, but not following CSNDS.
 
@@ -124,7 +124,7 @@ Both CSW/DS and Urine model defeat induce similar effect sizes and produce a sim
 kable(pct_sus)
 ```
 
-## Figure 5c
+### Fig. 5c
 
 As shown in *Figure 4,* $\Delta$Velocity is significantly lower in CSW/DS stressed females. Here, we demonstrate that $\Delta$Velocity shows a significant and trending reduction following CSNDS and Urine model defeat, respectively. The lower effect size after Urine model defeat could relate to the more extreme SI ratio values observed in this model, which are incompatible with low $\Delta$Velocity values, as shown in *Figure 6.*
 

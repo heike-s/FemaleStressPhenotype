@@ -226,7 +226,7 @@ kable(rbind(sidak_cond_tt_f[1],
 
 ```
 
-
+---
 
 ## Session Info
 ```{r}
