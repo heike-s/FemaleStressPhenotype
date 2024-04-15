@@ -9,7 +9,7 @@ editor:
     render-on-save: false
 ---
 
-In Figure 5 we show that $\Delta$Velocity changes are observed in Chronic Social Non-Discriminatory Defeat (CSNDS) as well as Urine Model Defeat. This code generates Fig 5b and Fig 5c as well as statistics for the results section **Decreased** $\Delta$**Velocity generalizes to stressed females in different defeat models**.
+In Figure 5 we show that $\Delta$Velocity changes are observed in Chronic Social Non-Discriminatory Defeat (CSNDS) as well as Urine Model Defeat. This code generates Figure 5 as well as statistics for the results section **Attenuated** $\Delta$**Velocity generalizes across female social stress models.**
 
 ### Libraries & Config
 
@@ -47,7 +47,9 @@ SIT_diff <- bind_rows(primary_diff, secondary_diff) %>%
                 mutate(model = factor(model, levels = c('CSW/DS', 'CSNDS', 'Urine')))
 ```
 
-### Fig. 5b
+---
+
+### SI ratio across female defeat models (Fig. 5b)
 
 SI ratio is significantly lower in stressed females following CSW/DS and Urine model defeat, but not following CSNDS.
 
@@ -110,7 +112,7 @@ pct_sus$`Hedge's g` <- c(g_CSWDS, g_CSNDS, g_Urine)
 
 SI_ratio
 
-pander(aov_SIratio_CSWDS, caption = 'ANOVA: SI ratio in CSWDS')
+pander(aov_SIratio_CSWDS, caption = 'ANOVA: SI ratio in CSW/DS')
 pander(aov_SIratio_CSNDS, caption = 'ANOVA: SI ratio in CSNDS')
 pander(aov_SIratio_Urine, caption = 'ANOVA: SI ratio in Urine Defeat')
 ```
@@ -124,7 +126,7 @@ Both CSW/DS and Urine model defeat induce similar effect sizes and produce a sim
 kable(pct_sus)
 ```
 
-### Fig. 5c
+### $\Delta$Velocity across female defeat models (Fig. 5c)
 
 As shown in *Figure 4,* $\Delta$Velocity is significantly lower in CSW/DS stressed females. Here, we demonstrate that $\Delta$Velocity shows a significant and trending reduction following CSNDS and Urine model defeat, respectively. The lower effect size after Urine model defeat could relate to the more extreme SI ratio values observed in this model, which are incompatible with low $\Delta$Velocity values, as shown in *Figure 6.*
 
@@ -168,10 +170,12 @@ aov_SIratio_Urine <- summary(aov(Velocity ~ Condition + cohort, Urine_data))
 
 DelVel
 
-pander(aov_SIratio_CSWDS, caption = 'ANOVA: Delta Velocity in CSWDS')
+pander(aov_SIratio_CSWDS, caption = 'ANOVA: Delta Velocity in CSW/DS')
 pander(aov_SIratio_CSNDS, caption = 'ANOVA: Delta Velocity in CSNDS')
 pander(aov_SIratio_Urine, caption = 'ANOVA: Delta Velocity in Urine Defeat')
 ```
+
+---
 
 ## Session Info
 
