@@ -9,7 +9,7 @@ editor:
     render-on-save: false
 ---
 
-Figure 6 explores the relationship between the standard metric SI Ratio with the new metric $\Delta$Velocity, and proposes a .
+Figure 6 explores the relationship between the standard metric SI Ratio with the new metric $\Delta$Velocity, and proposes a new cut-off including both metrics. Figure S4 expands on this finding by exploring the grouping based on the novel cutoff in the OFT. Thie notebook generates Figure 6 and Figure S4 as well as statistics for the results section **Attenuated ΔVelocity generalizes across female social stress models**.
 
 ### Libraries and Config
 
@@ -112,13 +112,30 @@ ggplot(SIT_diff, aes(SI_bin, Velocity)) +
   facet_grid(. ~ Sex, scales = 'free', space = 'free') +
   plot_theme + 
   theme(legend.position = 'bottom',
-         axis.text.x = element_text(angle = 45, hjust = 1),#, vjust = 0.5),
-         strip.text = element_blank())
+        legend.title = element_blank(),
+         axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
 ### Resilience/susceptibility cut-offs (Fig. 6b)
 
-We are proposing a distribution based cut-off for $\Delta$Velocity
+We are proposing a distribution based cut-off for $\Delta$Velocity in addition to the existing cut-off sued for SI ratio. We suggest to. use both cut-offs, based on the small but significant effect observed in SI ratio, as well as the U-shaped relationship between SI ratio and $\Delta$Velocity. Based on CSW/DS data, we identify the 10% lower bound one-sided z-score CI (i.e., 1.28 SD below mean) for a cut-off that assigns susceptibility to stressed females that behave outside the commonly observed range of control $\Delta$Velocity values, which we will approximate with 1.5:
+
+```{r}
+#| label: DelVel distribution
+#| code-fold: true
+
+CI_data <- SIT_diff$Velocity[SIT_diff$model == 'CSW/DS' & 
+                             SIT_diff$Condition == 'Ctl' & 
+                             SIT_diff$Sex == 'Female']
+
+mu <- mean(CI_data)
+CI_range <- 1.28 * sd(CI_data)
+CI_low <- mu - CI_range
+
+print(paste('Mean:', mu, '; SD:', sd(CI_data), '; Lower CI Boundary:', CI_low))
+```
+
+The scatterplot below highlights all susceptible females, defined either by SI ratio or $\Delta$Velocity of both. Notably, the large majority of points identified are stressed females.
 
 ```{r}
 #| label: Fig 6b plot
@@ -141,7 +158,8 @@ Cor_plot <- ggplot(SIT_diff[SIT_diff$Sex == 'Female',], aes(IZ_time, Velocity)) 
                       scale_x_continuous(limits = c(0,3.2)) + 
                       xlab('SI Ratio') + ylab(expression(Delta*' Velocity')) +
                       plot_theme + 
-                      theme(legend.position = 'none',
+                      theme(legend.position = 'bottom',
+                            legend.title =  element_blank(), 
                             plot.margin = unit(c(0,0,0,0), 'cm'))
 
 SI_hist <- ggplot(SIT_diff[SIT_diff$Sex == 'Female',], 
@@ -176,9 +194,9 @@ plot_grid(SI_hist, NULL, Cor_plot, DelVel_hist, align = 'hv',
 
 ### General stress-induced phenotype in OFT (Fig. S4)
 
-Defeated **males** demonstrate a decrease in the time spent in the center of the arena, whether they are susceptible or resilient as classified by the SI ratio. This is argued to represent a general stress effect, and shows that social defeat leads to social avoidance in only a subset of animals but that all animals have experienced stress.
+Defeated **males** demonstrate a decrease in the time spent in the center of the arena, whether they are susceptible or resilient as classified by the SI ratio, suggesting a dissociation of social stress effects on social reward and anxiety-like behavior.
 
-In **females**, we do not see a general stress effect when looking at time spent in the center of the arena. However, we do observe an increase in velocity in all stressed animals, whether they were classified as susceptible or resilient by $\Delta$Velocity+SI. This suggests that the observed SIT $\Delta$ Velocity effects are specific to the interaction with the CD1 aggressor. This further points towards hyperlocomotion as being an indicator of anxiety-like behavior in females.
+In **females**, we do not see a general stress effect when looking at time spent in the center of the arena. However, we do observe an increase in velocity in all stressed animals, whether they were classified as susceptible or resilient by $\Delta$Velocity+SI. This suggests that the observed SIT $\Delta$ Velocity effects are specific to the interaction with the CD1 aggressor. This additionally further points towards hyperlocomotion as being an indicator of anxiety-like behavior in females.
 
 ```{r}
 #| label: Fig s4 prep
@@ -278,17 +296,17 @@ kable(rbind(c('Group', 'r (Pearson)', 'df', 'p-Value'),
 aov_Vel <- aov(Velocity ~ group_SI_Velocity * Sex + cohort_id, OFT)
 sum_aov_Vel <- summary(aov_Vel)
 sidak_Vel <- pairs(emmeans(aov_Vel, ~ group_SI_Velocity | Sex, adjust = 'sidak'))
-pander(sum_aov_Vel)
+pander(sum_aov_Vel, caption = 'ANOVA Velocity OFT')
 kable(sidak_Vel, align='c', 
-            caption = 'Sidak Post-Hoc Planned Contrasts')
+            caption = 'Sidak Post-Hoc Planned Contrasts: Velocity OFT')
 
 # ANOVA for OFT Time in Center by group and sex
 aov_Time <- aov(Center_Middle_Time ~ group_SI_Velocity * Sex + cohort_id, OFT)
 sum_aov_Time <- summary(aov_Time)
 sidak_Time <- pairs(emmeans(aov_Time, ~ group_SI_Velocity | Sex, adjust = 'sidak'))
-pander(sum_aov_Time)
+pander(sum_aov_Time, caption = 'ANOVA Time in Center OFT')
 kable(sidak_Time, align='c', 
-            caption = 'Sidak Post-Hoc Planned Contrasts')
+            caption = 'Sidak Post-Hoc Planned Contrasts: Time in Center OFT')
 ```
 
 ------------------------------------------------------------------------

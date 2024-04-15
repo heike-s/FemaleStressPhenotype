@@ -36,6 +36,8 @@ data_path <- here('data')
 FIP_data <- readRDS(glue('{data_path}/FIP_data.rds'))
 ```
 
+---
+
 ### Neural activity is modulated by target presence arena-wide in resilient females only (Fig. 7b)
 
 We show that FIP recordings in the mPFC to NAc pathway in resilient mice is different in the No Target and Target trial across the whole arena. In contrast, susceptible mice do not show differences between No Target and Targe trials, which matches the observation of non-adaptation on the behavioral level. Controls also do not show discrimination between trial types on the level of neuronal recordings.
@@ -151,6 +153,8 @@ kable(lme_IZ_f_table,
       caption = 'LME in Interaction Zone', )
 kable(mm_ttype_IZ_f, align='c', caption = 'Sidak Post-Hoc Planned Contrasts in Interaction Zone')
 ```
+
+---
 
 ### Session Info
 

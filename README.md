@@ -1,6 +1,6 @@
 # Female Stress Phenotype
 
-This is the github repository accompanying the paper: **Data-driven analysis identifies female-speicifc modulation after chronic social defeat stress**.\
+This is the github repository accompanying the paper: **Data-driven analysis identifies female-specific modulation after chronic social defeat stress**.\
 BIORXIV LINK.\
 
 This repo contains code and data to reproduce analyses and main and supplementary figures and tables.\
@@ -17,4 +17,4 @@ Fig 3, Fig S2 | PCA; Changes in Up- and Downregulated syllables |
 Fig 4, Fig S3 | Velocity as a heuristic | 
 Fig 5 | Generalization to other female defeat models | 
 Fig 6, Fig S4 | Defining resilience and susceptibility | 
-Fig 7 | FIP mPFC to NAc susceptibility signature | 
+Fig 7 | FIP mPFC to NAc susceptibility signature | `./code/07_mPFC_FIP.qmd`
