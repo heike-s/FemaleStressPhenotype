@@ -1,5 +1,5 @@
 ---
-title: 'Figure 7: mPFC->NAc FIP Evaluation'
+title: 'Figure 7: mPFC->NAc FIP'
 format:
     html:
         code-fold: false
@@ -9,7 +9,7 @@ editor:
     render-on-save: false
 ---
 
-Figure 7 demonstrates that a classification based on $\Delta$Velocity *and* SI ratio identifies meaningful neurobiological differences between resilient and susceptible female mice. This code generates Fig 7b and Fig 7c as well as statistics for the results section **Resilient and susceptible females show differences in mPFC to NAc pathway responses during SIT**.
+Figure 7 demonstrates that a classification based on $\Delta$Velocity *and* SI ratio identifies meaningful neurobiological differences between resilient and susceptible female mice. This notebook generates Fig 7 as well as statistics for the results section **Social modulation of mPFC-NAc neural activity in resilient, but not susceptible, females**.
 
 ### Libraries & Config
 
@@ -36,7 +36,7 @@ data_path <- here('data')
 FIP_data <- readRDS(glue('{data_path}/FIP_data.rds'))
 ```
 
-## Figure 7b
+### Neural activity is modulated by target presence arena-wide in resilient females only (Fig. 7b)
 
 We show that FIP recordings in the mPFC to NAc pathway in resilient mice is different in the No Target and Target trial across the whole arena. In contrast, susceptible mice do not show differences between No Target and Targe trials, which matches the observation of non-adaptation on the behavioral level. Controls also do not show discrimination between trial types on the level of neuronal recordings.
 
@@ -71,6 +71,11 @@ FIP_Arena <- ggplot(FIP_data, aes(Trial_type, z_Arena)) +
 
 lme_arena_f <- lme(z_Arena ~ Group * Trial_type, 
                      data = FIP_data, random = list(applied_ID = ~ 1))
+lme_arena_f_table <- cbind(rownames(summary(lme_arena_f)$tTable),
+                            unname(summary(lme_arena_f)$tTable[,'Value']),
+                            unname(summary(lme_arena_f)$tTable[,'Std.Error']),
+                            unname(summary(lme_arena_f)$tTable[,'DF']),
+                            unname(summary(lme_arena_f)$tTable[,'t-value']))
 mm_ttype_arena_f <- pairs(emmeans(lme_arena_f, ~ Trial_type | Group), adjust = 'sidak')
 ```
 
@@ -83,13 +88,15 @@ mm_ttype_arena_f <- pairs(emmeans(lme_arena_f, ~ Trial_type | Group), adjust = '
 
 FIP_Arena
 
-pander(lme_arena_f, caption = 'LME in Whole Arena')
+kable(lme_arena_f_table, 
+      col.names = c('','Value','Std. Error', 'DF', 't-Value'),
+      caption = 'LME in Whole Arena')
 kable(mm_ttype_arena_f, align='c', caption = 'Sidak Post-Hoc Planned Contrasts in Whole Arena')
 ```
 
-## Figure 7c
+### Neural activity is modulated by target presence in the IZ in resilient females only (Fig. 7c)
 
-We further show that the same effect is observed when animals are in the interaction zone.
+We further show that the same effect when animals are in the interaction zone.
 
 ```{r}
 #| label: Fig 7c prep
@@ -122,6 +129,11 @@ FIP_IZ <- ggplot(FIP_data, aes(Trial_type, z_IZ)) +
 
 lme_IZ_f <- lme(z_IZ ~ Group * Trial_type, 
                      data = FIP_data, random = list(applied_ID = ~ 1))
+lme_IZ_f_table <- cbind(rownames(summary(lme_IZ_f)$tTable),
+                          unname(summary(lme_IZ_f)$tTable[,'Value']),
+                          unname(summary(lme_IZ_f)$tTable[,'Std.Error']),
+                          unname(summary(lme_IZ_f)$tTable[,'DF']),
+                          unname(summary(lme_IZ_f)$tTable[,'t-value']))
 mm_ttype_IZ_f <- pairs(emmeans(lme_IZ_f, ~ Trial_type | Group), adjust = 'sidak')
 ```
 
@@ -134,11 +146,13 @@ mm_ttype_IZ_f <- pairs(emmeans(lme_IZ_f, ~ Trial_type | Group), adjust = 'sidak'
 
 FIP_IZ
 
-pander(lme_IZ_f, caption = 'LME in Interaction Zone', )
+kable(lme_IZ_f_table, 
+      col.names = c('','Value','Std. Error', 'DF', 't-Value'),
+      caption = 'LME in Interaction Zone', )
 kable(mm_ttype_IZ_f, align='c', caption = 'Sidak Post-Hoc Planned Contrasts in Interaction Zone')
 ```
 
-## Session Info
+### Session Info
 
 ```{r}
 #| label: Session Info

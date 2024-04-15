@@ -9,6 +9,8 @@ editor:
     render-on-save: false
 ---
 
+Figure 6 explores the relationship between the standard metric SI Ratio with the new metric $\Delta$Velocity, and proposes a .
+
 ### Libraries and Config
 
 ```{r}
@@ -19,9 +21,15 @@ editor:
 library(here)
 library(glue)
 library(dplyr)
+library(magrittr)
 library(ggplot2)
 library(ggpubr)
+library(ggpmisc)
 library(cowplot)
+library(scales)
+library(knitr)
+library(pander)
+library(emmeans)
 ```
 
 ```{r}
@@ -32,6 +40,7 @@ source(here('styles.R'))
 data_path <- here('data')
 primary_diff <- readRDS(glue('{data_path}/SIT_diff_primary.rds'))
 secondary_diff <- readRDS(glue('{data_path}/SIT_diff_secondary.rds'))
+OFT <- readRDS(glue('{data_path}/OFT_primary.rds'))
 
 # Bind primary and secondary DFs 
 primary_diff %<>%
@@ -58,7 +67,7 @@ SIT_diff %>%
   mutate(SI_bin = cut(IZ_time, breaks = seq(0, max(IZ_time) + 0.1, .25))) %>%
   mutate(SI_bin = gsub('\\(', '', gsub('\\]', '', gsub('\\,', ' - ', SI_bin)))) -> SIT_diff
 
-# Make labels look pretty
+# Make labels look prettier
 SIT_diff$SI_bin[grepl('0 ', SIT_diff$SI_bin)] <- gsub('0 ','0.00 ', 
                                                       SIT_diff$SI_bin[grepl('0 ', SIT_diff$SI_bin)])
 SIT_diff$SI_bin[grepl('0.5 ', SIT_diff$SI_bin)] <- gsub('0.5 ','0.50 ', 
@@ -114,7 +123,7 @@ We are proposing a distribution based cut-off for $\Delta$Velocity
 ```{r}
 #| label: Fig 6b plot
 #| code-fold: true
-#| fig-width: 7.5
+#| fig-width: 6.5
 #| fig-asp: 1
 #| fig-align: center
 #| warning: false
@@ -167,8 +176,127 @@ plot_grid(SI_hist, NULL, Cor_plot, DelVel_hist, align = 'hv',
 
 ### General stress-induced phenotype in OFT (Fig. S4)
 
-In males, the OFT is used
+Defeated **males** demonstrate a decrease in the time spent in the center of the arena, whether they are susceptible or resilient as classified by the SI ratio. This is argued to represent a general stress effect, and shows that social defeat leads to social avoidance in only a subset of animals but that all animals have experienced stress.
+
+In **females**, we do not see a general stress effect when looking at time spent in the center of the arena. However, we do observe an increase in velocity in all stressed animals, whether they were classified as susceptible or resilient by $\Delta$Velocity+SI. This suggests that the observed SIT $\Delta$ Velocity effects are specific to the interaction with the CD1 aggressor. This further points towards hyperlocomotion as being an indicator of anxiety-like behavior in females.
 
 ```{r}
+#| label: Fig s4 prep
+#| code-fold: true
 
+# Annotate OFT data with SI data (SI ratio, Delta Vel) and group based on cut-offs
+OFT %<>%
+    mutate(SI_ratio = SIT_diff$IZ_time[match(id_full, SIT_diff$id_full)],
+           Del_Vel = SIT_diff$Velocity[match(id_full, SIT_diff$id_full)],
+           group_SIratio = ifelse(Condition == 'Stress' & SI_ratio > 1, 
+                                  'Res', 
+                                  ifelse(Condition == 'Stress' & SI_ratio < 1, 
+                                  'Sus', 'Ctl')),
+           group_Velocity = ifelse(Condition == 'Stress' & Del_Vel > 1.5, 
+                                   'Res', 
+                                   ifelse(Condition == 'Stress' & Del_Vel < 1.5, 
+                                   'Sus', 'Ctl')),
+           group_SI_Velocity = ifelse(group_Velocity == 'Sus' | 
+                                      group_SIratio == 'Sus', 
+                                      'Sus', group_Velocity),
+           group_SI_Velocity = ifelse(Sex == 'Male', 
+                                      group_SIratio, group_SI_Velocity),
+           group_full = paste(Sex, group_SI_Velocity)) %>%
+    na.omit() # drop animals that don't have SI
+```
+
+```{r}
+#| label: Fig s4 plot
+#| code-fold: true
+#| fig-width: 10
+#| fig-asp: 0.65
+#| fig-align: center
+#| warning: false
+
+cor_plot <- ggplot(OFT, aes(Velocity, Del_Vel, color = cond_full)) + 
+                geom_point(alpha = 0.6) +
+                stat_poly_line() +
+                stat_poly_eq(size = 4, label.y = 'top', label.x = 'right') +
+                scale_y_continuous(breaks = pretty_breaks(), 
+                                   name = (expression(Delta*' Velocity (SIT)')), 
+                                   expand = c(0,0,0.3,0)) +
+                xlab('Mean Velocity (OFT)') + 
+                facet_grid(Sex ~ .) + 
+                scale_color_manual(values = col_full) + 
+                scale_fill_manual(values = col_full) + 
+                plot_theme 
+
+center_time <- ggplot(OFT, aes(group_SI_Velocity, Velocity, color = group_full)) + 
+                    geom_jitter(width = 0.2, alpha = 0.2, height = 0) +
+                    stat_summary(fun = 'mean', geom = 'point', size = 2) + 
+                    stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
+                                 linewidth = 1, width = 0.4) + 
+                    scale_y_continuous(name = 'Mean Velocity', expand = c(0,0,0.3,0)) +
+                    facet_grid(Sex ~ .) + 
+                    scale_color_manual(values = col_stress) + 
+                    scale_fill_manual(values = col_stress) + 
+                    plot_theme + 
+                    theme(axis.title.x = element_blank())
+
+velocity <- ggplot(OFT, aes(group_SI_Velocity, Center_Middle_Time, color = group_full)) + 
+                geom_jitter(width = 0.2, alpha = 0.2, height = 0) +
+                stat_summary(fun = 'mean', geom = 'point', size = 2) + 
+                stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
+                             linewidth = 1, width = 0.4) + 
+                scale_y_continuous(name = 'Time in Center (s)', expand = c(0,0,0.3,0)) +
+                facet_grid(Sex ~ .) + 
+                scale_color_manual(values = col_stress) + 
+                scale_fill_manual(values = col_stress) + 
+                plot_theme +
+                theme(axis.title.x = element_blank())
+
+plot_grid(cor_plot, center_time, velocity, align = 'hv', 
+          nrow = 1, rel_widths = c(1.5,1,1))
+```
+
+```{r}
+#| label: Fig s4 stats
+#| code-fold: true
+
+# Velocity correlations with Delta Velocity 
+F_ctl <- cor.test(OFT$Velocity[OFT$Sex == 'Female' & OFT$Condition == 'Control'], 
+                  OFT$Del_Vel[OFT$Sex == 'Female' & OFT$Condition == 'Control'])
+F_str <- cor.test(OFT$Velocity[OFT$Sex == 'Female' & OFT$Condition == 'Stress'], 
+                  OFT$Del_Vel[OFT$Sex == 'Female' & OFT$Condition == 'Stress'])
+M_ctl <- cor.test(OFT$Velocity[OFT$Sex == 'Male' & OFT$Condition == 'Control'], 
+                  OFT$Del_Vel[OFT$Sex == 'Male' & OFT$Condition == 'Control'])
+M_str <- cor.test(OFT$Velocity[OFT$Sex == 'Male' & OFT$Condition == 'Stress'], 
+                  OFT$Del_Vel[OFT$Sex == 'Male' & OFT$Condition == 'Stress'])
+kable(rbind(c('Group', 'r (Pearson)', 'df', 'p-Value'),
+            c('Female Control', unname(F_ctl$estimate), unname(F_ctl$parameter), F_ctl$p.value),
+            c('Female Stress', unname(F_str$estimate), unname(F_str$parameter), F_str$p.value),
+            c('Male Control', unname(M_ctl$estimate), unname(M_ctl$parameter), M_ctl$p.value),
+            c('Male Stress', unname(M_str$estimate), unname(M_str$parameter), M_str$p.value)),
+     caption = 'Correlation tests within Sex * Condition')
+
+# ANOVA for OFT Velocity by group and sex
+aov_Vel <- aov(Velocity ~ group_SI_Velocity * Sex + cohort_id, OFT)
+sum_aov_Vel <- summary(aov_Vel)
+sidak_Vel <- pairs(emmeans(aov_Vel, ~ group_SI_Velocity | Sex, adjust = 'sidak'))
+pander(sum_aov_Vel)
+kable(sidak_Vel, align='c', 
+            caption = 'Sidak Post-Hoc Planned Contrasts')
+
+# ANOVA for OFT Time in Center by group and sex
+aov_Time <- aov(Center_Middle_Time ~ group_SI_Velocity * Sex + cohort_id, OFT)
+sum_aov_Time <- summary(aov_Time)
+sidak_Time <- pairs(emmeans(aov_Time, ~ group_SI_Velocity | Sex, adjust = 'sidak'))
+pander(sum_aov_Time)
+kable(sidak_Time, align='c', 
+            caption = 'Sidak Post-Hoc Planned Contrasts')
+```
+
+------------------------------------------------------------------------
+
+### Session Info
+
+```{r}
+#| label: Session Info
+#| echo: False
+sessionInfo()
 ```
