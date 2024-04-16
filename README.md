@@ -24,7 +24,8 @@ DATA REPO LINK.\
 
 ### Overview: Data for Figures
 
-| Datafile     | Description                                     | Path to file              |
-|------------------|----------------------------------|--------------------|
-|SIT Raw (Primary) | SIT data for each trial in raw format, including syllable frequencies (i.e., two observations per aninmal) |`./data/SIT_raw_primary.rds`|
-|SIT Difference (Primary) | SIT data that contains the ratio (IZ Time, Corner Time) or difference (all other variables) between trial types for each animal in the primary cohort (i.e., single observation per animal)
+| Datafile     | Description                                     | Path to file              | Figures | 
+|--------------------------|----------------------------------|--------------------|------------------|
+|SIT Raw (Primary) | SIT data for each trial in raw format, including syllable frequencies (i.e., two observations per aninmal) |`./data/SIT_raw_primary.rds`| 1,S1,S3 |
+|SIT Difference (Primary) | SIT data that contains the ratio (IZ Time, Corner Time) or difference (all other variables) between trial types for each animal in the primary cohort (i.e., single observation per animal)|`./data/SIT_diff_primary.rds`| 1,2,3,4,5,6, |
+|SIT Difference z-Scored (Primary) | 

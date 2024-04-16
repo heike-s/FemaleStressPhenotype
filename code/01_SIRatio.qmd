@@ -9,7 +9,7 @@ editor:
     render-on-save: false
 ---
 
-Figure 1 demonstrates that social interaction ratio is a sensitive metric of stress effect in males but not females. This code generates Fig 1b and Fig 1c as well as statistics for the results section \*\***SI ratio identifies marginal stress effects in females**\*\*.
+Figure 1 demonstrates that social interaction ratio is a sensitive metric of stress effect in males but not females. This code generates Fig 1b and Fig 1c as well as statistics for the results section **SI ratio identifies marginal stress effects in females**.
 
 ### Libraries & Config
 
@@ -43,9 +43,11 @@ SIT_diff <- readRDS(glue('{data_path}/SIT_diff_primary.rds'))
 SIT_raw <- readRDS(glue('{data_path}/SIT_raw_primary.rds'))
 ```
 
-## Figure 1B
+----
 
-Following exposure to CSW/DS, SI ratio is reduced in males and females compared to non-stressed controls. This effect is driven by changes in stressed animals, as male and female control mice do not differ significantly from each other. 
+### SI Ratio effects are larger in males than in females (Fig. 1b)
+
+Following exposure to CSW/DS, SI ratio is reduced in males and females compared to non-stressed controls. This effect is driven by changes in stressed animals, as male and female control mice do not differ significantly from each other.
 
 ```{r}
 #| label: Fig 1b prep
@@ -97,9 +99,9 @@ sidak_sex_cond <- pairs(emmeans(aov_SIratio, ~ Sex | Condition), adjust = 'sidak
 
 ```
 
-:::: {layout="[28, -2, 70]"}
+::: {layout="[28, -2, 70]"}
 ::: {plot}
-``` {r}
+```{r}
 #| label: Fig 1b plot
 #| fig-width: 3
 #| fig-asp: 2.1
@@ -108,11 +110,11 @@ sidak_sex_cond <- pairs(emmeans(aov_SIratio, ~ Sex | Condition), adjust = 'sidak
 
 plot_grid(point, hist + clean_theme(), 
           ncol = 2, nrow = 1, align = 'hv', rel_widths = c(1.5,1))
-```       
+```
 :::
 
 ::: {table}
-``` {r}
+```{r}
 #| label: Fig 1b stats
 #| echo: false
 
@@ -122,7 +124,7 @@ kable(rbind(sidak_cond_sex, sidak_sex_cond),
             caption = 'Sidak Post-Hoc Planned Contrasts')
 ```
 :::
-::::
+:::
 
 We then calculated effect sizes for males and females. For this, we performed a t-test for male and female data separately as a basis to calculate hedge's *g*. This value was then used to calculate the sample size required **per group** for an adequately powered experiment (*power* = 0.8), as well as to calculate the power currently achieved when using sample sizes ranging from 8-15 animals per group.
 
@@ -159,12 +161,24 @@ es <- tibble("Sex" = c('Male', 'Female'),
              "pwr (n = 8)" = c(round(pwr_t_low_m$power, 2), round(pwr_t_low_f$power, 2)),
              "pwr (n = 15)" = c(round(pwr_t_high_m$power, 2), round(pwr_t_high_f$power, 2)))
 
+# Variance test
+var_ctl <- var.test(IZ_time ~ Sex, SIT_diff[SIT_diff$Condition == 'Ctl',], 
+                    alternative = "two.sided")
+var_stress <- var.test(IZ_time ~ Sex, SIT_diff[SIT_diff$Condition == 'Stress',], 
+                       alternative = "two.sided")
+var_test <- tibble("Group" = c('Control', 'Stress'),
+                   "F Value" = c(var_ctl$statistic, var_stress$statistic),
+                   "df" = c(paste0(var_ctl$parameter[1], ',', var_ctl$parameter[2]), 
+                            paste0(var_stress$parameter[1], ',', var_stress$parameter[2])),
+                   "p Value" = c(var_ctl$p.value, var_stress$p.value))
+
 kable(es)
+kable(var_test)
 ```
 
-## Figure 1C
+### Raw data confirm differential effects in males and females (Fig. 1c)
 
-Finally, we tested if females showed evidence of stress effects in the raw time in the interaction zone, that may be masked when computing the SI ratio. Males show reduced time in ther interaction zone only during the Target trial. In contrast, Females show a modest increase in time in the interaction zone in the No Target trial, and a modest decrease during the Target trial compared to controls. 
+Finally, we tested if females showed evidence of stress effects in the raw time in the interaction zone, that may be masked when computing the SI ratio. Males show reduced time in ther interaction zone only during the Target trial. In contrast, Females show a modest increase in time in the interaction zone in the No Target trial, and a modest decrease during the Target trial compared to controls.
 
 ```{r}
 #| label: Fig 1c prep
@@ -190,9 +204,9 @@ point_raw <- ggplot(SIT_raw, aes(Condition, IZ_time, color = full_cond, fill = f
 
 # ANOVAs per sex
 m_data <- SIT_raw[SIT_raw$Sex == 'Male',]
-m_aov <- aov(IZ_time ~ Condition * Trial_type + cohort + Error(id_full / Trial_type), m_data)
+m_aov <- aov(IZ_time ~ Condition * Trial_type + cohort + Error(id_full), m_data)
 f_data <- SIT_raw[SIT_raw$Sex == 'Female',]
-f_aov <- aov(IZ_time ~ Condition * Trial_type + cohort + Error(id_full / Trial_type), f_data)
+f_aov <- aov(IZ_time ~ Condition * Trial_type + cohort + Error(id_full), f_data)
 
 # Sidak 
 sidak_cond_tt_m <- pairs(emmeans(m_aov, ~ Condition | Trial_type), adjust = 'sidak')
@@ -202,7 +216,7 @@ sidak_tt_cond_f <- pairs(emmeans(f_aov, ~ Trial_type | Condition), adjust = 'sid
 
 ```
 
-``` {r}
+```{r}
 #| label: Fig 1c plot and stats
 #| message: false
 #| echo: false
@@ -212,23 +226,20 @@ sidak_tt_cond_f <- pairs(emmeans(f_aov, ~ Trial_type | Condition), adjust = 'sid
 
 point_raw
 
-pander(m_aov, caption = 'rmANOVA in Males')
-kable(rbind(sidak_cond_tt_m[1],
-            sidak_cond_tt_m[2],
-            sidak_tt_cond_m[1],
-            sidak_tt_cond_m[2]), digits = 2, align='c', caption = 'Sidak Post-Hoc Planned Contrasts in Males')
+pander(summary(m_aov), caption = 'rmANOVA in Males')
+kable(rbind(sidak_cond_tt_m,
+            sidak_tt_cond_m), digits = 5, align='c', caption = 'Sidak Post-Hoc Planned Contrasts in Males')
 
-pander(f_aov, caption = 'rmANOVA in Females')
-kable(rbind(sidak_cond_tt_f[1],
-            sidak_cond_tt_f[2],
-            sidak_tt_cond_f[1],
-            sidak_tt_cond_f[2]), digits = 2, align='c', caption = 'Sidak Post-Hoc Planned Contrasts in Females')
+pander(summary(f_aov), caption = 'rmANOVA in Females')
+kable(rbind(sidak_cond_tt_f,
+            sidak_tt_cond_f), digits = 5, align='c', caption = 'Sidak Post-Hoc Planned Contrasts in Females')
 
 ```
 
----
+------------------------------------------------------------------------
 
-## Session Info
+### Session Info
+
 ```{r}
 #| label: Session Info
 #| echo: False

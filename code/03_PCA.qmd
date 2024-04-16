@@ -80,6 +80,8 @@ SIT_diff %>%
             sd_PC1 = sd(PC1), sd_PC2 = sd(PC2)) -> SIT_pca_mean
 ```
 
+------------------------------------------------------------------------
+
 ### PCA Plots (Fig. 3a, 3b)
 
 The PC plot shows that CSW/DS induces behavioral variability largely captured along PC1 in males, but along PC2 in females. This analysis not only confirms that male and female mice differ in their behavioral response after CSW/DS in the SIT, but also emphasizes that CSW/DS indeed causes behavioral changes in witness females, disputing the hypothesis that the stress model does not work.
