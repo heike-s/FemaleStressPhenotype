@@ -23,11 +23,14 @@ library(glue)
 library(dplyr)
 library(tidyr)
 library(knitr)
+library(magrittr)
 library(pander)
 library(ggplot2)
 library(ggpubr)
+library(ggpmisc)
 library(ggrepel)
 library(cowplot)
+library(emmeans)
 ```
 
 ```{r}
@@ -37,9 +40,8 @@ library(cowplot)
 source(here('styles.R'))
 data_path <- here('data')
 SIT_diff <- readRDS(glue('{data_path}/SIT_diff_primary.rds'))
-SIT_z_diff <- readRDS(glue('{data_path}/SIT_z_diff_primary.rds'))
+SIT_z <- readRDS(glue('{data_path}/SIT_z_primary.rds'))
 syl_info <- tibble(read.csv(glue('{data_path}/syllable_info.csv')))
-
 ```
 
 ### Run PCA
@@ -78,6 +80,7 @@ SIT_diff %>%
   group_by(Sex, Condition, full_cond) %>%
   summarise(avg_PC1 = mean(PC1), avg_PC2 = mean(PC2),
             sd_PC1 = sd(PC1), sd_PC2 = sd(PC2)) -> SIT_pca_mean
+
 ```
 
 ------------------------------------------------------------------------
@@ -214,13 +217,13 @@ ggplot(SIT_pca, aes(PC1, PC2, color = social_identity, fill = social_identity)) 
 
 Given that Up- and Downregulated syllables split along the axis of PC2, which in turn differentiates control and stressed females, we next looked at the average changes in syllable frequency observed within each social identity group. We show that in males, Upregulated syllables are more upregulated in defeated males compared to controls. In females, we see an attenuated regulation in both Up- and Downregulated syllables.
 
-We summarize these observations by quantifying the average absolute syllable frequency change. We observed an increase in syllable frequency
+We summarize these observations by quantifying the average absolute syllable frequency change, which we term the Social Modulation Score (SMS). We observed a significant increase in SMS in males, and a significant decre
 
 ```{r}
 #| label: Fig 3cd prep and plot
 #| code-fold: true
 #| fig-width: 10
-#| fig-asp: 2
+#| fig-asp: 0.66
 #| fig-align: center
 #| warning: false
 #| error: false
@@ -230,33 +233,33 @@ N_syls <- syl_info$metric[grepl('N',syl_info$new_label)]
 U_syls <- syl_info$metric[grepl('U',syl_info$new_label)] 
 D_syls <- syl_info$metric[grepl('D',syl_info$new_label)]
 
-SIT_z_diff$Social <- factor(ifelse(SIT_z_diff$metric %in% N_syls, 'No Change', 
-                            ifelse(SIT_z_diff$metric %in% U_syls, 'Up', 'Down')),
+SIT_z$Social <- factor(ifelse(SIT_z$metric %in% N_syls, 'No Change', 
+                            ifelse(SIT_z$metric %in% U_syls, 'Up', 'Down')),
                             levels = c('Up', 'No Change', 'Down'))
 
 # Calculate mean per social identity type and abs change
-SIT_z_diff %>%
+SIT_z %>%
   group_by(id_full, full_cond, Sex, Condition, Social, cohort) %>%
   summarise(Social_avg = mean(z_diff)) -> SIT_syl_avg_freq_z_diff
 
-SIT_z_diff %>%
-  group_by(id_full, full_cond, Sex, Condition, Social, cohort) %>%
+SIT_z %>%
   mutate(all = 'All Syllables') %>% # So that plot can be titled by facet
-  summarise(Avg_diff = mean(abs(z_diff))) -> SIT_avg_freq_z_diff
+  group_by(id_full, full_cond, Sex, Condition, cohort, all) %>%
+  summarise(SMS = mean(abs(z_diff))) -> SIT_avg_freq_z_diff
 
 # Plot for each social identity type
 ### Not faceted because of different y axes
 U_plot <- ggplot(SIT_syl_avg_freq_z_diff[SIT_syl_avg_freq_z_diff$Social == 'Up',], 
                  aes(Condition, Social_avg, color = full_cond, fill = full_cond)) + 
             geom_hline(yintercept = 0) + 
-            geom_jitter(width = 0.2, alpha = 0.2, height = 0) +
+            geom_jitter(width = 0.2, alpha = 0.2, height = 0, size = 0.3) +
             stat_summary(fun.y = 'mean', geom = 'point', size = 2) + 
             stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
                          linewidth = 1, width = 0.4) + 
             scale_y_continuous(name = 'Mean Syllable Frequency Diff. (Z Score)', 
                                limits = c(-10,10), breaks = c(-10,0,10)) + 
             facet_grid(Sex ~ Social, scale = 'free_y') + 
-            scale_color_manual(values = col_full[c(1,3,2,4)]) + 
+            scale_color_manual(values = col_full) + 
             scale_fill_manual(values = col_full) + 
             plot_theme + 
             theme(legend.position = 'None',
@@ -265,14 +268,14 @@ U_plot <- ggplot(SIT_syl_avg_freq_z_diff[SIT_syl_avg_freq_z_diff$Social == 'Up',
 N_plot <- ggplot(SIT_syl_avg_freq_z_diff[SIT_syl_avg_freq_z_diff$Social == 'No Change',], 
                  aes(Condition, Social_avg, color = full_cond, fill = full_cond)) + 
             geom_hline(yintercept = 0) + 
-            geom_jitter(width = 0.2, alpha = 0.2, height = 0) +
+            geom_jitter(width = 0.2, alpha = 0.2, height = 0, size = 0.3) +
             stat_summary(fun.y = 'mean', geom = 'point', size = 2) + 
             stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
                          linewidth = 1, width = 0.4) + 
             scale_y_continuous(name = 'Mean Syllable Frequency Diff. (Z Score)', 
                      limits = c(-5,5), breaks = c(-5,0,5)) + 
             facet_grid(Sex ~ Social, scale = 'free_y') + 
-            scale_color_manual(values = col_full[c(1,3,2,4)]) + 
+            scale_color_manual(values = col_full) + 
             scale_fill_manual(values = col_full) + 
             plot_theme + 
             theme(legend.position = 'None',
@@ -281,22 +284,22 @@ N_plot <- ggplot(SIT_syl_avg_freq_z_diff[SIT_syl_avg_freq_z_diff$Social == 'No C
 D_plot <- ggplot(SIT_syl_avg_freq_z_diff[SIT_syl_avg_freq_z_diff$Social == 'Down',], 
                  aes(Condition, Social_avg, color = full_cond, fill = full_cond)) + 
             geom_hline(yintercept = 0) + 
-            geom_jitter(width = 0.2, alpha = 0.2, height = 0) +
+            geom_jitter(width = 0.2, alpha = 0.2, height = 0, size = 0.3) +
             stat_summary(fun.y = 'mean', geom = 'point', size = 2) + 
             stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
                          linewidth = 1, width = 0.4) + 
             scale_y_continuous(name = 'Mean Syllable Frequency Diff. (Z Score)', 
                      limits = c(-2,2), breaks = c(-2,0,2)) + 
             facet_grid(Sex ~ Social, scale = 'free_y') + 
-            scale_color_manual(values = col_full[c(1,3,2,4)]) + 
+            scale_color_manual(values = col_full) + 
             scale_fill_manual(values = col_full) + 
             plot_theme + 
             theme(legend.position = 'None',
                   axis.title.x = element_blank())
 
 SMS_plot <- ggplot(SIT_avg_freq_z_diff, 
-                   aes(Condition, Avg_diff, color = full_cond, fill = full_cond)) + 
-              geom_jitter(width = 0.2, alpha = 0.2, height = 0) +
+                   aes(Condition, SMS, color = full_cond, fill = full_cond)) + 
+              geom_jitter(width = 0.2, alpha = 0.2, height = 0, size = 0.3) +
               stat_summary(fun.y = 'mean', geom = 'point', size = 2) + 
               stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
                            linewidth = 1, width = 0.4) + 
@@ -308,15 +311,51 @@ SMS_plot <- ggplot(SIT_avg_freq_z_diff,
               theme(legend.position = 'None',
                     axis.title.x = element_blank())
 
-plot_grid(U_plot, N_plot, D_plot, NULL, SMS_plot, align = 'hv', nrow = 1)
+plot_grid(U_plot, N_plot, D_plot, SMS_plot, align = 'hv', nrow = 1)
 ```
 
 ```{r}
 #| label: Fig 3cd stats
 #| code-fold: true
 #| warning: false
-#| error: false
 
+# rmANOVA by social type
+aov_social_m <- aov(Social_avg ~ Condition * Social + cohort + Error(id_full), 
+                    SIT_syl_avg_freq_z_diff[SIT_syl_avg_freq_z_diff$Sex == 'Male',])
+aov_social_f <- aov(Social_avg ~ Condition * Social + cohort + Error(id_full),
+                     SIT_syl_avg_freq_z_diff[SIT_syl_avg_freq_z_diff$Sex == 'Female',])
+
+sidak_social_m <- pairs(emmeans(aov_social_m, 
+                        ~ Condition | Social), adjust = 'sidak')
+sidak_social_f <- pairs(emmeans(aov_social_f, 
+                        ~ Condition | Social), adjust = 'sidak')
+
+# ANOVA for SMS
+aov_sms_m <- aov(SMS ~ Condition + cohort, 
+                    SIT_avg_freq_z_diff[SIT_avg_freq_z_diff$Sex == 'Male',])
+aov_sms_f <- aov(SMS ~ Condition + cohort,
+                    SIT_avg_freq_z_diff[SIT_avg_freq_z_diff$Sex == 'Female',])
+```
+
+```{r}
+#| label: show stats
+#| echo: false
+
+pander(aov_social_m,
+       caption = 'rmANOVA: Social type * Condition on Frequency Difference in Males')
+kable(sidak_social_m, 
+      digits = 5, align='c', 
+      caption = 'Sidak Post-Hoc Planned Contrasts ')
+pander(aov_social_f,
+       caption = 'rmANOVA: Social type * Condition on Frequency Difference in Females')
+kable(sidak_social_f, 
+      digits = 5, align='c', 
+      caption = 'Sidak Post-Hoc Planned Contrasts')
+
+pander(aov_sms_m,
+       caption = 'ANOVA: Condition on SMS in Males')
+pander(aov_sms_f,
+       caption = 'ANOVA: Condition on SMS in Females')
 ```
 
 ### SI Ratio and SMS correlation to PCs (Fig. 3e)
@@ -324,13 +363,18 @@ plot_grid(U_plot, N_plot, D_plot, NULL, SMS_plot, align = 'hv', nrow = 1)
 Finally, we confirm that SI ratio correlates with PC1 and that SMS indeed captures the variability identified by PC2.
 
 ```{r}
-#| label: Fig 3e plot
+#| label: Fig 3e prep + plot + save PCs&SMS to df
 #| code-fold: true
 #| fig-width: 10
 #| fig-asp: 0.5
 #| fig-align: center
 #| warning: false
 #| error: false
+
+SIT_diff %<>%
+  mutate(SMS = SIT_avg_freq_z_diff$SMS[match(id_full, 
+                                             SIT_avg_freq_z_diff$id_full)])
+#saveRDS(SIT_diff, glue('{data_path}/SIT_diff_primary.rds')) # overwrite rds data to in
 
 pc1 <- ggplot(SIT_diff, aes(PC1, IZ_time)) + 
          geom_point(aes(color=full_cond), size = 2, alpha = 0.3) + 
@@ -342,7 +386,7 @@ pc1 <- ggplot(SIT_diff, aes(PC1, IZ_time)) +
          plot_theme + 
          theme(legend.position = 'none')
 
-pc2 <- ggplot(SIT_diff, aes(PC2, Diff_score)) + 
+pc2 <- ggplot(SIT_diff, aes(PC2, SMS)) + 
          geom_point(aes(color=full_cond), size = 2, alpha = 0.3) + 
          stat_poly_line(col = 'black') +
          stat_poly_eq(size = 7, label.y = 'top', label.x = 'right') +

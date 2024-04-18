@@ -1,0 +1,364 @@
+---
+title: 'Figure 2: Syllable Frequencies'
+format:
+    html:
+        code-fold: false
+        self-contained: true
+        toc: true
+editor:
+    render-on-save: false
+---
+
+Figure 2 explores syllable frequency changes between Target and No Target trials in control and stressed males and females. The data suggest that CSW/DS induces widespread yet modes changes across syllables, rather than altering the frequency of only a few select syllables. This code generates Figure 2 and Figure S1 as well as statistics for the results section **Unsupervised behavioral classification reveals widespread effects in female mice**.
+
+### Libraries & Config
+
+```{r}
+#| label: libraries
+#| message: false
+#| code-fold: true
+
+library(here)
+library(glue)
+library(dplyr)
+library(tidyr)
+library(knitr)
+library(magrittr)
+library(nlme)
+library(emmeans)
+library(ggplot2)
+library(ggpubr)
+library(ggridges)
+library(cowplot)
+```
+
+```{r}
+#| label: config + paths + data
+#| code-fold: true
+
+source(here('styles.R'))
+data_path <- here('data')
+SIT_raw <- readRDS(glue('{data_path}/SIT_raw_primary.rds'))
+SIT_diff <- readRDS(glue('{data_path}/SIT_diff_primary.rds'))
+SIT_z <- readRDS(glue('{data_path}/SIT_z_diff_primary.rds'))
+
+SIT_z %>%
+  mutate(Sex = factor(Sex, 
+                      levels = c('Male', 'Female')),
+         Condition = factor(Condition,  
+                            levels = c('Ctl','Stress')),
+         full_cond = factor(paste(Condition, Sex),
+                            levels = c('Ctl Female',
+                                       'Stress Female',
+                                       'Ctl Male', 
+                                       'Stress Male'))) -> SIT_z
+```
+
+------------------------------------------------------------------------
+
+### Widespread changes in syllable frequencies as a result of CSW/DS (Fig. 2a-d)
+
+We first identifies social identity of syllable based on whether syllable frequency changes in response to Target presence in control animals. We identify syllables based on their direction of change (t-ratio) and significance of comparison when comparing No Target to Target trials. Syllables that are Upregulated in response to target presence (i.e., higher frequency in Target than No Target trial) are labeled U; Those that are Downregulated in response to target presence (i.e., lower frequency in Target than No Tagret trial) are labeled D; Non-significant differences are labeled N (i.e., No Change).
+
+```{r}
+#| label: assign social identity to syls
+#| code-fold: true
+
+# Subset to control
+SIT_z %>%
+    dplyr::select(-z_diff) %>%
+    pivot_longer(cols = c('NT_z','T_z'),
+                 names_to = 'Trial_type', values_to = 'z_freq') %>%
+    filter(Condition == 'Ctl') -> SIT_z_ctl_raw
+
+# LME model 
+lme_social <- lme(z_freq ~ metric * Trial_type, 
+                  data = SIT_z_ctl_raw, random = ~ 1 | cohort/id)
+lme_social_table <- cbind(rownames(summary(lme_social)$tTable),
+                            unname(summary(lme_social)$tTable[,'Value']),
+                            unname(summary(lme_social)$tTable[,'Std.Error']),
+                            unname(summary(lme_social)$tTable[,'DF']),
+                            unname(summary(lme_social)$tTable[,'t-value']))
+
+# Main: Social syllables
+mm_social <- emmeans(lme_social, ~ Trial_type | metric)
+sidak_social <- summary(pairs(mm_social, adjust = 'sidak'))
+social_tests <- tibble(syllable = sidak_social$metric,
+                       t_ratio = sidak_social$t.ratio,
+                       p_value = sidak_social$p.value)
+
+# Define syllables as up, no change or down
+up <- sidak_social$metric[sidak_social$p.value <= 0.05 & sidak_social$estimate < 0]
+no_change <- sidak_social$metric[sidak_social$p.value > 0.05]
+down <- sidak_social$metric[sidak_social$p.value <= 0.05 & sidak_social$estimate > 0]
+
+# Sort by effect and assign new syllable name
+SIT_z %>%
+  filter(Condition == 'Ctl') %>%
+  group_by(metric) %>%
+  summarise(avg_freq = mean(z_diff, na.rm = TRUE)) %>%
+  arrange(desc(avg_freq)) %>%
+  mutate(t_ratio = social_tests$t_ratio[match(metric, 
+                                              social_tests$syllable)],
+         p_value = social_tests$p_value[match(metric, 
+                                              social_tests$syllable)],
+         new_label = factor(metric, levels = metric,
+                            labels = c(paste0('D', seq(length(down), 1)),
+                                       paste0('N', seq(length(no_change), 1)),
+                                       paste0('U', seq(length(up), 1))))) -> SIT_z_ctl_diff_avg_sort
+
+```
+
+```{r}
+#| label: social identity table S1
+#| echo: true
+
+kable(SIT_z_ctl_diff_avg_sort)
+```
+
+We next compared control and stressed animals in sex-specific models, and also compared No Target to Target differences within each group. The distributions of these comparisons, the LME and the contrasts are shown below and demonstrate that CSW/DS induces widespread, yet modest changes in behavioral syllable frequency in both males and females.
+
+```{r}
+#| label: fig 4abcd prep and stats
+#| code-fold: true
+#| fig-width: 10
+#| fig-asp: 1.5
+#| fig-align: center
+#| warning: false
+#| error: false
+
+# Prep data frame
+SIT_z %<>%
+  pivot_longer(cols = c('NT_z','T_z'), names_to = 'Trial_type', values_to = 'z_Freq') %>%
+  mutate(Trial_type = factor(Trial_type, labels = c('No Target', 'Target')),
+         social = factor(ifelse(metric %in% no_change, 'No Change', 
+                                ifelse(metric %in% up, 'Up', 'Down')),
+                                levels = c('Up', 'No Change', 'Down')),
+         syllable = factor(metric, levels = SIT_z_ctl_diff_avg_sort$metric,
+                           labels = c(paste0('D', seq(length(down), 1)),
+                                      paste0('N', seq(length(no_change), 1)),
+                                      paste0('U', seq(length(up), 1)))))
+
+# LME + Contrasts Males
+lme_sylfreq_m <- lme(z_Freq ~ syllable * Condition * Trial_type -1, 
+                     data = SIT_z[SIT_z$Sex == 'Male',], random = ~ 1 | cohort/id)
+lme_sylfreq_m_table <- cbind(rownames(summary(lme_sylfreq_m)$tTable),
+                               unname(summary(lme_sylfreq_m)$tTable[,'Value']),
+                               unname(summary(lme_sylfreq_m)$tTable[,'Std.Error']),
+                               unname(summary(lme_sylfreq_m)$tTable[,'DF']),
+                               unname(summary(lme_sylfreq_m)$tTable[,'t-value']))
+
+mm_type_m <- emmeans(lme_sylfreq_m, ~ Trial_type | Condition * syllable)
+sidak_type_m <- summary(pairs(mm_type_m, adjust = 'sidak'))
+m_tests <- tibble(syllable = sidak_type_m$syllable,
+                  social = SIT_z$social[match(sidak_type_m$syllable, 
+                                              SIT_z$syllable)],
+                  factor = sidak_type_m$Condition,
+                  t_ratio = sidak_type_m$t.ratio, 
+                  t_ratio_plot = ifelse(sidak_type_m$p.value < 0.05, 
+                                        sidak_type_m$t.ratio, NA),
+                  p_value = sidak_type_m$p.value,
+                  test = 'type')
+
+# Interaction: How do stressed and controls differ, given trial type and syllable
+mm_stress_m <- emmeans(lme_sylfreq_m, ~ Condition | Trial_type * syllable)
+sidak_stress_m <- summary(pairs(mm_stress_m, adjust = 'sidak'))
+m_tests <- bind_rows(m_tests,
+                     tibble(syllable = sidak_stress_m$syllable,
+                             social = SIT_z$social[match(sidak_stress_m$syllable, 
+                                                         SIT_z$syllable)],
+                             factor = sidak_stress_m$Trial_type,
+                             t_ratio = sidak_stress_m$t.ratio, 
+                             t_ratio_plot = ifelse(sidak_stress_m$p.value < 0.05, 
+                                                   sidak_stress_m$t.ratio, NA),
+                             p_value = sidak_stress_m$p.value,
+                             test = 'stress'))
+
+# LME + Contrasts Females
+lme_sylfreq_f <- lme(z_Freq ~ syllable * Condition * Trial_type -1, 
+                     data = SIT_z[SIT_z$Sex == 'Female',], random = ~ 1 | cohort/id)
+lme_sylfreq_f_table <- cbind(rownames(summary(lme_sylfreq_f)$tTable),
+                               unname(summary(lme_sylfreq_f)$tTable[,'Value']),
+                               unname(summary(lme_sylfreq_f)$tTable[,'Std.Error']),
+                               unname(summary(lme_sylfreq_f)$tTable[,'DF']),
+                               unname(summary(lme_sylfreq_f)$tTable[,'t-value']))
+
+# Interaction: How do trial types differ from each other, given condition and syllable
+mm_type_f <- emmeans(lme_sylfreq_f, ~ Trial_type | Condition * syllable)
+sidak_type_f <- summary(pairs(mm_type_f, adjust = 'sidak'))
+f_tests <- tibble(syllable = sidak_type_f$syllable,
+                  social = SIT_z$social[match(sidak_type_f$syllable, 
+                                              SIT_z$syllable)],
+                  factor = sidak_type_f$Condition,
+                  t_ratio = sidak_type_f$t.ratio, 
+                  t_ratio_plot = ifelse(sidak_type_f$p.value < 0.05, 
+                                        sidak_type_f$t.ratio, NA),
+                  p_value = sidak_type_f$p.value,
+                  test = 'type')
+
+# Interaction: How do stressed and controls differ, given trial type and syllable
+mm_stress_f <- emmeans(lme_sylfreq_f, ~ Condition | Trial_type * syllable)
+sidak_stress_f <- summary(pairs(mm_stress_f, adjust = 'sidak'))
+f_tests <- bind_rows(f_tests,
+                 tibble(syllable = sidak_stress_f$syllable,
+                        social = SIT_z$social[match(sidak_stress_f$syllable, 
+                                                    SIT_z$syllable)],
+                        factor = sidak_stress_f$Trial_type,
+                        t_ratio = sidak_stress_f$t.ratio, 
+                        t_ratio_plot = ifelse(sidak_stress_f$p.value < 0.05, 
+                                              sidak_stress_f$t.ratio, NA),
+                        p_value = sidak_stress_f$p.value,
+                        test = 'stress'))
+```
+
+```{r}
+#| label: Fig 4abcd plot
+#| code-fold: true
+#| fig-width: 10
+#| fig-asp: 1.5
+#| fig-align: center
+#| warning: false
+#| error: false
+
+hist_m <- ggplot(SIT_z[SIT_z$Sex == 'Male',], 
+                 aes(z_Freq, syllable, color = full_cond, fill = full_cond)) + 
+              geom_vline(xintercept = 0, color = 'gray80') +
+              geom_density_ridges(aes(linetype = Trial_type), 
+                                  alpha = 0.1, size = 1) + 
+              scale_x_continuous(limits = c(-5, 5), breaks = c(-5,0,5), name = 'Frequency z-Score') + 
+              ylab('Syllable') + 
+              scale_color_manual(values = col_full[c(3,4)]) + 
+              scale_fill_manual(values = col_full[c(3,4)]) + 
+              facet_grid(social ~ Condition, space = 'free', scale = 'free_y') + 
+              plot_theme + 
+              theme(legend.position = 'bottom', 
+                    legend.title = element_blank(), 
+                    panel.spacing.y = unit(2, "lines"))
+
+tiles_m <- ggplot(m_tests, aes(factor, syllable, fill = log(abs(t_ratio_plot)))) + 
+              geom_tile()+ 
+              facet_grid(social ~ test, space = 'free', scale = 'free') + 
+              scale_fill_gradient(low = "white", high = "#ab0000", limits = c(0,5), na.value = 'white',
+                                  breaks = c(log(1),log(10),log(100)), labels = c('1','10','100')) +
+              plot_theme +  
+              theme(axis.title = element_blank(),
+                    legend.position = 'bottom',
+                    legend.text = element_text(size = 10),
+                    legend.title = element_blank(),
+                    legend.key.size = unit(0.8, 'cm'),
+                    strip.text = element_blank(),
+                    panel.spacing.y = unit(2, "lines"))
+
+hist_f <- ggplot(SIT_z[SIT_z$Sex == 'Female',], aes(z_Freq, syllable)) + 
+              geom_vline(xintercept = 0, color = 'gray80') +
+              geom_density_ridges(aes(color = full_cond, fill = full_cond, linetype = Trial_type), 
+                                  alpha = 0.1, size = 1) + 
+              scale_x_continuous(limits = c(-5, 5), breaks = c(-5,0,5), name = 'Frequency z-Score') + 
+              ylab('Syllable') + 
+              scale_color_manual(values = col_full[c(1,2)]) + 
+              scale_fill_manual(values = col_full[c(1,2)]) + 
+              facet_grid(social ~ Condition, space = 'free', scale = 'free_y') + 
+              plot_theme + 
+              theme(legend.position = 'bottom', 
+                    legend.title = element_blank(), 
+                    panel.spacing.y = unit(2, "lines"))
+
+tiles_f <- ggplot(f_tests, aes(factor, syllable, fill = log(abs(t_ratio_plot)))) + 
+              geom_tile()+ 
+              facet_grid(social ~ test, space = 'free', scale = 'free') + 
+              scale_fill_gradient(low = "white", high = "#ab0000", limits = c(0,5), na.value = 'white',
+                                  breaks = c(log(1),log(10),log(100)), labels = c('1','10','100')) +
+              plot_theme + 
+              theme(axis.title = element_blank(),
+                    legend.position = 'bottom',
+                    legend.text = element_text(size = 10),
+                    legend.title = element_blank(),
+                    legend.key.size = unit(0.8, 'cm'),
+                    strip.text = element_blank(),
+                    panel.spacing.y = unit(2, "lines"))
+
+plot_grid(hist_m, tiles_m, hist_f, tiles_f, nrow = 2, align = 'hv', rel_widths = c(2,1))
+```
+
+```{r}
+#| label: fig 4abcd model + contrasts 
+#| echo: false
+
+kable(lme_sylfreq_m_table) 
+kable(m_tests)
+```
+
+------------------------------------------------------------------------
+
+### Raw frequencies differ between syllables (Fig. S1)
+
+All above analysis are based on z-scored frequencies. Below, we show that the raw overall frequency of syllables varies largely, but also often consistently across groups.
+
+```{r}
+#| label: Fig S1 prep and plot
+#| code-fold: true
+#| fig-width: 10
+#| fig-asp: 1.5
+#| fig-align: center
+#| warning: false
+#| error: false
+
+# Fig S1 data
+SIT_raw %<>%
+  pivot_longer(cols = !c(id_full, cohort, id, Sex, Trial_type, Condition, full_cond),
+               names_to = 'syllable', values_to = 'freq') %>%
+  slice(which(grepl('syl', syllable))) %>%
+  mutate(tt_full_cond = factor(paste(full_cond, Trial_type)),
+         social = factor(ifelse(syllable %in% no_change, 'No Change', 
+                                ifelse(syllable %in% up, 'Up', 'Down')),
+                                levels = c('Up', 'No Change', 'Down')),
+         syllable = factor(syllable, levels = rev(SIT_z_ctl_diff_avg_sort$metric),
+                           labels = c(paste0('U', seq(1,length(up))),
+                                      paste0('N', seq(1,length(no_change))),
+                                      paste0('D', seq(1,length(down))))))
+
+# Plots
+ctl_bp <- ggplot(SIT_raw[SIT_raw$Condition == 'Ctl',], 
+                         aes(syllable, freq/30, 
+                         fill = tt_full_cond, color = tt_full_cond)) + 
+              geom_hline(yintercept = 0) + 
+              geom_boxplot(position = position_dodge(width = 0.6), 
+                           width = 0.4, size = 1) + 
+              scale_y_continuous(expand = c(0,0), limits = c(0,80)) + 
+              xlab('Syllable') + 
+              scale_color_manual(values = bp_col_ctl) + 
+              scale_fill_manual(values = bp_fill_ctl) + 
+              ylab('Avg. Seconds') + 
+              facet_grid(Sex ~ social, space = 'free', scale = 'free') + 
+              plot_theme + 
+              theme(legend.position = 'bottom', 
+                    legend.title = element_blank(),
+                    panel.spacing.y = unit(2, "lines"))
+
+str_bp <- ggplot(SIT_raw[SIT_raw$Condition == 'Stress',], 
+                         aes(syllable, freq/30, 
+                         fill = tt_full_cond, color = tt_full_cond)) + 
+              geom_hline(yintercept = 0) + 
+              geom_boxplot(position = position_dodge(width = 0.6), 
+                           width = 0.4, size = 1) + 
+              scale_y_continuous(expand = c(0,0), limits = c(0,80)) + 
+              xlab('Syllable') + 
+              scale_color_manual(values = bp_col_str) + 
+              scale_fill_manual(values = bp_fill_str) + 
+              ylab('Avg. Seconds') + 
+              facet_grid(Sex ~ social, space = 'free', scale = 'free') + 
+              plot_theme + 
+              theme(legend.position = 'bottom', 
+                    legend.title = element_blank(),
+                    panel.spacing.y = unit(2, "lines"))
+
+plot_grid(ctl_bp, str_bp, nrow = 2)
+```
+
+------------------------------------------------------------------------
+
+```{r}
+#| label: Session Info
+#| echo: False
+sessionInfo()
+```
