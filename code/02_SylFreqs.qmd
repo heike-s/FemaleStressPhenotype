@@ -40,7 +40,7 @@ source(here('styles.R'))
 data_path <- here('data')
 SIT_raw <- readRDS(glue('{data_path}/SIT_raw_primary.rds'))
 SIT_diff <- readRDS(glue('{data_path}/SIT_diff_primary.rds'))
-SIT_z <- readRDS(glue('{data_path}/SIT_z_diff_primary.rds'))
+SIT_z <- readRDS(glue('{data_path}/SIT_z_primary.rds'))
 
 SIT_z %>%
   mutate(Sex = factor(Sex, 
@@ -111,10 +111,12 @@ SIT_z %>%
 
 ```{r}
 #| label: social identity table S1
-#| echo: true
+#| echo: false
 
 kable(SIT_z_ctl_diff_avg_sort)
 ```
+
+For legibility of this document, the full model and contrast table is displayed at the end of this document.
 
 We next compared control and stressed animals in sex-specific models, and also compared No Target to Target differences within each group. The distributions of these comparisons, the LME and the contrasts are shown below and demonstrate that CSW/DS induces widespread, yet modest changes in behavioral syllable frequency in both males and females.
 
@@ -280,13 +282,7 @@ tiles_f <- ggplot(f_tests, aes(factor, syllable, fill = log(abs(t_ratio_plot))))
 plot_grid(hist_m, tiles_m, hist_f, tiles_f, nrow = 2, align = 'hv', rel_widths = c(2,1))
 ```
 
-```{r}
-#| label: fig 4abcd model + contrasts 
-#| echo: false
-
-kable(lme_sylfreq_m_table) 
-kable(m_tests)
-```
+For legibility of this document, the full models and contrast tables for each sex are displayed at the end of this document.
 
 ------------------------------------------------------------------------
 
@@ -361,4 +357,28 @@ plot_grid(ctl_bp, str_bp, nrow = 2)
 #| label: Session Info
 #| echo: False
 sessionInfo()
+```
+
+----
+
+### LME and Contrasts tables FULL
+
+These tables can also be found formatted in the supplementary tables document accompanying the paper (Tables S1 and S2).
+
+```{r}
+#| label: model + contrasts 
+#| echo: false
+
+kable(lme_social_table,
+      caption = 'LME predicting syllable frequency from Condition and Trial type in Controls')
+kable(social_tests, 
+      caption = 'Planned Contrasts with Sidak Correction in Controls')
+kable(lme_sylfreq_m_table,
+      caption = 'LME predicting syllable frequency from Condition and Trial type in Males') 
+kable(m_tests, 
+      caption = 'Planned Contrasts with Sidak Correction in Males')
+kable(lme_sylfreq_f_table,
+      caption = 'LME predicting syllable frequency from Condition and Trial type in Females') 
+kable(f_tests, 
+      caption = 'Planned Contrasts with Sidak Correction in Females')
 ```
