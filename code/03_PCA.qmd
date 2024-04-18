@@ -40,6 +40,7 @@ library(emmeans)
 source(here('styles.R'))
 data_path <- here('data')
 SIT_diff <- readRDS(glue('{data_path}/SIT_diff_primary.rds'))
+SIT_raw <- readRDS(glue('{data_path}/SIT_raw_primary.rds'))
 SIT_z <- readRDS(glue('{data_path}/SIT_z_primary.rds'))
 syl_info <- tibble(read.csv(glue('{data_path}/syllable_info.csv')))
 ```
@@ -234,8 +235,8 @@ U_syls <- syl_info$metric[grepl('U',syl_info$new_label)]
 D_syls <- syl_info$metric[grepl('D',syl_info$new_label)]
 
 SIT_z$Social <- factor(ifelse(SIT_z$metric %in% N_syls, 'No Change', 
-                            ifelse(SIT_z$metric %in% U_syls, 'Up', 'Down')),
-                            levels = c('Up', 'No Change', 'Down'))
+                              ifelse(SIT_z$metric %in% U_syls, 'Up', 'Down')),
+                              levels = c('Up', 'No Change', 'Down'))
 
 # Calculate mean per social identity type and abs change
 SIT_z %>%
@@ -374,7 +375,7 @@ Finally, we confirm that SI ratio correlates with PC1 and that SMS indeed captur
 SIT_diff %<>%
   mutate(SMS = SIT_avg_freq_z_diff$SMS[match(id_full, 
                                              SIT_avg_freq_z_diff$id_full)])
-#saveRDS(SIT_diff, glue('{data_path}/SIT_diff_primary.rds')) # overwrite rds data to in
+saveRDS(SIT_diff, glue('{data_path}/SIT_diff_primary_pcsms.rds')) # save rds data to include pcs and sms for later figures
 
 pc1 <- ggplot(SIT_diff, aes(PC1, IZ_time)) + 
          geom_point(aes(color=full_cond), size = 2, alpha = 0.3) + 
@@ -406,13 +407,107 @@ plot_grid(pc1, pc2, ncol = 2, nrow = 1, align = 'hv')
 We observed that Males show a higher upregulation of upregulated syllables only. When further investigating this observation we see that this is driven by an increase specific to U1 in stressed Males compared to control males.
 
 ```{r}
+#| label: Fig S2a prep + plot
+#| code-fold: true
+#| warning: false
 
+# Select relevant data and annotate new syllable label
+SIT_z$new_label <- syl_info$new_label[match(SIT_z$metric, syl_info$metric)]
+SIT_U_m <- SIT_z[grepl('U', SIT_z$new_label) & SIT_z$Sex == 'Male',]
+
+# Plot 
+Um_plot <- ggplot(SIT_U_m, aes(Condition, z_diff, color = Condition)) + 
+               stat_summary(fun = 'mean', geom = 'point', size = 2) + 
+               stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
+                            linewidth = 1, width = 0.4) + 
+               geom_jitter(width = 0.2, alpha = 0.2, height = 0) +
+               scale_color_manual(values = col_full[c(3,4)]) + 
+               facet_grid(. ~ new_label) + 
+               ylab('Mean Syllable Frequency Difference') +
+               ylim(-15, 5) + 
+               plot_theme + 
+               theme(legend.position = 'none',
+                     axis.title.x = element_blank())
+
+# Stats
+aov_freq <- aov(z_diff ~ Condition * new_label + cohort + Error(id_full), SIT_U_m)
+sidak_freq <- pairs(emmeans(aov_freq, ~ Condition | new_label, adjust = 'sidak'))
 ```
 
-We then explored whether there mice express this behavior preferentially at specific locations in the arena and whether it is correlated with SI ratio. Indeed, mice in an example cohort (E18) display this syllable specifically around the interaction zone and in the corners, suggesting that it is a target induced behavior. Finally, we see that in stressed males, the frequency of U1 is correlated to SI ratio, such that animals with a lower SI ratio display a higher frequency of syllable U1.
+```{r}
+#| label: Fig S2a show
+#| echo: false
+#| warning: false
+#| fig-width: 10
+#| fig-asp: 0.5
+#| fig-align: center
+
+Um_plot
+pander(aov_freq, caption = 'rmANOVA: Condition * Syllable for Upregulated syllables in Males')
+kable(sidak_freq, digits = 5, align='c', 
+      caption = 'Sidak Post-Hoc Planned Contrasts')
+```
+
+We then explored whether there mice express this behavior preferentially at specific locations in the arena and whether it is correlated with SI ratio. Indeed, mice in an example cohort (E15) display this syllable specifically around the interaction zone and in the corners, suggesting that it is a target induced behavior. Finally, we see that in stressed males, the frequency of U1 is correlated to SI ratio, such that animals with a lower SI ratio display a higher frequency of syllable U1.
 
 ```{r}
+#| label: Fig S2b plot
+#| code-fold: true
+#| fig-width: 5
+#| fig-asp: 0.9
+#| fig-align: center
+#| warning: false
 
+U1 <- readRDS(glue('{data_path}/Syls_descriptives_E15.rds'))[['21']] # THIS DATA IS ONLY ON OSF, NOT GITHUB > Please download separately.
+ggplot(U1, aes(centroid_y, centroid_x)) + 
+  geom_hex(aes(fill = stat(cut(count, breaks = c(0,25,50,75,100,125,150,175,Inf), 
+               labels = F, right = T, include.lowest = T))), bins = 30) + 
+  scale_fill_continuous(name = 'count') + 
+  plot_theme + 
+  theme(legend.position = 'right',
+        legend.title = element_blank(),
+        axis.title = element_blank(),
+        axis.line = element_blank(),
+        axis.text = element_blank(), 
+        axis.ticks = element_blank())
+```
+
+```{r}
+#| label: Fig S2c plot
+#| code-fold: true
+#| fig-width: 10
+#| fig-asp: 0.5
+#| fig-align: center
+#| warning: false
+
+SIT_raw$SI_ratio <- SIT_diff$IZ_time[match(SIT_raw$id_full, SIT_diff$id_full)] #add SI ratio to Raw df
+SIT_raw_m <- filter(SIT_raw, Sex == 'Male')
+
+# U1 = syl21
+cor_plot <- ggplot(SIT_raw_m, aes(syl21, SI_ratio, color = Condition)) + 
+                 geom_point(size = 2, alpha = 0.3) + 
+                 stat_poly_line() +
+                 stat_poly_eq(size = 7, label.y = 'top', label.x = 'right') +
+                 scale_color_manual(values = col_full[c(3,4)]) + 
+                 facet_wrap(. ~ Trial_type, scales = 'free_x', nrow = 1) +
+                 xlab('Frequency') + ylab('SI Ratio') +
+                 plot_theme + 
+                 theme(legend.position = 'none')
+
+# correlations
+Ctl_NT <- cor.test(SIT_raw_m$SI_ratio[SIT_raw_m$Condition == 'Ctl' & SIT_raw_m$Trial_type == 'No Target'], 
+                   SIT_raw_m$syl21[SIT_raw_m$Condition == 'Ctl' & SIT_raw_m$Trial_type == 'No Target'])
+Str_NT <- cor.test(SIT_raw_m$SI_ratio[SIT_raw_m$Condition == 'Stress' & SIT_raw_m$Trial_type == 'No Target'], 
+                  SIT_raw_m$syl21[SIT_raw_m$Condition == 'Stress' & SIT_raw_m$Trial_type == 'No Target'])
+Ctl_T <- cor.test(SIT_raw_m$SI_ratio[SIT_raw_m$Condition == 'Ctl' & SIT_raw_m$Trial_type == 'Target'], 
+                   SIT_raw_m$syl21[SIT_raw_m$Condition == 'Ctl' & SIT_raw_m$Trial_type == 'Target'])
+Str_T <- cor.test(SIT_raw_m$SI_ratio[SIT_raw_m$Condition == 'Stress' & SIT_raw_m$Trial_type == 'Target'], 
+                  SIT_raw_m$syl21[SIT_raw_m$Condition == 'Stress' & SIT_raw_m$Trial_type == 'Target'])
+
+# show
+cor_plot
+kable(rbind(Ctl_NT, Str_NT, Ctl_T, Str_T)[,1:4], digits = 5,
+      caption = 'Pearson Correlation tests')
 ```
 
 ------------------------------------------------------------------------
