@@ -1,5 +1,5 @@
 ---
-title: 'Figure 7: mPFC->NAc FIP'
+title: 'Figure 7: FIP mPFC to NAc susceptibility signature'
 format:
     html:
         code-fold: false

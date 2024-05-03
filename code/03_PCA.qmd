@@ -218,7 +218,7 @@ ggplot(SIT_pca, aes(PC1, PC2, color = social_identity, fill = social_identity)) 
 
 Given that Up- and Downregulated syllables split along the axis of PC2, which in turn differentiates control and stressed females, we next looked at the average changes in syllable frequency observed within each social identity group. We show that in males, Upregulated syllables are more upregulated in defeated males compared to controls. In females, we see an attenuated regulation in both Up- and Downregulated syllables.
 
-We summarize these observations by quantifying the average absolute syllable frequency change, which we term the Social Modulation Score (SMS). We observed a significant increase in SMS in males, and a significant decre
+We summarize these observations by quantifying the average absolute syllable frequency change, which we term the Social Modulation Score (SMS). We observed a significant increase in SMS in males, and a significant decrease in females.
 
 ```{r}
 #| label: Fig 3cd prep and plot
