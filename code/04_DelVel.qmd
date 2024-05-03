@@ -36,6 +36,7 @@ source(here('styles.R'))
 data_path <- here('data')
 
 SIT_diff <- readRDS(glue('{data_path}/SIT_diff_primary.rds'))
+SIT_raw <- readRDS(glue('{data_path}/SIT_raw_primary.rds'))
 syl_char <- readRDS(glue('{data_path}/SIT_syl_descriptives.rds'))
 syl_info <- tibble(read.csv(glue('{data_path}/syllable_info.csv')))
 ```
@@ -235,6 +236,8 @@ plot_grid(distr, es_plot)
 ------------------------------------------------------------------------
 
 ### $\Delta$Velocity effects are driven by differences in Target trial between control and stressed females (Fig. S3)
+
+Identifying
 
 ------------------------------------------------------------------------
 
