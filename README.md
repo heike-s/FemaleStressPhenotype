@@ -1,6 +1,6 @@
 # Female Stress Phenotype
 
-This is the github repository accompanying the paper: **Data-driven analysis identifies female-specific modulation after chronic social defeat stress**.\
+This is the github repository accompanying the paper: **Data-driven analysis identifies female-specific modulation after chronic social defeat stress**.
 
 This repo contains code and data to reproduce analyses and main and supplementary figures and tables.\
 Preprocessed data are included in the `./data/` folder. 
@@ -24,12 +24,12 @@ Full, unprocessed data can be found [here](https://osf.io/g3brw/).
 
 | Datafile | Description | Path to file | Figures | 
 |----------|-------------|--------------|---------|
-| Cohorts | Overview of cohorts and corresponding tests | `./data/Cohorts.csv` | |
-| SIT Raw (Primary) | SIT data for each trial in raw format, including syllable frequencies (i.e., two observations per aninmal) in primary CSW/DS dataset |`./data/SIT_raw_primary.rds`| 1,S1,S2,S3 |
-| SIT Difference (Primary) | SIT data that contains the ratio (IZ Time, Corner Time) or difference (all other variables) between trial types for each animal in primary CSW/DS dataset (i.e., single observation per animal). A copy of this df with added variables is created after Fig. 3 to include PCs and the SMS. |`./data/SIT_diff_primary.rds`, `./data/SIT_diff_primary_pcsms.rds`| 1,2,3,4,5,6 |
-| SIT Difference (Secondary) | Same as SIT Difference (Primary), but in secondary datasets (i.e., CSNDS, Urine model)|`./data/SIT_diff_secondary.rds`| 5,6 |
-| SIT z-Scored (Primary) | Syllable frequencies of each syllable z-scored for each trial type (NT_z, T_z) and for the difference btween trial types (z_diff = NT_z - T_z) | `.data/SIT_z_primary.rds` | 2,3,S2 |
-| Syllable information | Original syllable label, average frequency difference between NT and T trial as well as new label assigned based on social identity | `./data/syllable_info,csv` | 3,4,5 |
-| Syllable descriptives | Average syllable characteristics (Motion, Pose, Location) for each animal for each trial (NT, T) | `./data/SIT_syl_descriptives.rds` | 4 |
-| OFT (Primary) | OFT data for each animal in primary CSW/DS dataset | `./data/OFT_primary.rds` | S4 |
-| FIP data | FIP data during SIT in Arena and IZ | `./data/FIP_data.rds` | 7 |
+| Cohorts | Overview of cohorts and corresponding tests. | `./data/Cohorts.csv` | |
+| SIT Raw (Primary) | SIT data for each trial in raw format, including syllable frequencies (i.e., two observations per aninmal) in primary CSW/DS dataset. |`./data/SIT_raw_primary.rds`| 1,S1,S2,S3 |
+| SIT Difference (Primary) | SIT data that contain the ratio (IZ Time, Corner Time) or difference (all other variables) between trial types for each animal in primary CSW/DS dataset (i.e., single observation per animal). A copy of this df with added variables is created after Fig. 3 to include PCs and the SMS. |`./data/SIT_diff_primary.rds`, `./data/SIT_diff_primary_pcsms.rds`| 1,2,3,4,5,6 |
+| SIT Difference (Secondary) | Same as SIT Difference (Primary), but in secondary datasets (i.e., CSNDS, Urine model). |`./data/SIT_diff_secondary.rds`| 5,6 |
+| SIT z-Scored (Primary) | Syllable frequencies of each syllable z-scored for each trial type (NT_z, T_z) and for the difference btween trial types (z_diff = NT_z - T_z). | `.data/SIT_z_primary.rds` | 2,3,S2 |
+| Syllable information | Original syllable label, average frequency difference between NT and T trial as well as new label assigned based on social identity. | `./data/syllable_info,csv` | 3,4,5 |
+| Syllable descriptives | Average syllable characteristics (Motion, Pose, Location) for each animal for each trial (NT, T). | `./data/SIT_syl_descriptives.rds` | 4 |
+| OFT (Primary) | OFT data for each animal in primary CSW/DS dataset. | `./data/OFT_primary.rds` | S4 |
+| FIP data | FIP data during SIT in Arena and IZ. | `./data/FIP_data.rds` | 7 |
