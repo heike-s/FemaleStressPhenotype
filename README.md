@@ -12,13 +12,13 @@ Full, unprocessed data can be found [here](https://osf.io/g3brw/).
 
 | Figure(s)     | Link to rendered html                                       | Path to code              |
 |---------------|-------------------------------------------------------------|---------------------------|
-| Fig 1         | Standard SIT readouts in males and females                  | `./code/01_SIRatio.qmd`   |
-| Fig 2, Fig S1 | CSW/DS induced changes in frequency of behavioral syllables | `./code/02_SylFreqs.qmd`  |
-| Fig 3, Fig S2 | PCA; Changes in Up- and Downregulated syllables             | `./code/03_PCA.qmd`       |
-| Fig 4, Fig S3 | Velocity as a heuristic                                     | `./code/04_DelVel.qmd`    |
-| Fig 5         | Generalization to other female defeat models                | `./code/05_FemModels.qmd` |
-| Fig 6, Fig S4 | Defining resilience and susceptibility                      | `./code/06_SI_DelVel.qmd` |
-| Fig 7         | FIP mPFC to NAc susceptibility signature                    | `./code/07_mPFC_FIP.qmd`  |
+| Fig 1         | [Standard SIT readouts in males and females](https://heike-s.github.io/FemaleStressPhenotype/code/01_SIRatio.html)                     | `./code/01_SIRatio.qmd`   |
+| Fig 2, Fig S1 | [CSW/DS induced changes in frequency of behavioral syllables](https://heike-s.github.io/FemaleStressPhenotype/code/02_SylFreqs.html)   | `./code/02_SylFreqs.qmd`  |
+| Fig 3, Fig S2 | [PCA; Changes in Up- and Downregulated syllables](https://heike-s.github.io/FemaleStressPhenotype/code/03_PCA.html)                    | `./code/03_PCA.qmd`       |
+| Fig 4, Fig S3 | [Velocity as a heuristic](https://heike-s.github.io/FemaleStressPhenotype/code/04_DelVel.html)                                         | `./code/04_DelVel.qmd`    |
+| Fig 5         | [Generalization to other female defeat models](https://heike-s.github.io/FemaleStressPhenotype/code/05_FemModels.html)                 | `./code/05_FemModels.qmd` |
+| Fig 6, Fig S4 | [Defining resilience and susceptibility](https://heike-s.github.io/FemaleStressPhenotype/code/06_SI_DelVel.html)                       | `./code/06_SI_DelVel.qmd` |
+| Fig 7         | [FIP mPFC to NAc susceptibility signature](https://heike-s.github.io/FemaleStressPhenotype/code/07_mPFC_FIP.html)                      | `./code/07_mPFC_FIP.qmd`  |
 
 ### Overview: Data for Figures
 
