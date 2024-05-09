@@ -1,6 +1,6 @@
 # Female Stress Phenotype
 
-This is the github repository accompanying the paper: **Data-driven analysis identifies female-specific modulation after chronic social defeat stress**.
+This is the github repository accompanying the paper: [**Data-driven analysis identifies female-specific modulation after chronic social defeat stress**](https://www.biorxiv.org/content/10.1101/2024.05.08.593167v1).
 
 This repo contains code and data to reproduce analyses and main and supplementary figures and tables.\
 Preprocessed data are included in the `./data/` folder. 
