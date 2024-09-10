@@ -1,0 +1,1569 @@
+Sex,ID,Trial_type,Condition,Total_distance,Velocity,IZ_time,Corner_time,applied_id,cohort_id,model,other,lab
+Female,1494,No Target,Control,1132.8,7.55197,88.8,17.325,CF01,S01,CSNDS,Standard,pena
+Female,1512,No Target,Control,1207.16,8.05308,43.775,33.425,CF02,S01,CSNDS,Standard,pena
+Female,1432,No Target,Control,1222.59,8.1506,53.875,31.525,CF03,S01,CSNDS,Standard,pena
+Female,1418,No Target,Control,1337.04,8.91358,74.725,17.25,CF04,S01,CSNDS,Standard,pena
+Female,1397,No Target,Control,1171.44,7.80959,70.425,18.325,CF05,S01,CSNDS,Standard,pena
+Female,1403,No Target,Control,NA,7.46682,84.025,NA,CEF01,S01,CSNDS,ELS,pena
+Female,1444,No Target,Control,NA,8.03629,49.125,NA,CEF02,S01,CSNDS,ELS,pena
+Female,1455,No Target,Control,NA,8.25634,61.675,NA,CEF03,S01,CSNDS,ELS,pena
+Female,1471,No Target,Control,NA,7.80596,61.75,NA,CEF04,S01,CSNDS,ELS,pena
+Female,1499,No Target,Control,NA,7.87122,55.825,NA,CEF05,S01,CSNDS,ELS,pena
+Male,1316,No Target,Control,988.913,6.59276,54,31.25,CM01,S01,CSNDS,Standard,pena
+Male,1385,No Target,Control,1230.45,8.22356,41.1,15.6,CM02,S01,CSNDS,Standard,pena
+Male,1391,No Target,Control,935.66,6.23981,61.05,33.775,CM03,S01,CSNDS,Standard,pena
+Male,1409,No Target,Control,780.098,5.20065,18.1,28.375,CM04,S01,CSNDS,Standard,pena
+Male,1482,No Target,Control,1020.56,6.80373,69.1,16.7,CM05,S01,CSNDS,Standard,pena
+Male,1400,No Target,Control,1040.44,6.93628,74.8,24.775,CEM01,S01,CSNDS,ELS,pena
+Male,1446,No Target,Control,918.358,6.13363,44.75,39.775,CEM02,S01,CSNDS,ELS,pena
+Male,1456,No Target,Control,1292.09,8.61395,48.85,23.15,CEM03,S01,CSNDS,ELS,pena
+Male,1474,No Target,Control,1378.85,9.1923,56.75,24.175,CEM04,S01,CSNDS,ELS,pena
+Male,1505,No Target,Control,1408.56,9.40134,52.95,26.85,CEM05,S01,CSNDS,ELS,pena
+Male,1573,No Target,Control,1210.22,8.06817,27.95,23.975,CM06,S01,CSNDS,Standard,pena
+Male,1647,No Target,Control,1315.03,8.76686,44.5,33.55,CM07,S01,CSNDS,Standard,pena
+Male,1660,No Target,Control,1337.36,8.91574,41.725,25.75,CM08,S01,CSNDS,Standard,pena
+Male,1675,No Target,Control,1479.33,9.86217,51.55,14.55,CM09,S01,CSNDS,Standard,pena
+Male,1680,No Target,Control,1382.14,9.21428,46.125,18.95,CM10,S01,CSNDS,Standard,pena
+Male,1579,No Target,Control,1368.1,9.1911,43.9,27.225,CEM06,S01,CSNDS,ELS,pena
+Male,1592,No Target,Control,1151.39,7.67595,61.475,18.3,CEM07,S01,CSNDS,ELS,pena
+Male,1606,No Target,Control,1070.76,7.13837,54.575,12.55,CEM08,S01,CSNDS,ELS,pena
+Male,1623,No Target,Control,1322.18,8.81452,44.65,16.325,CEM09,S01,CSNDS,ELS,pena
+Male,1656,No Target,Control,1257.03,8.39982,43.975,24.975,CEM10,S01,CSNDS,ELS,pena
+Female,1494,Target,Control,778.355,5.54187,97.65,9.225,CF01,S01,CSNDS,Standard,pena
+Female,1512,Target,Control,757.458,5.09216,54.725,36.25,CF02,S01,CSNDS,Standard,pena
+Female,1432,Target,Control,676.526,4.51017,89.3,13.025,CF03,S01,CSNDS,Standard,pena
+Female,1418,Target,Control,936.192,6.24128,91.45,12.85,CF04,S01,CSNDS,Standard,pena
+Female,1397,Target,Control,729.025,4.86666,92.975,15.15,CF05,S01,CSNDS,Standard,pena
+Female,1403,Target,Control,NA,5.2451,93.3,NA,CEF01,S01,CSNDS,ELS,pena
+Female,1444,Target,Control,NA,4.86508,80.45,NA,CEF02,S01,CSNDS,ELS,pena
+Female,1455,Target,Control,NA,4.6729,113.2,NA,CEF03,S01,CSNDS,ELS,pena
+Female,1471,Target,Control,NA,6.03552,95.55,NA,CEF04,S01,CSNDS,ELS,pena
+Female,1499,Target,Control,NA,4.9857,83.975,NA,CEF05,S01,CSNDS,ELS,pena
+Male,1316,Target,Control,528.469,3.5792,84.75,9.1,CM01,S01,CSNDS,Standard,pena
+Male,1385,Target,Control,775.426,5.32299,67.875,16.475,CM02,S01,CSNDS,Standard,pena
+Male,1391,Target,Control,800.37,5.34382,80.9,15.85,CM03,S01,CSNDS,Standard,pena
+Male,1409,Target,Control,521.345,3.47564,69.4,13.025,CM04,S01,CSNDS,Standard,pena
+Male,1482,Target,Control,894.051,5.96034,77.35,16.275,CM05,S01,CSNDS,Standard,pena
+Male,1400,Target,Control,897.448,5.98298,74.725,13.5,CEM01,S01,CSNDS,ELS,pena
+Male,1446,Target,Control,850.56,5.6704,65.825,19.475,CEM02,S01,CSNDS,ELS,pena
+Male,1457,Target,Control,850.069,5.66713,85.375,12.7,CEM03,S01,CSNDS,ELS,pena
+Male,1474,Target,Control,962.899,6.41933,71.825,10.6,CEM04,S01,CSNDS,ELS,pena
+Male,1505,Target,Control,1024.52,6.83011,53.425,24.375,CEM05,S01,CSNDS,ELS,pena
+Male,1573,Target,Control,608.461,4.0564,92.625,5.2,CM06,S01,CSNDS,Standard,pena
+Male,1647,Target,Control,834.845,5.56564,44.85,35.075,CM07,S01,CSNDS,Standard,pena
+Male,1660,Target,Control,859.548,5.73032,41.5,21.9,CM08,S01,CSNDS,Standard,pena
+Male,1675,Target,Control,1043.09,6.95395,64.8,18.2,CM09,S01,CSNDS,Standard,pena
+Male,1680,Target,Control,1019.27,6.79516,62.475,11.775,CM10,S01,CSNDS,Standard,pena
+Male,1579,Target,Control,922.764,6.15176,22.35,37.3,CEM06,S01,CSNDS,ELS,pena
+Male,1592,Target,Control,802.776,5.35184,72.325,10.125,CEM07,S01,CSNDS,ELS,pena
+Male,1606,Target,Control,609.266,4.07741,78.15,21.55,CEM08,S01,CSNDS,ELS,pena
+Male,1623,Target,Control,780.502,5.20335,15.35,17.5,CEM09,S01,CSNDS,ELS,pena
+Male,1656,Target,Control,756.572,5.04381,88.075,14.775,CEM10,S01,CSNDS,ELS,pena
+Female,1386,No Target,Stress,1021.86,6.81237,83.7,9.1,SF01,S01,CSNDS,Standard,pena
+Female,1387,No Target,Stress,1115.25,7.43501,79.65,19.85,SF02,S01,CSNDS,Standard,pena
+Female,1389,No Target,Stress,1103.95,7.35968,83.225,19.525,SF03,S01,CSNDS,Standard,pena
+Female,1393,No Target,Stress,955.395,6.43255,75.475,22.475,SF04,S01,CSNDS,Standard,pena
+Female,1394,No Target,Stress,1244.64,8.29759,63.45,24.225,SF05,S01,CSNDS,Standard,pena
+Female,1411,No Target,Stress,1151.86,7.69448,70.65,20.9,SF06,S01,CSNDS,Standard,pena
+Female,1412,No Target,Stress,932.527,6.22515,79.375,32.55,SF07,S01,CSNDS,Standard,pena
+Female,1419,No Target,Stress,1083.43,7.22284,80.775,23.95,SF08,S01,CSNDS,Standard,pena
+Female,1430,No Target,Stress,921.686,6.64518,67.7,18.05,SF09,S01,CSNDS,Standard,pena
+Female,1484,No Target,Stress,875.681,5.83788,63.425,24.325,SF10,S01,CSNDS,Standard,pena
+Female,1488,No Target,Stress,1375.51,9.17004,71.75,17.475,SF11,S01,CSNDS,Standard,pena
+Female,1493,No Target,Stress,1089.74,7.26493,65.575,9.8,SF12,S01,CSNDS,Standard,pena
+Female,1513,No Target,Stress,852.894,5.68596,91.95,13.075,SF13,S01,CSNDS,Standard,pena
+Female,1520,No Target,Stress,950.816,6.34089,85.175,15.675,SF14,S01,CSNDS,Standard,pena
+Female,1433,No Target,Stress,1165.23,7.7682,69.925,16.675,SF15,S01,CSNDS,Standard,pena
+Female,1402,No Target,Stress,NA,8.63894,55.025,NA,SEF01,S01,CSNDS,ELS,pena
+Female,1404,No Target,Stress,NA,8.26221,54.35,NA,SEF02,S01,CSNDS,ELS,pena
+Female,1441,No Target,Stress,NA,5.94235,87.625,NA,SEF03,S01,CSNDS,ELS,pena
+Female,1442,No Target,Stress,NA,4.55679,74.8,NA,SEF04,S01,CSNDS,ELS,pena
+Female,1451,No Target,Stress,NA,6.30822,72.05,NA,SEF05,S01,CSNDS,ELS,pena
+Female,1453,No Target,Stress,NA,6.24468,45,NA,SEF06,S01,CSNDS,ELS,pena
+Female,1460,No Target,Stress,NA,8.54292,73.775,NA,SEF07,S01,CSNDS,ELS,pena
+Female,1461,No Target,Stress,NA,8.01726,73.2,NA,SEF08,S01,CSNDS,ELS,pena
+Female,1462,No Target,Stress,NA,7.13552,89.525,NA,SEF09,S01,CSNDS,ELS,pena
+Female,1469,No Target,Stress,NA,8.82479,76.425,NA,SEF10,S01,CSNDS,ELS,pena
+Female,1470,No Target,Stress,NA,9.57536,61.85,NA,SEF11,S01,CSNDS,ELS,pena
+Female,1477,No Target,Stress,NA,6.38445,76.5,NA,SEF12,S01,CSNDS,ELS,pena
+Female,1480,No Target,Stress,NA,8.98437,78.55,NA,SEF13,S01,CSNDS,ELS,pena
+Female,1500,No Target,Stress,NA,7.29343,80.375,NA,SEF14,S01,CSNDS,ELS,pena
+Female,1507,No Target,Stress,NA,9.41255,54.175,NA,SEF15,S01,CSNDS,ELS,pena
+Male,1415,No Target,Stress,1056.61,7.04405,84.3,14.3,SM01,S01,CSNDS,Standard,pena
+Male,1392,No Target,Stress,898.21,5.99206,61.825,33.55,SM02,S01,CSNDS,Standard,pena
+Male,1483,No Target,Stress,1093.31,7.28876,84.85,17.95,SM03,S01,CSNDS,Standard,pena
+Male,1408,No Target,Stress,1053.68,7.02453,47.3,20.65,SM04,S01,CSNDS,Standard,pena
+Male,1429,No Target,Stress,1245.36,8.35814,56.85,15.175,SM05,S01,CSNDS,Standard,pena
+Male,1486,No Target,Stress,1060.3,7.06865,81.4,20.625,SM06,S01,CSNDS,Standard,pena
+Male,1490,No Target,Stress,1185.48,7.91376,71.05,20.3,SM07,S01,CSNDS,Standard,pena
+Male,1509,No Target,Stress,974.919,6.49946,45.225,6.525,SM08,S01,CSNDS,Standard,pena
+Male,1517,No Target,Stress,719.741,4.79827,78.1,15.375,SM09,S01,CSNDS,Standard,pena
+Male,1382,No Target,Stress,1150.69,7.67127,27,43.325,SM10,S01,CSNDS,Standard,pena
+Male,1440,No Target,Stress,959.028,6.40205,65.7,19.675,SEM01,S01,CSNDS,ELS,pena
+Male,1476,No Target,Stress,1139.42,7.59613,61.375,11.775,SEM02,S01,CSNDS,ELS,pena
+Male,1497,No Target,Stress,961.797,6.41198,50.975,30.1,SEM03,S01,CSNDS,ELS,pena
+Male,1437,No Target,Stress,1178.18,7.85457,78.6,12.975,SEM04,S01,CSNDS,ELS,pena
+Male,1457,No Target,Stress,1296.97,8.64647,82.1,11.025,SEM05,S01,CSNDS,ELS,pena
+Male,1503,No Target,Stress,1145.82,7.63877,85.7,9.525,SEM06,S01,CSNDS,ELS,pena
+Male,1438,No Target,Stress,1369.88,9.13253,71.675,20.575,SEM07,S01,CSNDS,ELS,pena
+Male,1465,No Target,Stress,1061.78,7.07854,83.075,11.525,SEM08,S01,CSNDS,ELS,pena
+Male,1399,No Target,Stress,1239.09,8.26057,40.15,17.4,SEM09,S01,CSNDS,ELS,pena
+Male,1447,No Target,Stress,1088.15,7.25431,55.9,16.35,SEM10,S01,CSNDS,ELS,pena
+Male,1449,No Target,Stress,762.472,5.08315,85.375,10.9,SEM11,S01,CSNDS,ELS,pena
+Male,1504,No Target,Stress,1121.64,7.49011,63,38.4,SEM12,S01,CSNDS,ELS,pena
+Male,1416,No Target,Stress,1294.46,8.67017,58.275,9.175,SM11,S01,CSNDS,Standard,pena
+Male,1417,No Target,Stress,1265.59,8.43729,80.075,10.775,SM12,S01,CSNDS,Standard,pena
+Male,1383,No Target,Stress,824.944,5.49963,41.05,26.125,SM13,S01,CSNDS,Standard,pena
+Male,1511,No Target,Stress,1104.82,7.36544,75.625,25.875,SM14,S01,CSNDS,Standard,pena
+Male,1384,No Target,Stress,1326.96,8.87601,54.7,13.325,SM15,S01,CSNDS,Standard,pena
+Male,1491,No Target,Stress,1090.94,7.27292,49.4,16.35,SM16,S01,CSNDS,Standard,pena
+Male,1395,No Target,Stress,1382.06,9.21373,46.25,25.35,SM17,S01,CSNDS,Standard,pena
+Male,1396,No Target,Stress,1250.61,8.33743,45.85,17.8,SM18,S01,CSNDS,Standard,pena
+Male,1410,No Target,Stress,1611.31,10.7421,53.475,23.35,SM19,S01,CSNDS,Standard,pena
+Male,1492,No Target,Stress,828.27,5.5218,79.6,10.75,SM20,S01,CSNDS,Standard,pena
+Male,1510,No Target,Stress,2223.64,15.0424,28.125,16,SM21,S01,CSNDS,Standard,pena
+Male,1467,No Target,Stress,1205.19,8.03463,51.425,20.9,SEM13,S01,CSNDS,ELS,pena
+Male,1502,No Target,Stress,944.591,6.29727,66.225,17.975,SEM14,S01,CSNDS,ELS,pena
+Male,1401,No Target,Stress,1143.58,7.62389,74,14.375,SEM15,S01,CSNDS,ELS,pena
+Male,1496,No Target,Stress,1306.58,8.71053,43.5,22.325,SEM16,S01,CSNDS,ELS,pena
+Male,1475,No Target,Stress,979.328,6.52885,92.45,6.025,SEM17,S01,CSNDS,ELS,pena
+Male,1506,No Target,Stress,1211.87,8.07912,56.3,16.05,SEM18,S01,CSNDS,ELS,pena
+Male,1439,No Target,Stress,1035.01,6.90003,65.825,13.175,SEM19,S01,CSNDS,ELS,pena
+Male,1450,No Target,Stress,1253.75,8.35833,62.525,17.9,SEM20,S01,CSNDS,ELS,pena
+Male,1458,No Target,Stress,940.544,6.2703,62.825,24.725,SEM21,S01,CSNDS,ELS,pena
+Male,1466,No Target,Stress,1294.36,8.6291,72.775,18.35,SEM22,S01,CSNDS,ELS,pena
+Male,1498,No Target,Stress,923.72,6.15813,77.9,12.6,SEM23,S01,CSNDS,ELS,pena
+Male,1648,No Target,Stress,717.83,4.78553,61.025,21.525,SM22,S01,CSNDS,Standard,pena
+Male,1638,No Target,Stress,832.614,5.55076,42.225,20.05,SM23,S01,CSNDS,Standard,pena
+Male,1574,No Target,Stress,1043.86,6.95903,49.625,19.5,SM24,S01,CSNDS,Standard,pena
+Male,1629,No Target,Stress,635.855,4.23903,32.425,49.925,SM25,S01,CSNDS,Standard,pena
+Male,1631,No Target,Stress,1301.8,8.68591,28.175,21.225,SM26,S01,CSNDS,Standard,pena
+Male,1663,No Target,Stress,973.185,6.4879,43.3,43.375,SM27,S01,CSNDS,Standard,pena
+Male,1670,No Target,Stress,1136.22,7.57483,53.825,23.175,SM28,S01,CSNDS,Standard,pena
+Male,1681,No Target,Stress,1212.9,8.08603,61.625,6.95,SM29,S01,CSNDS,Standard,pena
+Male,1683,No Target,Stress,1445.27,9.63512,51.8,16.675,SM30,S01,CSNDS,Standard,pena
+Male,1584,No Target,Stress,888.551,5.92367,72.15,13.075,SEM24,S01,CSNDS,ELS,pena
+Male,1605,No Target,Stress,1362.68,9.0845,48.325,27,SEM25,S01,CSNDS,ELS,pena
+Male,1616,No Target,Stress,1273.49,8.52833,47.175,16.9,SEM26,S01,CSNDS,ELS,pena
+Male,1577,No Target,Stress,1237.06,8.24705,50.575,14.575,SEM27,S01,CSNDS,ELS,pena
+Male,1593,No Target,Stress,1175.89,7.86946,36.825,17.45,SEM28,S01,CSNDS,ELS,pena
+Male,1655,No Target,Stress,1111.56,7.41039,53.675,16.325,SEM29,S01,CSNDS,ELS,pena
+Male,1611,No Target,Stress,1198.78,7.99186,58.8,13.05,SEM30,S01,CSNDS,ELS,pena
+Male,1624,No Target,Stress,1228,8.1867,34.3,25.1,SEM31,S01,CSNDS,ELS,pena
+Male,1583,No Target,Stress,1100.66,7.33774,42.375,16.575,SEM32,S01,CSNDS,ELS,pena
+Male,1682,No Target,Stress,1026.6,6.84399,51.425,21.475,SM31,S01,CSNDS,Standard,pena
+Male,1639,No Target,Stress,1198.35,7.98902,55.425,24.6,SM32,S01,CSNDS,Standard,pena
+Male,1600,No Target,Stress,909.066,6.06044,78.025,7.6,SM33,S01,CSNDS,Standard,pena
+Male,1630,No Target,Stress,549.482,3.66321,66.425,22.45,SM34,S01,CSNDS,Standard,pena
+Male,1632,No Target,Stress,1030.59,6.87063,62.85,12.25,SM35,S01,CSNDS,Standard,pena
+Male,1649,No Target,Stress,850.077,5.66718,57.675,32.2,SM36,S01,CSNDS,Standard,pena
+Male,1661,No Target,Stress,1164.5,7.88954,39,29.35,SM37,S01,CSNDS,Standard,pena
+Male,1664,No Target,Stress,1226.36,8.17571,26.6,41.35,SM38,S01,CSNDS,Standard,pena
+Male,1671,No Target,Stress,1114.7,7.43134,40.525,18.125,SM39,S01,CSNDS,Standard,pena
+Male,1684,No Target,Stress,936.923,6.25241,38.35,23.35,SM40,S01,CSNDS,Standard,pena
+Male,1612,No Target,Stress,1259.29,8.39528,50.925,22.95,SEM33,S01,CSNDS,ELS,pena
+Male,1583,No Target,Stress,1007.94,6.71958,40.6,26.725,SEM34,S01,CSNDS,ELS,pena
+Male,1578,No Target,Stress,604.732,4.03155,21.975,54.375,SEM35,S01,CSNDS,ELS,pena
+Male,1594,No Target,Stress,936.485,6.24323,55.475,16.2,SEM36,S01,CSNDS,ELS,pena
+Male,1607,No Target,Stress,775.86,5.1724,26.7,34.975,SEM37,S01,CSNDS,ELS,pena
+Male,1617,No Target,Stress,828.491,5.52327,48.25,21.1,SEM38,S01,CSNDS,ELS,pena
+Male,1621,No Target,Stress,718.19,4.78793,38.175,15.35,SEM39,S01,CSNDS,ELS,pena
+Male,1622,No Target,Stress,852.039,5.68026,32.875,22.55,SEM40,S01,CSNDS,ELS,pena
+Male,1657,No Target,Stress,973.597,6.49065,42.4,17.85,SEM41,S01,CSNDS,ELS,pena
+Female,1386,Target,Stress,577.131,3.98021,101.65,13.625,SF01,S01,CSNDS,Standard,pena
+Female,1387,Target,Stress,692.724,5.37621,89.7,10.125,SF02,S01,CSNDS,Standard,pena
+Female,1389,Target,Stress,969.894,6.93649,78,24.55,SF03,S01,CSNDS,Standard,pena
+Female,1393,Target,Stress,772.819,5.15213,103.1,7.125,SF04,S01,CSNDS,Standard,pena
+Female,1394,Target,Stress,744.331,5.03181,83.45,17.625,SF05,S01,CSNDS,Standard,pena
+Female,1411,Target,Stress,957.084,6.38056,91.55,9.9,SF06,S01,CSNDS,Standard,pena
+Female,1412,Target,Stress,832.226,5.54817,91.175,23.825,SF07,S01,CSNDS,Standard,pena
+Female,1419,Target,Stress,893.722,5.95815,93.225,14.075,SF08,S01,CSNDS,Standard,pena
+Female,1430,Target,Stress,799.85,5.52573,100.225,8.825,SF09,S01,CSNDS,Standard,pena
+Female,1484,Target,Stress,891.296,5.94197,94.275,12.45,SF10,S01,CSNDS,Standard,pena
+Female,1488,Target,Stress,1085.8,7.2387,90.9,9.6,SF11,S01,CSNDS,Standard,pena
+Female,1493,Target,Stress,908.79,6.0586,99.325,8.925,SF12,S01,CSNDS,Standard,pena
+Female,1513,Target,Stress,975.041,6.57147,80.4,11.85,SF13,S01,CSNDS,Standard,pena
+Female,1520,Target,Stress,631.488,4.20992,93.25,8.55,SF14,S01,CSNDS,Standard,pena
+Female,1433,Target,Stress,797.643,5.31762,104.65,10.475,SF15,S01,CSNDS,Standard,pena
+Female,1402,Target,Stress,NA,6.95248,88.5,NA,SEF01,S01,CSNDS,ELS,pena
+Female,1404,Target,Stress,NA,5.92209,81.4,NA,SEF02,S01,CSNDS,ELS,pena
+Female,1441,Target,Stress,NA,3.67939,122.75,NA,SEF03,S01,CSNDS,ELS,pena
+Female,1442,Target,Stress,NA,2.96051,118.275,NA,SEF04,S01,CSNDS,ELS,pena
+Female,1451,Target,Stress,NA,7.6326,70.425,NA,SEF05,S01,CSNDS,ELS,pena
+Female,1453,Target,Stress,NA,5.92604,78.625,NA,SEF06,S01,CSNDS,ELS,pena
+Female,1460,Target,Stress,NA,6.74607,86.925,NA,SEF07,S01,CSNDS,ELS,pena
+Female,1461,Target,Stress,NA,4.56112,106.65,NA,SEF08,S01,CSNDS,ELS,pena
+Female,1462,Target,Stress,NA,7.92345,88.925,NA,SEF09,S01,CSNDS,ELS,pena
+Female,1469,Target,Stress,NA,6.84796,99.975,NA,SEF10,S01,CSNDS,ELS,pena
+Female,1470,Target,Stress,NA,5.94574,91.275,NA,SEF11,S01,CSNDS,ELS,pena
+Female,1477,Target,Stress,NA,4.96465,87.875,NA,SEF12,S01,CSNDS,ELS,pena
+Female,1480,Target,Stress,NA,5.67958,98.725,NA,SEF13,S01,CSNDS,ELS,pena
+Female,1500,Target,Stress,NA,6.28672,107.6,NA,SEF14,S01,CSNDS,ELS,pena
+Female,1507,Target,Stress,NA,5.50222,88.25,NA,SEF15,S01,CSNDS,ELS,pena
+Male,1415,Target,Stress,654.732,4.38021,80.375,21.025,SM01,S01,CSNDS,Standard,pena
+Male,1392,Target,Stress,892.29,5.9486,39,54.975,SM02,S01,CSNDS,Standard,pena
+Male,1483,Target,Stress,959.967,6.39978,70.275,16.225,SM03,S01,CSNDS,Standard,pena
+Male,1408,Target,Stress,747.225,4.98316,73.675,14.425,SM04,S01,CSNDS,Standard,pena
+Male,1429,Target,Stress,757.569,5.84431,83.15,9.475,SM05,S01,CSNDS,Standard,pena
+Male,1486,Target,Stress,793.633,5.29089,75.5,13.775,SM06,S01,CSNDS,Standard,pena
+Male,1490,Target,Stress,580.782,3.87188,93.75,8.025,SM07,S01,CSNDS,Standard,pena
+Male,1509,Target,Stress,498.96,3.84555,60.25,1,SM08,S01,CSNDS,Standard,pena
+Male,1517,Target,Stress,480.665,3.20444,96.425,11.675,SM09,S01,CSNDS,Standard,pena
+Male,1382,Target,Stress,869.811,6.81403,7.375,40.875,SM10,S01,CSNDS,Standard,pena
+Male,1440,Target,Stress,650.637,4.34265,44.3,21.625,SEM01,S01,CSNDS,ELS,pena
+Male,1476,Target,Stress,445.373,3.22092,54.025,6.2,SEM02,S01,CSNDS,ELS,pena
+Male,1497,Target,Stress,492.957,3.28638,16.975,45.75,SEM03,S01,CSNDS,ELS,pena
+Male,1437,Target,Stress,751.146,5.00764,39.825,15.125,SEM04,S01,CSNDS,ELS,pena
+Male,1457,Target,Stress,807.194,5.3813,94.7,12.025,SEM05,S01,CSNDS,ELS,pena
+Male,1503,Target,Stress,803.89,5.35927,62.125,32.325,SEM06,S01,CSNDS,ELS,pena
+Male,1438,Target,Stress,676.552,4.51034,46.65,29.45,SEM07,S01,CSNDS,ELS,pena
+Male,1465,Target,Stress,499.858,3.33239,73.975,10.1,SEM08,S01,CSNDS,ELS,pena
+Male,1399,Target,Stress,620.119,4.13413,106.55,2.45,SEM09,S01,CSNDS,ELS,pena
+Male,1447,Target,Stress,644.083,4.4581,62.725,21.025,SEM10,S01,CSNDS,ELS,pena
+Male,1449,Target,Stress,716.234,4.77489,86.75,14.15,SEM11,S01,CSNDS,ELS,pena
+Male,1504,Target,Stress,812.641,5.41761,30.05,78.475,SEM12,S01,CSNDS,ELS,pena
+Male,1416,Target,Stress,841.077,5.60718,22.85,54.8,SM11,S01,CSNDS,Standard,pena
+Male,1417,Target,Stress,898.5,5.99,56.25,18.65,SM12,S01,CSNDS,Standard,pena
+Male,1383,Target,Stress,558.986,3.72658,28.2,18.775,SM13,S01,CSNDS,Standard,pena
+Male,1511,Target,Stress,640.87,4.27247,16.075,62.475,SM14,S01,CSNDS,Standard,pena
+Male,1384,Target,Stress,958.158,6.38772,47.7,12.475,SM15,S01,CSNDS,Standard,pena
+Male,1491,Target,Stress,859.923,5.73282,39.825,19.65,SM16,S01,CSNDS,Standard,pena
+Male,1395,Target,Stress,744.414,5.49281,55.375,22.425,SM17,S01,CSNDS,Standard,pena
+Male,1396,Target,Stress,854.66,5.69773,47.425,40.275,SM18,S01,CSNDS,Standard,pena
+Male,1410,Target,Stress,967.051,6.44701,70.05,9.65,SM19,S01,CSNDS,Standard,pena
+Male,1492,Target,Stress,605.854,4.04645,82.15,6.9,SM20,S01,CSNDS,Standard,pena
+Male,1510,Target,Stress,1952.19,13.2397,54,10.675,SM21,S01,CSNDS,Standard,pena
+Male,1467,Target,Stress,887.566,5.91711,46.975,15.1,SEM13,S01,CSNDS,ELS,pena
+Male,1502,Target,Stress,757.463,5.04975,62.175,31.975,SEM14,S01,CSNDS,ELS,pena
+Male,1401,Target,Stress,493.989,3.29326,72.55,12.075,SEM15,S01,CSNDS,ELS,pena
+Male,1496,Target,Stress,767.79,5.1186,40.95,15.075,SEM16,S01,CSNDS,ELS,pena
+Male,1475,Target,Stress,741.434,4.94289,75.625,7.95,SEM17,S01,CSNDS,ELS,pena
+Male,1506,Target,Stress,944.036,6.29357,55.175,20.075,SEM18,S01,CSNDS,ELS,pena
+Male,1439,Target,Stress,824.575,5.49717,66.7,16.1,SEM19,S01,CSNDS,ELS,pena
+Male,1450,Target,Stress,1048.05,6.98702,70.7,18.6,SEM20,S01,CSNDS,ELS,pena
+Male,1458,Target,Stress,735.158,4.90105,87.775,17.2,SEM21,S01,CSNDS,ELS,pena
+Male,1466,Target,Stress,921.327,6.65819,73.475,5.125,SEM22,S01,CSNDS,ELS,pena
+Male,1498,Target,Stress,514.61,3.43074,85.3,5.025,SEM23,S01,CSNDS,ELS,pena
+Male,1648,Target,Stress,514.576,3.43051,18.35,40.525,SM22,S01,CSNDS,Standard,pena
+Male,1638,Target,Stress,411.708,2.74472,39.3,74.325,SM23,S01,CSNDS,Standard,pena
+Male,1574,Target,Stress,707.152,4.71435,85.9,6.125,SM24,S01,CSNDS,Standard,pena
+Male,1629,Target,Stress,388.954,2.59303,57.25,15.625,SM25,S01,CSNDS,Standard,pena
+Male,1631,Target,Stress,848.201,5.65467,54.625,18.65,SM26,S01,CSNDS,Standard,pena
+Male,1663,Target,Stress,695.138,4.63425,71.925,28.5,SM27,S01,CSNDS,Standard,pena
+Male,1670,Target,Stress,656.531,4.37687,82.15,15.825,SM28,S01,CSNDS,Standard,pena
+Male,1681,Target,Stress,669.086,4.46057,89.45,7.725,SM29,S01,CSNDS,Standard,pena
+Male,1683,Target,Stress,850.403,5.66935,85.825,22.3,SM30,S01,CSNDS,Standard,pena
+Male,1584,Target,Stress,861.69,5.7446,50.05,17.75,SEM24,S01,CSNDS,ELS,pena
+Male,1605,Target,Stress,950.289,6.33526,43.925,31.1,SEM25,S01,CSNDS,ELS,pena
+Male,1616,Target,Stress,661.784,4.41189,73.025,9.075,SEM26,S01,CSNDS,ELS,pena
+Male,1577,Target,Stress,1091.64,7.27761,38.35,36.725,SEM27,S01,CSNDS,ELS,pena
+Male,1593,Target,Stress,513.934,3.42623,35.075,12.225,SEM28,S01,CSNDS,ELS,pena
+Male,1655,Target,Stress,935.736,6.23824,23.525,58.725,SEM29,S01,CSNDS,ELS,pena
+Male,1611,Target,Stress,762.494,5.0833,59.425,15.25,SEM30,S01,CSNDS,ELS,pena
+Male,1624,Target,Stress,725.487,4.83658,63.35,18.975,SEM31,S01,CSNDS,ELS,pena
+Male,1583,Target,Stress,638.479,4.25653,83.35,9.25,SEM32,S01,CSNDS,ELS,pena
+Male,1682,Target,Stress,576.049,3.84033,24.1,14.725,SM31,S01,CSNDS,Standard,pena
+Male,1639,Target,Stress,578.702,3.85801,28.725,12.825,SM32,S01,CSNDS,Standard,pena
+Male,1600,Target,Stress,556.27,3.70847,88.675,16.15,SM33,S01,CSNDS,Standard,pena
+Male,1630,Target,Stress,395.895,2.6393,106.1,8.1,SM34,S01,CSNDS,Standard,pena
+Male,1632,Target,Stress,611.308,4.07539,95.65,8.15,SM35,S01,CSNDS,Standard,pena
+Male,1649,Target,Stress,790.654,5.27103,69.475,21.725,SM36,S01,CSNDS,Standard,pena
+Male,1661,Target,Stress,648.938,4.32625,50.6,69.225,SM37,S01,CSNDS,Standard,pena
+Male,1664,Target,Stress,638.597,4.25731,37,71.3,SM38,S01,CSNDS,Standard,pena
+Male,1671,Target,Stress,563.754,3.76212,53.625,17.175,SM39,S01,CSNDS,Standard,pena
+Male,1684,Target,Stress,746.122,4.98995,68.825,20.8,SM40,S01,CSNDS,Standard,pena
+Male,1612,Target,Stress,616.286,4.10857,32.4,62.275,SEM33,S01,CSNDS,ELS,pena
+Male,1583,Target,Stress,711.297,4.74198,59.975,19.875,SEM34,S01,CSNDS,ELS,pena
+Male,1578,Target,Stress,545.268,3.63512,65.875,10.975,SEM35,S01,CSNDS,ELS,pena
+Male,1594,Target,Stress,522.969,3.48646,91.075,3.7,SEM36,S01,CSNDS,ELS,pena
+Male,1607,Target,Stress,463.084,3.08723,86.025,28.325,SEM37,S01,CSNDS,ELS,pena
+Male,1617,Target,Stress,430.905,2.8727,77.175,8,SEM38,S01,CSNDS,ELS,pena
+Male,1621,Target,Stress,501.574,3.34383,56.25,5.725,SEM39,S01,CSNDS,ELS,pena
+Male,1622,Target,Stress,601.118,4.00745,65.175,18.75,SEM40,S01,CSNDS,ELS,pena
+Male,1657,Target,Stress,484.14,3.2276,69.225,11.975,SEM41,S01,CSNDS,ELS,pena
+Female,694,No Target,Control,14.755,NA,64.2,13.5,CF01,S02,Urine,NA,menard
+Female,695,No Target,Control,11.587,NA,82.7,17.8,CF02,S02,Urine,NA,menard
+Female,696,No Target,Control,11.553,NA,79,15.6,CF03,S02,Urine,NA,menard
+Female,697,No Target,Control,11.959,NA,82,13.6,CF04,S02,Urine,NA,menard
+Female,698,No Target,Control,9.908,NA,71.9,13,CF05,S02,Urine,NA,menard
+Female,699,No Target,Control,11.328,NA,82.5,13.1,CF06,S02,Urine,NA,menard
+Female,700,No Target,Control,11.675,NA,88.5,8.3,CF07,S02,Urine,NA,menard
+Female,701,No Target,Control,10.645,NA,69.8,10.8,CF08,S02,Urine,NA,menard
+Female,694,Target,Control,5.52,NA,125,6.5,CF01,S02,Urine,NA,menard
+Female,695,Target,Control,6.962,NA,109.9,5.3,CF02,S02,Urine,NA,menard
+Female,696,Target,Control,5.999,NA,82.4,14.8,CF03,S02,Urine,NA,menard
+Female,697,Target,Control,5.022,NA,56.3,10.3,CF04,S02,Urine,NA,menard
+Female,698,Target,Control,5.356,NA,116.2,2.3,CF05,S02,Urine,NA,menard
+Female,699,Target,Control,4.814,NA,124.1,2.8,CF06,S02,Urine,NA,menard
+Female,700,Target,Control,6.313,NA,96.5,10.5,CF07,S02,Urine,NA,menard
+Female,701,Target,Control,8.791,NA,64.9,24.8,CF08,S02,Urine,NA,menard
+Female,708,No Target,Stress,11.853,NA,86.5,6.7,SF01,S02,Urine,NA,menard
+Female,709,No Target,Stress,11.1,NA,82.2,6,SF02,S02,Urine,NA,menard
+Female,711,No Target,Stress,10.241,NA,77.6,18,SF03,S02,Urine,NA,menard
+Female,713,No Target,Stress,13.266,NA,67.2,12.9,SF04,S02,Urine,NA,menard
+Female,702,No Target,Stress,10.028,NA,63.7,11.2,SF05,S02,Urine,NA,menard
+Female,703,No Target,Stress,9.522,NA,92.5,1.3,SF06,S02,Urine,NA,menard
+Female,704,No Target,Stress,10.861,NA,94.5,10,SF07,S02,Urine,NA,menard
+Female,705,No Target,Stress,10.71,NA,79.7,8,SF08,S02,Urine,NA,menard
+Female,706,No Target,Stress,12.648,NA,96.5,5.6,SF09,S02,Urine,NA,menard
+Female,707,No Target,Stress,11.044,NA,80.4,14.1,SF10,S02,Urine,NA,menard
+Female,710,No Target,Stress,11.154,NA,90,14,SF11,S02,Urine,NA,menard
+Female,712,No Target,Stress,12.455,NA,77,7.3,SF12,S02,Urine,NA,menard
+Female,708,Target,Stress,5.407,NA,83.7,8,SF01,S02,Urine,NA,menard
+Female,709,Target,Stress,6.591,NA,59.2,30.4,SF02,S02,Urine,NA,menard
+Female,711,Target,Stress,4.096,NA,48,84.5,SF03,S02,Urine,NA,menard
+Female,713,Target,Stress,6.498,NA,54,19.8,SF04,S02,Urine,NA,menard
+Female,702,Target,Stress,7.137,NA,65.2,21.2,SF05,S02,Urine,NA,menard
+Female,703,Target,Stress,3.195,NA,136.2,0,SF06,S02,Urine,NA,menard
+Female,704,Target,Stress,3.999,NA,130.8,0,SF07,S02,Urine,NA,menard
+Female,705,Target,Stress,4.787,NA,89.1,7.5,SF08,S02,Urine,NA,menard
+Female,706,Target,Stress,7.539,NA,98.5,12.5,SF09,S02,Urine,NA,menard
+Female,707,Target,Stress,4.845,NA,94.8,5.9,SF10,S02,Urine,NA,menard
+Female,710,Target,Stress,6.14,NA,108.1,6.8,SF11,S02,Urine,NA,menard
+Female,712,Target,Stress,6.554,NA,110.5,12,SF12,S02,Urine,NA,menard
+Female,C3,No Target,Control,12.1,NA,75.7,20.4,CF01,S03,Urine,NA,menard
+Female,C4,No Target,Control,8.5,NA,61.1,19.4,CF02,S03,Urine,NA,menard
+Female,C5,No Target,Control,10.5,NA,73.3,13,CF03,S03,Urine,NA,menard
+Female,C6,No Target,Control,11.5,NA,88.2,7.7,CF04,S03,Urine,NA,menard
+Female,C7,No Target,Control,11.8,NA,73.7,18.5,CF05,S03,Urine,NA,menard
+Female,C9,No Target,Control,9.9,NA,78.4,12.1,CF06,S03,Urine,NA,menard
+Female,C10,No Target,Control,10.7,NA,80.1,4.3,CF07,S03,Urine,NA,menard
+Female,C3,Target,Control,5.9,NA,97.8,18.5,CF01,S03,Urine,NA,menard
+Female,C4,Target,Control,3.9,NA,131.4,0,CF02,S03,Urine,NA,menard
+Female,C5,Target,Control,5.2,NA,84.7,17.2,CF03,S03,Urine,NA,menard
+Female,C6,Target,Control,4.4,NA,126.9,3.7,CF04,S03,Urine,NA,menard
+Female,C7,Target,Control,3.2,NA,128.9,4.1,CF05,S03,Urine,NA,menard
+Female,C9,Target,Control,4.4,NA,108.8,13.8,CF06,S03,Urine,NA,menard
+Female,C10,Target,Control,3,NA,106.3,7.6,CF07,S03,Urine,NA,menard
+Female,S1,No Target,Stress,10.9,NA,76.3,19.6,SF01,S03,Urine,NA,menard
+Female,S2,No Target,Stress,12.2,NA,63.8,10.7,SF02,S03,Urine,NA,menard
+Female,S3,No Target,Stress,10.8,NA,80.8,12.5,SF03,S03,Urine,NA,menard
+Female,S6,No Target,Stress,8.6,NA,99.8,9.2,SF04,S03,Urine,NA,menard
+Female,S8,No Target,Stress,9.8,NA,83.6,18.3,SF05,S03,Urine,NA,menard
+Female,S15,No Target,Stress,6.8,NA,94.5,11.2,SF06,S03,Urine,NA,menard
+Female,S18,No Target,Stress,5,NA,115.4,6.1,SF07,S03,Urine,NA,menard
+Female,S24,No Target,Stress,9.2,NA,95.6,11.8,SF08,S03,Urine,NA,menard
+Female,S25,No Target,Stress,10.2,NA,90.9,5.3,SF09,S03,Urine,NA,menard
+Female,S4,No Target,Stress,10.4,NA,82.4,14.6,SF10,S03,Urine,NA,menard
+Female,S5,No Target,Stress,9.1,NA,71.4,15.6,SF11,S03,Urine,NA,menard
+Female,S7,No Target,Stress,8.3,NA,81.7,21.2,SF12,S03,Urine,NA,menard
+Female,S9,No Target,Stress,10.9,NA,92.3,7.6,SF13,S03,Urine,NA,menard
+Female,S10,No Target,Stress,10.2,NA,87.6,8.1,SF14,S03,Urine,NA,menard
+Female,S12,No Target,Stress,8.7,NA,70,20.5,SF15,S03,Urine,NA,menard
+Female,S13,No Target,Stress,9.8,NA,91,12.1,SF16,S03,Urine,NA,menard
+Female,S14,No Target,Stress,9.5,NA,85.6,13.5,SF17,S03,Urine,NA,menard
+Female,S16,No Target,Stress,12.5,NA,76.1,14.6,SF18,S03,Urine,NA,menard
+Female,S17,No Target,Stress,12,NA,75.5,7.5,SF19,S03,Urine,NA,menard
+Female,S19,No Target,Stress,11,NA,94.1,7.6,SF20,S03,Urine,NA,menard
+Female,S21,No Target,Stress,10.8,NA,92.5,9.3,SF21,S03,Urine,NA,menard
+Female,S22,No Target,Stress,9.6,NA,94.7,1.9,SF22,S03,Urine,NA,menard
+Female,S23,No Target,Stress,10.4,NA,95.7,5.2,SF23,S03,Urine,NA,menard
+Female,S1,Target,Stress,5.3,NA,42.1,28,SF01,S03,Urine,NA,menard
+Female,S2,Target,Stress,5.3,NA,47.1,13.2,SF02,S03,Urine,NA,menard
+Female,S3,Target,Stress,4.4,NA,17.6,27.9,SF03,S03,Urine,NA,menard
+Female,S6,Target,Stress,5.1,NA,5.5,78.8,SF04,S03,Urine,NA,menard
+Female,S8,Target,Stress,0.7,NA,2.7,3.4,SF05,S03,Urine,NA,menard
+Female,S15,Target,Stress,3.8,NA,73,6.4,SF06,S03,Urine,NA,menard
+Female,S18,Target,Stress,9.2,NA,97.1,9.9,SF07,S03,Urine,NA,menard
+Female,S24,Target,Stress,4,NA,82.8,4.5,SF08,S03,Urine,NA,menard
+Female,S25,Target,Stress,7,NA,47.5,31.5,SF09,S03,Urine,NA,menard
+Female,S4,Target,Stress,2.8,NA,137.2,2.8,SF10,S03,Urine,NA,menard
+Female,S5,Target,Stress,3.8,NA,90.3,10.1,SF11,S03,Urine,NA,menard
+Female,S7,Target,Stress,3.1,NA,107.1,0,SF12,S03,Urine,NA,menard
+Female,S9,Target,Stress,5.1,NA,118.9,3.7,SF13,S03,Urine,NA,menard
+Female,S10,Target,Stress,2.4,NA,130.4,0,SF14,S03,Urine,NA,menard
+Female,S12,Target,Stress,8.7,NA,86.7,13.4,SF15,S03,Urine,NA,menard
+Female,S13,Target,Stress,3.2,NA,109.1,2,SF16,S03,Urine,NA,menard
+Female,S14,Target,Stress,5,NA,119.9,8,SF17,S03,Urine,NA,menard
+Female,S16,Target,Stress,7.1,NA,100.4,16.4,SF18,S03,Urine,NA,menard
+Female,S17,Target,Stress,5.2,NA,109.5,10.3,SF19,S03,Urine,NA,menard
+Female,S19,Target,Stress,5.6,NA,110.4,4.8,SF20,S03,Urine,NA,menard
+Female,S21,Target,Stress,5.8,NA,113.5,8,SF21,S03,Urine,NA,menard
+Female,S22,Target,Stress,4.5,NA,106.2,8.7,SF22,S03,Urine,NA,menard
+Female,S23,Target,Stress,3.9,NA,134.4,0,SF23,S03,Urine,NA,menard
+Female,C1,No Target,Control,9.545,NA,37.8,9.9,CF01,S04,Urine,NA,menard
+Female,C2,No Target,Control,9.869,NA,56.9,12.5,CF02,S04,Urine,NA,menard
+Female,C3,No Target,Control,8.381,NA,59.1,16.5,CF03,S04,Urine,NA,menard
+Female,C4,No Target,Control,11.485,NA,49.1,18.1,CF04,S04,Urine,NA,menard
+Female,C5,No Target,Control,11.489,NA,56.8,21.3,CF05,S04,Urine,NA,menard
+Female,C6,No Target,Control,8.94,NA,75.5,13,CF06,S04,Urine,NA,menard
+Female,C7,No Target,Control,9.054,NA,53.2,17.7,CF07,S04,Urine,NA,menard
+Female,C8,No Target,Control,7.927,NA,73.4,17,CF08,S04,Urine,NA,menard
+Female,C1,Target,Control,5.684,NA,61,12,CF01,S04,Urine,NA,menard
+Female,C2,Target,Control,5.22,NA,79.7,18.8,CF02,S04,Urine,NA,menard
+Female,C3,Target,Control,5.031,NA,94,20.8,CF03,S04,Urine,NA,menard
+Female,C4,Target,Control,7.055,NA,60.2,3.9,CF04,S04,Urine,NA,menard
+Female,C5,Target,Control,5.522,NA,66.4,9.9,CF05,S04,Urine,NA,menard
+Female,C6,Target,Control,3.071,NA,75.5,17.4,CF06,S04,Urine,NA,menard
+Female,C7,Target,Control,6.799,NA,76.9,9.7,CF07,S04,Urine,NA,menard
+Female,C8,Target,Control,4.469,NA,97.6,11.5,CF08,S04,Urine,NA,menard
+Female,S9,No Target,Stress,7.525,NA,21.7,24.6,SF01,S04,Urine,NA,menard
+Female,S13,No Target,Stress,9.4,NA,89.7,13.7,SF02,S04,Urine,NA,menard
+Female,S1,No Target,Stress,13.033,NA,11.1,33.6,SF03,S04,Urine,NA,menard
+Female,S3,No Target,Stress,10.726,NA,68.1,10.8,SF04,S04,Urine,NA,menard
+Female,S4,No Target,Stress,11.658,NA,42,10.6,SF05,S04,Urine,NA,menard
+Female,S5,No Target,Stress,8.17,NA,91,15.9,SF06,S04,Urine,NA,menard
+Female,S6,No Target,Stress,11.086,NA,28.4,29.8,SF07,S04,Urine,NA,menard
+Female,S7,No Target,Stress,11.685,NA,42,31.6,SF08,S04,Urine,NA,menard
+Female,S8,No Target,Stress,11.584,NA,60.8,15.1,SF09,S04,Urine,NA,menard
+Female,S10,No Target,Stress,11.81,NA,79.2,8.8,SF10,S04,Urine,NA,menard
+Female,S11,No Target,Stress,10.035,NA,77.4,14.3,SF11,S04,Urine,NA,menard
+Female,S12,No Target,Stress,11.566,NA,79.9,9.7,SF12,S04,Urine,NA,menard
+Female,S14,No Target,Stress,9.949,NA,75.5,11.1,SF13,S04,Urine,NA,menard
+Female,S16,No Target,Stress,12.684,NA,57.9,20.5,SF14,S04,Urine,NA,menard
+Female,S17,No Target,Stress,7.803,NA,69.8,10.3,SF15,S04,Urine,NA,menard
+Female,S18,No Target,Stress,9.908,NA,45.9,18.3,SF16,S04,Urine,NA,menard
+Female,S20,No Target,Stress,10.484,NA,55.5,16.8,SF17,S04,Urine,NA,menard
+Female,S9,Target,Stress,1.775,NA,15.2,115,SF01,S04,Urine,NA,menard
+Female,S13,Target,Stress,7.811,NA,68.7,16.2,SF02,S04,Urine,NA,menard
+Female,S1,Target,Stress,8.053,NA,48.8,35.2,SF03,S04,Urine,NA,menard
+Female,S3,Target,Stress,3.571,NA,125.2,0,SF04,S04,Urine,NA,menard
+Female,S4,Target,Stress,3.96,NA,83.5,2,SF05,S04,Urine,NA,menard
+Female,S5,Target,Stress,6.478,NA,93.9,13.2,SF06,S04,Urine,NA,menard
+Female,S6,Target,Stress,3.73,NA,71.9,3.1,SF07,S04,Urine,NA,menard
+Female,S7,Target,Stress,6.564,NA,98,7.1,SF08,S04,Urine,NA,menard
+Female,S8,Target,Stress,6.085,NA,88.2,13.9,SF09,S04,Urine,NA,menard
+Female,S10,Target,Stress,5.934,NA,91,8.3,SF10,S04,Urine,NA,menard
+Female,S11,Target,Stress,6.527,NA,87.5,12.1,SF11,S04,Urine,NA,menard
+Female,S12,Target,Stress,4.526,NA,108.6,8.4,SF12,S04,Urine,NA,menard
+Female,S14,Target,Stress,7.172,NA,96.2,7.5,SF13,S04,Urine,NA,menard
+Female,S16,Target,Stress,6.938,NA,66.9,12.4,SF14,S04,Urine,NA,menard
+Female,S17,Target,Stress,3.338,NA,103.8,14.4,SF15,S04,Urine,NA,menard
+Female,S18,Target,Stress,6.119,NA,120.7,4.4,SF16,S04,Urine,NA,menard
+Female,S20,Target,Stress,6.926,NA,59.9,11.5,SF17,S04,Urine,NA,menard
+Female,C1,No Target,Control,12.078,NA,62.7,17.1,CF01,S05,Urine,NA,menard
+Female,C2,No Target,Control,11.407,NA,23.7,22.3,CF02,S05,Urine,NA,menard
+Female,C6,No Target,Control,11.14,NA,87.6,4.7,CF03,S05,Urine,NA,menard
+Female,C1,Target,Control,5.195,NA,107.1,10,CF01,S05,Urine,NA,menard
+Female,C2,Target,Control,7.219,NA,87.6,10.5,CF02,S05,Urine,NA,menard
+Female,C6,Target,Control,2.687,NA,114.7,3.5,CF03,S05,Urine,NA,menard
+Female,S2,No Target,Stress,10.183,NA,11.4,20.2,SF01,S05,Urine,NA,menard
+Female,S3,No Target,Stress,10.27,NA,70.3,9.1,SF02,S05,Urine,NA,menard
+Female,S4,No Target,Stress,9.507,NA,104.9,6,SF03,S05,Urine,NA,menard
+Female,S7,No Target,Stress,8.897,NA,76.1,10.4,SF04,S05,Urine,NA,menard
+Female,S9,No Target,Stress,11.402,NA,64.7,18.5,SF05,S05,Urine,NA,menard
+Female,S11,No Target,Stress,11.577,NA,83.7,7.6,SF06,S05,Urine,NA,menard
+Female,S13,No Target,Stress,9.362,NA,76.6,12.5,SF07,S05,Urine,NA,menard
+Female,S17,No Target,Stress,7.71,NA,60.2,13.6,SF08,S05,Urine,NA,menard
+Female,S19,No Target,Stress,12.184,NA,65.7,18.1,SF09,S05,Urine,NA,menard
+Female,S20,No Target,Stress,9.246,NA,81.5,11.2,SF10,S05,Urine,NA,menard
+Female,S21,No Target,Stress,8.408,NA,75.8,27.6,SF11,S05,Urine,NA,menard
+Female,S22,No Target,Stress,9.313,NA,105.1,6,SF12,S05,Urine,NA,menard
+Female,S23,No Target,Stress,9.144,NA,87.2,7.3,SF13,S05,Urine,NA,menard
+Female,S1,No Target,Stress,10.325,NA,35.8,18.4,SF14,S05,Urine,NA,menard
+Female,S5,No Target,Stress,10.986,NA,69.5,14.4,SF15,S05,Urine,NA,menard
+Female,S6,No Target,Stress,11.639,NA,61.2,11.1,SF16,S05,Urine,NA,menard
+Female,S8,No Target,Stress,10.499,NA,73.9,5.7,SF17,S05,Urine,NA,menard
+Female,S10,No Target,Stress,10.753,NA,73.8,9.5,SF18,S05,Urine,NA,menard
+Female,S12,No Target,Stress,9.31,NA,94.7,5.9,SF19,S05,Urine,NA,menard
+Female,S14,No Target,Stress,8.057,NA,77.5,4.8,SF20,S05,Urine,NA,menard
+Female,S15,No Target,Stress,9.081,NA,97.5,6.5,SF21,S05,Urine,NA,menard
+Female,S16,No Target,Stress,8.621,NA,99.8,8.1,SF22,S05,Urine,NA,menard
+Female,S18,No Target,Stress,7.055,NA,107.4,2.8,SF23,S05,Urine,NA,menard
+Female,S24,No Target,Stress,7.938,NA,106,6.7,SF24,S05,Urine,NA,menard
+Female,S25,No Target,Stress,7.466,NA,75.5,9.2,SF25,S05,Urine,NA,menard
+Female,S2,Target,Stress,2.139,NA,2.4,33.8,SF01,S05,Urine,NA,menard
+Female,S3,Target,Stress,3.668,NA,6.9,76.3,SF02,S05,Urine,NA,menard
+Female,S4,Target,Stress,6.163,NA,96.1,11.3,SF03,S05,Urine,NA,menard
+Female,S7,Target,Stress,4.151,NA,27.5,46.5,SF04,S05,Urine,NA,menard
+Female,S9,Target,Stress,2.418,NA,20.7,112.7,SF05,S05,Urine,NA,menard
+Female,S11,Target,Stress,2.977,NA,20.8,104.9,SF06,S05,Urine,NA,menard
+Female,S13,Target,Stress,6.415,NA,48.3,33.1,SF07,S05,Urine,NA,menard
+Female,S17,Target,Stress,0.951,NA,50.2,0,SF08,S05,Urine,NA,menard
+Female,S19,Target,Stress,6.56,NA,61.3,15.2,SF09,S05,Urine,NA,menard
+Female,S20,Target,Stress,2.584,NA,37.2,94.3,SF10,S05,Urine,NA,menard
+Female,S21,Target,Stress,4.915,NA,42.8,54.7,SF11,S05,Urine,NA,menard
+Female,S22,Target,Stress,5.013,NA,31.6,17.5,SF12,S05,Urine,NA,menard
+Female,S23,Target,Stress,4.332,NA,52.5,8,SF13,S05,Urine,NA,menard
+Female,S1,Target,Stress,2.738,NA,64,9.1,SF14,S05,Urine,NA,menard
+Female,S5,Target,Stress,3.994,NA,99.7,9.3,SF15,S05,Urine,NA,menard
+Female,S6,Target,Stress,3.911,NA,61.2,21.1,SF16,S05,Urine,NA,menard
+Female,S8,Target,Stress,6.833,NA,79.6,10.8,SF17,S05,Urine,NA,menard
+Female,S10,Target,Stress,1.33,NA,93.3,0,SF18,S05,Urine,NA,menard
+Female,S12,Target,Stress,6.205,NA,111.1,9.2,SF19,S05,Urine,NA,menard
+Female,S14,Target,Stress,4.968,NA,99.4,5.6,SF20,S05,Urine,NA,menard
+Female,S15,Target,Stress,2.629,NA,113.8,4.4,SF21,S05,Urine,NA,menard
+Female,S16,Target,Stress,0.509,NA,146.8,0,SF22,S05,Urine,NA,menard
+Female,S18,Target,Stress,2.284,NA,117.2,4.4,SF23,S05,Urine,NA,menard
+Female,S24,Target,Stress,4.665,NA,115.3,3.7,SF24,S05,Urine,NA,menard
+Female,S25,Target,Stress,4.32,NA,77.6,4.9,SF25,S05,Urine,NA,menard
+Female,C2,No Target,Control,11.144,NA,66.4,10.4,CF01,S06,Urine,NA,menard
+Female,C3,No Target,Control,12.6,NA,38.2,16.2,CF02,S06,Urine,NA,menard
+Female,C5,No Target,Control,10.643,NA,39.6,15.4,CF03,S06,Urine,NA,menard
+Female,C6,No Target,Control,14.434,NA,74.5,15.7,CF04,S06,Urine,NA,menard
+Female,C7,No Target,Control,10.216,NA,55.2,24.3,CF05,S06,Urine,NA,menard
+Female,C9,No Target,Control,11.512,NA,62.3,22.3,CF06,S06,Urine,NA,menard
+Female,C10,No Target,Control,10.932,NA,38.7,28.8,CF07,S06,Urine,NA,menard
+Female,C11,No Target,Control,14.205,NA,65.3,15,CF08,S06,Urine,NA,menard
+Female,C12,No Target,Control,11.742,NA,64,17.6,CF09,S06,Urine,NA,menard
+Female,C2,Target,Control,4.152,NA,83.3,16,CF01,S06,Urine,NA,menard
+Female,C3,Target,Control,5.504,NA,41.3,28,CF02,S06,Urine,NA,menard
+Female,C5,Target,Control,6.719,NA,95.3,8.4,CF03,S06,Urine,NA,menard
+Female,C6,Target,Control,7.406,NA,76.7,24.8,CF04,S06,Urine,NA,menard
+Female,C7,Target,Control,2.874,NA,110.3,2.3,CF05,S06,Urine,NA,menard
+Female,C9,Target,Control,4.575,NA,98,14,CF06,S06,Urine,NA,menard
+Female,C10,Target,Control,7.595,NA,106.1,6.8,CF07,S06,Urine,NA,menard
+Female,C11,Target,Control,5.997,NA,79.8,19.2,CF08,S06,Urine,NA,menard
+Female,C12,Target,Control,5.147,NA,104.5,13.3,CF09,S06,Urine,NA,menard
+Female,S1,No Target,Stress,11.094,NA,78.9,5.9,SF01,S06,Urine,NA,menard
+Female,S8,No Target,Stress,9.381,NA,82.8,4.7,SF02,S06,Urine,NA,menard
+Female,S10,No Target,Stress,13.126,NA,64.8,16.4,SF03,S06,Urine,NA,menard
+Female,S11,No Target,Stress,8.836,NA,80.5,28.2,SF04,S06,Urine,NA,menard
+Female,S12,No Target,Stress,11.334,NA,82.5,10.6,SF05,S06,Urine,NA,menard
+Female,S13,No Target,Stress,9.862,NA,97.9,14.9,SF06,S06,Urine,NA,menard
+Female,S20,No Target,Stress,8.337,NA,102.1,5.4,SF07,S06,Urine,NA,menard
+Female,S2,No Target,Stress,14.944,NA,49.9,11.6,SF08,S06,Urine,NA,menard
+Female,S3,No Target,Stress,13.469,NA,46.7,14.1,SF09,S06,Urine,NA,menard
+Female,S4,No Target,Stress,12.664,NA,78.3,15.3,SF10,S06,Urine,NA,menard
+Female,S5,No Target,Stress,10.976,NA,76,18.4,SF11,S06,Urine,NA,menard
+Female,S6,No Target,Stress,13.408,NA,60.8,15.4,SF12,S06,Urine,NA,menard
+Female,S7,No Target,Stress,11.07,NA,34.6,36,SF13,S06,Urine,NA,menard
+Female,S9,No Target,Stress,10.031,NA,43.3,20.5,SF14,S06,Urine,NA,menard
+Female,S14,No Target,Stress,10.269,NA,78.3,15.7,SF15,S06,Urine,NA,menard
+Female,S15,No Target,Stress,12.677,NA,81.3,10.4,SF16,S06,Urine,NA,menard
+Female,S16,No Target,Stress,11.772,NA,88.4,10,SF17,S06,Urine,NA,menard
+Female,S18,No Target,Stress,12.777,NA,69.7,18.2,SF18,S06,Urine,NA,menard
+Female,S19,No Target,Stress,8.41,NA,112.5,4.1,SF19,S06,Urine,NA,menard
+Female,S21,No Target,Stress,8.789,NA,65.1,18.5,SF20,S06,Urine,NA,menard
+Female,S22,No Target,Stress,7.432,NA,80.3,17.9,SF21,S06,Urine,NA,menard
+Female,S23,No Target,Stress,10.218,NA,53,12.9,SF22,S06,Urine,NA,menard
+Female,S25,No Target,Stress,8.059,NA,86.7,13.3,SF23,S06,Urine,NA,menard
+Female,S27,No Target,Stress,9.932,NA,93.7,6,SF24,S06,Urine,NA,menard
+Female,S28,No Target,Stress,8.207,NA,105.2,2.8,SF25,S06,Urine,NA,menard
+Female,S1,Target,Stress,5.391,NA,53,13.4,SF01,S06,Urine,NA,menard
+Female,S8,Target,Stress,3.466,NA,49.4,8.5,SF02,S06,Urine,NA,menard
+Female,S10,Target,Stress,5.62,NA,51.7,9.6,SF03,S06,Urine,NA,menard
+Female,S11,Target,Stress,6.267,NA,39.2,70.9,SF04,S06,Urine,NA,menard
+Female,S12,Target,Stress,8.824,NA,64.3,36,SF05,S06,Urine,NA,menard
+Female,S13,Target,Stress,8.139,NA,81.1,16,SF06,S06,Urine,NA,menard
+Female,S20,Target,Stress,6.298,NA,96.7,15.6,SF07,S06,Urine,NA,menard
+Female,S2,Target,Stress,7.028,NA,88.8,14.1,SF08,S06,Urine,NA,menard
+Female,S3,Target,Stress,6.955,NA,73.3,9.2,SF09,S06,Urine,NA,menard
+Female,S4,Target,Stress,7.032,NA,119.6,2.5,SF10,S06,Urine,NA,menard
+Female,S5,Target,Stress,5.2,NA,80.6,23.4,SF11,S06,Urine,NA,menard
+Female,S6,Target,Stress,3.795,NA,85.7,9.3,SF12,S06,Urine,NA,menard
+Female,S7,Target,Stress,4.183,NA,97.8,34.9,SF13,S06,Urine,NA,menard
+Female,S9,Target,Stress,4.052,NA,82,12,SF14,S06,Urine,NA,menard
+Female,S14,Target,Stress,5.723,NA,99.9,14.4,SF15,S06,Urine,NA,menard
+Female,S15,Target,Stress,8.269,NA,106.7,6.6,SF16,S06,Urine,NA,menard
+Female,S16,Target,Stress,4.691,NA,122.4,2.4,SF17,S06,Urine,NA,menard
+Female,S18,Target,Stress,5.093,NA,131.5,0,SF18,S06,Urine,NA,menard
+Female,S19,Target,Stress,4.751,NA,116.8,4.3,SF19,S06,Urine,NA,menard
+Female,S21,Target,Stress,4.436,NA,103.5,13.9,SF20,S06,Urine,NA,menard
+Female,S22,Target,Stress,3.213,NA,122.8,4.5,SF21,S06,Urine,NA,menard
+Female,S23,Target,Stress,6.251,NA,93.8,8.6,SF22,S06,Urine,NA,menard
+Female,S25,Target,Stress,4.337,NA,92.6,13.7,SF23,S06,Urine,NA,menard
+Female,S27,Target,Stress,5.965,NA,103.3,9.3,SF24,S06,Urine,NA,menard
+Female,S28,Target,Stress,5.347,NA,112.5,10.7,SF25,S06,Urine,NA,menard
+Female,C1,No Target,Control,10.346,NA,65.8,17.3,CF01,S07,Urine,NA,menard
+Female,C3,No Target,Control,13.605,NA,38.4,23.4,CF02,S07,Urine,NA,menard
+Female,C4,No Target,Control,12.728,NA,66.4,9.5,CF03,S07,Urine,NA,menard
+Female,C5,No Target,Control,10.891,NA,44.8,18.8,CF04,S07,Urine,NA,menard
+Female,C8,No Target,Control,12.56,NA,49.4,12.1,CF05,S07,Urine,NA,menard
+Female,C11,No Target,Control,13.054,NA,81,11,CF06,S07,Urine,NA,menard
+Female,C12,No Target,Control,12.198,NA,45.3,20.2,CF07,S07,Urine,NA,menard
+Female,C14,No Target,Control,13.854,NA,47.8,17.1,CF08,S07,Urine,NA,menard
+Female,C15,No Target,Control,11.905,NA,64.1,24.6,CF09,S07,Urine,NA,menard
+Female,C1,Target,Control,6.671,NA,73.9,21.4,CF01,S07,Urine,NA,menard
+Female,C3,Target,Control,3.133,NA,116.5,7.7,CF02,S07,Urine,NA,menard
+Female,C4,Target,Control,6.163,NA,79.7,11.5,CF03,S07,Urine,NA,menard
+Female,C5,Target,Control,5.842,NA,79.3,6.9,CF04,S07,Urine,NA,menard
+Female,C8,Target,Control,7.305,NA,62,23.7,CF05,S07,Urine,NA,menard
+Female,C11,Target,Control,5.67,NA,95.9,18.9,CF06,S07,Urine,NA,menard
+Female,C12,Target,Control,4.509,NA,61.9,14.8,CF07,S07,Urine,NA,menard
+Female,C14,Target,Control,6.611,NA,76.9,9.5,CF08,S07,Urine,NA,menard
+Female,C15,Target,Control,5.389,NA,73.4,44.4,CF09,S07,Urine,NA,menard
+Female,S1,No Target,Stress,14.838,NA,65.5,13.5,SF01,S07,Urine,NA,menard
+Female,S7,No Target,Stress,10.671,NA,43.9,18.4,SF02,S07,Urine,NA,menard
+Female,S8,No Target,Stress,9.924,NA,92.3,7.2,SF03,S07,Urine,NA,menard
+Female,S10,No Target,Stress,11.601,NA,79.1,10.9,SF04,S07,Urine,NA,menard
+Female,S19,No Target,Stress,8.78,NA,89.1,10.4,SF05,S07,Urine,NA,menard
+Female,S20,No Target,Stress,7.228,NA,93,10.8,SF06,S07,Urine,NA,menard
+Female,S21,No Target,Stress,8.833,NA,61,27.5,SF07,S07,Urine,NA,menard
+Female,S23,No Target,Stress,10.405,NA,59.3,24.3,SF08,S07,Urine,NA,menard
+Female,S2,No Target,Stress,12.609,NA,66.6,14.5,SF09,S07,Urine,NA,menard
+Female,S3,No Target,Stress,9.781,NA,68.1,9.3,SF10,S07,Urine,NA,menard
+Female,S4,No Target,Stress,12.257,NA,63.1,18.1,SF11,S07,Urine,NA,menard
+Female,S5,No Target,Stress,11.629,NA,65.3,12.4,SF12,S07,Urine,NA,menard
+Female,S6,No Target,Stress,9.713,NA,86.5,17.8,SF13,S07,Urine,NA,menard
+Female,S9,No Target,Stress,10.43,NA,40.2,33.3,SF14,S07,Urine,NA,menard
+Female,S12,No Target,Stress,10.836,NA,19.3,44.9,SF15,S07,Urine,NA,menard
+Female,S13,No Target,Stress,10.744,NA,71.1,16.6,SF16,S07,Urine,NA,menard
+Female,S14,No Target,Stress,10.461,NA,55.1,16.1,SF17,S07,Urine,NA,menard
+Female,S15,No Target,Stress,12.493,NA,51.9,18.1,SF18,S07,Urine,NA,menard
+Female,S17,No Target,Stress,14.191,NA,64.7,11.2,SF19,S07,Urine,NA,menard
+Female,S18,No Target,Stress,10.294,NA,60,11.6,SF20,S07,Urine,NA,menard
+Female,S22,No Target,Stress,9.309,NA,70.1,20.9,SF21,S07,Urine,NA,menard
+Female,S24,No Target,Stress,8.764,NA,32.3,27.5,SF22,S07,Urine,NA,menard
+Female,S25,No Target,Stress,8.585,NA,70.1,19,SF23,S07,Urine,NA,menard
+Female,S1,Target,Stress,1.716,NA,13.8,4.5,SF01,S07,Urine,NA,menard
+Female,S7,Target,Stress,4.2,NA,14.4,77.1,SF02,S07,Urine,NA,menard
+Female,S8,Target,Stress,4.032,NA,87.2,7.7,SF03,S07,Urine,NA,menard
+Female,S10,Target,Stress,5.294,NA,75.7,46,SF04,S07,Urine,NA,menard
+Female,S19,Target,Stress,8.164,NA,82.2,11.2,SF05,S07,Urine,NA,menard
+Female,S20,Target,Stress,5.083,NA,91.1,6,SF06,S07,Urine,NA,menard
+Female,S21,Target,Stress,1.995,NA,42.7,32.8,SF07,S07,Urine,NA,menard
+Female,S23,Target,Stress,2.422,NA,19.7,117.3,SF08,S07,Urine,NA,menard
+Female,S2,Target,Stress,5.494,NA,69.2,7.5,SF09,S07,Urine,NA,menard
+Female,S3,Target,Stress,3.981,NA,80.2,2.4,SF10,S07,Urine,NA,menard
+Female,S4,Target,Stress,9.727,NA,90.7,16.4,SF11,S07,Urine,NA,menard
+Female,S5,Target,Stress,4.359,NA,114.5,2.9,SF12,S07,Urine,NA,menard
+Female,S6,Target,Stress,3.729,NA,102.1,3.2,SF13,S07,Urine,NA,menard
+Female,S9,Target,Stress,6.223,NA,61.9,38,SF14,S07,Urine,NA,menard
+Female,S12,Target,Stress,7.445,NA,74.7,23.8,SF15,S07,Urine,NA,menard
+Female,S13,Target,Stress,7.27,NA,92.7,12.4,SF16,S07,Urine,NA,menard
+Female,S14,Target,Stress,5.651,NA,70.1,26.3,SF17,S07,Urine,NA,menard
+Female,S15,Target,Stress,4.381,NA,63.6,61.1,SF18,S07,Urine,NA,menard
+Female,S17,Target,Stress,7.204,NA,96.8,4.9,SF19,S07,Urine,NA,menard
+Female,S18,Target,Stress,1.24,NA,63.4,0,SF20,S07,Urine,NA,menard
+Female,S22,Target,Stress,4.17,NA,121.2,6.3,SF21,S07,Urine,NA,menard
+Female,S24,Target,Stress,5.168,NA,68.9,16.4,SF22,S07,Urine,NA,menard
+Female,S25,Target,Stress,5.078,NA,84.7,18.8,SF23,S07,Urine,NA,menard
+Female,C1,No Target,Control,13.733,NA,68.5,8.4,CF01,S08,Urine,NA,menard
+Female,C2,No Target,Control,11.464,NA,19.5,26.4,CF02,S08,Urine,NA,menard
+Female,C5,No Target,Control,12.904,NA,71.4,15.2,CF03,S08,Urine,NA,menard
+Female,C7,No Target,Control,10.737,NA,68.4,9.9,CF04,S08,Urine,NA,menard
+Female,C8,No Target,Control,13.014,NA,63.4,10.2,CF05,S08,Urine,NA,menard
+Female,C9,No Target,Control,12.891,NA,82,7,CF06,S08,Urine,NA,menard
+Female,C11,No Target,Control,10.082,NA,75.7,11.5,CF07,S08,Urine,NA,menard
+Female,C12,No Target,Control,13.362,NA,46.1,16,CF08,S08,Urine,NA,menard
+Female,C15,No Target,Control,12.851,NA,59.7,17.4,CF09,S08,Urine,NA,menard
+Female,C1,Target,Control,4.985,NA,104.3,13.5,CF01,S08,Urine,NA,menard
+Female,C2,Target,Control,5.487,NA,110.4,5.1,CF02,S08,Urine,NA,menard
+Female,C5,Target,Control,6.261,NA,80.7,7.5,CF03,S08,Urine,NA,menard
+Female,C7,Target,Control,1.804,NA,136.3,0,CF04,S08,Urine,NA,menard
+Female,C8,Target,Control,5.737,NA,108.8,3.2,CF05,S08,Urine,NA,menard
+Female,C9,Target,Control,4.463,NA,90.3,7.3,CF06,S08,Urine,NA,menard
+Female,C11,Target,Control,3.444,NA,120.5,3.6,CF07,S08,Urine,NA,menard
+Female,C12,Target,Control,6.593,NA,91.5,11.3,CF08,S08,Urine,NA,menard
+Female,C15,Target,Control,4.124,NA,113.6,7.9,CF09,S08,Urine,NA,menard
+Female,S10,No Target,Stress,9.804,NA,95.4,10.8,SF01,S08,Urine,NA,menard
+Female,S21,No Target,Stress,11.792,NA,87.3,18.4,SF02,S08,Urine,NA,menard
+Female,S24,No Target,Stress,14.396,NA,75.2,13.3,SF03,S08,Urine,NA,menard
+Female,S1,No Target,Stress,13.229,NA,68.5,14,SF04,S08,Urine,NA,menard
+Female,S2,No Target,Stress,11.35,NA,71.6,12.7,SF05,S08,Urine,NA,menard
+Female,S3,No Target,Stress,9.245,NA,74.4,10.5,SF06,S08,Urine,NA,menard
+Female,S4,No Target,Stress,13.315,NA,67.3,6.3,SF07,S08,Urine,NA,menard
+Female,S5,No Target,Stress,9.941,NA,74.3,6.7,SF08,S08,Urine,NA,menard
+Female,S6,No Target,Stress,11.467,NA,84.5,2.8,SF09,S08,Urine,NA,menard
+Female,S7,No Target,Stress,6.705,NA,14,89.7,SF10,S08,Urine,NA,menard
+Female,S8,No Target,Stress,10.749,NA,104.7,5.8,SF11,S08,Urine,NA,menard
+Female,S9,No Target,Stress,10.834,NA,87.2,14.4,SF12,S08,Urine,NA,menard
+Female,S11,No Target,Stress,10.086,NA,95.4,7.2,SF13,S08,Urine,NA,menard
+Female,S12,No Target,Stress,11.098,NA,68.6,13.9,SF14,S08,Urine,NA,menard
+Female,S13,No Target,Stress,8.981,NA,48.1,26.9,SF15,S08,Urine,NA,menard
+Female,S14,No Target,Stress,15.264,NA,59.1,21.7,SF16,S08,Urine,NA,menard
+Female,S15,No Target,Stress,13.167,NA,64.8,18,SF17,S08,Urine,NA,menard
+Female,S16,No Target,Stress,10.309,NA,99.9,9.4,SF18,S08,Urine,NA,menard
+Female,S17,No Target,Stress,12.577,NA,68.8,12.9,SF19,S08,Urine,NA,menard
+Female,S18,No Target,Stress,13.557,NA,85.3,11.9,SF20,S08,Urine,NA,menard
+Female,S19,No Target,Stress,11.055,NA,83.6,9,SF21,S08,Urine,NA,menard
+Female,S20,No Target,Stress,13.156,NA,76.1,16.8,SF22,S08,Urine,NA,menard
+Female,S22,No Target,Stress,9.277,NA,78.9,8.8,SF23,S08,Urine,NA,menard
+Female,S23,No Target,Stress,10.866,NA,70.8,3.5,SF24,S08,Urine,NA,menard
+Female,S25,No Target,Stress,11.478,NA,33.2,11.4,SF25,S08,Urine,NA,menard
+Female,S10,Target,Stress,3.129,NA,50.3,30.3,SF01,S08,Urine,NA,menard
+Female,S21,Target,Stress,6.871,NA,82.3,25.2,SF02,S08,Urine,NA,menard
+Female,S24,Target,Stress,6.071,NA,52.9,36.8,SF03,S08,Urine,NA,menard
+Female,S1,Target,Stress,5.483,NA,99.5,8.3,SF04,S08,Urine,NA,menard
+Female,S2,Target,Stress,5.203,NA,100.8,1.5,SF05,S08,Urine,NA,menard
+Female,S3,Target,Stress,4.762,NA,76.1,31.9,SF06,S08,Urine,NA,menard
+Female,S4,Target,Stress,6.908,NA,95.2,15.1,SF07,S08,Urine,NA,menard
+Female,S5,Target,Stress,5.036,NA,85.9,28.9,SF08,S08,Urine,NA,menard
+Female,S6,Target,Stress,4.745,NA,101.4,8.3,SF09,S08,Urine,NA,menard
+Female,S7,Target,Stress,3.313,NA,61.8,14.4,SF10,S08,Urine,NA,menard
+Female,S8,Target,Stress,3.678,NA,129.1,0,SF11,S08,Urine,NA,menard
+Female,S9,Target,Stress,6.621,NA,90.4,14.3,SF12,S08,Urine,NA,menard
+Female,S11,Target,Stress,5.29,NA,112.9,10.4,SF13,S08,Urine,NA,menard
+Female,S12,Target,Stress,3.675,NA,97,34.4,SF14,S08,Urine,NA,menard
+Female,S13,Target,Stress,7.414,NA,107.1,11.9,SF15,S08,Urine,NA,menard
+Female,S14,Target,Stress,7.194,NA,86.9,11.9,SF16,S08,Urine,NA,menard
+Female,S15,Target,Stress,4.815,NA,92.5,11.9,SF17,S08,Urine,NA,menard
+Female,S16,Target,Stress,3.847,NA,111.8,5.3,SF18,S08,Urine,NA,menard
+Female,S17,Target,Stress,6.335,NA,79.2,5.2,SF19,S08,Urine,NA,menard
+Female,S18,Target,Stress,5.901,NA,96.1,6.5,SF20,S08,Urine,NA,menard
+Female,S19,Target,Stress,6.837,NA,86.3,6.3,SF21,S08,Urine,NA,menard
+Female,S20,Target,Stress,4.721,NA,127.3,3.5,SF22,S08,Urine,NA,menard
+Female,S22,Target,Stress,3.996,NA,86,6.1,SF23,S08,Urine,NA,menard
+Female,S23,Target,Stress,4.666,NA,80.3,10.3,SF24,S08,Urine,NA,menard
+Female,S25,Target,Stress,4.848,NA,76.5,6,SF25,S08,Urine,NA,menard
+Female,C1,No Target,Control,10.592,NA,64.3,9.7,CF01,S09,Urine,NA,menard
+Female,C2,No Target,Control,10.87,NA,76.6,6.7,CF02,S09,Urine,NA,menard
+Female,C3,No Target,Control,16.975,NA,63.7,20.6,CF03,S09,Urine,NA,menard
+Female,C4,No Target,Control,13.759,NA,49.8,21,CF04,S09,Urine,NA,menard
+Female,C5,No Target,Control,14.522,NA,44.4,15.7,CF05,S09,Urine,NA,menard
+Female,C6,No Target,Control,10.12,NA,43.2,8.5,CF06,S09,Urine,NA,menard
+Female,C7,No Target,Control,9.431,NA,59.4,20.5,CF07,S09,Urine,NA,menard
+Female,C8,No Target,Control,11.756,NA,62.8,10.8,CF08,S09,Urine,NA,menard
+Female,C9,No Target,Control,13.063,NA,73.7,15.9,CF09,S09,Urine,NA,menard
+Female,C10,No Target,Control,12.637,NA,62.3,11.6,CF10,S09,Urine,NA,menard
+Female,C12,No Target,Control,12.051,NA,61.9,14.8,CF11,S09,Urine,NA,menard
+Female,C13,No Target,Control,9.183,NA,39.1,42.4,CF12,S09,Urine,NA,menard
+Female,C14,No Target,Control,10.392,NA,69.1,15.4,CF13,S09,Urine,NA,menard
+Female,C1,Target,Control,7.061,NA,77.7,8.9,CF01,S09,Urine,NA,menard
+Female,C2,Target,Control,7.992,NA,84.9,9.9,CF02,S09,Urine,NA,menard
+Female,C3,Target,Control,8.659,NA,86.9,8.8,CF03,S09,Urine,NA,menard
+Female,C4,Target,Control,6.511,NA,94.8,9,CF04,S09,Urine,NA,menard
+Female,C5,Target,Control,11.069,NA,100.3,2.1,CF05,S09,Urine,NA,menard
+Female,C6,Target,Control,6.746,NA,94.8,4.3,CF06,S09,Urine,NA,menard
+Female,C7,Target,Control,4.307,NA,80.7,3,CF07,S09,Urine,NA,menard
+Female,C8,Target,Control,8.135,NA,89.9,10.1,CF08,S09,Urine,NA,menard
+Female,C9,Target,Control,7.261,NA,91.8,19.2,CF09,S09,Urine,NA,menard
+Female,C10,Target,Control,8.014,NA,89.9,7.9,CF10,S09,Urine,NA,menard
+Female,C12,Target,Control,6.965,NA,95.1,6.8,CF11,S09,Urine,NA,menard
+Female,C13,Target,Control,3.653,NA,109.5,11.6,CF12,S09,Urine,NA,menard
+Female,C14,Target,Control,8.072,NA,89.9,15.5,CF13,S09,Urine,NA,menard
+Female,S15,No Target,Stress,8.136,NA,31.1,24.1,SF01,S09,Urine,NA,menard
+Female,S22,No Target,Stress,9.266,NA,99.2,4.7,SF02,S09,Urine,NA,menard
+Female,S1,No Target,Stress,9.866,NA,21.7,14.4,SF03,S09,Urine,NA,menard
+Female,S2,No Target,Stress,13.949,NA,67.1,16.4,SF04,S09,Urine,NA,menard
+Female,S3,No Target,Stress,7.948,NA,77.6,26.9,SF05,S09,Urine,NA,menard
+Female,S5,No Target,Stress,11.24,NA,85.6,6.7,SF06,S09,Urine,NA,menard
+Female,S6,No Target,Stress,10.619,NA,69.6,28.6,SF07,S09,Urine,NA,menard
+Female,S7,No Target,Stress,8.324,NA,88.7,9.1,SF08,S09,Urine,NA,menard
+Female,S8,No Target,Stress,11.44,NA,60.6,32.6,SF09,S09,Urine,NA,menard
+Female,S9,No Target,Stress,10.919,NA,84.5,8.7,SF10,S09,Urine,NA,menard
+Female,S10,No Target,Stress,8.507,NA,89.2,10.7,SF11,S09,Urine,NA,menard
+Female,S11,No Target,Stress,7.675,NA,69.9,26.4,SF12,S09,Urine,NA,menard
+Female,S12,No Target,Stress,10.344,NA,70.1,22.6,SF13,S09,Urine,NA,menard
+Female,S13,No Target,Stress,10.471,NA,48,28.2,SF14,S09,Urine,NA,menard
+Female,S14,No Target,Stress,9.583,NA,78.7,14.9,SF15,S09,Urine,NA,menard
+Female,S17,No Target,Stress,8.292,NA,58.2,27.3,SF16,S09,Urine,NA,menard
+Female,S18,No Target,Stress,11.14,NA,67.7,4,SF17,S09,Urine,NA,menard
+Female,S19,No Target,Stress,11.285,NA,75.6,18.4,SF18,S09,Urine,NA,menard
+Female,S20,No Target,Stress,8.647,NA,76.9,13.5,SF19,S09,Urine,NA,menard
+Female,S21,No Target,Stress,10.619,NA,39.1,35.7,SF20,S09,Urine,NA,menard
+Female,S23,No Target,Stress,9.424,NA,82.2,9.5,SF21,S09,Urine,NA,menard
+Female,S24,No Target,Stress,10.46,NA,77.5,14.7,SF22,S09,Urine,NA,menard
+Female,S15,Target,Stress,5.506,NA,27.4,54.8,SF01,S09,Urine,NA,menard
+Female,S22,Target,Stress,7.473,NA,72.7,24.4,SF02,S09,Urine,NA,menard
+Female,S1,Target,Stress,4.592,NA,84.1,18,SF03,S09,Urine,NA,menard
+Female,S2,Target,Stress,7.945,NA,82,11.9,SF04,S09,Urine,NA,menard
+Female,S3,Target,Stress,3.312,NA,100.5,26.4,SF05,S09,Urine,NA,menard
+Female,S5,Target,Stress,6.718,NA,108.7,9.9,SF06,S09,Urine,NA,menard
+Female,S6,Target,Stress,5.332,NA,99.1,11.3,SF07,S09,Urine,NA,menard
+Female,S7,Target,Stress,3.839,NA,123,6.8,SF08,S09,Urine,NA,menard
+Female,S8,Target,Stress,7.436,NA,90.6,10.7,SF09,S09,Urine,NA,menard
+Female,S9,Target,Stress,6.389,NA,107,8.5,SF10,S09,Urine,NA,menard
+Female,S10,Target,Stress,4.688,NA,116.6,11.1,SF11,S09,Urine,NA,menard
+Female,S11,Target,Stress,5.791,NA,98.6,10.9,SF12,S09,Urine,NA,menard
+Female,S12,Target,Stress,6.065,NA,91.8,17.8,SF13,S09,Urine,NA,menard
+Female,S13,Target,Stress,7.409,NA,95.8,3.3,SF14,S09,Urine,NA,menard
+Female,S14,Target,Stress,4.079,NA,89.2,2.4,SF15,S09,Urine,NA,menard
+Female,S17,Target,Stress,2.879,NA,80,6,SF16,S09,Urine,NA,menard
+Female,S18,Target,Stress,5.944,NA,117.3,0.7,SF17,S09,Urine,NA,menard
+Female,S19,Target,Stress,5.843,NA,100.1,9.6,SF18,S09,Urine,NA,menard
+Female,S20,Target,Stress,7.571,NA,90.4,14.9,SF19,S09,Urine,NA,menard
+Female,S21,Target,Stress,6.197,NA,61.2,13.3,SF20,S09,Urine,NA,menard
+Female,S23,Target,Stress,5.367,NA,108.8,9.5,SF21,S09,Urine,NA,menard
+Female,S24,Target,Stress,2.01,NA,136.4,0,SF22,S09,Urine,NA,menard
+Female,W1,No Target,Stress,1917.31,12.8894,73.2739,21.9889,SF01,S10,CSW/DS,NA,bagot
+Female,W1,Target,Stress,1383.77,9.22816,79.9807,13.3802,SF01,S10,CSW/DS,NA,bagot
+Female,W3,No Target,Stress,746.155,6.39736,69.0663,15.9564,SF02,S10,CSW/DS,NA,bagot
+Female,W3,Target,Stress,926.343,6.25427,94.5364,17.6254,SF02,S10,CSW/DS,NA,bagot
+Female,C1,No Target,Control,1500.75,10.0395,89.1233,17.3842,CF01,S10,CSW/DS,NA,bagot
+Female,C2,No Target,Control,1075.1,7.16651,101.781,8.2119,CF02,S10,CSW/DS,NA,bagot
+Female,C1,Target,Control,1023.79,6.82745,91.2254,7.77451,CF01,S10,CSW/DS,NA,bagot
+Female,C2,Target,Control,581.176,3.92294,126.016,1.2685,CF02,S10,CSW/DS,NA,bagot
+Female,C3,No Target,Control,1234.44,8.23227,87.5216,18.2517,CF03,S10,CSW/DS,NA,bagot
+Female,C4,No Target,Control,938.227,6.80552,84.1196,7.4773,CF04,S10,CSW/DS,NA,bagot
+Female,C3,Target,Control,940.818,6.35333,118.419,11.1446,CF03,S10,CSW/DS,NA,bagot
+Female,C4,Target,Control,467.064,5.8395,47.1689,5.07408,CF04,S10,CSW/DS,NA,bagot
+Female,W5,No Target,Stress,1132.65,7.55681,109.811,9.30939,SF03,S10,CSW/DS,NA,bagot
+Female,W6,No Target,Stress,1263.23,8.4545,89.996,16.6906,SF04,S10,CSW/DS,NA,bagot
+Female,W5,Target,Stress,874.03,5.83136,113.248,8.17492,SF03,S10,CSW/DS,NA,bagot
+Female,W6,Target,Stress,1045.88,6.97175,105.052,13.9869,SF04,S10,CSW/DS,NA,bagot
+Female,W7,No Target,Stress,1366.36,9.12863,84.3862,18.7265,SF05,S10,CSW/DS,NA,bagot
+Female,W8,No Target,Stress,1281.22,8.54077,81.9494,13.7528,SF06,S10,CSW/DS,NA,bagot
+Female,W7,Target,Stress,1371.55,9.15478,98.6662,9.30939,SF05,S10,CSW/DS,NA,bagot
+Female,W8,Target,Stress,1390.5,9.27301,91.2587,12.2123,SF06,S10,CSW/DS,NA,bagot
+Female,W9,No Target,Stress,1367.62,9.13263,89.19,20.7209,SF07,S10,CSW/DS,NA,bagot
+Female,W10,No Target,Stress,1307.92,8.72227,88.823,11.4449,SF08,S10,CSW/DS,NA,bagot
+Female,W9,Target,Stress,1131.88,7.5635,93.9615,12.6461,SF07,S10,CSW/DS,NA,bagot
+Female,W10,Target,Stress,1004.04,6.69579,109.711,3.50353,SF08,S10,CSW/DS,NA,bagot
+Female,W11,No Target,Stress,1282.69,8.56357,102.103,11.1112,SF09,S10,CSW/DS,NA,bagot
+Female,W12,No Target,Stress,1622.36,10.8193,95.0626,11.1779,SF10,S10,CSW/DS,NA,bagot
+Female,W11,Target,Stress,1293.82,8.75493,92.0596,9.67643,SF09,S10,CSW/DS,NA,bagot
+Female,W12,Target,Stress,1461.12,9.74399,79.8472,11.5116,SF10,S10,CSW/DS,NA,bagot
+Female,C5,No Target,Control,1285.98,8.63168,69.2032,27.8948,CF05,S10,CSW/DS,NA,bagot
+Female,C16,No Target,Control,1098.68,7.32691,103.605,13.2801,CF06,S10,CSW/DS,NA,bagot
+Female,C5,Target,Control,1000.83,6.69973,93.3275,21.9889,CF05,S10,CSW/DS,NA,bagot
+Female,C16,Target,Control,866.561,5.77895,120.221,9.04246,CF06,S10,CSW/DS,NA,bagot
+Female,W13,No Target,Stress,1433.61,9.56901,91.0252,14.8483,SF11,S10,CSW/DS,NA,bagot
+Female,W14,No Target,Stress,1453.85,9.69545,100.835,17.4509,SF12,S10,CSW/DS,NA,bagot
+Female,W13,Target,Stress,1118.65,7.5052,101.502,11.7452,SF11,S10,CSW/DS,NA,bagot
+Female,W14,Target,Stress,1184.43,7.89877,86.4205,12.3458,SF12,S10,CSW/DS,NA,bagot
+Female,W15,No Target,Stress,1475.66,9.8717,89.9574,14.2143,SF13,S10,CSW/DS,NA,bagot
+Female,W16,No Target,Stress,1562.47,10.4198,95.5631,13.4803,SF14,S10,CSW/DS,NA,bagot
+Female,W15,Target,Stress,1052.78,7.0998,83.7845,10.5106,SF13,S10,CSW/DS,NA,bagot
+Female,W16,Target,Stress,1287.02,8.58291,100.068,7.14054,SF14,S10,CSW/DS,NA,bagot
+Female,W17,No Target,Stress,1564.95,11.1009,68.6026,23.2568,SF15,S10,CSW/DS,NA,bagot
+Female,W18,No Target,Stress,1683.29,11.2682,87.2881,12.8797,SF16,S10,CSW/DS,NA,bagot
+Female,W17,Target,Stress,1153.94,7.79604,95.2628,14.7482,SF15,S10,CSW/DS,NA,bagot
+Female,W18,Target,Stress,1194,7.97854,99.2335,6.8736,SF16,S10,CSW/DS,NA,bagot
+Female,W19,No Target,Stress,1314.45,8.81491,94.0949,12.3124,SF17,S10,CSW/DS,NA,bagot
+Female,W20,No Target,Stress,1214.53,8.09951,104.572,13.9474,SF18,S10,CSW/DS,NA,bagot
+Female,W19,Target,Stress,1045.73,7.00654,95.5297,11.8119,SF17,S10,CSW/DS,NA,bagot
+Female,W20,Target,Stress,1020.02,6.80231,103.404,12.4459,SF18,S10,CSW/DS,NA,bagot
+Female,C17,No Target,Control,1712.14,11.4434,88.2223,15.816,CF07,S10,CSW/DS,NA,bagot
+Female,C18,No Target,Control,1364.96,9.10269,88.9231,15.2821,CF08,S10,CSW/DS,NA,bagot
+Female,C17,Target,Control,995.649,6.64573,105.139,6.20626,CF07,S10,CSW/DS,NA,bagot
+Female,C18,Target,Control,1168.74,7.79412,87.7218,10.1436,CF08,S10,CSW/DS,NA,bagot
+Female,C19,No Target,Control,1672.26,11.28,78.012,20.8544,CF09,S10,CSW/DS,NA,bagot
+Female,C20,No Target,Control,1469.8,9.80185,66.0667,15.7826,CF10,S10,CSW/DS,NA,bagot
+Female,C19,Target,Control,1117.12,7.45318,80.3477,13.6137,CF09,S10,CSW/DS,NA,bagot
+Female,C20,Target,Control,938.114,6.25613,100.802,7.20727,CF10,S10,CSW/DS,NA,bagot
+Male,M1,No Target,Stress,1688.34,11.2592,67.7684,24.7917,SM01,S10,CSW/DS,NA,bagot
+Male,M2,No Target,Stress,1664.83,11.1024,78.279,11.0111,SM02,S10,CSW/DS,NA,bagot
+Male,M1,Target,Stress,1135.31,7.57627,36.3367,46.8473,SM01,S10,CSW/DS,NA,bagot
+Male,M2,Target,Stress,936.933,6.24825,58.3922,57.4913,SM02,S10,CSW/DS,NA,bagot
+Male,M3,No Target,Stress,1610.25,10.7385,98.9665,14.3478,SM03,S10,CSW/DS,NA,bagot
+Male,M4,No Target,Stress,1628.91,10.8629,70.9382,21.8554,SM04,S10,CSW/DS,NA,bagot
+Male,M3,Target,Stress,1019.42,6.79833,103.037,9.8099,SM03,S10,CSW/DS,NA,bagot
+Male,M4,Target,Stress,1134.36,7.56483,52.6865,42.3094,SM04,S10,CSW/DS,NA,bagot
+Male,C6,No Target,Control,1346.4,8.99094,93.194,15.549,CM01,S10,CSW/DS,NA,bagot
+Male,C7,No Target,Control,1519.95,10.1363,81.6157,12.8797,CM02,S10,CSW/DS,NA,bagot
+Male,C6,Target,Control,981.564,6.5825,98.9665,12.9464,CM01,S10,CSW/DS,NA,bagot
+Male,C7,Target,Control,961.225,6.41025,121.956,4.90495,CM02,S10,CSW/DS,NA,bagot
+Male,C8,No Target,Control,1269.46,8.49225,87.2547,19.5864,CM03,S10,CSW/DS,NA,bagot
+Male,C9,No Target,Control,1521.39,10.1459,61.8291,29.1294,CM04,S10,CSW/DS,NA,bagot
+Male,C8,Target,Control,990.3,6.60414,117.519,11.9454,CM03,S10,CSW/DS,NA,bagot
+Male,C9,Target,Control,1097.11,7.31647,92.1263,10.2103,CM04,S10,CSW/DS,NA,bagot
+Male,M5,No Target,Stress,1472.05,9.88063,84.9524,15.0485,SM05,S10,CSW/DS,NA,bagot
+Male,M6,No Target,Stress,1597.12,10.6509,81.6824,14.548,SM06,S10,CSW/DS,NA,bagot
+Male,M5,Target,Stress,1047.89,6.99908,88.6228,8.40848,SM05,S10,CSW/DS,NA,bagot
+Male,M6,Target,Stress,1152.64,7.68675,72.1728,41.1749,SM06,S10,CSW/DS,NA,bagot
+Male,M8,No Target,Stress,1623.21,10.9393,91.0919,13.0799,SM07,S10,CSW/DS,NA,bagot
+Male,M9,No Target,Stress,1662.62,11.0878,75.4094,24.091,SM08,S10,CSW/DS,NA,bagot
+Male,M8,Target,Stress,1140.59,7.66266,107.375,5.70576,SM07,S10,CSW/DS,NA,bagot
+Male,M9,Target,Stress,951.034,6.34228,69.6369,49.0829,SM08,S10,CSW/DS,NA,bagot
+Male,M10,No Target,Stress,1332.57,8.94845,98.9332,12.3124,SM09,S10,CSW/DS,NA,bagot
+Male,M11,No Target,Stress,1337.55,8.91989,75.3093,18.4186,SM10,S10,CSW/DS,NA,bagot
+Male,M10,Target,Stress,918.228,6.12896,122.39,5.43882,SM09,S10,CSW/DS,NA,bagot
+Male,M11,Target,Stress,1159.69,7.73379,64.9989,25.7593,SM10,S10,CSW/DS,NA,bagot
+Male,C10,No Target,Control,1162.08,7.75662,48.1486,27.9949,CM05,S10,CSW/DS,NA,bagot
+Male,C11,No Target,Control,1282.33,8.55163,79.9807,14.0809,CM06,S10,CSW/DS,NA,bagot
+Male,C10,Target,Control,1060.51,7.12625,101.836,7.1739,CM05,S10,CSW/DS,NA,bagot
+Male,C11,Target,Control,1097.14,7.31667,99.4003,10.8776,CM06,S10,CSW/DS,NA,bagot
+Male,C12,No Target,Control,1602.13,10.7345,84.285,19.7533,CM07,S10,CSW/DS,NA,bagot
+Male,C14,No Target,Control,1722.94,11.49,86.1202,17.4176,CM08,S10,CSW/DS,NA,bagot
+Male,C12,Target,Control,985.21,6.57606,107.275,13.3468,CM07,S10,CSW/DS,NA,bagot
+Male,C14,Target,Control,1167.56,7.85795,102.971,4.60465,CM08,S10,CSW/DS,NA,bagot
+Male,M12,No Target,Stress,1418.72,9.47594,90.825,13.3134,SM11,S10,CSW/DS,NA,bagot
+Male,M14,No Target,Stress,1543.82,10.2955,70.7714,16.7836,SM12,S10,CSW/DS,NA,bagot
+Male,M12,Target,Stress,833.7,5.5598,130.532,4.17087,SM11,S10,CSW/DS,NA,bagot
+Male,M14,Target,Stress,1120.17,7.47025,63.1637,34.8018,SM12,S10,CSW/DS,NA,bagot
+Male,M15,No Target,Stress,1361.89,9.09841,84.4185,23.5571,SM13,S10,CSW/DS,NA,bagot
+Male,M16,No Target,Stress,1571.76,10.4818,61.7957,16.7502,SM14,S10,CSW/DS,NA,bagot
+Male,M15,Target,Stress,790.254,5.27712,85.3528,44.3114,SM13,S10,CSW/DS,NA,bagot
+Male,M16,Target,Stress,1302.94,8.68906,70.1041,19.7866,SM14,S10,CSW/DS,NA,bagot
+Male,M17,No Target,Stress,1723.65,11.4999,85.1526,18.1183,SM15,S10,CSW/DS,NA,bagot
+Male,M18,No Target,Stress,1205.28,8.03779,69.9372,10.0768,SM16,S10,CSW/DS,NA,bagot
+Male,M17,Target,Stress,1478.33,9.85871,41.8756,36.003,SM15,S10,CSW/DS,NA,bagot
+Male,M18,Target,Stress,904.522,6.03211,96.3639,12.3458,SM16,S10,CSW/DS,NA,bagot
+Male,C15,No Target,Control,1649.34,11.004,80.3144,16.8503,CM09,S10,CSW/DS,NA,bagot
+Male,C15,Target,Control,1197.88,8.05294,91.9928,15.7826,CM09,S10,CSW/DS,NA,bagot
+Male,M19,No Target,Stress,1216.85,8.11496,62.8301,16.4166,SM17,S10,CSW/DS,NA,bagot
+Male,M19,Target,Stress,937.581,6.25257,20.2204,96.464,SM17,S10,CSW/DS,NA,bagot
+Female,676,No Target,Control,NA,9.195,29.229,NA,CF01,S11,Swiss Webster,NA,newman
+Female,677,No Target,Control,NA,9.209,49.283,NA,CF02,S11,Swiss Webster,NA,newman
+Female,678,No Target,Control,NA,9.374,37.371,NA,CF03,S11,Swiss Webster,NA,newman
+Female,679,No Target,Control,NA,8.346,27.528,NA,CF04,S11,Swiss Webster,NA,newman
+Female,680,No Target,Control,NA,9.234,42.709,NA,CF05,S11,Swiss Webster,NA,newman
+Female,681,No Target,Control,NA,7.96,66.233,NA,CF06,S11,Swiss Webster,NA,newman
+Female,682,No Target,Control,NA,7.052,83.55,NA,CF07,S11,Swiss Webster,NA,newman
+Female,683,No Target,Control,NA,7.478,68.001,NA,CF08,S11,Swiss Webster,NA,newman
+Female,684,No Target,Control,NA,9.663,60.46,NA,CF09,S11,Swiss Webster,NA,newman
+Female,685,No Target,Control,NA,8.714,64.831,NA,CF10,S11,Swiss Webster,NA,newman
+Female,1622,No Target,Control,NA,5.652,2.436,NA,CF11,S11,Swiss Webster,NA,newman
+Female,1623,No Target,Control,NA,4.849,25.692,NA,CF12,S11,Swiss Webster,NA,newman
+Female,1624,No Target,Control,NA,6.626,13.914,NA,CF13,S11,Swiss Webster,NA,newman
+Female,1625,No Target,Control,NA,9.879,29.229,NA,CF14,S11,Swiss Webster,NA,newman
+Female,852,No Target,Control,NA,7.385,54.388,NA,CF15,S11,Swiss Webster,NA,newman
+Female,853,No Target,Control,NA,6.908,48.215,NA,CF16,S11,Swiss Webster,NA,newman
+Female,854,No Target,Control,NA,6.766,49.616,NA,CF17,S11,Swiss Webster,NA,newman
+Female,855,No Target,Control,NA,4.372,83.083,NA,CF18,S11,Swiss Webster,NA,newman
+Female,856,No Target,Control,NA,7.395,61.128,NA,CF19,S11,Swiss Webster,NA,newman
+Female,857,No Target,Control,NA,8.187,42.543,NA,CF20,S11,Swiss Webster,NA,newman
+Female,858,No Target,Control,NA,9.005,40.707,NA,CF21,S11,Swiss Webster,NA,newman
+Female,859,No Target,Control,NA,7.46,51.852,NA,CF22,S11,Swiss Webster,NA,newman
+Female,860,No Target,Control,NA,5.554,60.06,NA,CF23,S11,Swiss Webster,NA,newman
+Female,861,No Target,Control,NA,6.014,40.34,NA,CF24,S11,Swiss Webster,NA,newman
+Female,676,Target,Control,NA,5.972,88.822,NA,CF01,S11,Swiss Webster,NA,newman
+Female,677,Target,Control,NA,5.342,96.563,NA,CF02,S11,Swiss Webster,NA,newman
+Female,678,Target,Control,NA,8.913,55.856,NA,CF03,S11,Swiss Webster,NA,newman
+Female,679,Target,Control,NA,6.7,77.377,NA,CF04,S11,Swiss Webster,NA,newman
+Female,680,Target,Control,NA,8.879,50.083,NA,CF05,S11,Swiss Webster,NA,newman
+Female,681,Target,Control,NA,6.904,77.678,NA,CF06,S11,Swiss Webster,NA,newman
+Female,682,Target,Control,NA,5.495,118.685,NA,CF07,S11,Swiss Webster,NA,newman
+Female,683,Target,Control,NA,7.826,73.941,NA,CF08,S11,Swiss Webster,NA,newman
+Female,684,Target,Control,NA,6.576,130.264,NA,CF09,S11,Swiss Webster,NA,newman
+Female,685,Target,Control,NA,7.96,131.231,NA,CF10,S11,Swiss Webster,NA,newman
+Female,1622,Target,Control,NA,3.227,14.581,NA,CF11,S11,Swiss Webster,NA,newman
+Female,1623,Target,Control,NA,2.513,25.826,NA,CF12,S11,Swiss Webster,NA,newman
+Female,1624,Target,Control,NA,6.083,42.476,NA,CF13,S11,Swiss Webster,NA,newman
+Female,1625,Target,Control,NA,4.6,70.704,NA,CF14,S11,Swiss Webster,NA,newman
+Female,852,Target,Control,NA,2.608,134.401,NA,CF15,S11,Swiss Webster,NA,newman
+Female,853,Target,Control,NA,5.472,71.438,NA,CF16,S11,Swiss Webster,NA,newman
+Female,854,Target,Control,NA,6.108,87.821,NA,CF17,S11,Swiss Webster,NA,newman
+Female,855,Target,Control,NA,3.978,84.551,NA,CF18,S11,Swiss Webster,NA,newman
+Female,856,Target,Control,NA,3.466,88.922,NA,CF19,S11,Swiss Webster,NA,newman
+Female,857,Target,Control,NA,4.822,15.983,NA,CF20,S11,Swiss Webster,NA,newman
+Female,858,Target,Control,NA,5.134,41.141,NA,CF21,S11,Swiss Webster,NA,newman
+Female,859,Target,Control,NA,6.835,59.66,NA,CF22,S11,Swiss Webster,NA,newman
+Female,860,Target,Control,NA,4.527,77.444,NA,CF23,S11,Swiss Webster,NA,newman
+Female,861,Target,Control,NA,5.027,78.512,NA,CF24,S11,Swiss Webster,NA,newman
+Female,686,No Target,Stress,NA,12.222,19.419,NA,SF01,S11,Swiss Webster,NA,newman
+Female,687,No Target,Stress,NA,8.993,42.976,NA,SF02,S11,Swiss Webster,NA,newman
+Female,688,No Target,Stress,NA,7.927,91.758,NA,SF03,S11,Swiss Webster,NA,newman
+Female,689,No Target,Stress,NA,8.916,53.554,NA,SF04,S11,Swiss Webster,NA,newman
+Female,690,No Target,Stress,NA,9.282,42.976,NA,SF05,S11,Swiss Webster,NA,newman
+Female,691,No Target,Stress,NA,10.391,65.032,NA,SF06,S11,Swiss Webster,NA,newman
+Female,692,No Target,Stress,NA,7.03,91.592,NA,SF07,S11,Swiss Webster,NA,newman
+Female,693,No Target,Stress,NA,7.976,74.875,NA,SF08,S11,Swiss Webster,NA,newman
+Female,694,No Target,Stress,NA,10.516,36.003,NA,SF09,S11,Swiss Webster,NA,newman
+Female,695,No Target,Stress,NA,5.779,84.618,NA,SF10,S11,Swiss Webster,NA,newman
+Female,1632,No Target,Stress,NA,7.149,32.366,NA,SF11,S11,Swiss Webster,NA,newman
+Female,1633,No Target,Stress,NA,9.594,34.334,NA,SF12,S11,Swiss Webster,NA,newman
+Female,1634,No Target,Stress,NA,9.762,17.785,NA,SF13,S11,Swiss Webster,NA,newman
+Female,1635,No Target,Stress,NA,9.778,34.802,NA,SF14,S11,Swiss Webster,NA,newman
+Female,1636,No Target,Stress,NA,8.3,72.473,NA,SF15,S11,Swiss Webster,NA,newman
+Female,1637,No Target,Stress,NA,7.771,46.78,NA,SF16,S11,Swiss Webster,NA,newman
+Female,1638,No Target,Stress,NA,7.855,26.093,NA,SF17,S11,Swiss Webster,NA,newman
+Female,1639,No Target,Stress,NA,4.609,34.168,NA,SF18,S11,Swiss Webster,NA,newman
+Female,1640,No Target,Stress,NA,8.595,61.462,NA,SF19,S11,Swiss Webster,NA,newman
+Female,1641,No Target,Stress,NA,8.526,20.254,NA,SF20,S11,Swiss Webster,NA,newman
+Female,862,No Target,Stress,NA,9.321,50.083,NA,SF21,S11,Swiss Webster,NA,newman
+Female,863,No Target,Stress,NA,7.709,46.98,NA,SF22,S11,Swiss Webster,NA,newman
+Female,864,No Target,Stress,NA,6.15,77.878,NA,SF23,S11,Swiss Webster,NA,newman
+Female,865,No Target,Stress,NA,3.641,85.853,NA,SF24,S11,Swiss Webster,NA,newman
+Female,866,No Target,Stress,NA,6.157,45.579,NA,SF25,S11,Swiss Webster,NA,newman
+Female,867,No Target,Stress,NA,6.083,39.94,NA,SF26,S11,Swiss Webster,NA,newman
+Female,868,No Target,Stress,NA,5.485,43.877,NA,SF27,S11,Swiss Webster,NA,newman
+Female,869,No Target,Stress,NA,4.779,92.626,NA,SF28,S11,Swiss Webster,NA,newman
+Female,870,No Target,Stress,NA,4.428,68.469,NA,SF29,S11,Swiss Webster,NA,newman
+Female,871,No Target,Stress,NA,3.579,13.614,NA,SF30,S11,Swiss Webster,NA,newman
+Female,686,Target,Stress,NA,8.453,83.15,NA,SF01,S11,Swiss Webster,NA,newman
+Female,687,Target,Stress,NA,8.634,67.234,NA,SF02,S11,Swiss Webster,NA,newman
+Female,688,Target,Stress,NA,6.157,127.961,NA,SF03,S11,Swiss Webster,NA,newman
+Female,689,Target,Stress,NA,7.568,99.066,NA,SF04,S11,Swiss Webster,NA,newman
+Female,690,Target,Stress,NA,9.294,101.235,NA,SF05,S11,Swiss Webster,NA,newman
+Female,691,Target,Stress,NA,7.714,105.639,NA,SF06,S11,Swiss Webster,NA,newman
+Female,692,Target,Stress,NA,5.723,107.908,NA,SF07,S11,Swiss Webster,NA,newman
+Female,693,Target,Stress,NA,5.747,108.275,NA,SF08,S11,Swiss Webster,NA,newman
+Female,694,Target,Stress,NA,4.167,135.536,NA,SF09,S11,Swiss Webster,NA,newman
+Female,695,Target,Stress,NA,5.383,58.392,NA,SF10,S11,Swiss Webster,NA,newman
+Female,1632,Target,Stress,NA,3.937,61.128,NA,SF11,S11,Swiss Webster,NA,newman
+Female,1633,Target,Stress,NA,5.868,75.442,NA,SF12,S11,Swiss Webster,NA,newman
+Female,1634,Target,Stress,NA,5.35,35.569,NA,SF13,S11,Swiss Webster,NA,newman
+Female,1635,Target,Stress,NA,6.628,31.098,NA,SF14,S11,Swiss Webster,NA,newman
+Female,1636,Target,Stress,NA,4.786,119.553,NA,SF15,S11,Swiss Webster,NA,newman
+Female,1637,Target,Stress,NA,4.092,32.533,NA,SF16,S11,Swiss Webster,NA,newman
+Female,1638,Target,Stress,NA,5.23,30.998,NA,SF17,S11,Swiss Webster,NA,newman
+Female,1639,Target,Stress,NA,3.776,26.26,NA,SF18,S11,Swiss Webster,NA,newman
+Female,1640,Target,Stress,NA,3.494,108.976,NA,SF19,S11,Swiss Webster,NA,newman
+Female,1641,Target,Stress,NA,4.978,32.733,NA,SF20,S11,Swiss Webster,NA,newman
+Female,862,Target,Stress,NA,4.467,89.022,NA,SF21,S11,Swiss Webster,NA,newman
+Female,863,Target,Stress,NA,6.392,66.8,NA,SF22,S11,Swiss Webster,NA,newman
+Female,864,Target,Stress,NA,5.674,97.498,NA,SF23,S11,Swiss Webster,NA,newman
+Female,865,Target,Stress,NA,2.351,46.046,NA,SF24,S11,Swiss Webster,NA,newman
+Female,866,Target,Stress,NA,3.302,29.596,NA,SF25,S11,Swiss Webster,NA,newman
+Female,867,Target,Stress,NA,2.85,33.433,NA,SF26,S11,Swiss Webster,NA,newman
+Female,868,Target,Stress,NA,3.604,96.23,NA,SF27,S11,Swiss Webster,NA,newman
+Female,869,Target,Stress,NA,3.572,111.845,NA,SF28,S11,Swiss Webster,NA,newman
+Female,870,Target,Stress,NA,3.157,111.745,NA,SF29,S11,Swiss Webster,NA,newman
+Female,871,Target,Stress,NA,1.373,0,NA,SF30,S11,Swiss Webster,NA,newman
+Female,1400,No Target,Control,22.37,NA,105.9,NA,CF01,S12,California ,carefresh,trainor
+Female,2627,No Target,Control,19.02,NA,149,NA,CF02,S12,California ,carefresh,trainor
+Female,4456,No Target,Control,32.15,NA,159,NA,CF03,S12,California ,carefresh,trainor
+Female,1089,No Target,Control,15.08,NA,86.4,NA,CF04,S12,California ,carefresh,trainor
+Female,1615,No Target,Control,20,NA,154,NA,CF05,S12,California ,carefresh,trainor
+Female,2567,No Target,Control,11.9,NA,76.3,NA,CF06,S12,California ,carefresh,trainor
+Female,625,No Target,Control,53.94,NA,135,NA,CF07,S12,California ,carefresh,trainor
+Female,381,No Target,Control,25.5,NA,58.5,NA,CF08,S12,California ,carefresh,trainor
+Female,1087,No Target,Control,28.3,NA,50.7,NA,CF09,S12,California ,carefresh,trainor
+Female,1576,No Target,Control,15.26,NA,106.8,NA,CF10,S12,California ,carefresh,trainor
+Female,338,No Target,Control,28.33,NA,112,NA,CF11,S12,California ,carefresh,trainor
+Female,1577,No Target,Control,34,NA,84,NA,CF12,S12,California ,carefresh,trainor
+Female,1523,No Target,Control,18.61,NA,52.8,NA,CF13,S12,California ,carefresh,trainor
+Female,3197,No Target,Control,15.04,NA,117.4,NA,CF14,S12,California ,corncob,trainor
+Female,1581,No Target,Control,9.99,NA,137,NA,CF15,S12,California ,corncob,trainor
+Female,1809,No Target,Control,23.69,NA,152.3,NA,CF16,S12,California ,corncob,trainor
+Female,3287,No Target,Control,13.34,NA,84.3,NA,CF17,S12,California ,corncob,trainor
+Female,1951,No Target,Control,14.1,NA,159.6,NA,CF18,S12,California ,corncob,trainor
+Female,1750,No Target,Control,18.13,NA,119,NA,CF19,S12,California ,corncob,trainor
+Female,1868,No Target,Control,20.82,NA,169.7,NA,CF20,S12,California ,corncob,trainor
+Female,1959,No Target,Control,18.24,NA,138.5,NA,CF21,S12,California ,corncob,trainor
+Female,363,No Target,Control,20.86,NA,96.8,NA,CF22,S12,California ,corncob,trainor
+Female,2917,No Target,Control,29.18,NA,121.7,NA,CF23,S12,California ,corncob,trainor
+Female,1880,No Target,Control,24.17,NA,117.4,NA,CF24,S12,California ,corncob,trainor
+Female,1352,No Target,Control,38.56,NA,101.7,NA,CF25,S12,California ,corncob,trainor
+Female,571,No Target,Control,36.05,NA,117.5,NA,CF26,S12,California ,corncob,trainor
+Female,3204,No Target,Control,32.23,NA,110.5,NA,CF27,S12,California ,corncob,trainor
+Female,1591,No Target,Control,19.6,NA,102,NA,CF28,S12,California ,corncob,trainor
+Female,1318,No Target,Control,20.75,NA,69.3,NA,CF29,S12,California ,corncob,trainor
+Female,417,No Target,Control,13.83,NA,77.6,NA,CF30,S12,California ,corncob,trainor
+Female,4137,No Target,Control,20.9,NA,104.4,NA,CF31,S12,California ,corncob,trainor
+Female,1892,No Target,Control,37.25,NA,60.7,NA,CF32,S12,California ,corncob,trainor
+Female,1454,No Target,Control,34.4,NA,29.2,NA,CF33,S12,California ,corncob,trainor
+Female,4104,No Target,Control,61.91,NA,160.8,NA,CF34,S12,California ,sanchips,trainor
+Female,4634,No Target,Control,9.85,NA,116.7,NA,CF35,S12,California ,sanchips,trainor
+Female,1384,No Target,Control,17.1,NA,125.9,NA,CF36,S12,California ,sanchips,trainor
+Female,4716,No Target,Control,26.1,NA,140.3,NA,CF37,S12,California ,sanchips,trainor
+Female,1597,No Target,Control,20.74,NA,87.5,NA,CF38,S12,California ,sanchips,trainor
+Female,575,No Target,Control,14.26,NA,167.2,NA,CF39,S12,California ,sanchips,trainor
+Female,1782,No Target,Control,31.71,NA,77.4,NA,CF40,S12,California ,sanchips,trainor
+Female,593,No Target,Control,29.69,NA,100.5,NA,CF41,S12,California ,sanchips,trainor
+Female,1403,No Target,Control,24.66,NA,124.1,NA,CF42,S12,California ,sanchips,trainor
+Female,594,No Target,Control,29.32,NA,83,NA,CF43,S12,California ,sanchips,trainor
+Female,1311,No Target,Control,30.09,NA,133.5,NA,CF44,S12,California ,sanchips,trainor
+Female,1949,No Target,Control,16.38,NA,71.6,NA,CF45,S12,California ,sanchips,trainor
+Female,1437,No Target,Control,21.16,NA,120.7,NA,CF46,S12,California ,sanchips,trainor
+Female,595,No Target,Control,20.45,NA,80.9,NA,CF47,S12,California ,sanchips,trainor
+Female,2554,No Target,Control,26.78,NA,101.2,NA,CF48,S12,California ,sanchips,trainor
+Female,402,No Target,Control,18.11,NA,62.1,NA,CF49,S12,California ,sanchips,trainor
+Female,1635,No Target,Control,23.73,NA,86.2,NA,CF50,S12,California ,sanchips,trainor
+Female,1402,No Target,Control,11.21,NA,102.7,NA,CF51,S12,California ,sanchips,trainor
+Female,1572,No Target,Control,40.59,NA,73.8,NA,CF52,S12,California ,sanchips,trainor
+Female,1579,No Target,Control,34.36,NA,83,NA,CF53,S12,California ,sanchips,trainor
+Female,1385,No Target,Control,46.44,NA,69.8,NA,CF54,S12,California ,sanchips,trainor
+Female,1427,No Target,Control,40.7,NA,88.4,NA,CF55,S12,California ,sanchips,trainor
+Female,3392,No Target,Control,19,NA,67.7,NA,CF56,S12,California ,sanchips,trainor
+Female,2629,No Target,Control,37.73,NA,60.1,NA,CF57,S12,California ,sanchips,trainor
+Female,3530,No Target,Control,27.56,NA,66,NA,CF58,S12,California ,sanchips,trainor
+Female,3271,No Target,Control,20.48,NA,52.9,NA,CF59,S12,California ,sanchips,trainor
+Female,864,No Target,Control,17.07,NA,40.3,NA,CF60,S12,California ,sanchips,trainor
+Female,287,No Target,Control,21.13,NA,54.4,NA,CF61,S12,California ,sanchips,trainor
+Female,3903,No Target,Control,19.71,NA,18,NA,CF62,S12,California ,sanchips,trainor
+Female,3797,No Target,Control,115.4,NA,24,NA,CF63,S12,California ,sanchips,trainor
+Female,3902,No Target,Control,54.8,NA,16,NA,CF64,S12,California ,sanchips,trainor
+Female,3730,No Target,Control,95.1,NA,15,NA,CF65,S12,California ,sanchips,trainor
+Female,3773,No Target,Control,140.4,NA,11,NA,CF66,S12,California ,sanchips,trainor
+Female,3727,No Target,Control,41.6,NA,8,NA,CF67,S12,California ,sanchips,trainor
+Female,3929,No Target,Control,47.9,NA,94.3,NA,CF68,S12,California ,sanchips,trainor
+Female,5207,No Target,Control,129.7,NA,82.9,NA,CF69,S12,California ,sanchips,trainor
+Female,5208,No Target,Control,32.7,NA,130.3,NA,CF70,S12,California ,sanchips,trainor
+Female,5209,No Target,Control,34.2,NA,103.1,NA,CF71,S12,California ,sanchips,trainor
+Female,5210,No Target,Control,127.9,NA,57.1,NA,CF72,S12,California ,sanchips,trainor
+Female,1614,No Target,Stress,25.68,NA,94.2,NA,SF01,S12,California ,carefresh,trainor
+Female,1405,No Target,Stress,20.95,NA,98.9,NA,SF02,S12,California ,carefresh,trainor
+Female,4128,No Target,Stress,11.75,NA,118,NA,SF03,S12,California ,carefresh,trainor
+Female,1767,No Target,Stress,22.91,NA,49.3,NA,SF04,S12,California ,carefresh,trainor
+Female,629,No Target,Stress,16.54,NA,120.4,NA,SF05,S12,California ,carefresh,trainor
+Female,1838,No Target,Stress,33.97,NA,134,NA,SF06,S12,California ,carefresh,trainor
+Female,4026,No Target,Stress,23.42,NA,96.5,NA,SF07,S12,California ,carefresh,trainor
+Female,509,No Target,Stress,21.22,NA,52.8,NA,SF08,S12,California ,carefresh,trainor
+Female,1440,No Target,Stress,18.13,NA,167,NA,SF09,S12,California ,carefresh,trainor
+Female,623,No Target,Stress,18.43,NA,160,NA,SF10,S12,California ,carefresh,trainor
+Female,1455,No Target,Stress,14.65,NA,114,NA,SF11,S12,California ,carefresh,trainor
+Female,1623,No Target,Stress,20.04,NA,43.4,NA,SF12,S12,California ,carefresh,trainor
+Female,1429,No Target,Stress,33.69,NA,47,NA,SF13,S12,California ,carefresh,trainor
+Female,3806,No Target,Stress,39.49,NA,38,NA,SF14,S12,California ,carefresh,trainor
+Female,2622,No Target,Stress,3.99,NA,107.8,NA,SF15,S12,California ,corncob,trainor
+Female,510,No Target,Stress,20.39,NA,134,NA,SF16,S12,California ,corncob,trainor
+Female,326,No Target,Stress,22.11,NA,158.3,NA,SF17,S12,California ,corncob,trainor
+Female,439,No Target,Stress,20.11,NA,99.5,NA,SF18,S12,California ,corncob,trainor
+Female,4429,No Target,Stress,20.63,NA,127.9,NA,SF19,S12,California ,corncob,trainor
+Female,1445,No Target,Stress,23.72,NA,126,NA,SF20,S12,California ,corncob,trainor
+Female,1516,No Target,Stress,18.63,NA,126.5,NA,SF21,S12,California ,corncob,trainor
+Female,1575,No Target,Stress,22.98,NA,114.2,NA,SF22,S12,California ,corncob,trainor
+Female,1432,No Target,Stress,19.67,NA,147.5,NA,SF23,S12,California ,corncob,trainor
+Female,1573,No Target,Stress,29.6,NA,92.5,NA,SF24,S12,California ,corncob,trainor
+Female,1564,No Target,Stress,23.43,NA,108.5,NA,SF25,S12,California ,corncob,trainor
+Female,3181,No Target,Stress,10.52,NA,102.7,NA,SF26,S12,California ,corncob,trainor
+Female,1566,No Target,Stress,18.87,NA,90.6,NA,SF27,S12,California ,corncob,trainor
+Female,1764,No Target,Stress,46.2,NA,119.6,NA,SF28,S12,California ,corncob,trainor
+Female,325,No Target,Stress,16.07,NA,71.3,NA,SF29,S12,California ,corncob,trainor
+Female,1406,No Target,Stress,35.49,NA,109.8,NA,SF30,S12,California ,corncob,trainor
+Female,1433,No Target,Stress,19.04,NA,80.8,NA,SF31,S12,California ,corncob,trainor
+Female,410,No Target,Stress,23.64,NA,109.2,NA,SF32,S12,California ,corncob,trainor
+Female,757,No Target,Stress,42.39,NA,131.2,NA,SF33,S12,California ,corncob,trainor
+Female,1377,No Target,Stress,30.54,NA,118.3,NA,SF34,S12,California ,corncob,trainor
+Female,1350,No Target,Stress,28.86,NA,95.7,NA,SF35,S12,California ,corncob,trainor
+Female,1410,No Target,Stress,22.6,NA,84.2,NA,SF36,S12,California ,corncob,trainor
+Female,1553,No Target,Stress,37.38,NA,35.2,NA,SF37,S12,California ,corncob,trainor
+Female,3282,No Target,Stress,70.5,NA,51.5,NA,SF38,S12,California ,corncob,trainor
+Female,3767,No Target,Stress,7.92,NA,26.7,NA,SF39,S12,California ,corncob,trainor
+Female,3732,No Target,Stress,122.7,NA,1.4,NA,SF40,S12,California ,corncob,trainor
+Female,868,No Target,Stress,19.1,NA,55.3,NA,SF41,S12,California ,sanchips,trainor
+Female,1755,No Target,Stress,16.11,NA,125,NA,SF42,S12,California ,sanchips,trainor
+Female,4350,No Target,Stress,34.89,NA,83,NA,SF43,S12,California ,sanchips,trainor
+Female,1754,No Target,Stress,15.94,NA,131.8,NA,SF44,S12,California ,sanchips,trainor
+Female,3353,No Target,Stress,18.14,NA,117.6,NA,SF45,S12,California ,sanchips,trainor
+Female,3168,No Target,Stress,24.96,NA,88.2,NA,SF46,S12,California ,sanchips,trainor
+Female,1954,No Target,Stress,16.04,NA,64.5,NA,SF47,S12,California ,sanchips,trainor
+Female,1950,No Target,Stress,18.89,NA,77,NA,SF48,S12,California ,sanchips,trainor
+Female,1593,No Target,Stress,12.63,NA,51.7,NA,SF49,S12,California ,sanchips,trainor
+Female,3173,No Target,Stress,15.48,NA,92.8,NA,SF50,S12,California ,sanchips,trainor
+Female,4033,No Target,Stress,19.07,NA,62.7,NA,SF51,S12,California ,sanchips,trainor
+Female,1420,No Target,Stress,44.07,NA,30.1,NA,SF52,S12,California ,sanchips,trainor
+Female,4148,No Target,Stress,25.32,NA,62,NA,SF53,S12,California ,sanchips,trainor
+Female,1330,No Target,Stress,41.85,NA,105.2,NA,SF54,S12,California ,sanchips,trainor
+Female,1436,No Target,Stress,25.27,NA,139.5,NA,SF55,S12,California ,sanchips,trainor
+Female,1316,No Target,Stress,33.31,NA,68.3,NA,SF56,S12,California ,sanchips,trainor
+Female,3166,No Target,Stress,15.66,NA,83.8,NA,SF57,S12,California ,sanchips,trainor
+Female,1608,No Target,Stress,21.3,NA,41.3,NA,SF58,S12,California ,sanchips,trainor
+Female,1628,No Target,Stress,19.49,NA,66.8,NA,SF59,S12,California ,sanchips,trainor
+Female,1622,No Target,Stress,15.29,NA,86.7,NA,SF60,S12,California ,sanchips,trainor
+Female,411,No Target,Stress,26.45,NA,104,NA,SF61,S12,California ,sanchips,trainor
+Female,518,No Target,Stress,28.57,NA,102.8,NA,SF62,S12,California ,sanchips,trainor
+Female,1570,No Target,Stress,13.25,NA,125.5,NA,SF63,S12,California ,sanchips,trainor
+Female,762,No Target,Stress,26.97,NA,48.3,NA,SF64,S12,California ,sanchips,trainor
+Female,803,No Target,Stress,15.8,NA,102.6,NA,SF65,S12,California ,sanchips,trainor
+Female,1559,No Target,Stress,20.04,NA,75.1,NA,SF66,S12,California ,sanchips,trainor
+Female,1398,No Target,Stress,38.26,NA,52,NA,SF67,S12,California ,sanchips,trainor
+Female,1960,No Target,Stress,30.56,NA,43.6,NA,SF68,S12,California ,sanchips,trainor
+Female,1952,No Target,Stress,36.31,NA,47.5,NA,SF69,S12,California ,sanchips,trainor
+Female,3214,No Target,Stress,23.24,NA,47.2,NA,SF70,S12,California ,sanchips,trainor
+Female,333,No Target,Stress,33.7,NA,46.5,NA,SF71,S12,California ,sanchips,trainor
+Female,2563,No Target,Stress,38.14,NA,18,NA,SF72,S12,California ,sanchips,trainor
+Female,1376,No Target,Stress,87.1,NA,21,NA,SF73,S12,California ,sanchips,trainor
+Female,3923,No Target,Stress,24.9,NA,15,NA,SF74,S12,California ,sanchips,trainor
+Female,3922,No Target,Stress,25.31,NA,13,NA,SF75,S12,California ,sanchips,trainor
+Female,3768,No Target,Stress,103,NA,8,NA,SF76,S12,California ,sanchips,trainor
+Female,4090,No Target,Stress,96.7,NA,4.7,NA,SF77,S12,California ,sanchips,trainor
+Male,1533,No Target,Control,21.88,NA,96.7,NA,CM01,S12,California ,carefresh,trainor
+Male,1051,No Target,Control,14.13,NA,157,NA,CM02,S12,California ,carefresh,trainor
+Male,335,No Target,Control,32.53,NA,89.9,NA,CM03,S12,California ,carefresh,trainor
+Male,1987,No Target,Control,36.28,NA,3,NA,CM04,S12,California ,carefresh,trainor
+Male,1961,No Target,Control,10.26,NA,109.1,NA,CM05,S12,California ,corncob,trainor
+Male,1719,No Target,Control,20.02,NA,170,NA,CM06,S12,California ,corncob,trainor
+Male,1739,No Target,Control,13.92,NA,87.5,NA,CM07,S12,California ,corncob,trainor
+Male,752,No Target,Control,49.92,NA,95.7,NA,CM08,S12,California ,corncob,trainor
+Male,1522,No Target,Control,48.92,NA,69.2,NA,CM09,S12,California ,corncob,trainor
+Male,1963,No Target,Control,30.9,NA,81.6,NA,CM10,S12,California ,corncob,trainor
+Male,1738,No Target,Control,16.79,NA,94.3,NA,CM11,S12,California ,corncob,trainor
+Male,1322,No Target,Control,17.24,NA,54.5,NA,CM12,S12,California ,corncob,trainor
+Male,1317,No Target,Control,13.98,NA,64.9,NA,CM13,S12,California ,corncob,trainor
+Male,6007,No Target,Control,133.86,NA,103.1,NA,CM14,S12,California ,corncob,trainor
+Male,1999,No Target,Control,14.86,NA,177,NA,CM15,S12,California ,sanchips,trainor
+Male,1305,No Target,Control,30.3,NA,92.2,NA,CM16,S12,California ,sanchips,trainor
+Male,1996,No Target,Control,30.72,NA,167.3,NA,CM17,S12,California ,sanchips,trainor
+Male,1728,No Target,Control,41.51,NA,138.8,NA,CM18,S12,California ,sanchips,trainor
+Male,1535,No Target,Control,9.99,NA,131,NA,CM19,S12,California ,sanchips,trainor
+Male,1175,No Target,Control,16.64,NA,85.9,NA,CM20,S12,California ,sanchips,trainor
+Male,648,No Target,Control,10.7,NA,163.9,NA,CM21,S12,California ,sanchips,trainor
+Male,501,No Target,Control,42.04,NA,79.3,NA,CM22,S12,California ,sanchips,trainor
+Male,659,No Target,Control,17.2,NA,123,NA,CM23,S12,California ,sanchips,trainor
+Male,1989,No Target,Control,20.3,NA,123.4,NA,CM24,S12,California ,sanchips,trainor
+Male,1988,No Target,Control,20.33,NA,112.2,NA,CM25,S12,California ,sanchips,trainor
+Male,383,No Target,Control,25.61,NA,103.9,NA,CM26,S12,California ,sanchips,trainor
+Male,1308,No Target,Control,25.72,NA,67.1,NA,CM27,S12,California ,sanchips,trainor
+Male,1530,No Target,Control,17.2,NA,83.4,NA,CM28,S12,California ,sanchips,trainor
+Male,1179,No Target,Control,42.52,NA,107.4,NA,CM29,S12,California ,sanchips,trainor
+Male,645,No Target,Control,28.06,NA,92.8,NA,CM30,S12,California ,sanchips,trainor
+Male,386,No Target,Control,42.28,NA,22.1,NA,CM31,S12,California ,sanchips,trainor
+Male,1751,No Target,Control,35.51,NA,104.2,NA,CM32,S12,California ,sanchips,trainor
+Male,436,No Target,Control,24.85,NA,89.6,NA,CM33,S12,California ,sanchips,trainor
+Male,353,No Target,Control,12.5,NA,40.6,NA,CM34,S12,California ,sanchips,trainor
+Male,340,No Target,Control,32.31,NA,111.3,NA,CM35,S12,California ,sanchips,trainor
+Male,1997,No Target,Control,33.54,NA,100,NA,CM36,S12,California ,sanchips,trainor
+Male,1720,No Target,Control,12.16,NA,67.3,NA,CM37,S12,California ,sanchips,trainor
+Male,552,No Target,Control,35.46,NA,75.9,NA,CM38,S12,California ,sanchips,trainor
+Male,351,No Target,Control,29.06,NA,71.4,NA,CM39,S12,California ,sanchips,trainor
+Male,1177,No Target,Control,15.36,NA,63.3,NA,CM40,S12,California ,sanchips,trainor
+Male,433,No Target,Control,20.17,NA,8.3,NA,CM41,S12,California ,sanchips,trainor
+Male,5989,No Target,Control,25.5,NA,111.6,NA,CM42,S12,California ,sanchips,trainor
+Male,5990,No Target,Control,96.3,NA,114.1,NA,CM43,S12,California ,sanchips,trainor
+Male,6008,No Target,Control,89.9,NA,145.9,NA,CM44,S12,California ,sanchips,trainor
+Male,6003,No Target,Control,2.1,NA,142.2,NA,CM45,S12,California ,sanchips,trainor
+Male,1453,No Target,Stress,24.07,NA,73,NA,SM01,S12,California ,carefresh,trainor
+Male,1842,No Target,Stress,32.32,NA,146,NA,SM02,S12,California ,carefresh,trainor
+Male,299,No Target,Stress,16.06,NA,114.6,NA,SM03,S12,California ,carefresh,trainor
+Male,1555,No Target,Stress,30.01,NA,123,NA,SM04,S12,California ,carefresh,trainor
+Male,3764,No Target,Stress,28.66,NA,127,NA,SM05,S12,California ,carefresh,trainor
+Male,359,No Target,Stress,28.14,NA,80.5,NA,SM06,S12,California ,carefresh,trainor
+Male,3350,No Target,Stress,29.83,NA,120.3,NA,SM07,S12,California ,carefresh,trainor
+Male,1321,No Target,Stress,35.39,NA,77.3,NA,SM08,S12,California ,carefresh,trainor
+Male,3551,No Target,Stress,16.14,NA,49.3,NA,SM09,S12,California ,corncob,trainor
+Male,1844,No Target,Stress,14.19,NA,133.9,NA,SM10,S12,California ,corncob,trainor
+Male,1473,No Target,Stress,18.45,NA,145.1,NA,SM11,S12,California ,corncob,trainor
+Male,1438,No Target,Stress,26.38,NA,141.8,NA,SM12,S12,California ,corncob,trainor
+Male,1310,No Target,Stress,19.66,NA,128.9,NA,SM13,S12,California ,corncob,trainor
+Male,1054,No Target,Stress,27.67,NA,89.3,NA,SM14,S12,California ,corncob,trainor
+Male,4388,No Target,Stress,24.62,NA,55.7,NA,SM15,S12,California ,corncob,trainor
+Male,523,No Target,Stress,16.49,NA,52.1,NA,SM16,S12,California ,corncob,trainor
+Male,1534,No Target,Stress,44.3,NA,63,NA,SM17,S12,California ,corncob,trainor
+Male,1721,No Target,Stress,29.96,NA,9.2,NA,SM18,S12,California ,corncob,trainor
+Male,305,No Target,Stress,9.19,NA,127.4,NA,SM19,S12,California ,sanchips,trainor
+Male,1531,No Target,Stress,25.8,NA,95,NA,SM20,S12,California ,sanchips,trainor
+Male,2516,No Target,Stress,22.27,NA,49.5,NA,SM21,S12,California ,sanchips,trainor
+Male,5924,No Target,Stress,25.51,NA,158.1,NA,SM22,S12,California ,sanchips,trainor
+Male,3048,No Target,Stress,29.49,NA,101.4,NA,SM23,S12,California ,sanchips,trainor
+Male,1448,No Target,Stress,26.03,NA,97.9,NA,SM24,S12,California ,sanchips,trainor
+Male,1525,No Target,Stress,17.17,NA,98,NA,SM25,S12,California ,sanchips,trainor
+Male,764,No Target,Stress,11.25,NA,120.7,NA,SM26,S12,California ,sanchips,trainor
+Male,570,No Target,Stress,30.16,NA,86.2,NA,SM27,S12,California ,sanchips,trainor
+Male,1547,No Target,Stress,8.06,NA,99.5,NA,SM28,S12,California ,sanchips,trainor
+Male,2619,No Target,Stress,25.88,NA,79.3,NA,SM29,S12,California ,sanchips,trainor
+Male,1711,No Target,Stress,22.12,NA,95.3,NA,SM30,S12,California ,sanchips,trainor
+Male,1863,No Target,Stress,29.18,NA,51.9,NA,SM31,S12,California ,sanchips,trainor
+Male,3582,No Target,Stress,17.73,NA,71.9,NA,SM32,S12,California ,sanchips,trainor
+Male,361,No Target,Stress,35.81,NA,66.4,NA,SM33,S12,California ,sanchips,trainor
+Male,1050,No Target,Stress,43.6,NA,50.2,NA,SM34,S12,California ,sanchips,trainor
+Male,3063,No Target,Stress,21.5,NA,34.3,NA,SM35,S12,California ,sanchips,trainor
+Male,1315,No Target,Stress,42.68,NA,49.9,NA,SM36,S12,California ,sanchips,trainor
+Male,3652,No Target,Stress,26.58,NA,51,NA,SM37,S12,California ,sanchips,trainor
+Female,1400,Target,Control,22.05,NA,108.8,NA,CF01,S12,California ,carefresh,trainor
+Female,2627,Target,Control,18.03,NA,160,NA,CF02,S12,California ,carefresh,trainor
+Female,4456,Target,Control,23.14,NA,173.7,NA,CF03,S12,California ,carefresh,trainor
+Female,1089,Target,Control,11.28,NA,95.7,NA,CF04,S12,California ,carefresh,trainor
+Female,1615,Target,Control,16.45,NA,180,NA,CF05,S12,California ,carefresh,trainor
+Female,2567,Target,Control,18.62,NA,93.6,NA,CF06,S12,California ,carefresh,trainor
+Female,625,Target,Control,29.59,NA,174.2,NA,CF07,S12,California ,carefresh,trainor
+Female,381,Target,Control,13.21,NA,76,NA,CF08,S12,California ,carefresh,trainor
+Female,1087,Target,Control,18.15,NA,67,NA,CF09,S12,California ,carefresh,trainor
+Female,1576,Target,Control,24.89,NA,147.8,NA,CF10,S12,California ,carefresh,trainor
+Female,338,Target,Control,16.07,NA,160,NA,CF11,S12,California ,carefresh,trainor
+Female,1577,Target,Control,11.9,NA,129.9,NA,CF12,S12,California ,carefresh,trainor
+Female,1523,Target,Control,23.93,NA,147,NA,CF13,S12,California ,carefresh,trainor
+Female,3197,Target,Control,11.18,NA,98.5,NA,CF14,S12,California ,corncob,trainor
+Female,1581,Target,Control,17.03,NA,117.8,NA,CF15,S12,California ,corncob,trainor
+Female,1809,Target,Control,24.71,NA,136.5,NA,CF16,S12,California ,corncob,trainor
+Female,3287,Target,Control,16.35,NA,81.6,NA,CF17,S12,California ,corncob,trainor
+Female,1951,Target,Control,14.94,NA,156.2,NA,CF18,S12,California ,corncob,trainor
+Female,1750,Target,Control,18,NA,118.3,NA,CF19,S12,California ,corncob,trainor
+Female,1868,Target,Control,15.52,NA,173,NA,CF20,S12,California ,corncob,trainor
+Female,1959,Target,Control,14.36,NA,143.4,NA,CF21,S12,California ,corncob,trainor
+Female,363,Target,Control,46.06,NA,104.3,NA,CF22,S12,California ,corncob,trainor
+Female,2917,Target,Control,21.03,NA,134.4,NA,CF23,S12,California ,corncob,trainor
+Female,1880,Target,Control,19.38,NA,145.3,NA,CF24,S12,California ,corncob,trainor
+Female,1352,Target,Control,43.51,NA,133.9,NA,CF25,S12,California ,corncob,trainor
+Female,571,Target,Control,23.43,NA,155.6,NA,CF26,S12,California ,corncob,trainor
+Female,3204,Target,Control,36.72,NA,149.9,NA,CF27,S12,California ,corncob,trainor
+Female,1591,Target,Control,10.83,NA,140,NA,CF28,S12,California ,corncob,trainor
+Female,1318,Target,Control,26.02,NA,95.4,NA,CF29,S12,California ,corncob,trainor
+Female,417,Target,Control,11.41,NA,112.7,NA,CF30,S12,California ,corncob,trainor
+Female,4137,Target,Control,29.66,NA,157.3,NA,CF31,S12,California ,corncob,trainor
+Female,1892,Target,Control,7.73,NA,128.9,NA,CF32,S12,California ,corncob,trainor
+Female,1454,Target,Control,36.28,NA,79.1,NA,CF33,S12,California ,corncob,trainor
+Female,4104,Target,Control,27.32,NA,61.8,NA,CF34,S12,California ,sanchips,trainor
+Female,4634,Target,Control,13.53,NA,80.4,NA,CF35,S12,California ,sanchips,trainor
+Female,1384,Target,Control,14.77,NA,92,NA,CF36,S12,California ,sanchips,trainor
+Female,4716,Target,Control,21.6,NA,115.3,NA,CF37,S12,California ,sanchips,trainor
+Female,1597,Target,Control,16.53,NA,78.1,NA,CF38,S12,California ,sanchips,trainor
+Female,575,Target,Control,20.22,NA,153.2,NA,CF39,S12,California ,sanchips,trainor
+Female,1782,Target,Control,13.99,NA,75.4,NA,CF40,S12,California ,sanchips,trainor
+Female,593,Target,Control,32.42,NA,99.8,NA,CF41,S12,California ,sanchips,trainor
+Female,1403,Target,Control,24.12,NA,129.9,NA,CF42,S12,California ,sanchips,trainor
+Female,594,Target,Control,42.49,NA,93.3,NA,CF43,S12,California ,sanchips,trainor
+Female,1311,Target,Control,21.57,NA,151.2,NA,CF44,S12,California ,sanchips,trainor
+Female,1949,Target,Control,49.63,NA,81.1,NA,CF45,S12,California ,sanchips,trainor
+Female,1437,Target,Control,25.7,NA,140,NA,CF46,S12,California ,sanchips,trainor
+Female,595,Target,Control,14.14,NA,98.5,NA,CF47,S12,California ,sanchips,trainor
+Female,2554,Target,Control,22.61,NA,123.8,NA,CF48,S12,California ,sanchips,trainor
+Female,402,Target,Control,14.88,NA,76.3,NA,CF49,S12,California ,sanchips,trainor
+Female,1635,Target,Control,23.26,NA,108.2,NA,CF50,S12,California ,sanchips,trainor
+Female,1402,Target,Control,26.07,NA,131.9,NA,CF51,S12,California ,sanchips,trainor
+Female,1572,Target,Control,33.38,NA,98.2,NA,CF52,S12,California ,sanchips,trainor
+Female,1579,Target,Control,33.83,NA,113.1,NA,CF53,S12,California ,sanchips,trainor
+Female,1385,Target,Control,32.2,NA,103.6,NA,CF54,S12,California ,sanchips,trainor
+Female,1427,Target,Control,35.61,NA,133.2,NA,CF55,S12,California ,sanchips,trainor
+Female,3392,Target,Control,20.25,NA,107.2,NA,CF56,S12,California ,sanchips,trainor
+Female,2629,Target,Control,31.25,NA,97.8,NA,CF57,S12,California ,sanchips,trainor
+Female,3530,Target,Control,29.76,NA,134.6,NA,CF58,S12,California ,sanchips,trainor
+Female,3271,Target,Control,17.02,NA,111.8,NA,CF59,S12,California ,sanchips,trainor
+Female,864,Target,Control,13.81,NA,93,NA,CF60,S12,California ,sanchips,trainor
+Female,287,Target,Control,39,NA,155.6,NA,CF61,S12,California ,sanchips,trainor
+Female,3903,Target,Control,12.89,NA,96.7,NA,CF62,S12,California ,sanchips,trainor
+Female,3797,Target,Control,27.3,NA,130.4,NA,CF63,S12,California ,sanchips,trainor
+Female,3902,Target,Control,23.34,NA,124,NA,CF64,S12,California ,sanchips,trainor
+Female,3730,Target,Control,26.35,NA,154.6,NA,CF65,S12,California ,sanchips,trainor
+Female,3773,Target,Control,14.3,NA,122.6,NA,CF66,S12,California ,sanchips,trainor
+Female,3727,Target,Control,35.32,NA,148.8,NA,CF67,S12,California ,sanchips,trainor
+Female,3929,Target,Control,36.06,NA,138.7,NA,CF68,S12,California ,sanchips,trainor
+Female,5207,Target,Control,24.89,NA,83.7,NA,CF69,S12,California ,sanchips,trainor
+Female,5208,Target,Control,11.74,NA,119,NA,CF70,S12,California ,sanchips,trainor
+Female,5209,Target,Control,18.57,NA,104.3,NA,CF71,S12,California ,sanchips,trainor
+Female,5210,Target,Control,17.05,NA,34.4,NA,CF72,S12,California ,sanchips,trainor
+Female,1614,Target,Stress,21.24,NA,52.1,NA,SF01,S12,California ,carefresh,trainor
+Female,1405,Target,Stress,52.1,NA,63.5,NA,SF02,S12,California ,carefresh,trainor
+Female,4128,Target,Stress,21.03,NA,92,NA,SF03,S12,California ,carefresh,trainor
+Female,1767,Target,Stress,24.5,NA,42.1,NA,SF04,S12,California ,carefresh,trainor
+Female,629,Target,Stress,18.44,NA,104.1,NA,SF05,S12,California ,carefresh,trainor
+Female,1838,Target,Stress,36.41,NA,120.9,NA,SF06,S12,California ,carefresh,trainor
+Female,4026,Target,Stress,18.13,NA,92.6,NA,SF07,S12,California ,carefresh,trainor
+Female,509,Target,Stress,13.73,NA,50.7,NA,SF08,S12,California ,carefresh,trainor
+Female,1440,Target,Stress,17.16,NA,165,NA,SF09,S12,California ,carefresh,trainor
+Female,623,Target,Stress,92.6,NA,160,NA,SF10,S12,California ,carefresh,trainor
+Female,1455,Target,Stress,10.22,NA,165,NA,SF11,S12,California ,carefresh,trainor
+Female,1623,Target,Stress,15.99,NA,65.4,NA,SF12,S12,California ,carefresh,trainor
+Female,1429,Target,Stress,6.45,NA,85.4,NA,SF13,S12,California ,carefresh,trainor
+Female,3806,Target,Stress,24.5,NA,82.7,NA,SF14,S12,California ,carefresh,trainor
+Female,2622,Target,Stress,4.7,NA,10.5,NA,SF15,S12,California ,corncob,trainor
+Female,510,Target,Stress,17.35,NA,74.5,NA,SF16,S12,California ,corncob,trainor
+Female,326,Target,Stress,22.95,NA,102.1,NA,SF17,S12,California ,corncob,trainor
+Female,439,Target,Stress,16.87,NA,77.7,NA,SF18,S12,California ,corncob,trainor
+Female,4429,Target,Stress,12.11,NA,111.6,NA,SF19,S12,California ,corncob,trainor
+Female,1445,Target,Stress,25.24,NA,123.8,NA,SF20,S12,California ,corncob,trainor
+Female,1516,Target,Stress,15.02,NA,132.4,NA,SF21,S12,California ,corncob,trainor
+Female,1575,Target,Stress,19.03,NA,122.3,NA,SF22,S12,California ,corncob,trainor
+Female,1432,Target,Stress,195.61,NA,160.2,NA,SF23,S12,California ,corncob,trainor
+Female,1573,Target,Stress,21.77,NA,100.6,NA,SF24,S12,California ,corncob,trainor
+Female,1564,Target,Stress,44.91,NA,127.2,NA,SF25,S12,California ,corncob,trainor
+Female,3181,Target,Stress,19.39,NA,122.7,NA,SF26,S12,California ,corncob,trainor
+Female,1566,Target,Stress,23.41,NA,109.3,NA,SF27,S12,California ,corncob,trainor
+Female,1764,Target,Stress,32.19,NA,147.8,NA,SF28,S12,California ,corncob,trainor
+Female,325,Target,Stress,13.23,NA,89.3,NA,SF29,S12,California ,corncob,trainor
+Female,1406,Target,Stress,59.71,NA,138.8,NA,SF30,S12,California ,corncob,trainor
+Female,1433,Target,Stress,8.83,NA,102.3,NA,SF31,S12,California ,corncob,trainor
+Female,410,Target,Stress,23.45,NA,143.2,NA,SF32,S12,California ,corncob,trainor
+Female,757,Target,Stress,39.25,NA,173.6,NA,SF33,S12,California ,corncob,trainor
+Female,1377,Target,Stress,25.98,NA,157.9,NA,SF34,S12,California ,corncob,trainor
+Female,1350,Target,Stress,29.46,NA,144.1,NA,SF35,S12,California ,corncob,trainor
+Female,1410,Target,Stress,21.19,NA,133,NA,SF36,S12,California ,corncob,trainor
+Female,1553,Target,Stress,27.38,NA,60.2,NA,SF37,S12,California ,corncob,trainor
+Female,3282,Target,Stress,28.25,NA,124,NA,SF38,S12,California ,corncob,trainor
+Female,3767,Target,Stress,14.34,NA,106.4,NA,SF39,S12,California ,corncob,trainor
+Female,3732,Target,Stress,15.4,NA,9.9,NA,SF40,S12,California ,corncob,trainor
+Female,868,Target,Stress,7.8,NA,5.9,NA,SF41,S12,California ,sanchips,trainor
+Female,1755,Target,Stress,12.98,NA,20.2,NA,SF42,S12,California ,sanchips,trainor
+Female,4350,Target,Stress,11.15,NA,20.7,NA,SF43,S12,California ,sanchips,trainor
+Female,1754,Target,Stress,3.52,NA,33.5,NA,SF44,S12,California ,sanchips,trainor
+Female,3353,Target,Stress,12.52,NA,30.6,NA,SF45,S12,California ,sanchips,trainor
+Female,3168,Target,Stress,21.32,NA,31.6,NA,SF46,S12,California ,sanchips,trainor
+Female,1954,Target,Stress,10.88,NA,29.5,NA,SF47,S12,California ,sanchips,trainor
+Female,1950,Target,Stress,26.24,NA,35.8,NA,SF48,S12,California ,sanchips,trainor
+Female,1593,Target,Stress,15.1,NA,27.5,NA,SF49,S12,California ,sanchips,trainor
+Female,3173,Target,Stress,16.56,NA,53.9,NA,SF50,S12,California ,sanchips,trainor
+Female,4033,Target,Stress,12.9,NA,39.9,NA,SF51,S12,California ,sanchips,trainor
+Female,1420,Target,Stress,57.3,NA,22.1,NA,SF52,S12,California ,sanchips,trainor
+Female,4148,Target,Stress,31.01,NA,48.3,NA,SF53,S12,California ,sanchips,trainor
+Female,1330,Target,Stress,25.48,NA,82.4,NA,SF54,S12,California ,sanchips,trainor
+Female,1436,Target,Stress,21.83,NA,115.4,NA,SF55,S12,California ,sanchips,trainor
+Female,1316,Target,Stress,39.6,NA,58.1,NA,SF56,S12,California ,sanchips,trainor
+Female,3166,Target,Stress,19.25,NA,73.6,NA,SF57,S12,California ,sanchips,trainor
+Female,1608,Target,Stress,16.51,NA,36.4,NA,SF58,S12,California ,sanchips,trainor
+Female,1628,Target,Stress,26.81,NA,59.5,NA,SF59,S12,California ,sanchips,trainor
+Female,1622,Target,Stress,104.1,NA,78,NA,SF60,S12,California ,sanchips,trainor
+Female,411,Target,Stress,25.31,NA,103.7,NA,SF61,S12,California ,sanchips,trainor
+Female,518,Target,Stress,29.68,NA,103,NA,SF62,S12,California ,sanchips,trainor
+Female,1570,Target,Stress,160.2,NA,135.7,NA,SF63,S12,California ,sanchips,trainor
+Female,762,Target,Stress,10.62,NA,55.8,NA,SF64,S12,California ,sanchips,trainor
+Female,803,Target,Stress,12.29,NA,121.7,NA,SF65,S12,California ,sanchips,trainor
+Female,1559,Target,Stress,17.29,NA,93.8,NA,SF66,S12,California ,sanchips,trainor
+Female,1398,Target,Stress,23.46,NA,66.3,NA,SF67,S12,California ,sanchips,trainor
+Female,1960,Target,Stress,39.31,NA,55.7,NA,SF68,S12,California ,sanchips,trainor
+Female,1952,Target,Stress,36.82,NA,60.9,NA,SF69,S12,California ,sanchips,trainor
+Female,3214,Target,Stress,12.25,NA,71.6,NA,SF70,S12,California ,sanchips,trainor
+Female,333,Target,Stress,38.87,NA,103.5,NA,SF71,S12,California ,sanchips,trainor
+Female,2563,Target,Stress,13.31,NA,61.9,NA,SF72,S12,California ,sanchips,trainor
+Female,1376,Target,Stress,26.09,NA,88.3,NA,SF73,S12,California ,sanchips,trainor
+Female,3923,Target,Stress,22.59,NA,63.6,NA,SF74,S12,California ,sanchips,trainor
+Female,3922,Target,Stress,13.42,NA,77.6,NA,SF75,S12,California ,sanchips,trainor
+Female,3768,Target,Stress,11.16,NA,179.8,NA,SF76,S12,California ,sanchips,trainor
+Female,4090,Target,Stress,10.22,NA,131.1,NA,SF77,S12,California ,sanchips,trainor
+Male,1533,Target,Control,24.29,NA,83.4,NA,CM01,S12,California ,carefresh,trainor
+Male,1051,Target,Control,9.62,NA,160,NA,CM02,S12,California ,carefresh,trainor
+Male,335,Target,Control,23.41,NA,138.9,NA,CM03,S12,California ,carefresh,trainor
+Male,1987,Target,Control,17.45,NA,13,NA,CM04,S12,California ,carefresh,trainor
+Male,1961,Target,Control,23.2,NA,74.4,NA,CM05,S12,California ,corncob,trainor
+Male,1719,Target,Control,15.48,NA,130.2,NA,CM06,S12,California ,corncob,trainor
+Male,1739,Target,Control,9.45,NA,78.4,NA,CM07,S12,California ,corncob,trainor
+Male,752,Target,Control,48.51,NA,99.7,NA,CM08,S12,California ,corncob,trainor
+Male,1522,Target,Control,25.87,NA,78.8,NA,CM09,S12,California ,corncob,trainor
+Male,1963,Target,Control,39.52,NA,105.2,NA,CM10,S12,California ,corncob,trainor
+Male,1738,Target,Control,11.12,NA,142.7,NA,CM11,S12,California ,corncob,trainor
+Male,1322,Target,Control,12.07,NA,96.6,NA,CM12,S12,California ,corncob,trainor
+Male,1317,Target,Control,16,NA,159.4,NA,CM13,S12,California ,corncob,trainor
+Male,6007,Target,Control,32.09,NA,165.6,NA,CM14,S12,California ,corncob,trainor
+Male,1999,Target,Control,13.62,NA,108.3,NA,CM15,S12,California ,sanchips,trainor
+Male,1305,Target,Control,38.68,NA,63,NA,CM16,S12,California ,sanchips,trainor
+Male,1996,Target,Control,23.6,NA,114.4,NA,CM17,S12,California ,sanchips,trainor
+Male,1728,Target,Control,22.6,NA,105.9,NA,CM18,S12,California ,sanchips,trainor
+Male,1535,Target,Control,17.03,NA,105.1,NA,CM19,S12,California ,sanchips,trainor
+Male,1175,Target,Control,14.85,NA,83.2,NA,CM20,S12,California ,sanchips,trainor
+Male,648,Target,Control,16.5,NA,168.3,NA,CM21,S12,California ,sanchips,trainor
+Male,501,Target,Control,110.1,NA,83.7,NA,CM22,S12,California ,sanchips,trainor
+Male,659,Target,Control,21.28,NA,137,NA,CM23,S12,California ,sanchips,trainor
+Male,1989,Target,Control,22.9,NA,137.7,NA,CM24,S12,California ,sanchips,trainor
+Male,1988,Target,Control,22.91,NA,125.3,NA,CM25,S12,California ,sanchips,trainor
+Male,383,Target,Control,26.06,NA,120.1,NA,CM26,S12,California ,sanchips,trainor
+Male,1308,Target,Control,21,NA,82.5,NA,CM27,S12,California ,sanchips,trainor
+Male,1530,Target,Control,15.77,NA,106.9,NA,CM28,S12,California ,sanchips,trainor
+Male,1179,Target,Control,36.42,NA,138.9,NA,CM29,S12,California ,sanchips,trainor
+Male,645,Target,Control,21.07,NA,123.6,NA,CM30,S12,California ,sanchips,trainor
+Male,386,Target,Control,40.93,NA,30.4,NA,CM31,S12,California ,sanchips,trainor
+Male,1751,Target,Control,29.3,NA,156.8,NA,CM32,S12,California ,sanchips,trainor
+Male,436,Target,Control,151.3,NA,141.6,NA,CM33,S12,California ,sanchips,trainor
+Male,353,Target,Control,8.66,NA,65,NA,CM34,S12,California ,sanchips,trainor
+Male,340,Target,Control,32.36,NA,179.8,NA,CM35,S12,California ,sanchips,trainor
+Male,1997,Target,Control,22.54,NA,162,NA,CM36,S12,California ,sanchips,trainor
+Male,1720,Target,Control,31.14,NA,119.2,NA,CM37,S12,California ,sanchips,trainor
+Male,552,Target,Control,121.6,NA,161.5,NA,CM38,S12,California ,sanchips,trainor
+Male,351,Target,Control,19.06,NA,154.1,NA,CM39,S12,California ,sanchips,trainor
+Male,1177,Target,Control,12.1,NA,170.6,NA,CM40,S12,California ,sanchips,trainor
+Male,433,Target,Control,7.8,NA,44.9,NA,CM41,S12,California ,sanchips,trainor
+Male,5989,Target,Control,9.13,NA,65.6,NA,CM42,S12,California ,sanchips,trainor
+Male,5990,Target,Control,18.12,NA,138.6,NA,CM43,S12,California ,sanchips,trainor
+Male,6008,Target,Control,22.47,NA,159.4,NA,CM44,S12,California ,sanchips,trainor
+Male,6003,Target,Control,14.96,NA,88.7,NA,CM45,S12,California ,sanchips,trainor
+Male,1453,Target,Stress,25.62,NA,54,NA,SM01,S12,California ,carefresh,trainor
+Male,1842,Target,Stress,123.1,NA,166,NA,SM02,S12,California ,carefresh,trainor
+Male,299,Target,Stress,27.91,NA,130.9,NA,SM03,S12,California ,carefresh,trainor
+Male,1555,Target,Stress,11.74,NA,146,NA,SM04,S12,California ,carefresh,trainor
+Male,3764,Target,Stress,112.2,NA,170,NA,SM05,S12,California ,carefresh,trainor
+Male,359,Target,Stress,19.42,NA,110.7,NA,SM06,S12,California ,carefresh,trainor
+Male,3350,Target,Stress,23.84,NA,171.7,NA,SM07,S12,California ,carefresh,trainor
+Male,1321,Target,Stress,47.59,NA,138.2,NA,SM08,S12,California ,carefresh,trainor
+Male,3551,Target,Stress,16.22,NA,35.2,NA,SM09,S12,California ,corncob,trainor
+Male,1844,Target,Stress,30.39,NA,120,NA,SM10,S12,California ,corncob,trainor
+Male,1473,Target,Stress,16.5,NA,138.8,NA,SM11,S12,California ,corncob,trainor
+Male,1438,Target,Stress,30.86,NA,144.2,NA,SM12,S12,California ,corncob,trainor
+Male,1310,Target,Stress,12.68,NA,158.9,NA,SM13,S12,California ,corncob,trainor
+Male,1054,Target,Stress,23.28,NA,130.5,NA,SM14,S12,California ,corncob,trainor
+Male,4388,Target,Stress,13.59,NA,105.6,NA,SM15,S12,California ,corncob,trainor
+Male,523,Target,Stress,11.54,NA,119.2,NA,SM16,S12,California ,corncob,trainor
+Male,1534,Target,Stress,27.97,NA,162.4,NA,SM17,S12,California ,corncob,trainor
+Male,1721,Target,Stress,10.04,NA,143.6,NA,SM18,S12,California ,corncob,trainor
+Male,305,Target,Stress,5.36,NA,71.1,NA,SM19,S12,California ,sanchips,trainor
+Male,1531,Target,Stress,30.17,NA,64,NA,SM20,S12,California ,sanchips,trainor
+Male,2516,Target,Stress,54,NA,38.9,NA,SM21,S12,California ,sanchips,trainor
+Male,5924,Target,Stress,23.1,NA,130.5,NA,SM22,S12,California ,sanchips,trainor
+Male,3048,Target,Stress,31.37,NA,86.1,NA,SM23,S12,California ,sanchips,trainor
+Male,1448,Target,Stress,33.03,NA,100.8,NA,SM24,S12,California ,sanchips,trainor
+Male,1525,Target,Stress,21.37,NA,107.4,NA,SM25,S12,California ,sanchips,trainor
+Male,764,Target,Stress,29.74,NA,133.6,NA,SM26,S12,California ,sanchips,trainor
+Male,570,Target,Stress,24.25,NA,95.5,NA,SM27,S12,California ,sanchips,trainor
+Male,1547,Target,Stress,25.9,NA,128.5,NA,SM28,S12,California ,sanchips,trainor
+Male,2619,Target,Stress,36.47,NA,103.2,NA,SM29,S12,California ,sanchips,trainor
+Male,1711,Target,Stress,22.1,NA,126.7,NA,SM30,S12,California ,sanchips,trainor
+Male,1863,Target,Stress,40.61,NA,74,NA,SM31,S12,California ,sanchips,trainor
+Male,3582,Target,Stress,16.78,NA,107.6,NA,SM32,S12,California ,sanchips,trainor
+Male,361,Target,Stress,41.66,NA,108.3,NA,SM33,S12,California ,sanchips,trainor
+Male,1050,Target,Stress,138.2,NA,95.6,NA,SM34,S12,California ,sanchips,trainor
+Male,3063,Target,Stress,28.06,NA,68,NA,SM35,S12,California ,sanchips,trainor
+Male,1315,Target,Stress,120.5,NA,130.4,NA,SM36,S12,California ,sanchips,trainor
+Male,3652,Target,Stress,21.96,NA,138.2,NA,SM37,S12,California ,sanchips,trainor
+Female,6,No Target,Control,891.001,6.12035,54.9221,35.7027,CF01,S13,CSW/DS,Fiber,bagot
+Female,8,No Target,Control,1299.83,8.88384,82.0161,21.5217,CF02,S13,CSW/DS,Fiber,bagot
+Female,9,No Target,Control,1069.53,7.44394,86.0201,12.0121,CF03,S13,CSW/DS,Fiber,bagot
+Female,10,No Target,Stress,1358.16,9.51241,97.098,13.5136,SF01,S13,CSW/DS,Fiber,bagot
+Female,11,No Target,Stress,1192.24,8.03304,87.188,16.4833,SF02,S13,CSW/DS,Fiber,bagot
+Female,12,No Target,Stress,1088.46,7.39031,92.1263,15.2821,SF03,S13,CSW/DS,Fiber,bagot
+Female,13,No Target,Stress,1580.7,10.7544,69.6036,25.8928,SF04,S13,CSW/DS,Fiber,bagot
+Female,14,No Target,Stress,1365.06,9.26628,93.6612,15.182,SF05,S13,CSW/DS,Fiber,bagot
+Female,25,No Target,Stress,1278.71,8.69389,83.918,24.2912,SF06,S13,CSW/DS,Fiber,bagot
+Female,26,No Target,Control,1242.66,8.46413,83.6844,20.0536,CF04,S13,CSW/DS,Fiber,bagot
+Female,27,No Target,Stress,1051.95,7.08463,88.2557,11.7786,SF07,S13,CSW/DS,Fiber,bagot
+Female,28,No Target,Stress,1399.04,9.47761,67.3012,33.9342,SF08,S13,CSW/DS,Fiber,bagot
+Female,29,No Target,Stress,1410.66,9.42635,76.3103,18.0182,SF09,S13,CSW/DS,Fiber,bagot
+Female,30,No Target,Stress,1636.97,11.1246,81.6824,18.2851,SF10,S13,CSW/DS,Fiber,bagot
+Female,34,No Target,Control,1112.71,7.62758,58.9261,35.4691,CF05,S13,CSW/DS,Fiber,bagot
+Female,44,No Target,Control,1113.81,7.53685,103.104,7.87461,CF06,S13,CSW/DS,Fiber,bagot
+Female,45,No Target,Stress,1439.95,9.85269,86.7876,7.94135,SF11,S13,CSW/DS,Fiber,bagot
+Female,46,No Target,Stress,1456.65,9.84781,87.8887,22.823,SF12,S13,CSW/DS,Fiber,bagot
+Female,47,No Target,Stress,1425.18,9.83929,93.6278,15.9161,SF13,S13,CSW/DS,Fiber,bagot
+Female,48,No Target,Stress,1019.56,7.18628,115.083,7.74114,SF14,S13,CSW/DS,Fiber,bagot
+Female,6,Target,Control,973.961,6.57122,106.841,2.13549,CF01,S13,CSW/DS,Fiber,bagot
+Female,8,Target,Control,1179.26,8.04693,90.9251,13.2801,CF02,S13,CSW/DS,Fiber,bagot
+Female,9,Target,Control,822.286,5.52673,111.112,5.33872,CF03,S13,CSW/DS,Fiber,bagot
+Female,10,Target,Stress,909.078,6.1307,126.594,2.63599,SF01,S13,CSW/DS,Fiber,bagot
+Female,11,Target,Stress,850.31,5.72022,85.6197,10.911,SF02,S13,CSW/DS,Fiber,bagot
+Female,12,Target,Stress,927.561,6.25816,121.89,5.63902,SF03,S13,CSW/DS,Fiber,bagot
+Female,13,Target,Stress,1215.53,8.3039,88.9231,23.824,SF04,S13,CSW/DS,Fiber,bagot
+Female,14,Target,Stress,1013,6.94246,121.356,4.17087,SF05,S13,CSW/DS,Fiber,bagot
+Female,25,Target,Stress,760.872,5.08091,126.995,0.700707,SF06,S13,CSW/DS,Fiber,bagot
+Female,26,Target,Control,1060.3,7.1489,114.983,7.77451,CF04,S13,CSW/DS,Fiber,bagot
+Female,27,Target,Stress,1125.45,7.68852,92.0929,21.7887,SF07,S13,CSW/DS,Fiber,bagot
+Female,28,Target,Stress,1112.23,7.62597,113.014,14.6147,SF08,S13,CSW/DS,Fiber,bagot
+Female,29,Target,Stress,911.358,6.08582,110.311,10.2437,SF09,S13,CSW/DS,Fiber,bagot
+Female,30,Target,Stress,1219.59,8.23585,108.776,5.73912,SF10,S13,CSW/DS,Fiber,bagot
+Female,34,Target,Control,842.859,5.76586,123.458,6.07279,CF05,S13,CSW/DS,Fiber,bagot
+Female,44,Target,Control,557.301,3.83429,136.371,0.367037,CF06,S13,CSW/DS,Fiber,bagot
+Female,45,Target,Stress,1249.34,8.74007,95.9969,11.6117,SF11,S13,CSW/DS,Fiber,bagot
+Female,46,Target,Stress,1154.93,7.77818,112.28,15.6158,SF12,S13,CSW/DS,Fiber,bagot
+Female,47,Target,Stress,1119.52,7.62888,115.083,12.8129,SF13,S13,CSW/DS,Fiber,bagot
+Female,48,Target,Stress,1018.41,7.06023,110.044,9.24266,SF14,S13,CSW/DS,Fiber,bagot
+Male,SM01,No Target,Defeat,1390.67,9.95176,65.4661,NA,SM01,S14,CSW/DS,MaleWitness,bagot
+Male,SM02,No Target,Defeat,1255.93,8.38304,80.3144,NA,SM02,S15,CSW/DS,MaleWitness,bagot
+Male,SM01,Target,Defeat,955.773,6.91389,86.8877,NA,SM01,S16,CSW/DS,MaleWitness,bagot
+Male,SM02,Target,Defeat,536.177,3.57568,84.285,NA,SM02,S17,CSW/DS,MaleWitness,bagot
+Male,WM01,No Target,Witness,1064.91,7.20105,75.2426,NA,WM01,S18,CSW/DS,MaleWitness,bagot
+Male,WM02,No Target,Witness,1469.21,9.84612,74.6086,NA,WM02,S19,CSW/DS,MaleWitness,bagot
+Male,WM01,Target,Witness,1056.85,7.25625,103.137,NA,WM01,S20,CSW/DS,MaleWitness,bagot
+Male,WM02,Target,Witness,1223.36,8.69014,57.0242,NA,WM02,S21,CSW/DS,MaleWitness,bagot
+Male,CM01,No Target,Control,1484.72,9.93453,81.5823,NA,CM01,S22,CSW/DS,MaleWitness,bagot
+Male,CM02,No Target,Control,1452.79,9.74481,78.1455,NA,CM02,S23,CSW/DS,MaleWitness,bagot
+Male,CM01,Target,Control,1206.86,8.08073,83.9514,NA,CM01,S24,CSW/DS,MaleWitness,bagot
+Male,CM02,Target,Control,1215.2,8.15475,90.6915,NA,CM02,S25,CSW/DS,MaleWitness,bagot
+Male,SM03,No Target,Defeat,1301.31,8.71701,59.2932,NA,SM03,S26,CSW/DS,MaleWitness,bagot
+Male,SM04,No Target,Defeat,1378.43,9.23981,67.0677,NA,SM04,S27,CSW/DS,MaleWitness,bagot
+Male,SM03,Target,Defeat,774.633,5.18436,63.9645,NA,SM03,S28,CSW/DS,MaleWitness,bagot
+Male,SM04,Target,Defeat,785.472,5.27102,86.9878,NA,SM04,S29,CSW/DS,MaleWitness,bagot
+Male,WM03,No Target,Witness,1254.09,8.37264,58.2921,NA,WM03,S30,CSW/DS,MaleWitness,bagot
+Male,WM04,No Target,Witness,1672.74,11.2151,68.8028,NA,WM04,S31,CSW/DS,MaleWitness,bagot
+Male,WM03,Target,Witness,1034.23,6.90634,77.5115,NA,WM03,S32,CSW/DS,MaleWitness,bagot
+Male,WM04,Target,Witness,1294.7,8.68635,105.273,NA,WM04,S33,CSW/DS,MaleWitness,bagot
+Male,CM03,No Target,Control,1180.36,7.9121,98.8664,NA,CM03,S34,CSW/DS,MaleWitness,bagot
+Male,CM04,No Target,Control,1489.86,9.98227,78.646,NA,CM04,S35,CSW/DS,MaleWitness,bagot
+Male,CM03,Target,Control,996.13,6.77416,91.2254,NA,CM03,S36,CSW/DS,MaleWitness,bagot
+Male,CM04,Target,Control,1071.47,7.18223,95.4296,NA,CM04,S37,CSW/DS,MaleWitness,bagot
+Male,SM06,No Target,Defeat,1244.72,8.33234,82.8836,NA,SM06,S38,CSW/DS,MaleWitness,bagot
+Male,SM13,No Target,Defeat,1594.35,10.6562,56.1233,NA,SM13,S39,CSW/DS,MaleWitness,bagot
+Male,SM06,Target,Defeat,824.056,5.51267,104.272,NA,SM06,S40,CSW/DS,MaleWitness,bagot
+Male,SM13,Target,Defeat,1287.86,8.62881,40.6076,NA,SM13,S41,CSW/DS,MaleWitness,bagot
+Male,WM05,No Target,Witness,1585.87,10.6255,62.096,NA,WM05,S42,CSW/DS,MaleWitness,bagot
+Male,WM06,No Target,Witness,1308.81,8.78692,82.55,NA,WM06,S43,CSW/DS,MaleWitness,bagot
+Male,WM05,Target,Witness,1245.77,8.33563,84.4852,NA,WM05,S44,CSW/DS,MaleWitness,bagot
+Male,WM06,Target,Witness,1028.08,6.89134,111.913,NA,WM06,S45,CSW/DS,MaleWitness,bagot
+Male,CM05,No Target,Control,1568.28,10.4749,64.9989,NA,CM05,S46,CSW/DS,MaleWitness,bagot
+Male,CM06,No Target,Control,1536.93,10.3069,53.9544,NA,CM06,S47,CSW/DS,MaleWitness,bagot
+Male,CM05,Target,Control,1048.75,7.01576,99.9675,NA,CM05,S48,CSW/DS,MaleWitness,bagot
+Male,CM06,Target,Control,1073.44,7.19379,92.3265,NA,CM06,S49,CSW/DS,MaleWitness,bagot
+Male,SM07,No Target,Defeat,1513.2,10.1251,54.4549,NA,SM07,S50,CSW/DS,MaleWitness,bagot
+Male,SM08,No Target,Defeat,1499.61,10.0454,50.184,NA,SM08,S51,CSW/DS,MaleWitness,bagot
+Male,SM07,Target,Defeat,1135.84,7.5984,49.9504,NA,SM07,S52,CSW/DS,MaleWitness,bagot
+Male,SM08,Target,Defeat,820.943,5.53011,39.0728,NA,SM08,S53,CSW/DS,MaleWitness,bagot
+Male,WM07,No Target,Witness,1537.47,10.2966,75.3427,NA,WM07,S54,CSW/DS,MaleWitness,bagot
+Male,WM08,No Target,Witness,1601.25,11.572,70.2375,NA,WM08,S55,CSW/DS,MaleWitness,bagot
+Male,WM07,Target,Witness,1361.34,9.22221,105.206,NA,WM07,S56,CSW/DS,MaleWitness,bagot
+Male,WM08,Target,Witness,1474.26,9.86669,83.918,NA,WM08,S57,CSW/DS,MaleWitness,bagot
+Male,CM07,No Target,Control,1321.42,8.83986,66.6339,NA,CM07,S58,CSW/DS,MaleWitness,bagot
+Male,CM08,No Target,Control,1591.21,10.6661,51.2517,NA,CM08,S59,CSW/DS,MaleWitness,bagot
+Male,CM07,Target,Control,1032.18,6.90955,96.9645,NA,CM07,S60,CSW/DS,MaleWitness,bagot
+Male,CM08,Target,Control,1371.23,9.18535,75.5095,NA,CM08,S61,CSW/DS,MaleWitness,bagot
+Male,SM09,No Target,Defeat,1134.69,7.58224,46.1132,NA,SM09,S62,CSW/DS,MaleWitness,bagot
+Male,SM10,No Target,Defeat,1545.86,10.3644,56.4903,NA,SM10,S63,CSW/DS,MaleWitness,bagot
+Male,SM09,Target,Defeat,716.623,4.7865,84.8856,NA,SM09,S64,CSW/DS,MaleWitness,bagot
+Male,SM10,Target,Defeat,859.366,5.76174,32.0991,NA,SM10,S65,CSW/DS,MaleWitness,bagot
+Male,WM09,No Target,Witness,1403.42,9.40524,56.3902,NA,WM09,S66,CSW/DS,MaleWitness,bagot
+Male,WM10,No Target,Witness,1411.33,9.83886,79.7805,NA,WM10,S67,CSW/DS,MaleWitness,bagot
+Male,WM09,Target,Witness,1091.89,7.293,95.5631,NA,WM09,S68,CSW/DS,MaleWitness,bagot
+Male,WM10,Target,Witness,1052.09,7.05546,102.737,NA,WM10,S69,CSW/DS,MaleWitness,bagot
+Male,CM09,No Target,Control,1310.06,8.77365,81.7825,NA,CM09,S70,CSW/DS,MaleWitness,bagot
+Male,CM10,No Target,Control,1111.76,8.64089,50.3842,NA,CM10,S71,CSW/DS,MaleWitness,bagot
+Male,CM09,Target,Control,1049.29,7.02568,66.8007,NA,CM09,S72,CSW/DS,MaleWitness,bagot
+Male,CM10,Target,Control,918.32,6.15838,102.604,NA,CM10,S73,CSW/DS,MaleWitness,bagot
+Male,SM11,No Target,Defeat,1042.09,6.95264,40.6744,NA,SM11,S74,CSW/DS,MaleWitness,bagot
+Male,SM12,No Target,Defeat,1600.58,10.7337,73.8078,NA,SM12,S75,CSW/DS,MaleWitness,bagot
+Male,SM11,Target,Defeat,474.136,3.16969,3.57027,NA,SM11,S76,CSW/DS,MaleWitness,bagot
+Male,SM12,Target,Defeat,1022.15,6.83632,85.7532,NA,SM12,S77,CSW/DS,MaleWitness,bagot
+Male,WM11,No Target,Witness,1272.96,8.51191,56.0566,NA,WM11,S78,CSW/DS,MaleWitness,bagot
+Male,WM12,No Target,Witness,285.952,1.96964,0,NA,WM12,S79,CSW/DS,MaleWitness,bagot
+Male,WM11,Target,Witness,1166.74,7.79639,61.6288,NA,WM11,S80,CSW/DS,MaleWitness,bagot
+Male,WM12,Target,Witness,1047.76,7.03272,81.6824,NA,WM12,S81,CSW/DS,MaleWitness,bagot
+Male,CM11,No Target,Control,1559.63,10.4614,62.6632,NA,CM11,S82,CSW/DS,MaleWitness,bagot
+Male,CM12,No Target,Control,1261.21,8.45594,95.3629,NA,CM12,S83,CSW/DS,MaleWitness,bagot
+Male,CM11,Target,Control,1145.05,7.67369,90.4246,NA,CM11,S84,CSW/DS,MaleWitness,bagot
+Male,CM12,Target,Control,902.785,6.05284,61.9959,NA,CM12,S85,CSW/DS,MaleWitness,bagot
+Male,WM13,No Target,Witness,1105.33,7.39597,67.5348,NA,WM13,S86,CSW/DS,MaleWitness,bagot
+Male,WM14,No Target,Witness,1232.67,8.2683,44.1445,NA,WM14,S87,CSW/DS,MaleWitness,bagot
+Male,WM13,Target,Witness,1059.13,7.11543,69.2032,NA,WM13,S88,CSW/DS,MaleWitness,bagot
+Male,WM14,Target,Witness,961.161,6.44712,105.54,NA,WM14,S89,CSW/DS,MaleWitness,bagot
+Male,CM13,No Target,Control,1366.83,9.17642,76.9109,NA,CM13,S90,CSW/DS,MaleWitness,bagot
+Male,CM14,No Target,Control,1770.6,11.8713,57.5581,NA,CM14,S91,CSW/DS,MaleWitness,bagot
+Male,CM13,Target,Control,985.402,6.66191,98.3659,NA,CM13,S92,CSW/DS,MaleWitness,bagot
+Male,CM14,Target,Control,1062.53,8.5786,76.1769,NA,CM14,S93,CSW/DS,MaleWitness,bagot
+Male,SM15,No Target,Defeat,1665.05,11.1511,80.3477,NA,SM15,S94,CSW/DS,MaleWitness,bagot
+Male,SM16,No Target,Defeat,1533.59,10.2752,67.8017,NA,SM16,S95,CSW/DS,MaleWitness,bagot
+Male,SM15,Target,Defeat,1108.65,7.41155,35.7027,NA,SM15,S96,CSW/DS,MaleWitness,bagot
+Male,SM16,Target,Defeat,797.022,5.34255,102.937,NA,SM16,S97,CSW/DS,MaleWitness,bagot
+Male,WM15,No Target,Witness,1500.3,10.0321,59.6602,NA,WM15,S98,CSW/DS,MaleWitness,bagot
+Male,WM16,No Target,Witness,1451.17,9.72301,54.0545,NA,WM16,S99,CSW/DS,MaleWitness,bagot
+Male,WM15,Target,Witness,1102.29,7.37399,90.3245,NA,WM15,S100,CSW/DS,MaleWitness,bagot
+Male,WM16,Target,Witness,1004.51,6.73939,104.606,NA,WM16,S101,CSW/DS,MaleWitness,bagot
+Male,CM15,No Target,Control,1224.35,8.22354,74.5085,NA,CM15,S102,CSW/DS,MaleWitness,bagot
+Male,CM16,No Target,Control,1083.36,8.32936,51.819,NA,CM16,S103,CSW/DS,MaleWitness,bagot
+Male,CM15,Target,Control,971.402,6.48822,65.5328,NA,CM15,S104,CSW/DS,MaleWitness,bagot
+Male,CM16,Target,Control,1013.44,6.78107,92.5601,NA,CM16,S105,CSW/DS,MaleWitness,bagot

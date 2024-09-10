@@ -43,7 +43,7 @@ SIT_diff <- readRDS(glue('{data_path}/SIT_diff_primary.rds'))
 SIT_raw <- readRDS(glue('{data_path}/SIT_raw_primary.rds'))
 ```
 
-----
+------------------------------------------------------------------------
 
 ### SI Ratio effects are larger in males than in females (Fig. 1b)
 

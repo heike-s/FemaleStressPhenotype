@@ -41,10 +41,12 @@ secondary_diff <- readRDS(glue('{data_path}/SIT_diff_secondary.rds'))
 primary_diff %<>%
     filter(Sex == 'Female') %>%
     mutate(model = 'CSW/DS',
-           lab = 'bagot') %>%
+           lab = 'bagot',
+           rearing = 'Standard') %>%
     select(names(secondary_diff)) 
 SIT_diff <- bind_rows(primary_diff, secondary_diff) %>%
-                mutate(model = factor(model, levels = c('CSW/DS', 'CSNDS', 'Urine')))
+                mutate(model = factor(model, levels = c('CSW/DS', 'CSNDS', 'Urine')),
+                       rearing = factor(rearing, levels = c('Standard', 'ELS')))
 ```
 
 ---
@@ -60,7 +62,7 @@ SI ratio is significantly lower in stressed females following CSW/DS and Urine m
 # PLOT ----
 SI_ratio <- ggplot(SIT_diff, aes(Condition, IZ_time, color = Condition, fill = Condition)) + 
                 geom_hline(yintercept = 1, color = 'gray10') + 
-                geom_jitter(width = 0.2, alpha = 0.2, height = 0) + 
+                geom_jitter(aes(shape = rearing), width = 0.2, alpha = 0.2, height = 0) + 
                 stat_summary(fun = 'mean', geom = 'point', size = 2) + 
                 stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
                              linewidth = 1, width = 0.4) + 
@@ -135,9 +137,10 @@ As shown in *Figure 4,* $\Delta$Velocity is significantly lower in CSW/DS stress
 #| warning: false
 #| code-fold: true
 
-DelVel <- ggplot(SIT_diff, aes(Condition, Velocity, color = Condition, fill = Condition)) + 
+DelVel <- ggplot(SIT_diff, aes(Condition, Velocity, 
+                 color = Condition, fill = Condition)) + 
               geom_hline(yintercept = 0, color = 'gray80') + 
-              geom_jitter(width = 0.2, alpha = 0.2, height = 0) +
+              geom_jitter(aes(shape = rearing), width = 0.2, alpha = 0.2, height = 0) +
               stat_summary(fun = 'mean', geom = 'point', size = 2) + 
               stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
                            linewidth = 1, width = 0.4) + 

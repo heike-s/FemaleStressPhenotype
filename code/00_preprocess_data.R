@@ -11,13 +11,13 @@ library(here)
 
 ##### PRIMARY SIT #####
 ## Process MoSeq ----
-exps = list.files('Data/kpMoSeq/') # dir contains one dir for each experiment
+exps = list.files('data/kpMoSeq/') # dir contains one dir for each experiment
 data = list()
 
 # Read individual h5 files
 for (exp in exps) {
   print(paste('Reading:', exp))
-  results_file = paste0(path, 'Data/kpMoSeq/', exp)
+  results_file = paste0('data/kpMoSeq/', exp)
   files = unique(h5ls(results_file)$group)
   files = files[2:length(files)]
   files = gsub('/', '', files)
@@ -34,7 +34,7 @@ SIT_data = unlist(lapply(data, '[', 'syllables'))
 SIT_data = tibble('id_full' = as.vector.data.frame(gsub('\\..*', '', names(SIT_data))),
                   'syllable' = as.vector.data.frame(SIT_data))
 
-# Identify syllables > 12 frames in at least one cohort
+# Identify syllables > 15 frames in at least one cohort
 SIT_data %>%
   separate(id_full, c('cohort','id','trial_type'), '_', remove = F) %>%
   group_by(id_full, cohort, id, trial_type, syllable) %>%
@@ -306,14 +306,15 @@ saveRDS(OFT, 'OFT_primary.rds')
 
 ##### SECONDARY SIT #####
 
-Sec <- read.csv('EthoVision_AnyMaze/secondary_CSDS_SIT_results.csv')
-Sec$Total_distance[Sec$model == 'Urine'] <- Sec$Total_distance[Sec$model == 'Urine'] * 100
-Sec$Velocity[Sec$model == 'Urine'] <- Sec$Total_distance[Sec$model == 'Urine'] / 150 
+Sec <- read.csv('EthoVision_AnyMaze/SIT_raw_secondary.csv')
+
+Sec$Total_distance[Sec$model %in% c('Urine','California')] <- Sec$Total_distance[Sec$model %in% c('Urine','California')] * 100
+Sec$Velocity[Sec$model %in% c('Urine','California')] <- Sec$Total_distance[Sec$model %in% c('Urine', 'California')] / 150 
 
 Sec %>%
   select(-c('ID')) %>%
   pivot_longer(cols = !c('cohort_id', 'applied_id', 'lab',
-                         'Sex', 'Condition', 'Trial_type', 'model'), 
+                         'Sex', 'Condition', 'Trial_type', 'model', 'other'), 
                names_to = 'metric', values_to = 'values') %>%
   pivot_wider(names_from = 'Trial_type', values_from = 'values') %>%
   mutate(diff = ifelse(metric %in% c('IZ_time', 'Corner_time'), 
@@ -321,7 +322,7 @@ Sec %>%
                        `No Target` - Target)) %>%
   select(-c(`No Target`, Target)) %>%
   pivot_wider(id_cols = c('cohort_id', 'applied_id', 'lab',
-                         'Sex', 'Condition', 'model'), 
+                         'Sex', 'Condition', 'model', 'other'), 
               names_from = 'metric', values_from = 'diff')   %>%
   mutate(id_full = paste(cohort_id, applied_id, sep='_')) %>%
   filter(IZ_time < 4) %>%
@@ -329,7 +330,7 @@ Sec %>%
 
 Sec_diff$Condition = factor(Sec_diff$Condition, levels = c('Control', 'Stress'), 
                             labels = c('Ctl','Stress'))
-saveRDS(Sec_diff, 'SIT_diff_secondary.rds')
+saveRDS(Sec_diff, 'data/SIT_diff_secondary.rds')
 
 
 

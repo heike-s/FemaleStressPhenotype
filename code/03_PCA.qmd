@@ -473,6 +473,33 @@ ggplot(U1, aes(centroid_y, centroid_x)) +
 ```
 
 ```{r}
+#| label: Fig S2b plot
+#| code-fold: true
+#| fig-width: 5
+#| fig-asp: 0.9
+#| fig-align: center
+#| warning: false
+
+for (syl in substr(syl_info$metric,4,5)) {
+   syl_data <- readRDS(glue('{data_path}/Syls_descriptives_E15.rds'))[[syl]]
+   ggplot(syl_data, aes(centroid_y, centroid_x)) + 
+                  geom_hex() + 
+                  scale_fill_continuous(name = 'count') + 
+                  plot_theme + 
+                  theme(legend.position = 'right',
+                        legend.key.width = unit(0.4, 'cm'),
+                        legend.key.height = unit(1, 'cm'),
+                        legend.title = element_blank(),
+                        axis.title = element_blank(),
+                        axis.line = element_blank(),
+                        axis.text = element_blank(), 
+                        axis.ticks = element_blank())
+   ggsave(glue('/home/bagotlab/global/heike/StressDLC/moseq/SIT_cropped_HSonly_revision/syllable{syl}_arena.pdf', width = 3500, height = 3000, units = 'px'))
+}
+
+```
+
+```{r}
 #| label: Fig S2c plot
 #| code-fold: true
 #| fig-width: 10
