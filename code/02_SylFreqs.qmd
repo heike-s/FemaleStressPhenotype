@@ -9,7 +9,7 @@ editor:
     render-on-save: false
 ---
 
-Figure 2 explores syllable frequency changes between Target and No Target trials in control and stressed males and females. The data suggest that CSW/DS induces widespread yet modes changes across syllables, rather than altering the frequency of only a few select syllables. This code generates Figure 2 and Figure S1 as well as statistics for the results section **Unsupervised behavioral classification reveals widespread effects in female mice**.
+Figure 2 explores syllable frequency changes between Target and No Target trials in control and defeated males and witness females. The data suggest that CSW/DS induces widespread yet modes changes across syllables, rather than altering the frequency of only a few select syllables. This code generates Figure 2 and Figure S1 as well as statistics for the results section **Unsupervised behavioral classification reveals widespread effects in witness female mice**.
 
 ### Libraries & Config
 
@@ -359,7 +359,7 @@ plot_grid(ctl_bp, str_bp, nrow = 2)
 sessionInfo()
 ```
 
-----
+------------------------------------------------------------------------
 
 ### LME and Contrasts tables FULL
 
