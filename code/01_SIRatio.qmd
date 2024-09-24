@@ -9,7 +9,7 @@ editor:
     render-on-save: false
 ---
 
-Figure 1 demonstrates that social interaction ratio is a sensitive metric of stress effect in males but not females. This code generates Fig 1b and Fig 1c as well as statistics for the results section **SI ratio identifies marginal stress effects in females**.
+Figure 1 demonstrates that social interaction ratio is a sensitive metric of stress effect in defeat males but not witness females. This code generates Fig 1b and Fig 1c as well as statistics for the results section **SI ratio identifies marginal stress effects in witness females**.
 
 ### Libraries & Config
 
@@ -176,9 +176,9 @@ kable(es)
 kable(var_test)
 ```
 
-### Raw data confirm differential effects in males and females (Fig. 1c)
+### Raw data confirm differential effects in defeated males and witness females (Fig. 1c)
 
-Finally, we tested if females showed evidence of stress effects in the raw time in the interaction zone, that may be masked when computing the SI ratio. Males show reduced time in ther interaction zone only during the Target trial. In contrast, Females show a modest increase in time in the interaction zone in the No Target trial, and a modest decrease during the Target trial compared to controls.
+Finally, we tested if female witnesses showed evidence of stress effects in the raw time in the interaction zone, that may be masked when computing the SI ratio. Defeated males show reduced time in their interaction zone only during the Target trial. In contrast, witness females show a modest increase in time in the interaction zone in the No Target trial, and a modest decrease during the Target trial compared to controls.
 
 ```{r}
 #| label: Fig 1c prep
