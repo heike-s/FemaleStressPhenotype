@@ -156,6 +156,103 @@ kable(mm_ttype_IZ_f, align='c', caption = 'Sidak Post-Hoc Planned Contrasts in I
 
 ---
 
+```{r}
+#| label: Fig S7d plot and stats
+#| echo: false
+#| fig-width: 7
+#| fig-asp: 0.75
+#| fig-align: center
+
+# PLOT ----
+FIP_dffArena <- ggplot(FIP_data, aes(Trial_type, dff_Arena)) + 
+                      geom_hline(yintercept = 0) + 
+                      geom_jitter(
+                        data = FIP_data[FIP_data$Group_combined != 'ResSus',],
+                        aes(alpha = Trial_type, color = Group), 
+                        width = 0.2, size = 5.5, height = 0) + 
+                      geom_jitter(
+                        data = FIP_data[FIP_data$Group_combined == 'ResSus',],
+                        aes(alpha = Trial_type), color = '#C1292E', 
+                        shape = 17, width = 0.2, size = 5.5, height = 0) + 
+                      stat_summary(fun = 'mean', geom = 'point', size = 5, 
+                                   color = 'gray50') + 
+                      stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
+                                   linewidth = 1.5, width = 0.5, color = 'gray50') + 
+                      facet_grid(. ~ Group) + 
+                      ylim(c(-.2,.1)) + ylab('Mean DF/F') +
+                      plot_theme + 
+                      scale_color_manual(values = col_stress_f) + 
+                      scale_alpha_manual(values = c(0.8,0.5)) + 
+                      theme(axis.title.x = element_blank(),
+                            legend.position = 'none')
+FIP_dffArena
+
+# STATS ----
+lme_Arena_dff <- lme(dff_Arena ~ Group * Trial_type, 
+                     data = FIP_data, random = list(applied_ID = ~ 1))
+lme_Arena_dff_table <- cbind(rownames(summary(lme_Arena_dff)$tTable),
+                          unname(summary(lme_Arena_dff)$tTable[,'Value']),
+                          unname(summary(lme_Arena_dff)$tTable[,'Std.Error']),
+                          unname(summary(lme_Arena_dff)$tTable[,'DF']),
+                          unname(summary(lme_Arena_dff)$tTable[,'t-value']))
+mm_ttype_Arena_dff <- pairs(emmeans(lme_Arena_dff, ~ Trial_type | Group), adjust = 'sidak')
+
+kable(lme_Arena_dff_table, 
+      col.names = c('','Value','Std. Error', 'DF', 't-Value'),
+      caption = 'LME in Arena', )
+kable(mm_ttype_Arena_dff, align='c', caption = 'Sidak Post-Hoc Planned Contrasts in Arena')
+
+```
+
+```{r}
+#| label: Fig S7e plot and stats
+#| echo: false
+#| fig-width: 7
+#| fig-asp: 0.75
+#| fig-align: center
+
+# PLOT ----
+FIP_dffIZ <- ggplot(FIP_data, aes(Trial_type, dff_IZ)) + 
+                      geom_hline(yintercept = 0) + 
+                      geom_jitter(
+                        data = FIP_data[FIP_data$Group_combined != 'ResSus',],
+                        aes(alpha = Trial_type, color = Group), 
+                        width = 0.2, size = 5.5, height = 0) + 
+                      geom_jitter(
+                        data = FIP_data[FIP_data$Group_combined == 'ResSus',],
+                        aes(alpha = Trial_type), color = '#C1292E', 
+                        shape = 17, width = 0.2, size = 5.5, height = 0) + 
+                      stat_summary(fun = 'mean', geom = 'point', size = 5, 
+                                   color = 'gray50') + 
+                      stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
+                                   linewidth = 1.5, width = 0.5, color = 'gray50') + 
+                      facet_grid(. ~ Group) + 
+                      ylim(c(-.2,.1)) + ylab('Mean DF/F') +
+                      plot_theme + 
+                      scale_color_manual(values = col_stress_f) + 
+                      scale_alpha_manual(values = c(0.8,0.5)) + 
+                      theme(axis.title.x = element_blank(),
+                            legend.position = 'none')
+FIP_dffIZ
+
+# STATS ----
+lme_IZ_dff <- lme(dff_IZ ~ Group * Trial_type, 
+                     data = FIP_data, random = list(applied_ID = ~ 1))
+lme_IZ_dff_table <- cbind(rownames(summary(lme_IZ_dff)$tTable),
+                          unname(summary(lme_IZ_dff)$tTable[,'Value']),
+                          unname(summary(lme_IZ_dff)$tTable[,'Std.Error']),
+                          unname(summary(lme_IZ_dff)$tTable[,'DF']),
+                          unname(summary(lme_IZ_dff)$tTable[,'t-value']))
+mm_ttype_IZ_dff <- pairs(emmeans(lme_IZ_dff, ~ Trial_type | Group), adjust = 'sidak')
+
+kable(lme_IZ_dff_table, 
+      col.names = c('','Value','Std. Error', 'DF', 't-Value'),
+      caption = 'LME in Arena', )
+kable(mm_ttype_IZ_dff, align='c', caption = 'Sidak Post-Hoc Planned Contrasts in Arena')
+```
+
+---
+
 ### Session Info
 
 ```{r}
