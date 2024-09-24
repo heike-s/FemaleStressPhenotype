@@ -9,7 +9,7 @@ editor:
     render-on-save: false
 ---
 
-Figure 4 links the SMS to Velocity as a heuristic to quantify the female stress effect. This notebook generates Figure 4 and Figure S3 as well as statistics for the results section **Velocity is a unifying feature and heuristic for social modulation**.
+Figure 4 links the SMS to Velocity as a heuristic to quantify the female witness effect. This notebook generates Figure 4 and Figure S4 as well as statistics for the results section **Velocity is a unifying feature and heuristic for social modulation**.
 
 ```{r}
 #| label: libraries
@@ -75,8 +75,9 @@ syl_char$social_type <- ifelse(grepl("U", syl_char$syl_name), "Up",
 # Avg per social identity type per animal
 syl_char %<>%
     filter(social_type != "No Change") %>% # Only interested in U and D
+    mutate(id_full = paste(cohort, id)) %>%
     mutate(outcome = ifelse(name %in% c("Velocity", "Distance"), "Motion",
-        ifelse(name %in% c("Dist. to Center", "Dist. to Target"),
+        ifelse(name %in% c("Dist. to Center", "Dist. to Target", "Orientation"),
             "Location", "Pose"
         )
     )) %>% # Group outcome for plotting
@@ -119,15 +120,11 @@ em_plot <- ggplot(tests, aes(name, estimate, color = name)) +
     geom_hline(yintercept = 0, color = "gray30") +
     geom_point(size = 3) +
     geom_errorbar(aes(ymin = lower_cl, ymax = upper_cl), width = 0.4, linewidth = 1.1) +
-    facet_wrap(outcome ~ ., scales = "free_x") +
-    scale_color_manual(values = c(
-        "#030637", "#030637", "#030637",
-        "#030637", "#E95793", "gray30"
-    )) + # Color based on direction of effect
-    scale_fill_manual(values = c(
-        "#030637", "#030637", "#030637",
-        "#030637", "#E95793", "gray30"
-    )) + # Color based on direction of effect
+    facet_grid(. ~ outcome, scales = 'free', space = 'free') + 
+    scale_color_manual(values = c('#030637','#030637','#030637',
+                              '#030637','#E95793','#030637','#030637')) + # Color based on direction of effect
+    scale_fill_manual(values = c('#030637','#030637','#030637',
+                              '#030637','#E95793','#030637','#030637')) + # Color based on direction of effect
     scale_y_continuous(
         breaks = pretty_breaks(), limits = c(-1.5, 2.5),
         name = "Estimated Marginal Mean Difference"
@@ -197,7 +194,7 @@ kable(rbind(PC2_cor, SMS_cor)[,1:4], digits = 5,
 ```
 
 ### $\Delta$Velocity and the SMS detect stress effects equally well (Fig. 4c, 4d)
-We visually examine the distributions of the metrics below as well as formally compare effect sizes between the metrics. For males, SI ratio is differentiates best between stressed and control males. In contrast, for females, both SMS and $\Delta$Velocity differentiate between witnesses and controls. While the effect sizes are slightly larger for the SMS, the heuristic $\Delta$Velocity still provides significant improvement in effect size over the SI ratio in females.
+We visually examine the distributions of the metrics below as well as formally compare effect sizes between the metrics. For  males, SI ratio is differentiates best between defeated and control males. In contrast, for females, both SMS and $\Delta$Velocity differentiate between witnesses and controls. While the effect sizes are slightly larger for the SMS, the heuristic $\Delta$Velocity still provides significant improvement in effect size over the SI ratio in females.
 
 ```{r}
 #| label: fig 4c prep + plot
@@ -310,12 +307,12 @@ es_plot
 
 ------------------------------------------------------------------------
 
-### $\Delta$Velocity effects are driven by differences in Target trial between control and stressed females (Fig. S3)
+### $\Delta$Velocity effects are driven by differences in Target trial between control and witness females (Fig. S4)
 
 We find that the differences in $\Delta$Velocity are largely driven by changes in the Target trial. 
 
 ```{r}
-#| label: fig s3 prep + plot
+#| label: fig s4 prep + plot
 #| code-fold: true
 #| fig-width: 10
 #| fig-asp: 0.9
