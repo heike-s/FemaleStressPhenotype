@@ -9,7 +9,7 @@ editor:
     render-on-save: false
 ---
 
-Figure 3 demonstrates that female mice show behavioral variability distinct of that observed in males as a result of CSW/DS, and that this behavioral variability is driven by an attenuated behavioral regulation in response to target presence. This code generates Fig 3 and Fig. S2 as well as statistics for the results section **Dimensionality reduction identifies distinct sources of stress-related variance in males and females**.
+Figure 3 demonstrates that female witness mice show behavioral variability distinct of that observed in males as a result of CSW/DS, and that this behavioral variability is driven by an attenuated behavioral regulation in response to target presence. This code generates Fig 3 and Fig. S2 as well as statistics for the results section **Dimensionality reduction identifies distinct sources of stress-related variance in defeat males and witness females**.
 
 ### Libraries & Config
 
@@ -88,7 +88,7 @@ SIT_diff %>%
 
 ### PCA Plots (Fig. 3a, 3b)
 
-The PC plot shows that CSW/DS induces behavioral variability largely captured along PC1 in males, but along PC2 in females. This analysis not only confirms that male and female mice differ in their behavioral response after CSW/DS in the SIT, but also emphasizes that CSW/DS indeed causes behavioral changes in witness females, disputing the hypothesis that the stress model does not work.
+The PC plot shows that CSW/DS induces behavioral variability largely captured along PC1 in defeat males, but along PC2 in witness females. This analysis not only confirms that male and female mice differ in their behavioral response after CSW/DS in the SIT, but also emphasizes that CSW/DS indeed causes behavioral changes in witness females, disputing the hypothesis that the stress model does not work.
 
 ```{r}
 #| label: Fig 3a prep and plot
@@ -216,9 +216,9 @@ ggplot(SIT_pca, aes(PC1, PC2, color = social_identity, fill = social_identity)) 
 
 ### Importance of Syllable Social Identity (Fig. 3c, 3d)
 
-Given that Up- and Downregulated syllables split along the axis of PC2, which in turn differentiates control and stressed females, we next looked at the average changes in syllable frequency observed within each social identity group. We show that in males, Upregulated syllables are more upregulated in defeated males compared to controls. In females, we see an attenuated regulation in both Up- and Downregulated syllables.
+Given that Up- and Downregulated syllables split along the axis of PC2, which in turn differentiates control and witness females, we next looked at the average changes in syllable frequency observed within each social identity group. We show that Upregulated syllables are more upregulated in defeated males compared to controls. In witness females, we see an attenuated regulation in both Up- and Downregulated syllables.
 
-We summarize these observations by quantifying the average absolute syllable frequency change, which we term the Social Modulation Score (SMS). We observed a significant increase in SMS in males, and a significant decrease in females.
+We summarize these observations by quantifying the average absolute syllable frequency change, which we term the Social Modulation Score (SMS). We observed a significant increase in SMS in males, and a significant decrease in witness females.
 
 ```{r}
 #| label: Fig 3cd prep and plot
@@ -402,9 +402,9 @@ plot_grid(pc1, pc2, ncol = 2, nrow = 1, align = 'hv')
 
 ------------------------------------------------------------------------
 
-### Defeat male-specific behavior: U1 Upregulation (Fig. S2)
+### Defeat male-specific behavior: U1 Upregulation (Fig. S3)
 
-We observed that Males show a higher upregulation of upregulated syllables only. When further investigating this observation we see that this is driven by an increase specific to U1 in stressed Males compared to control males.
+We observed that defeat ales show a higher upregulation of upregulated syllables only. When further investigating this observation we see that this is driven by an increase specific to U1 in defeated males compared to control males.
 
 ```{r}
 #| label: Fig S2a prep + plot
