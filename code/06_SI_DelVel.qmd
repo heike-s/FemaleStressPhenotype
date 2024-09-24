@@ -9,7 +9,7 @@ editor:
     render-on-save: false
 ---
 
-Figure 6 explores the relationship between the standard metric SI Ratio with the new metric $\Delta$Velocity, and proposes a new cut-off including both metrics. Figure S4 expands on this finding by exploring the grouping based on the novel cutoff in the OFT. Thie notebook generates Figure 6 and Figure S4 as well as statistics for the results section **Attenuated ΔVelocity generalizes across female social stress models**.
+Figure 6 explores the relationship between the standard metric SI Ratio with the new metric $\Delta$Velocity, and proposes a new cut-off including both metrics. Figure S6 expands on this finding by exploring the grouping based on the novel cutoff in the OFT. This notebook generates Figure 6 and Figure S6 as well as statistics for the results section **Combining ΔVelocity and SI Ratio optimally differentiates resilient and susceptible female witnesses**.
 
 ### Libraries and Config
 
@@ -56,7 +56,7 @@ SIT_diff <- bind_rows(primary_diff, secondary_diff) %>%
 
 ### Relationship between SI Ratio and $\Delta$ Velocity (Fig. 6a)
 
-Si data are binned before plotting. The majority of SI ratio values are within 1 - 2, with only sparse coverage below 1. We are specifically interested in the relationship between low SI ratio values and $\Delta$Velocity, and without binning the data, the relationship to lower values will be difficult to understand due to their sparsity.
+SI data are binned before plotting. The majority of SI ratio values are within 1 - 2, with only sparse coverage below 1. We are specifically interested in the relationship between low SI ratio values and $\Delta$Velocity, and without binning the data, the relationship to lower values will be difficult to understand due to their sparsity.
 
 ```{r}
 #| label: SI ratio bins + Fig. 6a prep
@@ -192,7 +192,7 @@ plot_grid(SI_hist, NULL, Cor_plot, DelVel_hist, align = 'hv',
 
 ------------------------------------------------------------------------
 
-### General stress-induced phenotype in OFT (Fig. S4)
+### General stress-induced phenotype in OFT (Fig. S6)
 
 Defeated **males** demonstrate a decrease in the time spent in the center of the arena, whether they are susceptible or resilient as classified by the SI ratio, suggesting a dissociation of social stress effects on social reward and anxiety-like behavior.
 
