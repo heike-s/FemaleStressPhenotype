@@ -308,11 +308,11 @@ saveRDS(OFT, 'OFT_primary.rds')
 
 Sec <- read.csv('EthoVision_AnyMaze/SIT_raw_secondary.csv')
 
-Sec$Total_distance[Sec$model %in% c('Urine','California')] <- Sec$Total_distance[Sec$model %in% c('Urine','California')] * 100
-Sec$Velocity[Sec$model %in% c('Urine','California')] <- Sec$Total_distance[Sec$model %in% c('Urine', 'California')] / 150 
+Sec$Total_distance[Sec$model %in% c('Urine','California ')] <- Sec$Total_distance[Sec$model %in% c('Urine','California ')] * 100
+Sec$Velocity[Sec$model %in% c('Urine','California ')] <- Sec$Total_distance[Sec$model %in% c('Urine', 'California ')] / 150 
 
 Sec %>%
-  select(-c('ID')) %>%
+  dplyr::select(-c('ID')) %>%
   pivot_longer(cols = !c('cohort_id', 'applied_id', 'lab',
                          'Sex', 'Condition', 'Trial_type', 'model', 'other'), 
                names_to = 'metric', values_to = 'values') %>%
@@ -320,7 +320,7 @@ Sec %>%
   mutate(diff = ifelse(metric %in% c('IZ_time', 'Corner_time'), 
                        Target / `No Target`, 
                        `No Target` - Target)) %>%
-  select(-c(`No Target`, Target)) %>%
+  dplyr::select(-c(`No Target`, Target)) %>%
   pivot_wider(id_cols = c('cohort_id', 'applied_id', 'lab',
                          'Sex', 'Condition', 'model', 'other'), 
               names_from = 'metric', values_from = 'diff')   %>%
