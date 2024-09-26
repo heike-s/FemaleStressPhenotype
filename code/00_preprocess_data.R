@@ -306,7 +306,7 @@ saveRDS(OFT, 'OFT_primary.rds')
 
 ##### SECONDARY SIT #####
 
-Sec <- read.csv('EthoVision_AnyMaze/SIT_raw_secondary.csv')
+Sec <- read.csv('data/SIT_raw_secondary.csv')
 
 Sec$Total_distance[Sec$model %in% c('Urine','California ')] <- Sec$Total_distance[Sec$model %in% c('Urine','California ')] * 100
 Sec$Velocity[Sec$model %in% c('Urine','California ')] <- Sec$Total_distance[Sec$model %in% c('Urine', 'California ')] / 150 

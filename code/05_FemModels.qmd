@@ -9,7 +9,7 @@ editor:
     render-on-save: false
 ---
 
-In Figure 5 we show that $\Delta$Velocity changes are observed in Chronic Social Non-Discriminatory Defeat (CSNDS) as well as Urine Model Defeat. This code generates Figure 5 as well as statistics for the results section **Attenuated** $\Delta$**Velocity generalizes across female social stress models.**
+In Figure 5 we show that $\Delta$Velocity changes are observed in Chronic Social Non-Discriminatory Defeat (CSNDS) as well as Urine Model Defeat. This code generates Figure 5 as well as statistics for the results section **Exploration of** $\Delta$**Velocity across female social stress models.**
 
 ### Libraries & Config
 
@@ -21,9 +21,12 @@ In Figure 5 we show that $\Delta$Velocity changes are observed in Chronic Social
 library(here)
 library(glue)
 library(dplyr)
+library(tidyr)
 library(magrittr)
 library(ggplot2)
+library(cowplot)
 library(effectsize)
+library(emmeans)
 library(pander)
 library(knitr)
 ```
@@ -42,27 +45,33 @@ primary_diff %<>%
     filter(Sex == 'Female') %>%
     mutate(model = 'CSW/DS',
            lab = 'bagot',
-           rearing = 'Standard') %>%
+           other = NA) %>%
     select(names(secondary_diff)) 
 SIT_diff <- bind_rows(primary_diff, secondary_diff) %>%
-                mutate(model = factor(model, levels = c('CSW/DS', 'CSNDS', 'Urine')),
-                       rearing = factor(rearing, levels = c('Standard', 'ELS')))
+                      mutate(other = ifelse(is.na(other), 'None', other))
+
 ```
 
 ---
 
-### SI ratio across female defeat models (Fig. 5b)
+### SI ratio across female defeat models (Fig. 5a-d)
 
-SI ratio is significantly lower in stressed females following CSW/DS and Urine model defeat, but not following CSNDS.
+SI ratio is significantly lower in stressed females Urine model defeat, but not following CSNDS or in a validation cohort of CSW/DS. In male witnesses, SI ratio is not significantly reduced either. In CSNDS males and in the males of the CSW/DS validation cohort, SI ratio is as expected significantly reduced. 
 
 ```{r}
-#| label: Fig 5b prep
+#| label: Fig 5a-d siratio prep
 #| code-fold: true
 
+SIT_diff %>%
+  filter(model %in% c('CSW/DS VC F', 'CSW/DS VC M','CSW/DS Witness M', 'CSNDS Female', 'CSNDS Male', 'Urine'),
+         other != 'ELS') %>%
+  mutate(model = factor(model, levels = c('CSW/DS VC F', 'CSW/DS VC M','CSW/DS Witness M', 'CSNDS Female', 'CSNDS Male', 'Urine')), 
+         colcond = paste0(Sex, Condition)) -> main_SIT_diff
+
 # PLOT ----
-SI_ratio <- ggplot(SIT_diff, aes(Condition, IZ_time, color = Condition, fill = Condition)) + 
+SI_ratio <- ggplot(main_SIT_diff, aes(Condition, IZ_time, color = colcond, fill = colcond)) + 
                 geom_hline(yintercept = 1, color = 'gray10') + 
-                geom_jitter(aes(shape = rearing), width = 0.2, alpha = 0.2, height = 0) + 
+                geom_jitter(width = 0.2, alpha = 0.2, height = 0) + 
                 stat_summary(fun = 'mean', geom = 'point', size = 2) + 
                 stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
                              linewidth = 1, width = 0.4) + 
@@ -70,43 +79,38 @@ SI_ratio <- ggplot(SIT_diff, aes(Condition, IZ_time, color = Condition, fill = C
                 scale_y_continuous(name = 'SI Ratio',
                                    breaks = c(0,1,2,3,4), limits = c(0,4),
                                    expand = c(0,0)) + 
-                scale_color_manual(values = col_full[c(1,2)]) + 
+                scale_color_manual(values = col_full) + 
                 scale_fill_manual(values = col_full) + 
                 plot_theme + 
                 theme(legend.position = 'None',
                       axis.title.x = element_blank(),
-                      panel.spacing.x = unit(3, 'lines'),
-                      strip.text = element_blank())
+                      panel.spacing.x = unit(3, 'lines'))
 
 # STATS ----
 
-# ANOVAs & ES
-CSWDS_data <- SIT_diff[SIT_diff$model == 'CSW/DS',]
-aov_SIratio_CSWDS <- summary(aov(IZ_time ~ Condition + cohort, CSWDS_data))
-g_CSWDS <- hedges_g(IZ_time ~ Condition, data = CSWDS_data)$Hedges_g
+# ANOVAs
+CSWDS_VC_F_data <- SIT_diff[SIT_diff$model == 'CSW/DS VC F',]
+aov_SIratio_CSWDS_VC_F <- summary(aov(IZ_time ~ Condition, CSWDS_VC_F_data))
 
-CSNDS_data <- SIT_diff[SIT_diff$model == 'CSNDS',] 
-aov_SIratio_CSNDS <- summary(aov(IZ_time ~ Condition, CSNDS_data)) # Single cohort only
-g_CSNDS <- hedges_g(IZ_time ~ Condition, data = CSNDS_data)$Hedges_g
+CSWDS_VC_M_data <- SIT_diff[SIT_diff$model == 'CSW/DS VC M',]
+aov_SIratio_CSWDS_VC_M <- summary(aov(IZ_time ~ Condition, CSWDS_VC_M_data))
+
+CSWDS_Witness_M_data <- SIT_diff[SIT_diff$model == 'CSW/DS Witness M',] 
+aov_SIratio_CSWDS_Witness_M <- summary(aov(IZ_time ~ Condition, CSWDS_Witness_M_data)) 
+
+CSNDS_F_data <- SIT_diff[SIT_diff$model == 'CSNDS Female',]
+aov_SIratio_CSNDS_F <- summary(aov(IZ_time ~ Condition, CSNDS_F_data))
+
+CSNDS_M_data <- SIT_diff[SIT_diff$model == 'CSNDS Male',]
+aov_SIratio_CSNDS_M <- summary(aov(IZ_time ~ Condition, CSNDS_M_data))
 
 Urine_data <- SIT_diff[SIT_diff$model == 'Urine',]
-aov_SIratio_Urine <- summary(aov(IZ_time ~ Condition + cohort, Urine_data))
-g_Urine <- hedges_g(IZ_time ~ Condition, data = Urine_data)$Hedges_g
+aov_SIratio_Urine <- summary(aov(IZ_time ~ Condition, Urine_data))
 
-# %Sus
-SIT_diff %>%
-    group_by(model) %>%
-    filter(Condition == 'Stress') %>%
-    count(IZ_time < 1) %>%
-    mutate(percent_sus = n / sum(n) * 100) %>%
-    filter(`IZ_time < 1` == 'TRUE') %>%
-    select(!c(`IZ_time < 1`,'n')) %>%
-    rename(Model = model, `% Susceptible` = percent_sus) -> pct_sus
-pct_sus$`Hedge's g` <- c(g_CSWDS, g_CSNDS, g_Urine)
 ```
 
 ```{r}
-#| label: Fig 5b plot and stats
+#| label: Fig 5a-d siratio plot and stats
 #| echo: false
 #| fig-width: 10
 #| fig-asp: 0.6
@@ -114,39 +118,35 @@ pct_sus$`Hedge's g` <- c(g_CSWDS, g_CSNDS, g_Urine)
 
 SI_ratio
 
-pander(aov_SIratio_CSWDS, caption = 'ANOVA: SI ratio in CSW/DS')
-pander(aov_SIratio_CSNDS, caption = 'ANOVA: SI ratio in CSNDS')
+pander(aov_SIratio_CSWDS_VC_F, caption = 'ANOVA: SI ratio in in Female CSW/DS witness mice in a validation cohort')
+pander(aov_SIratio_CSWDS_VC_M, caption = 'ANOVA: SI ratio in in Male CSW/DS witness mice in a validation cohort')
+pander(aov_SIratio_CSWDS_Witness_M, caption = 'ANOVA: SI ratio in Male CSW/DS witness mice')
+pander(aov_SIratio_CSNDS_F, caption = 'ANOVA: SI ratio in Female CSNDS mice')
+pander(aov_SIratio_CSNDS_M, caption = 'ANOVA: SI ratio in Male CSNDS mice')
 pander(aov_SIratio_Urine, caption = 'ANOVA: SI ratio in Urine Defeat')
+
 ```
 
-Both CSW/DS and Urine model defeat induce similar effect sizes and produce a similar percentage of susceptible females, with a slightly larger effect observed in Urine model defeat.
+
+### $\Delta$Velocity across female defeat models (Fig. 5a-d)
+
+As shown in *Figure 4,* $\Delta$Velocity is significantly lower in CSW/DS female witnesses. Here, we demonstrate that $\Delta$Velocity shows a significant reduction in the CSW/DS VC females and following CSNDS, with a trending reduction in Urine model defeat and CSW/DS witness males. The lower effect size after Urine model defeat could relate to the more extreme SI ratio values observed in this model, which are incompatible with low $\Delta$Velocity values, as shown in *Figure 6.*
 
 ```{r}
-#| label: Fig 5b extra stats
-#| echo: false
-
-kable(pct_sus)
-```
-
-### $\Delta$Velocity across female defeat models (Fig. 5c)
-
-As shown in *Figure 4,* $\Delta$Velocity is significantly lower in CSW/DS stressed females. Here, we demonstrate that $\Delta$Velocity shows a significant and trending reduction following CSNDS and Urine model defeat, respectively. The lower effect size after Urine model defeat could relate to the more extreme SI ratio values observed in this model, which are incompatible with low $\Delta$Velocity values, as shown in *Figure 6.*
-
-```{r}
-#| label: Fig 5c prep
+#| label: Fig 5a-d delvel prep
 #| warning: false
 #| code-fold: true
 
-DelVel <- ggplot(SIT_diff, aes(Condition, Velocity, 
-                 color = Condition, fill = Condition)) + 
+DelVel <- ggplot(main_SIT_diff, aes(Condition, Velocity, 
+                 color = colcond, fill = colcond)) + 
               geom_hline(yintercept = 0, color = 'gray80') + 
-              geom_jitter(aes(shape = rearing), width = 0.2, alpha = 0.2, height = 0) +
+              geom_jitter(width = 0.2, alpha = 0.2, height = 0) +
               stat_summary(fun = 'mean', geom = 'point', size = 2) + 
               stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
                            linewidth = 1, width = 0.4) + 
               facet_grid(. ~ model) + 
               scale_y_continuous(name = expression(Delta*' Velocity')) + 
-              scale_color_manual(values = col_full[c(1,2)]) + 
+              scale_color_manual(values = col_full) + 
               scale_fill_manual(values = col_full) + 
               plot_theme + 
               theme(legend.position = 'None',
@@ -157,14 +157,17 @@ DelVel <- ggplot(SIT_diff, aes(Condition, Velocity,
 # STATS ----
 
 # ANOVAs
-aov_SIratio_CSWDS <- summary(aov(Velocity ~ Condition + cohort, CSWDS_data))
-aov_SIratio_CSNDS <- summary(aov(Velocity ~ Condition, CSNDS_data)) # Single cohort only
-aov_SIratio_Urine <- summary(aov(Velocity ~ Condition + cohort, Urine_data))
+aov_DelVel_CSWDS_VC_F <- summary(aov(Velocity ~ Condition, CSWDS_VC_F_data))
+aov_DelVel_CSNDS_VC_M <- summary(aov(Velocity ~ Condition, CSWDS_VC_M_data))
+aov_DelVel_CSWDS_Witness_M <- summary(aov(Velocity ~ Condition, CSWDS_Witness_M_data))
+aov_DelVel_CSNDS_F <- summary(aov(Velocity ~ Condition, CSNDS_F_data))
+aov_DelVel_CSNDS_M <- summary(aov(Velocity ~ Condition, CSNDS_M_data))
+aov_DelVel_Urine <- summary(aov(Velocity ~ Condition, Urine_data))
 
 ```
 
 ```{r}
-#| label: Fig 5c plot and stats
+#| label: Fig 5a-d delvel plot and stats
 #| echo: false
 #| fig-width: 10
 #| fig-asp: 0.6
@@ -173,9 +176,162 @@ aov_SIratio_Urine <- summary(aov(Velocity ~ Condition + cohort, Urine_data))
 
 DelVel
 
-pander(aov_SIratio_CSWDS, caption = 'ANOVA: Delta Velocity in CSW/DS')
-pander(aov_SIratio_CSNDS, caption = 'ANOVA: Delta Velocity in CSNDS')
-pander(aov_SIratio_Urine, caption = 'ANOVA: Delta Velocity in Urine Defeat')
+pander(aov_DelVel_CSWDS_VC_F, caption = 'ANOVA: Delta Velocity in in Female CSW/DS witness mice in a validation cohort')
+pander(aov_DelVel_CSNDS_VC_M, caption = 'ANOVA: Delta Velocity in in Male CSW/DS witness mice in a validation cohort')
+pander(aov_DelVel_CSWDS_Witness_M, caption = 'ANOVA: Delta Velocity in Male CSW/DS witness mice')
+pander(aov_DelVel_CSNDS_F, caption = 'ANOVA: Delta Velocity in Female CSNDS mice')
+pander(aov_DelVel_CSNDS_M, caption = 'ANOVA: Delta Velocity in Male CSNDS mice')
+pander(aov_DelVel_Urine, caption = 'ANOVA: Delta Velocity in Urine Defeat')
+
+```
+
+### Effect sizes across female defeat models (Fig. 5e)
+
+To account for differences in sample size in the datasets used in the study we also provide effect sizes to compare mean differences across different female defeat models. 
+
+```{r}
+#| label: Fig 5e stats
+#| echo: false
+#| warning: false
+#| fig-width: 10
+#| fig-asp: 0.6
+#| fig-align: center
+
+SIT_diff %>%
+  filter(model %in% c('CSW/DS VC F', 'CSW/DS VC M','CSW/DS Witness M', 'CSNDS Female', 'CSNDS Male', 'Urine')) %>%
+  mutate(model = ifelse(Sex == 'Male' & model == 'CSW/DS', 'CSW/DS Defeat', model)) -> es_SIT_diff
+
+es_SIT_diff %>%
+  group_by(model, Sex, other) %>%
+  summarise(g_SI_ratio = abs(effectsize::hedges_g(IZ_time ~ Condition, .data)$Hedges_g),
+            g_Vel_diff = abs(effectsize::hedges_g(Velocity ~ Condition, .data)$Hedges_g)) %>%
+  pivot_longer(cols = c('g_SI_ratio', 'g_Vel_diff'),
+               values_to = 'hedges_g', names_to = 'metric') %>%
+  mutate(metric = factor(metric, levels = c('g_SI_ratio', 'g_Vel_diff'),
+                           labels = c('SI Ratio', 'Velocity'))) %>%
+  pivot_wider(values_from = 'hedges_g', names_from = 'metric') -> g_es_models
+
+kable(g_es_models, caption = "Hedge's g effect sizes across models for SI Ratio and Delta Velocity")
+
+```
+
+
+---
+
+### Models of inter-female aggression (Fig. S5)
+
+#### Mus Muculus (Swiss Webster)
+```{r}
+#| label: Fig s5a swb
+#| echo: false
+#| warning: false
+#| fig-width: 10
+#| fig-asp: 0.6
+#| fig-align: center
+
+SIT_diff %>%
+  filter(model == 'Swiss Webster') -> swb_SIT_diff
+
+swb_SI <- ggplot(swb_SIT_diff, aes(Condition, IZ_time, color = Condition, fill = Condition)) + 
+  geom_hline(yintercept = 1, color = 'gray80') + 
+  geom_jitter(aes(shape = other), size = 3, width = 0.2, alpha = 0.2, height = 0) +
+  stat_summary(fun.y = 'mean', geom = 'point', size = 3) + 
+  stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
+               linewidth = 1, width = 0.4) + 
+  facet_grid(. ~ model) + 
+  ylab('SI Ratio') + 
+  scale_color_manual(values = col_full[c(1,2)]) + 
+  scale_fill_manual(values = col_full) + 
+  plot_theme + 
+  theme(legend.position = 'None',
+        axis.title.x = element_blank(),
+        panel.spacing.x = unit(3, 'lines'))
+
+swb_Vel <- ggplot(swb_SIT_diff, aes(Condition, Velocity, color = Condition, fill = Condition)) + 
+  geom_hline(yintercept = 0, color = 'gray80') + 
+  geom_jitter(aes(shape = other), size = 3, width = 0.2, alpha = 0.2, height = 0) +
+  stat_summary(fun.y = 'mean', geom = 'point', size = 3) + 
+  stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
+               linewidth = 1, width = 0.4) + 
+  facet_grid(. ~ model) + 
+  scale_y_continuous(name = expression(Delta*' Velocity'),
+                     breaks = c(-2,0,2,4,6,8), limits = c(-2,8)) + 
+  scale_color_manual(values = col_full[c(1,2)]) + 
+  scale_fill_manual(values = col_full) + 
+  plot_theme + 
+  theme(legend.position = 'None',
+        axis.title.x = element_blank(),
+        panel.spacing.x = unit(3, 'lines'))
+
+aov_SIratio_swb <- summary(aov(IZ_time ~ Condition, swb_SIT_diff))
+aov_DelVel_swb <- summary(aov(Velocity ~ Condition, swb_SIT_diff))
+
+plot_grid(swb_SI, swb_Vel)
+
+pander(aov_SIratio_swb, caption = 'ANOVA: SI ratio in Mus Muculus (Swiss Webster) model of inter-female aggression.')
+pander(aov_DelVel_swb, caption = 'ANOVA: Delta Velocity in Mus Muculus (Swiss Webster) model of inter-female aggression.')
+```
+
+#### Peromyscus californicus (California Mouse)
+
+```{r}
+#| label: Fig s5b calmouse
+#| echo: false
+#| fig-width: 10
+#| fig-asp: 0.6
+#| fig-align: center
+
+
+SIT_diff %>%
+  filter(model == 'California ',
+         Sex == 'Female', 
+         Velocity > -25 & Velocity < 25) -> cal_SIT_diff
+
+ggplot(cal_SIT_diff, aes(Condition, IZ_time, color = Condition, fill = Condition)) + 
+  geom_hline(yintercept = 1, color = 'gray80') + 
+  geom_jitter(aes(shape = other), size = 3, width = 0.2, alpha = 0.2, height = 0) +
+  stat_summary(fun.y = 'mean', geom = 'point', size = 3) + 
+  stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
+               linewidth = 1, width = 0.4) + 
+  facet_grid(. ~ other) + 
+  ylab('SI Ratio') + 
+  scale_color_manual(values = col_full[c(1,2)]) + 
+  scale_fill_manual(values = col_full) + 
+  plot_theme + 
+  theme(legend.position = 'None',
+        axis.title.x = element_blank(),
+        panel.spacing.x = unit(3, 'lines'))
+
+ggplot(cal_SIT_diff, aes(Condition, Velocity, color = Condition, fill = Condition)) + 
+  geom_hline(yintercept = 0, color = 'gray80') + 
+  geom_jitter(aes(shape = other), size = 3, width = 0.2, alpha = 0.2, height = 0) +
+  stat_summary(fun.y = 'mean', geom = 'point', size = 3) + 
+  stat_summary(fun.data = 'mean_se', geom = 'errorbar', 
+               linewidth = 1, width = 0.4) + 
+  facet_grid(. ~ other) + 
+  scale_y_continuous(name = expression(Delta*' Velocity')) + 
+  scale_color_manual(values = col_full[c(1,2)]) + 
+  scale_fill_manual(values = col_full) + 
+  plot_theme + 
+  theme(legend.position = 'None',
+        axis.title.x = element_blank(),
+        panel.spacing.x = unit(3, 'lines'))
+
+
+
+aov_SIratio_cal <- summary(aov(IZ_time ~ Condition * other, cal_SIT_diff))
+aov_SIratio_em <- pairs(emmeans(aov(IZ_time ~ Condition * other, cal_SIT_diff), 
+                          ~ Condition | other, adjust = 'sidak'))
+aov_DelVel_cal <- summary(aov(Velocity ~ Condition * other, cal_SIT_diff))
+aov_DelVel_em <- pairs(emmeans(aov(Velocity ~ Condition * other, cal_SIT_diff), 
+                          ~ Condition | other, adjust = 'sidak'))
+
+pander(aov_SIratio_cal, caption = 'ANOVA: SI ratio in P. Californicus model of inter-female aggression.')
+kable(aov_SIratio_em, caption = 'Comparisons SI ratio')
+
+pander(aov_DelVel_cal, caption = 'ANOVA: Delta Velocity in P. Californicus model of inter-female aggression.')
+kable(aov_DelVel_em, caption = 'Comparisons Delta Velocity')
+
 ```
 
 ---
