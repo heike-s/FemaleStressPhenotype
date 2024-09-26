@@ -156,6 +156,9 @@ kable(mm_ttype_IZ_f, align='c', caption = 'Sidak Post-Hoc Planned Contrasts in I
 
 ---
 
+### DF/F (non-z-scored) neural activity in the arena (Fig. S7d) and in the IZ (Fig. S7e)
+
+
 ```{r}
 #| label: Fig S7d plot and stats
 #| echo: false

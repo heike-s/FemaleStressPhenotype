@@ -451,7 +451,7 @@ kable(sidak_freq, digits = 5, align='c',
 We then explored whether there mice express this behavior preferentially at specific locations in the arena and whether it is correlated with SI ratio. Indeed, mice in an example cohort (E15) display this syllable specifically around the interaction zone and in the corners, suggesting that it is a target induced behavior. Finally, we see that in stressed males, the frequency of U1 is correlated to SI ratio, such that animals with a lower SI ratio display a higher frequency of syllable U1.
 
 ```{r}
-#| label: Fig S2b plot
+#| label: Fig S2b1 plot
 #| code-fold: true
 #| fig-width: 5
 #| fig-asp: 0.9
@@ -473,7 +473,7 @@ ggplot(U1, aes(centroid_y, centroid_x)) +
 ```
 
 ```{r}
-#| label: Fig S2b plot
+#| label: Fig S2b2 plot
 #| code-fold: true
 #| fig-width: 5
 #| fig-asp: 0.9

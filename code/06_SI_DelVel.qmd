@@ -45,10 +45,13 @@ OFT <- readRDS(glue('{data_path}/OFT_primary.rds'))
 # Bind primary and secondary DFs 
 primary_diff %<>%
     mutate(model = 'CSW/DS',
-           lab = 'bagot') %>%
-    select(names(secondary_diff)) 
+           lab = 'bagot',
+           other = NA) %>%
+    dplyr::select(names(secondary_diff)) 
+secondary_diff %<>%
+    filter(model %in% c('CSNDS Female', 'Urine'))
 SIT_diff <- bind_rows(primary_diff, secondary_diff) %>%
-                      mutate(model = factor(model, levels = c('CSW/DS', 'CSNDS', 'Urine')),
+                      mutate(model = factor(model, levels = c('CSW/DS', 'CSNDS Female', 'Urine')),
                              full_cond = paste(Sex, Condition))
 ```
 
@@ -86,7 +89,7 @@ SIT_diff$SI_bin[grepl(' 2', SIT_diff$SI_bin)] <- gsub(' 2$',' 2.00',
                                                       SIT_diff$SI_bin[grepl(' 2', SIT_diff$SI_bin)])
 SIT_diff$SI_bin[SIT_diff$IZ_time > 2] <- '2.00 +'
 SIT_diff$SI_bin_window <- ifelse(SIT_diff$IZ_time > 2, 'B', 'A')
-SIT_diff$model <- factor(SIT_diff$model, levels = c('CSW/DS', 'CSNDS', 'Urine'))
+SIT_diff$model <- factor(SIT_diff$model, levels = c('CSW/DS', 'CSNDS Female', 'Urine'))
 ```
 
 ```{r}
