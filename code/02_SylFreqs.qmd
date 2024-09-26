@@ -227,7 +227,7 @@ hist_m <- ggplot(SIT_z[SIT_z$Sex == 'Male',],
               geom_vline(xintercept = 0, color = 'gray80') +
               geom_density_ridges(aes(linetype = Trial_type), 
                                   alpha = 0.1, size = 1) + 
-              scale_x_continuous(limits = c(-5, 5), breaks = c(-5,0,5), name = 'Frequency z-Score') + 
+              scale_x_continuous(limits = c(-5, 5), breaks = c(-5,0,5), name = 'Cumulative Duration z-Score') + 
               ylab('Syllable') + 
               scale_color_manual(values = col_full[c(3,4)]) + 
               scale_fill_manual(values = col_full[c(3,4)]) + 
@@ -255,7 +255,7 @@ hist_f <- ggplot(SIT_z[SIT_z$Sex == 'Female',], aes(z_Freq, syllable)) +
               geom_vline(xintercept = 0, color = 'gray80') +
               geom_density_ridges(aes(color = full_cond, fill = full_cond, linetype = Trial_type), 
                                   alpha = 0.1, size = 1) + 
-              scale_x_continuous(limits = c(-5, 5), breaks = c(-5,0,5), name = 'Frequency z-Score') + 
+              scale_x_continuous(limits = c(-5, 5), breaks = c(-5,0,5), name = 'Cumulative Duration z-Score') + 
               ylab('Syllable') + 
               scale_color_manual(values = col_full[c(1,2)]) + 
               scale_fill_manual(values = col_full[c(1,2)]) + 
@@ -324,7 +324,7 @@ ctl_bp <- ggplot(SIT_raw[SIT_raw$Condition == 'Ctl',],
               xlab('Syllable') + 
               scale_color_manual(values = bp_col_ctl) + 
               scale_fill_manual(values = bp_fill_ctl) + 
-              ylab('Avg. Seconds') + 
+              ylab('Cumulative Duration (Seconds)') + 
               facet_grid(Sex ~ social, space = 'free', scale = 'free') + 
               plot_theme + 
               theme(legend.position = 'bottom', 
@@ -341,7 +341,7 @@ str_bp <- ggplot(SIT_raw[SIT_raw$Condition == 'Stress',],
               xlab('Syllable') + 
               scale_color_manual(values = bp_col_str) + 
               scale_fill_manual(values = bp_fill_str) + 
-              ylab('Avg. Seconds') + 
+              ylab('Cumulative Duration (Seconds)') + 
               facet_grid(Sex ~ social, space = 'free', scale = 'free') + 
               plot_theme + 
               theme(legend.position = 'bottom', 

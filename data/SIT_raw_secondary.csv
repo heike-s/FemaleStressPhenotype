@@ -1,94 +1,49 @@
 Sex,ID,Trial_type,Condition,Total_distance,Velocity,IZ_time,Corner_time,applied_id,cohort_id,model,other,lab
-Female,1494,No Target,Control,1132.8,7.55197,88.8,17.325,CF01,S01,CSNDS,Standard,pena
-Female,1512,No Target,Control,1207.16,8.05308,43.775,33.425,CF02,S01,CSNDS,Standard,pena
-Female,1432,No Target,Control,1222.59,8.1506,53.875,31.525,CF03,S01,CSNDS,Standard,pena
-Female,1418,No Target,Control,1337.04,8.91358,74.725,17.25,CF04,S01,CSNDS,Standard,pena
-Female,1397,No Target,Control,1171.44,7.80959,70.425,18.325,CF05,S01,CSNDS,Standard,pena
-Female,1403,No Target,Control,NA,7.46682,84.025,NA,CEF01,S01,CSNDS,ELS,pena
-Female,1444,No Target,Control,NA,8.03629,49.125,NA,CEF02,S01,CSNDS,ELS,pena
-Female,1455,No Target,Control,NA,8.25634,61.675,NA,CEF03,S01,CSNDS,ELS,pena
-Female,1471,No Target,Control,NA,7.80596,61.75,NA,CEF04,S01,CSNDS,ELS,pena
-Female,1499,No Target,Control,NA,7.87122,55.825,NA,CEF05,S01,CSNDS,ELS,pena
+Female,1494,No Target,Control,1132.8,7.55197,88.8,17.325,CF01,S01,CSNDS Female,Standard,pena
+Female,1512,No Target,Control,1207.16,8.05308,43.775,33.425,CF02,S01,CSNDS Female,Standard,pena
+Female,1432,No Target,Control,1222.59,8.1506,53.875,31.525,CF03,S01,CSNDS Female,Standard,pena
+Female,1418,No Target,Control,1337.04,8.91358,74.725,17.25,CF04,S01,CSNDS Female,Standard,pena
+Female,1397,No Target,Control,1171.44,7.80959,70.425,18.325,CF05,S01,CSNDS Female,Standard,pena
 Male,1316,No Target,Control,988.913,6.59276,54,31.25,CM01,S01,CSNDS Male,Standard,pena
 Male,1385,No Target,Control,1230.45,8.22356,41.1,15.6,CM02,S01,CSNDS Male,Standard,pena
 Male,1391,No Target,Control,935.66,6.23981,61.05,33.775,CM03,S01,CSNDS Male,Standard,pena
 Male,1409,No Target,Control,780.098,5.20065,18.1,28.375,CM04,S01,CSNDS Male,Standard,pena
 Male,1482,No Target,Control,1020.56,6.80373,69.1,16.7,CM05,S01,CSNDS Male,Standard,pena
-Male,1400,No Target,Control,1040.44,6.93628,74.8,24.775,CEM01,S01,CSNDS Male,ELS,pena
-Male,1446,No Target,Control,918.358,6.13363,44.75,39.775,CEM02,S01,CSNDS Male,ELS,pena
-Male,1456,No Target,Control,1292.09,8.61395,48.85,23.15,CEM03,S01,CSNDS Male,ELS,pena
-Male,1474,No Target,Control,1378.85,9.1923,56.75,24.175,CEM04,S01,CSNDS Male,ELS,pena
-Male,1505,No Target,Control,1408.56,9.40134,52.95,26.85,CEM05,S01,CSNDS Male,ELS,pena
 Male,1573,No Target,Control,1210.22,8.06817,27.95,23.975,CM06,S01,CSNDS Male,Standard,pena
 Male,1647,No Target,Control,1315.03,8.76686,44.5,33.55,CM07,S01,CSNDS Male,Standard,pena
 Male,1660,No Target,Control,1337.36,8.91574,41.725,25.75,CM08,S01,CSNDS Male,Standard,pena
 Male,1675,No Target,Control,1479.33,9.86217,51.55,14.55,CM09,S01,CSNDS Male,Standard,pena
 Male,1680,No Target,Control,1382.14,9.21428,46.125,18.95,CM10,S01,CSNDS Male,Standard,pena
-Male,1579,No Target,Control,1368.1,9.1911,43.9,27.225,CEM06,S01,CSNDS Male,ELS,pena
-Male,1592,No Target,Control,1151.39,7.67595,61.475,18.3,CEM07,S01,CSNDS Male,ELS,pena
-Male,1606,No Target,Control,1070.76,7.13837,54.575,12.55,CEM08,S01,CSNDS Male,ELS,pena
-Male,1623,No Target,Control,1322.18,8.81452,44.65,16.325,CEM09,S01,CSNDS Male,ELS,pena
-Male,1656,No Target,Control,1257.03,8.39982,43.975,24.975,CEM10,S01,CSNDS Male,ELS,pena
-Female,1494,Target,Control,778.355,5.54187,97.65,9.225,CF01,S01,CSNDS,Standard,pena
-Female,1512,Target,Control,757.458,5.09216,54.725,36.25,CF02,S01,CSNDS,Standard,pena
-Female,1432,Target,Control,676.526,4.51017,89.3,13.025,CF03,S01,CSNDS,Standard,pena
-Female,1418,Target,Control,936.192,6.24128,91.45,12.85,CF04,S01,CSNDS,Standard,pena
-Female,1397,Target,Control,729.025,4.86666,92.975,15.15,CF05,S01,CSNDS,Standard,pena
-Female,1403,Target,Control,NA,5.2451,93.3,NA,CEF01,S01,CSNDS,ELS,pena
-Female,1444,Target,Control,NA,4.86508,80.45,NA,CEF02,S01,CSNDS,ELS,pena
-Female,1455,Target,Control,NA,4.6729,113.2,NA,CEF03,S01,CSNDS,ELS,pena
-Female,1471,Target,Control,NA,6.03552,95.55,NA,CEF04,S01,CSNDS,ELS,pena
-Female,1499,Target,Control,NA,4.9857,83.975,NA,CEF05,S01,CSNDS,ELS,pena
+Female,1494,Target,Control,778.355,5.54187,97.65,9.225,CF01,S01,CSNDS Female,Standard,pena
+Female,1512,Target,Control,757.458,5.09216,54.725,36.25,CF02,S01,CSNDS Female,Standard,pena
+Female,1432,Target,Control,676.526,4.51017,89.3,13.025,CF03,S01,CSNDS Female,Standard,pena
+Female,1418,Target,Control,936.192,6.24128,91.45,12.85,CF04,S01,CSNDS Female,Standard,pena
+Female,1397,Target,Control,729.025,4.86666,92.975,15.15,CF05,S01,CSNDS Female,Standard,pena
 Male,1316,Target,Control,528.469,3.5792,84.75,9.1,CM01,S01,CSNDS Male,Standard,pena
 Male,1385,Target,Control,775.426,5.32299,67.875,16.475,CM02,S01,CSNDS Male,Standard,pena
 Male,1391,Target,Control,800.37,5.34382,80.9,15.85,CM03,S01,CSNDS Male,Standard,pena
 Male,1409,Target,Control,521.345,3.47564,69.4,13.025,CM04,S01,CSNDS Male,Standard,pena
 Male,1482,Target,Control,894.051,5.96034,77.35,16.275,CM05,S01,CSNDS Male,Standard,pena
-Male,1400,Target,Control,897.448,5.98298,74.725,13.5,CEM01,S01,CSNDS Male,ELS,pena
-Male,1446,Target,Control,850.56,5.6704,65.825,19.475,CEM02,S01,CSNDS Male,ELS,pena
-Male,1457,Target,Control,850.069,5.66713,85.375,12.7,CEM03,S01,CSNDS Male,ELS,pena
-Male,1474,Target,Control,962.899,6.41933,71.825,10.6,CEM04,S01,CSNDS Male,ELS,pena
-Male,1505,Target,Control,1024.52,6.83011,53.425,24.375,CEM05,S01,CSNDS Male,ELS,pena
 Male,1573,Target,Control,608.461,4.0564,92.625,5.2,CM06,S01,CSNDS Male,Standard,pena
 Male,1647,Target,Control,834.845,5.56564,44.85,35.075,CM07,S01,CSNDS Male,Standard,pena
 Male,1660,Target,Control,859.548,5.73032,41.5,21.9,CM08,S01,CSNDS Male,Standard,pena
 Male,1675,Target,Control,1043.09,6.95395,64.8,18.2,CM09,S01,CSNDS Male,Standard,pena
 Male,1680,Target,Control,1019.27,6.79516,62.475,11.775,CM10,S01,CSNDS Male,Standard,pena
-Male,1579,Target,Control,922.764,6.15176,22.35,37.3,CEM06,S01,CSNDS Male,ELS,pena
-Male,1592,Target,Control,802.776,5.35184,72.325,10.125,CEM07,S01,CSNDS Male,ELS,pena
-Male,1606,Target,Control,609.266,4.07741,78.15,21.55,CEM08,S01,CSNDS Male,ELS,pena
-Male,1623,Target,Control,780.502,5.20335,15.35,17.5,CEM09,S01,CSNDS Male,ELS,pena
-Male,1656,Target,Control,756.572,5.04381,88.075,14.775,CEM10,S01,CSNDS Male,ELS,pena
-Female,1386,No Target,Stress,1021.86,6.81237,83.7,9.1,SF01,S01,CSNDS,Standard,pena
-Female,1387,No Target,Stress,1115.25,7.43501,79.65,19.85,SF02,S01,CSNDS,Standard,pena
-Female,1389,No Target,Stress,1103.95,7.35968,83.225,19.525,SF03,S01,CSNDS,Standard,pena
-Female,1393,No Target,Stress,955.395,6.43255,75.475,22.475,SF04,S01,CSNDS,Standard,pena
-Female,1394,No Target,Stress,1244.64,8.29759,63.45,24.225,SF05,S01,CSNDS,Standard,pena
-Female,1411,No Target,Stress,1151.86,7.69448,70.65,20.9,SF06,S01,CSNDS,Standard,pena
-Female,1412,No Target,Stress,932.527,6.22515,79.375,32.55,SF07,S01,CSNDS,Standard,pena
-Female,1419,No Target,Stress,1083.43,7.22284,80.775,23.95,SF08,S01,CSNDS,Standard,pena
-Female,1430,No Target,Stress,921.686,6.64518,67.7,18.05,SF09,S01,CSNDS,Standard,pena
-Female,1484,No Target,Stress,875.681,5.83788,63.425,24.325,SF10,S01,CSNDS,Standard,pena
-Female,1488,No Target,Stress,1375.51,9.17004,71.75,17.475,SF11,S01,CSNDS,Standard,pena
-Female,1493,No Target,Stress,1089.74,7.26493,65.575,9.8,SF12,S01,CSNDS,Standard,pena
-Female,1513,No Target,Stress,852.894,5.68596,91.95,13.075,SF13,S01,CSNDS,Standard,pena
-Female,1520,No Target,Stress,950.816,6.34089,85.175,15.675,SF14,S01,CSNDS,Standard,pena
-Female,1433,No Target,Stress,1165.23,7.7682,69.925,16.675,SF15,S01,CSNDS,Standard,pena
-Female,1402,No Target,Stress,NA,8.63894,55.025,NA,SEF01,S01,CSNDS,ELS,pena
-Female,1404,No Target,Stress,NA,8.26221,54.35,NA,SEF02,S01,CSNDS,ELS,pena
-Female,1441,No Target,Stress,NA,5.94235,87.625,NA,SEF03,S01,CSNDS,ELS,pena
-Female,1442,No Target,Stress,NA,4.55679,74.8,NA,SEF04,S01,CSNDS,ELS,pena
-Female,1451,No Target,Stress,NA,6.30822,72.05,NA,SEF05,S01,CSNDS,ELS,pena
-Female,1453,No Target,Stress,NA,6.24468,45,NA,SEF06,S01,CSNDS,ELS,pena
-Female,1460,No Target,Stress,NA,8.54292,73.775,NA,SEF07,S01,CSNDS,ELS,pena
-Female,1461,No Target,Stress,NA,8.01726,73.2,NA,SEF08,S01,CSNDS,ELS,pena
-Female,1462,No Target,Stress,NA,7.13552,89.525,NA,SEF09,S01,CSNDS,ELS,pena
-Female,1469,No Target,Stress,NA,8.82479,76.425,NA,SEF10,S01,CSNDS,ELS,pena
-Female,1470,No Target,Stress,NA,9.57536,61.85,NA,SEF11,S01,CSNDS,ELS,pena
-Female,1477,No Target,Stress,NA,6.38445,76.5,NA,SEF12,S01,CSNDS,ELS,pena
-Female,1480,No Target,Stress,NA,8.98437,78.55,NA,SEF13,S01,CSNDS,ELS,pena
-Female,1500,No Target,Stress,NA,7.29343,80.375,NA,SEF14,S01,CSNDS,ELS,pena
-Female,1507,No Target,Stress,NA,9.41255,54.175,NA,SEF15,S01,CSNDS,ELS,pena
+Female,1386,No Target,Stress,1021.86,6.81237,83.7,9.1,SF01,S01,CSNDS Female,Standard,pena
+Female,1387,No Target,Stress,1115.25,7.43501,79.65,19.85,SF02,S01,CSNDS Female,Standard,pena
+Female,1389,No Target,Stress,1103.95,7.35968,83.225,19.525,SF03,S01,CSNDS Female,Standard,pena
+Female,1393,No Target,Stress,955.395,6.43255,75.475,22.475,SF04,S01,CSNDS Female,Standard,pena
+Female,1394,No Target,Stress,1244.64,8.29759,63.45,24.225,SF05,S01,CSNDS Female,Standard,pena
+Female,1411,No Target,Stress,1151.86,7.69448,70.65,20.9,SF06,S01,CSNDS Female,Standard,pena
+Female,1412,No Target,Stress,932.527,6.22515,79.375,32.55,SF07,S01,CSNDS Female,Standard,pena
+Female,1419,No Target,Stress,1083.43,7.22284,80.775,23.95,SF08,S01,CSNDS Female,Standard,pena
+Female,1430,No Target,Stress,921.686,6.64518,67.7,18.05,SF09,S01,CSNDS Female,Standard,pena
+Female,1484,No Target,Stress,875.681,5.83788,63.425,24.325,SF10,S01,CSNDS Female,Standard,pena
+Female,1488,No Target,Stress,1375.51,9.17004,71.75,17.475,SF11,S01,CSNDS Female,Standard,pena
+Female,1493,No Target,Stress,1089.74,7.26493,65.575,9.8,SF12,S01,CSNDS Female,Standard,pena
+Female,1513,No Target,Stress,852.894,5.68596,91.95,13.075,SF13,S01,CSNDS Female,Standard,pena
+Female,1520,No Target,Stress,950.816,6.34089,85.175,15.675,SF14,S01,CSNDS Female,Standard,pena
+Female,1433,No Target,Stress,1165.23,7.7682,69.925,16.675,SF15,S01,CSNDS Female,Standard,pena
 Male,1415,No Target,Stress,1056.61,7.04405,84.3,14.3,SM01,S01,CSNDS Male,Standard,pena
 Male,1392,No Target,Stress,898.21,5.99206,61.825,33.55,SM02,S01,CSNDS Male,Standard,pena
 Male,1483,No Target,Stress,1093.31,7.28876,84.85,17.95,SM03,S01,CSNDS Male,Standard,pena
@@ -99,18 +54,6 @@ Male,1490,No Target,Stress,1185.48,7.91376,71.05,20.3,SM07,S01,CSNDS Male,Standa
 Male,1509,No Target,Stress,974.919,6.49946,45.225,6.525,SM08,S01,CSNDS Male,Standard,pena
 Male,1517,No Target,Stress,719.741,4.79827,78.1,15.375,SM09,S01,CSNDS Male,Standard,pena
 Male,1382,No Target,Stress,1150.69,7.67127,27,43.325,SM10,S01,CSNDS Male,Standard,pena
-Male,1440,No Target,Stress,959.028,6.40205,65.7,19.675,SEM01,S01,CSNDS Male,ELS,pena
-Male,1476,No Target,Stress,1139.42,7.59613,61.375,11.775,SEM02,S01,CSNDS Male,ELS,pena
-Male,1497,No Target,Stress,961.797,6.41198,50.975,30.1,SEM03,S01,CSNDS Male,ELS,pena
-Male,1437,No Target,Stress,1178.18,7.85457,78.6,12.975,SEM04,S01,CSNDS Male,ELS,pena
-Male,1457,No Target,Stress,1296.97,8.64647,82.1,11.025,SEM05,S01,CSNDS Male,ELS,pena
-Male,1503,No Target,Stress,1145.82,7.63877,85.7,9.525,SEM06,S01,CSNDS Male,ELS,pena
-Male,1438,No Target,Stress,1369.88,9.13253,71.675,20.575,SEM07,S01,CSNDS Male,ELS,pena
-Male,1465,No Target,Stress,1061.78,7.07854,83.075,11.525,SEM08,S01,CSNDS Male,ELS,pena
-Male,1399,No Target,Stress,1239.09,8.26057,40.15,17.4,SEM09,S01,CSNDS Male,ELS,pena
-Male,1447,No Target,Stress,1088.15,7.25431,55.9,16.35,SEM10,S01,CSNDS Male,ELS,pena
-Male,1449,No Target,Stress,762.472,5.08315,85.375,10.9,SEM11,S01,CSNDS Male,ELS,pena
-Male,1504,No Target,Stress,1121.64,7.49011,63,38.4,SEM12,S01,CSNDS Male,ELS,pena
 Male,1416,No Target,Stress,1294.46,8.67017,58.275,9.175,SM11,S01,CSNDS Male,Standard,pena
 Male,1417,No Target,Stress,1265.59,8.43729,80.075,10.775,SM12,S01,CSNDS Male,Standard,pena
 Male,1383,No Target,Stress,824.944,5.49963,41.05,26.125,SM13,S01,CSNDS Male,Standard,pena
@@ -122,17 +65,6 @@ Male,1396,No Target,Stress,1250.61,8.33743,45.85,17.8,SM18,S01,CSNDS Male,Standa
 Male,1410,No Target,Stress,1611.31,10.7421,53.475,23.35,SM19,S01,CSNDS Male,Standard,pena
 Male,1492,No Target,Stress,828.27,5.5218,79.6,10.75,SM20,S01,CSNDS Male,Standard,pena
 Male,1510,No Target,Stress,2223.64,15.0424,28.125,16,SM21,S01,CSNDS Male,Standard,pena
-Male,1467,No Target,Stress,1205.19,8.03463,51.425,20.9,SEM13,S01,CSNDS Male,ELS,pena
-Male,1502,No Target,Stress,944.591,6.29727,66.225,17.975,SEM14,S01,CSNDS Male,ELS,pena
-Male,1401,No Target,Stress,1143.58,7.62389,74,14.375,SEM15,S01,CSNDS Male,ELS,pena
-Male,1496,No Target,Stress,1306.58,8.71053,43.5,22.325,SEM16,S01,CSNDS Male,ELS,pena
-Male,1475,No Target,Stress,979.328,6.52885,92.45,6.025,SEM17,S01,CSNDS Male,ELS,pena
-Male,1506,No Target,Stress,1211.87,8.07912,56.3,16.05,SEM18,S01,CSNDS Male,ELS,pena
-Male,1439,No Target,Stress,1035.01,6.90003,65.825,13.175,SEM19,S01,CSNDS Male,ELS,pena
-Male,1450,No Target,Stress,1253.75,8.35833,62.525,17.9,SEM20,S01,CSNDS Male,ELS,pena
-Male,1458,No Target,Stress,940.544,6.2703,62.825,24.725,SEM21,S01,CSNDS Male,ELS,pena
-Male,1466,No Target,Stress,1294.36,8.6291,72.775,18.35,SEM22,S01,CSNDS Male,ELS,pena
-Male,1498,No Target,Stress,923.72,6.15813,77.9,12.6,SEM23,S01,CSNDS Male,ELS,pena
 Male,1648,No Target,Stress,717.83,4.78553,61.025,21.525,SM22,S01,CSNDS Male,Standard,pena
 Male,1638,No Target,Stress,832.614,5.55076,42.225,20.05,SM23,S01,CSNDS Male,Standard,pena
 Male,1574,No Target,Stress,1043.86,6.95903,49.625,19.5,SM24,S01,CSNDS Male,Standard,pena
@@ -142,15 +74,6 @@ Male,1663,No Target,Stress,973.185,6.4879,43.3,43.375,SM27,S01,CSNDS Male,Standa
 Male,1670,No Target,Stress,1136.22,7.57483,53.825,23.175,SM28,S01,CSNDS Male,Standard,pena
 Male,1681,No Target,Stress,1212.9,8.08603,61.625,6.95,SM29,S01,CSNDS Male,Standard,pena
 Male,1683,No Target,Stress,1445.27,9.63512,51.8,16.675,SM30,S01,CSNDS Male,Standard,pena
-Male,1584,No Target,Stress,888.551,5.92367,72.15,13.075,SEM24,S01,CSNDS Male,ELS,pena
-Male,1605,No Target,Stress,1362.68,9.0845,48.325,27,SEM25,S01,CSNDS Male,ELS,pena
-Male,1616,No Target,Stress,1273.49,8.52833,47.175,16.9,SEM26,S01,CSNDS Male,ELS,pena
-Male,1577,No Target,Stress,1237.06,8.24705,50.575,14.575,SEM27,S01,CSNDS Male,ELS,pena
-Male,1593,No Target,Stress,1175.89,7.86946,36.825,17.45,SEM28,S01,CSNDS Male,ELS,pena
-Male,1655,No Target,Stress,1111.56,7.41039,53.675,16.325,SEM29,S01,CSNDS Male,ELS,pena
-Male,1611,No Target,Stress,1198.78,7.99186,58.8,13.05,SEM30,S01,CSNDS Male,ELS,pena
-Male,1624,No Target,Stress,1228,8.1867,34.3,25.1,SEM31,S01,CSNDS Male,ELS,pena
-Male,1583,No Target,Stress,1100.66,7.33774,42.375,16.575,SEM32,S01,CSNDS Male,ELS,pena
 Male,1682,No Target,Stress,1026.6,6.84399,51.425,21.475,SM31,S01,CSNDS Male,Standard,pena
 Male,1639,No Target,Stress,1198.35,7.98902,55.425,24.6,SM32,S01,CSNDS Male,Standard,pena
 Male,1600,No Target,Stress,909.066,6.06044,78.025,7.6,SM33,S01,CSNDS Male,Standard,pena
@@ -161,45 +84,21 @@ Male,1661,No Target,Stress,1164.5,7.88954,39,29.35,SM37,S01,CSNDS Male,Standard,
 Male,1664,No Target,Stress,1226.36,8.17571,26.6,41.35,SM38,S01,CSNDS Male,Standard,pena
 Male,1671,No Target,Stress,1114.7,7.43134,40.525,18.125,SM39,S01,CSNDS Male,Standard,pena
 Male,1684,No Target,Stress,936.923,6.25241,38.35,23.35,SM40,S01,CSNDS Male,Standard,pena
-Male,1612,No Target,Stress,1259.29,8.39528,50.925,22.95,SEM33,S01,CSNDS Male,ELS,pena
-Male,1583,No Target,Stress,1007.94,6.71958,40.6,26.725,SEM34,S01,CSNDS Male,ELS,pena
-Male,1578,No Target,Stress,604.732,4.03155,21.975,54.375,SEM35,S01,CSNDS Male,ELS,pena
-Male,1594,No Target,Stress,936.485,6.24323,55.475,16.2,SEM36,S01,CSNDS Male,ELS,pena
-Male,1607,No Target,Stress,775.86,5.1724,26.7,34.975,SEM37,S01,CSNDS Male,ELS,pena
-Male,1617,No Target,Stress,828.491,5.52327,48.25,21.1,SEM38,S01,CSNDS Male,ELS,pena
-Male,1621,No Target,Stress,718.19,4.78793,38.175,15.35,SEM39,S01,CSNDS Male,ELS,pena
-Male,1622,No Target,Stress,852.039,5.68026,32.875,22.55,SEM40,S01,CSNDS Male,ELS,pena
-Male,1657,No Target,Stress,973.597,6.49065,42.4,17.85,SEM41,S01,CSNDS Male,ELS,pena
-Female,1386,Target,Stress,577.131,3.98021,101.65,13.625,SF01,S01,CSNDS,Standard,pena
-Female,1387,Target,Stress,692.724,5.37621,89.7,10.125,SF02,S01,CSNDS,Standard,pena
-Female,1389,Target,Stress,969.894,6.93649,78,24.55,SF03,S01,CSNDS,Standard,pena
-Female,1393,Target,Stress,772.819,5.15213,103.1,7.125,SF04,S01,CSNDS,Standard,pena
-Female,1394,Target,Stress,744.331,5.03181,83.45,17.625,SF05,S01,CSNDS,Standard,pena
-Female,1411,Target,Stress,957.084,6.38056,91.55,9.9,SF06,S01,CSNDS,Standard,pena
-Female,1412,Target,Stress,832.226,5.54817,91.175,23.825,SF07,S01,CSNDS,Standard,pena
-Female,1419,Target,Stress,893.722,5.95815,93.225,14.075,SF08,S01,CSNDS,Standard,pena
-Female,1430,Target,Stress,799.85,5.52573,100.225,8.825,SF09,S01,CSNDS,Standard,pena
-Female,1484,Target,Stress,891.296,5.94197,94.275,12.45,SF10,S01,CSNDS,Standard,pena
-Female,1488,Target,Stress,1085.8,7.2387,90.9,9.6,SF11,S01,CSNDS,Standard,pena
-Female,1493,Target,Stress,908.79,6.0586,99.325,8.925,SF12,S01,CSNDS,Standard,pena
-Female,1513,Target,Stress,975.041,6.57147,80.4,11.85,SF13,S01,CSNDS,Standard,pena
-Female,1520,Target,Stress,631.488,4.20992,93.25,8.55,SF14,S01,CSNDS,Standard,pena
-Female,1433,Target,Stress,797.643,5.31762,104.65,10.475,SF15,S01,CSNDS,Standard,pena
-Female,1402,Target,Stress,NA,6.95248,88.5,NA,SEF01,S01,CSNDS,ELS,pena
-Female,1404,Target,Stress,NA,5.92209,81.4,NA,SEF02,S01,CSNDS,ELS,pena
-Female,1441,Target,Stress,NA,3.67939,122.75,NA,SEF03,S01,CSNDS,ELS,pena
-Female,1442,Target,Stress,NA,2.96051,118.275,NA,SEF04,S01,CSNDS,ELS,pena
-Female,1451,Target,Stress,NA,7.6326,70.425,NA,SEF05,S01,CSNDS,ELS,pena
-Female,1453,Target,Stress,NA,5.92604,78.625,NA,SEF06,S01,CSNDS,ELS,pena
-Female,1460,Target,Stress,NA,6.74607,86.925,NA,SEF07,S01,CSNDS,ELS,pena
-Female,1461,Target,Stress,NA,4.56112,106.65,NA,SEF08,S01,CSNDS,ELS,pena
-Female,1462,Target,Stress,NA,7.92345,88.925,NA,SEF09,S01,CSNDS,ELS,pena
-Female,1469,Target,Stress,NA,6.84796,99.975,NA,SEF10,S01,CSNDS,ELS,pena
-Female,1470,Target,Stress,NA,5.94574,91.275,NA,SEF11,S01,CSNDS,ELS,pena
-Female,1477,Target,Stress,NA,4.96465,87.875,NA,SEF12,S01,CSNDS,ELS,pena
-Female,1480,Target,Stress,NA,5.67958,98.725,NA,SEF13,S01,CSNDS,ELS,pena
-Female,1500,Target,Stress,NA,6.28672,107.6,NA,SEF14,S01,CSNDS,ELS,pena
-Female,1507,Target,Stress,NA,5.50222,88.25,NA,SEF15,S01,CSNDS,ELS,pena
+Female,1386,Target,Stress,577.131,3.98021,101.65,13.625,SF01,S01,CSNDS Female,Standard,pena
+Female,1387,Target,Stress,692.724,5.37621,89.7,10.125,SF02,S01,CSNDS Female,Standard,pena
+Female,1389,Target,Stress,969.894,6.93649,78,24.55,SF03,S01,CSNDS Female,Standard,pena
+Female,1393,Target,Stress,772.819,5.15213,103.1,7.125,SF04,S01,CSNDS Female,Standard,pena
+Female,1394,Target,Stress,744.331,5.03181,83.45,17.625,SF05,S01,CSNDS Female,Standard,pena
+Female,1411,Target,Stress,957.084,6.38056,91.55,9.9,SF06,S01,CSNDS Female,Standard,pena
+Female,1412,Target,Stress,832.226,5.54817,91.175,23.825,SF07,S01,CSNDS Female,Standard,pena
+Female,1419,Target,Stress,893.722,5.95815,93.225,14.075,SF08,S01,CSNDS Female,Standard,pena
+Female,1430,Target,Stress,799.85,5.52573,100.225,8.825,SF09,S01,CSNDS Female,Standard,pena
+Female,1484,Target,Stress,891.296,5.94197,94.275,12.45,SF10,S01,CSNDS Female,Standard,pena
+Female,1488,Target,Stress,1085.8,7.2387,90.9,9.6,SF11,S01,CSNDS Female,Standard,pena
+Female,1493,Target,Stress,908.79,6.0586,99.325,8.925,SF12,S01,CSNDS Female,Standard,pena
+Female,1513,Target,Stress,975.041,6.57147,80.4,11.85,SF13,S01,CSNDS Female,Standard,pena
+Female,1520,Target,Stress,631.488,4.20992,93.25,8.55,SF14,S01,CSNDS Female,Standard,pena
+Female,1433,Target,Stress,797.643,5.31762,104.65,10.475,SF15,S01,CSNDS Female,Standard,pena
 Male,1415,Target,Stress,654.732,4.38021,80.375,21.025,SM01,S01,CSNDS Male,Standard,pena
 Male,1392,Target,Stress,892.29,5.9486,39,54.975,SM02,S01,CSNDS Male,Standard,pena
 Male,1483,Target,Stress,959.967,6.39978,70.275,16.225,SM03,S01,CSNDS Male,Standard,pena
@@ -210,18 +109,6 @@ Male,1490,Target,Stress,580.782,3.87188,93.75,8.025,SM07,S01,CSNDS Male,Standard
 Male,1509,Target,Stress,498.96,3.84555,60.25,1,SM08,S01,CSNDS Male,Standard,pena
 Male,1517,Target,Stress,480.665,3.20444,96.425,11.675,SM09,S01,CSNDS Male,Standard,pena
 Male,1382,Target,Stress,869.811,6.81403,7.375,40.875,SM10,S01,CSNDS Male,Standard,pena
-Male,1440,Target,Stress,650.637,4.34265,44.3,21.625,SEM01,S01,CSNDS Male,ELS,pena
-Male,1476,Target,Stress,445.373,3.22092,54.025,6.2,SEM02,S01,CSNDS Male,ELS,pena
-Male,1497,Target,Stress,492.957,3.28638,16.975,45.75,SEM03,S01,CSNDS Male,ELS,pena
-Male,1437,Target,Stress,751.146,5.00764,39.825,15.125,SEM04,S01,CSNDS Male,ELS,pena
-Male,1457,Target,Stress,807.194,5.3813,94.7,12.025,SEM05,S01,CSNDS Male,ELS,pena
-Male,1503,Target,Stress,803.89,5.35927,62.125,32.325,SEM06,S01,CSNDS Male,ELS,pena
-Male,1438,Target,Stress,676.552,4.51034,46.65,29.45,SEM07,S01,CSNDS Male,ELS,pena
-Male,1465,Target,Stress,499.858,3.33239,73.975,10.1,SEM08,S01,CSNDS Male,ELS,pena
-Male,1399,Target,Stress,620.119,4.13413,106.55,2.45,SEM09,S01,CSNDS Male,ELS,pena
-Male,1447,Target,Stress,644.083,4.4581,62.725,21.025,SEM10,S01,CSNDS Male,ELS,pena
-Male,1449,Target,Stress,716.234,4.77489,86.75,14.15,SEM11,S01,CSNDS Male,ELS,pena
-Male,1504,Target,Stress,812.641,5.41761,30.05,78.475,SEM12,S01,CSNDS Male,ELS,pena
 Male,1416,Target,Stress,841.077,5.60718,22.85,54.8,SM11,S01,CSNDS Male,Standard,pena
 Male,1417,Target,Stress,898.5,5.99,56.25,18.65,SM12,S01,CSNDS Male,Standard,pena
 Male,1383,Target,Stress,558.986,3.72658,28.2,18.775,SM13,S01,CSNDS Male,Standard,pena
@@ -233,17 +120,6 @@ Male,1396,Target,Stress,854.66,5.69773,47.425,40.275,SM18,S01,CSNDS Male,Standar
 Male,1410,Target,Stress,967.051,6.44701,70.05,9.65,SM19,S01,CSNDS Male,Standard,pena
 Male,1492,Target,Stress,605.854,4.04645,82.15,6.9,SM20,S01,CSNDS Male,Standard,pena
 Male,1510,Target,Stress,1952.19,13.2397,54,10.675,SM21,S01,CSNDS Male,Standard,pena
-Male,1467,Target,Stress,887.566,5.91711,46.975,15.1,SEM13,S01,CSNDS Male,ELS,pena
-Male,1502,Target,Stress,757.463,5.04975,62.175,31.975,SEM14,S01,CSNDS Male,ELS,pena
-Male,1401,Target,Stress,493.989,3.29326,72.55,12.075,SEM15,S01,CSNDS Male,ELS,pena
-Male,1496,Target,Stress,767.79,5.1186,40.95,15.075,SEM16,S01,CSNDS Male,ELS,pena
-Male,1475,Target,Stress,741.434,4.94289,75.625,7.95,SEM17,S01,CSNDS Male,ELS,pena
-Male,1506,Target,Stress,944.036,6.29357,55.175,20.075,SEM18,S01,CSNDS Male,ELS,pena
-Male,1439,Target,Stress,824.575,5.49717,66.7,16.1,SEM19,S01,CSNDS Male,ELS,pena
-Male,1450,Target,Stress,1048.05,6.98702,70.7,18.6,SEM20,S01,CSNDS Male,ELS,pena
-Male,1458,Target,Stress,735.158,4.90105,87.775,17.2,SEM21,S01,CSNDS Male,ELS,pena
-Male,1466,Target,Stress,921.327,6.65819,73.475,5.125,SEM22,S01,CSNDS Male,ELS,pena
-Male,1498,Target,Stress,514.61,3.43074,85.3,5.025,SEM23,S01,CSNDS Male,ELS,pena
 Male,1648,Target,Stress,514.576,3.43051,18.35,40.525,SM22,S01,CSNDS Male,Standard,pena
 Male,1638,Target,Stress,411.708,2.74472,39.3,74.325,SM23,S01,CSNDS Male,Standard,pena
 Male,1574,Target,Stress,707.152,4.71435,85.9,6.125,SM24,S01,CSNDS Male,Standard,pena
@@ -253,15 +129,6 @@ Male,1663,Target,Stress,695.138,4.63425,71.925,28.5,SM27,S01,CSNDS Male,Standard
 Male,1670,Target,Stress,656.531,4.37687,82.15,15.825,SM28,S01,CSNDS Male,Standard,pena
 Male,1681,Target,Stress,669.086,4.46057,89.45,7.725,SM29,S01,CSNDS Male,Standard,pena
 Male,1683,Target,Stress,850.403,5.66935,85.825,22.3,SM30,S01,CSNDS Male,Standard,pena
-Male,1584,Target,Stress,861.69,5.7446,50.05,17.75,SEM24,S01,CSNDS Male,ELS,pena
-Male,1605,Target,Stress,950.289,6.33526,43.925,31.1,SEM25,S01,CSNDS Male,ELS,pena
-Male,1616,Target,Stress,661.784,4.41189,73.025,9.075,SEM26,S01,CSNDS Male,ELS,pena
-Male,1577,Target,Stress,1091.64,7.27761,38.35,36.725,SEM27,S01,CSNDS Male,ELS,pena
-Male,1593,Target,Stress,513.934,3.42623,35.075,12.225,SEM28,S01,CSNDS Male,ELS,pena
-Male,1655,Target,Stress,935.736,6.23824,23.525,58.725,SEM29,S01,CSNDS Male,ELS,pena
-Male,1611,Target,Stress,762.494,5.0833,59.425,15.25,SEM30,S01,CSNDS Male,ELS,pena
-Male,1624,Target,Stress,725.487,4.83658,63.35,18.975,SEM31,S01,CSNDS Male,ELS,pena
-Male,1583,Target,Stress,638.479,4.25653,83.35,9.25,SEM32,S01,CSNDS Male,ELS,pena
 Male,1682,Target,Stress,576.049,3.84033,24.1,14.725,SM31,S01,CSNDS Male,Standard,pena
 Male,1639,Target,Stress,578.702,3.85801,28.725,12.825,SM32,S01,CSNDS Male,Standard,pena
 Male,1600,Target,Stress,556.27,3.70847,88.675,16.15,SM33,S01,CSNDS Male,Standard,pena
@@ -272,15 +139,6 @@ Male,1661,Target,Stress,648.938,4.32625,50.6,69.225,SM37,S01,CSNDS Male,Standard
 Male,1664,Target,Stress,638.597,4.25731,37,71.3,SM38,S01,CSNDS Male,Standard,pena
 Male,1671,Target,Stress,563.754,3.76212,53.625,17.175,SM39,S01,CSNDS Male,Standard,pena
 Male,1684,Target,Stress,746.122,4.98995,68.825,20.8,SM40,S01,CSNDS Male,Standard,pena
-Male,1612,Target,Stress,616.286,4.10857,32.4,62.275,SEM33,S01,CSNDS Male,ELS,pena
-Male,1583,Target,Stress,711.297,4.74198,59.975,19.875,SEM34,S01,CSNDS Male,ELS,pena
-Male,1578,Target,Stress,545.268,3.63512,65.875,10.975,SEM35,S01,CSNDS Male,ELS,pena
-Male,1594,Target,Stress,522.969,3.48646,91.075,3.7,SEM36,S01,CSNDS Male,ELS,pena
-Male,1607,Target,Stress,463.084,3.08723,86.025,28.325,SEM37,S01,CSNDS Male,ELS,pena
-Male,1617,Target,Stress,430.905,2.8727,77.175,8,SEM38,S01,CSNDS Male,ELS,pena
-Male,1621,Target,Stress,501.574,3.34383,56.25,5.725,SEM39,S01,CSNDS Male,ELS,pena
-Male,1622,Target,Stress,601.118,4.00745,65.175,18.75,SEM40,S01,CSNDS Male,ELS,pena
-Male,1657,Target,Stress,484.14,3.2276,69.225,11.975,SEM41,S01,CSNDS Male,ELS,pena
 Female,694,No Target,Control,14.755,NA,64.2,13.5,CF01,S02,Urine,NA,menard
 Female,695,No Target,Control,11.587,NA,82.7,17.8,CF02,S02,Urine,NA,menard
 Female,696,No Target,Control,11.553,NA,79,15.6,CF03,S02,Urine,NA,menard
@@ -757,114 +615,114 @@ Female,S20,Target,Stress,7.571,NA,90.4,14.9,SF19,S09,Urine,NA,menard
 Female,S21,Target,Stress,6.197,NA,61.2,13.3,SF20,S09,Urine,NA,menard
 Female,S23,Target,Stress,5.367,NA,108.8,9.5,SF21,S09,Urine,NA,menard
 Female,S24,Target,Stress,2.01,NA,136.4,0,SF22,S09,Urine,NA,menard
-Female,W1,No Target,Stress,1917.31,12.8894,73.2739,21.9889,SF01,S10,CSW/DS Validation,NA,bagot
-Female,W1,Target,Stress,1383.77,9.22816,79.9807,13.3802,SF01,S10,CSW/DS Validation,NA,bagot
-Female,W3,No Target,Stress,746.155,6.39736,69.0663,15.9564,SF02,S10,CSW/DS Validation,NA,bagot
-Female,W3,Target,Stress,926.343,6.25427,94.5364,17.6254,SF02,S10,CSW/DS Validation,NA,bagot
-Female,C1,No Target,Control,1500.75,10.0395,89.1233,17.3842,CF01,S10,CSW/DS Validation,NA,bagot
-Female,C2,No Target,Control,1075.1,7.16651,101.781,8.2119,CF02,S10,CSW/DS Validation,NA,bagot
-Female,C1,Target,Control,1023.79,6.82745,91.2254,7.77451,CF01,S10,CSW/DS Validation,NA,bagot
-Female,C2,Target,Control,581.176,3.92294,126.016,1.2685,CF02,S10,CSW/DS Validation,NA,bagot
-Female,C3,No Target,Control,1234.44,8.23227,87.5216,18.2517,CF03,S10,CSW/DS Validation,NA,bagot
-Female,C4,No Target,Control,938.227,6.80552,84.1196,7.4773,CF04,S10,CSW/DS Validation,NA,bagot
-Female,C3,Target,Control,940.818,6.35333,118.419,11.1446,CF03,S10,CSW/DS Validation,NA,bagot
-Female,C4,Target,Control,467.064,5.8395,47.1689,5.07408,CF04,S10,CSW/DS Validation,NA,bagot
-Female,W5,No Target,Stress,1132.65,7.55681,109.811,9.30939,SF03,S10,CSW/DS Validation,NA,bagot
-Female,W6,No Target,Stress,1263.23,8.4545,89.996,16.6906,SF04,S10,CSW/DS Validation,NA,bagot
-Female,W5,Target,Stress,874.03,5.83136,113.248,8.17492,SF03,S10,CSW/DS Validation,NA,bagot
-Female,W6,Target,Stress,1045.88,6.97175,105.052,13.9869,SF04,S10,CSW/DS Validation,NA,bagot
-Female,W7,No Target,Stress,1366.36,9.12863,84.3862,18.7265,SF05,S10,CSW/DS Validation,NA,bagot
-Female,W8,No Target,Stress,1281.22,8.54077,81.9494,13.7528,SF06,S10,CSW/DS Validation,NA,bagot
-Female,W7,Target,Stress,1371.55,9.15478,98.6662,9.30939,SF05,S10,CSW/DS Validation,NA,bagot
-Female,W8,Target,Stress,1390.5,9.27301,91.2587,12.2123,SF06,S10,CSW/DS Validation,NA,bagot
-Female,W9,No Target,Stress,1367.62,9.13263,89.19,20.7209,SF07,S10,CSW/DS Validation,NA,bagot
-Female,W10,No Target,Stress,1307.92,8.72227,88.823,11.4449,SF08,S10,CSW/DS Validation,NA,bagot
-Female,W9,Target,Stress,1131.88,7.5635,93.9615,12.6461,SF07,S10,CSW/DS Validation,NA,bagot
-Female,W10,Target,Stress,1004.04,6.69579,109.711,3.50353,SF08,S10,CSW/DS Validation,NA,bagot
-Female,W11,No Target,Stress,1282.69,8.56357,102.103,11.1112,SF09,S10,CSW/DS Validation,NA,bagot
-Female,W12,No Target,Stress,1622.36,10.8193,95.0626,11.1779,SF10,S10,CSW/DS Validation,NA,bagot
-Female,W11,Target,Stress,1293.82,8.75493,92.0596,9.67643,SF09,S10,CSW/DS Validation,NA,bagot
-Female,W12,Target,Stress,1461.12,9.74399,79.8472,11.5116,SF10,S10,CSW/DS Validation,NA,bagot
-Female,C5,No Target,Control,1285.98,8.63168,69.2032,27.8948,CF05,S10,CSW/DS Validation,NA,bagot
-Female,C16,No Target,Control,1098.68,7.32691,103.605,13.2801,CF06,S10,CSW/DS Validation,NA,bagot
-Female,C5,Target,Control,1000.83,6.69973,93.3275,21.9889,CF05,S10,CSW/DS Validation,NA,bagot
-Female,C16,Target,Control,866.561,5.77895,120.221,9.04246,CF06,S10,CSW/DS Validation,NA,bagot
-Female,W13,No Target,Stress,1433.61,9.56901,91.0252,14.8483,SF11,S10,CSW/DS Validation,NA,bagot
-Female,W14,No Target,Stress,1453.85,9.69545,100.835,17.4509,SF12,S10,CSW/DS Validation,NA,bagot
-Female,W13,Target,Stress,1118.65,7.5052,101.502,11.7452,SF11,S10,CSW/DS Validation,NA,bagot
-Female,W14,Target,Stress,1184.43,7.89877,86.4205,12.3458,SF12,S10,CSW/DS Validation,NA,bagot
-Female,W15,No Target,Stress,1475.66,9.8717,89.9574,14.2143,SF13,S10,CSW/DS Validation,NA,bagot
-Female,W16,No Target,Stress,1562.47,10.4198,95.5631,13.4803,SF14,S10,CSW/DS Validation,NA,bagot
-Female,W15,Target,Stress,1052.78,7.0998,83.7845,10.5106,SF13,S10,CSW/DS Validation,NA,bagot
-Female,W16,Target,Stress,1287.02,8.58291,100.068,7.14054,SF14,S10,CSW/DS Validation,NA,bagot
-Female,W17,No Target,Stress,1564.95,11.1009,68.6026,23.2568,SF15,S10,CSW/DS Validation,NA,bagot
-Female,W18,No Target,Stress,1683.29,11.2682,87.2881,12.8797,SF16,S10,CSW/DS Validation,NA,bagot
-Female,W17,Target,Stress,1153.94,7.79604,95.2628,14.7482,SF15,S10,CSW/DS Validation,NA,bagot
-Female,W18,Target,Stress,1194,7.97854,99.2335,6.8736,SF16,S10,CSW/DS Validation,NA,bagot
-Female,W19,No Target,Stress,1314.45,8.81491,94.0949,12.3124,SF17,S10,CSW/DS Validation,NA,bagot
-Female,W20,No Target,Stress,1214.53,8.09951,104.572,13.9474,SF18,S10,CSW/DS Validation,NA,bagot
-Female,W19,Target,Stress,1045.73,7.00654,95.5297,11.8119,SF17,S10,CSW/DS Validation,NA,bagot
-Female,W20,Target,Stress,1020.02,6.80231,103.404,12.4459,SF18,S10,CSW/DS Validation,NA,bagot
-Female,C17,No Target,Control,1712.14,11.4434,88.2223,15.816,CF07,S10,CSW/DS Validation,NA,bagot
-Female,C18,No Target,Control,1364.96,9.10269,88.9231,15.2821,CF08,S10,CSW/DS Validation,NA,bagot
-Female,C17,Target,Control,995.649,6.64573,105.139,6.20626,CF07,S10,CSW/DS Validation,NA,bagot
-Female,C18,Target,Control,1168.74,7.79412,87.7218,10.1436,CF08,S10,CSW/DS Validation,NA,bagot
-Female,C19,No Target,Control,1672.26,11.28,78.012,20.8544,CF09,S10,CSW/DS Validation,NA,bagot
-Female,C20,No Target,Control,1469.8,9.80185,66.0667,15.7826,CF10,S10,CSW/DS Validation,NA,bagot
-Female,C19,Target,Control,1117.12,7.45318,80.3477,13.6137,CF09,S10,CSW/DS Validation,NA,bagot
-Female,C20,Target,Control,938.114,6.25613,100.802,7.20727,CF10,S10,CSW/DS Validation,NA,bagot
-Male,M1,No Target,Stress,1688.34,11.2592,67.7684,24.7917,SM01,S10,CSW/DS Validation,NA,bagot
-Male,M2,No Target,Stress,1664.83,11.1024,78.279,11.0111,SM02,S10,CSW/DS Validation,NA,bagot
-Male,M1,Target,Stress,1135.31,7.57627,36.3367,46.8473,SM01,S10,CSW/DS Validation,NA,bagot
-Male,M2,Target,Stress,936.933,6.24825,58.3922,57.4913,SM02,S10,CSW/DS Validation,NA,bagot
-Male,M3,No Target,Stress,1610.25,10.7385,98.9665,14.3478,SM03,S10,CSW/DS Validation,NA,bagot
-Male,M4,No Target,Stress,1628.91,10.8629,70.9382,21.8554,SM04,S10,CSW/DS Validation,NA,bagot
-Male,M3,Target,Stress,1019.42,6.79833,103.037,9.8099,SM03,S10,CSW/DS Validation,NA,bagot
-Male,M4,Target,Stress,1134.36,7.56483,52.6865,42.3094,SM04,S10,CSW/DS Validation,NA,bagot
-Male,C6,No Target,Control,1346.4,8.99094,93.194,15.549,CM01,S10,CSW/DS Validation,NA,bagot
-Male,C7,No Target,Control,1519.95,10.1363,81.6157,12.8797,CM02,S10,CSW/DS Validation,NA,bagot
-Male,C6,Target,Control,981.564,6.5825,98.9665,12.9464,CM01,S10,CSW/DS Validation,NA,bagot
-Male,C7,Target,Control,961.225,6.41025,121.956,4.90495,CM02,S10,CSW/DS Validation,NA,bagot
-Male,C8,No Target,Control,1269.46,8.49225,87.2547,19.5864,CM03,S10,CSW/DS Validation,NA,bagot
-Male,C9,No Target,Control,1521.39,10.1459,61.8291,29.1294,CM04,S10,CSW/DS Validation,NA,bagot
-Male,C8,Target,Control,990.3,6.60414,117.519,11.9454,CM03,S10,CSW/DS Validation,NA,bagot
-Male,C9,Target,Control,1097.11,7.31647,92.1263,10.2103,CM04,S10,CSW/DS Validation,NA,bagot
-Male,M5,No Target,Stress,1472.05,9.88063,84.9524,15.0485,SM05,S10,CSW/DS Validation,NA,bagot
-Male,M6,No Target,Stress,1597.12,10.6509,81.6824,14.548,SM06,S10,CSW/DS Validation,NA,bagot
-Male,M5,Target,Stress,1047.89,6.99908,88.6228,8.40848,SM05,S10,CSW/DS Validation,NA,bagot
-Male,M6,Target,Stress,1152.64,7.68675,72.1728,41.1749,SM06,S10,CSW/DS Validation,NA,bagot
-Male,M8,No Target,Stress,1623.21,10.9393,91.0919,13.0799,SM07,S10,CSW/DS Validation,NA,bagot
-Male,M9,No Target,Stress,1662.62,11.0878,75.4094,24.091,SM08,S10,CSW/DS Validation,NA,bagot
-Male,M8,Target,Stress,1140.59,7.66266,107.375,5.70576,SM07,S10,CSW/DS Validation,NA,bagot
-Male,M9,Target,Stress,951.034,6.34228,69.6369,49.0829,SM08,S10,CSW/DS Validation,NA,bagot
-Male,M10,No Target,Stress,1332.57,8.94845,98.9332,12.3124,SM09,S10,CSW/DS Validation,NA,bagot
-Male,M11,No Target,Stress,1337.55,8.91989,75.3093,18.4186,SM10,S10,CSW/DS Validation,NA,bagot
-Male,M10,Target,Stress,918.228,6.12896,122.39,5.43882,SM09,S10,CSW/DS Validation,NA,bagot
-Male,M11,Target,Stress,1159.69,7.73379,64.9989,25.7593,SM10,S10,CSW/DS Validation,NA,bagot
-Male,C10,No Target,Control,1162.08,7.75662,48.1486,27.9949,CM05,S10,CSW/DS Validation,NA,bagot
-Male,C11,No Target,Control,1282.33,8.55163,79.9807,14.0809,CM06,S10,CSW/DS Validation,NA,bagot
-Male,C10,Target,Control,1060.51,7.12625,101.836,7.1739,CM05,S10,CSW/DS Validation,NA,bagot
-Male,C11,Target,Control,1097.14,7.31667,99.4003,10.8776,CM06,S10,CSW/DS Validation,NA,bagot
-Male,C12,No Target,Control,1602.13,10.7345,84.285,19.7533,CM07,S10,CSW/DS Validation,NA,bagot
-Male,C14,No Target,Control,1722.94,11.49,86.1202,17.4176,CM08,S10,CSW/DS Validation,NA,bagot
-Male,C12,Target,Control,985.21,6.57606,107.275,13.3468,CM07,S10,CSW/DS Validation,NA,bagot
-Male,C14,Target,Control,1167.56,7.85795,102.971,4.60465,CM08,S10,CSW/DS Validation,NA,bagot
-Male,M12,No Target,Stress,1418.72,9.47594,90.825,13.3134,SM11,S10,CSW/DS Validation,NA,bagot
-Male,M14,No Target,Stress,1543.82,10.2955,70.7714,16.7836,SM12,S10,CSW/DS Validation,NA,bagot
-Male,M12,Target,Stress,833.7,5.5598,130.532,4.17087,SM11,S10,CSW/DS Validation,NA,bagot
-Male,M14,Target,Stress,1120.17,7.47025,63.1637,34.8018,SM12,S10,CSW/DS Validation,NA,bagot
-Male,M15,No Target,Stress,1361.89,9.09841,84.4185,23.5571,SM13,S10,CSW/DS Validation,NA,bagot
-Male,M16,No Target,Stress,1571.76,10.4818,61.7957,16.7502,SM14,S10,CSW/DS Validation,NA,bagot
-Male,M15,Target,Stress,790.254,5.27712,85.3528,44.3114,SM13,S10,CSW/DS Validation,NA,bagot
-Male,M16,Target,Stress,1302.94,8.68906,70.1041,19.7866,SM14,S10,CSW/DS Validation,NA,bagot
-Male,M17,No Target,Stress,1723.65,11.4999,85.1526,18.1183,SM15,S10,CSW/DS Validation,NA,bagot
-Male,M18,No Target,Stress,1205.28,8.03779,69.9372,10.0768,SM16,S10,CSW/DS Validation,NA,bagot
-Male,M17,Target,Stress,1478.33,9.85871,41.8756,36.003,SM15,S10,CSW/DS Validation,NA,bagot
-Male,M18,Target,Stress,904.522,6.03211,96.3639,12.3458,SM16,S10,CSW/DS Validation,NA,bagot
-Male,C15,No Target,Control,1649.34,11.004,80.3144,16.8503,CM09,S10,CSW/DS Validation,NA,bagot
-Male,C15,Target,Control,1197.88,8.05294,91.9928,15.7826,CM09,S10,CSW/DS Validation,NA,bagot
-Male,M19,No Target,Stress,1216.85,8.11496,62.8301,16.4166,SM17,S10,CSW/DS Validation,NA,bagot
-Male,M19,Target,Stress,937.581,6.25257,20.2204,96.464,SM17,S10,CSW/DS Validation,NA,bagot
+Female,W1,No Target,Stress,1917.31,12.8894,73.2739,21.9889,SF01,S10,CSW/DS VC F,NA,bagot
+Female,W1,Target,Stress,1383.77,9.22816,79.9807,13.3802,SF01,S10,CSW/DS VC F,NA,bagot
+Female,W3,No Target,Stress,746.155,6.39736,69.0663,15.9564,SF02,S10,CSW/DS VC F,NA,bagot
+Female,W3,Target,Stress,926.343,6.25427,94.5364,17.6254,SF02,S10,CSW/DS VC F,NA,bagot
+Female,C1,No Target,Control,1500.75,10.0395,89.1233,17.3842,CF01,S10,CSW/DS VC F,NA,bagot
+Female,C2,No Target,Control,1075.1,7.16651,101.781,8.2119,CF02,S10,CSW/DS VC F,NA,bagot
+Female,C1,Target,Control,1023.79,6.82745,91.2254,7.77451,CF01,S10,CSW/DS VC F,NA,bagot
+Female,C2,Target,Control,581.176,3.92294,126.016,1.2685,CF02,S10,CSW/DS VC F,NA,bagot
+Female,C3,No Target,Control,1234.44,8.23227,87.5216,18.2517,CF03,S10,CSW/DS VC F,NA,bagot
+Female,C4,No Target,Control,938.227,6.80552,84.1196,7.4773,CF04,S10,CSW/DS VC F,NA,bagot
+Female,C3,Target,Control,940.818,6.35333,118.419,11.1446,CF03,S10,CSW/DS VC F,NA,bagot
+Female,C4,Target,Control,467.064,5.8395,47.1689,5.07408,CF04,S10,CSW/DS VC F,NA,bagot
+Female,W5,No Target,Stress,1132.65,7.55681,109.811,9.30939,SF03,S10,CSW/DS VC F,NA,bagot
+Female,W6,No Target,Stress,1263.23,8.4545,89.996,16.6906,SF04,S10,CSW/DS VC F,NA,bagot
+Female,W5,Target,Stress,874.03,5.83136,113.248,8.17492,SF03,S10,CSW/DS VC F,NA,bagot
+Female,W6,Target,Stress,1045.88,6.97175,105.052,13.9869,SF04,S10,CSW/DS VC F,NA,bagot
+Female,W7,No Target,Stress,1366.36,9.12863,84.3862,18.7265,SF05,S10,CSW/DS VC F,NA,bagot
+Female,W8,No Target,Stress,1281.22,8.54077,81.9494,13.7528,SF06,S10,CSW/DS VC F,NA,bagot
+Female,W7,Target,Stress,1371.55,9.15478,98.6662,9.30939,SF05,S10,CSW/DS VC F,NA,bagot
+Female,W8,Target,Stress,1390.5,9.27301,91.2587,12.2123,SF06,S10,CSW/DS VC F,NA,bagot
+Female,W9,No Target,Stress,1367.62,9.13263,89.19,20.7209,SF07,S10,CSW/DS VC F,NA,bagot
+Female,W10,No Target,Stress,1307.92,8.72227,88.823,11.4449,SF08,S10,CSW/DS VC F,NA,bagot
+Female,W9,Target,Stress,1131.88,7.5635,93.9615,12.6461,SF07,S10,CSW/DS VC F,NA,bagot
+Female,W10,Target,Stress,1004.04,6.69579,109.711,3.50353,SF08,S10,CSW/DS VC F,NA,bagot
+Female,W11,No Target,Stress,1282.69,8.56357,102.103,11.1112,SF09,S10,CSW/DS VC F,NA,bagot
+Female,W12,No Target,Stress,1622.36,10.8193,95.0626,11.1779,SF10,S10,CSW/DS VC F,NA,bagot
+Female,W11,Target,Stress,1293.82,8.75493,92.0596,9.67643,SF09,S10,CSW/DS VC F,NA,bagot
+Female,W12,Target,Stress,1461.12,9.74399,79.8472,11.5116,SF10,S10,CSW/DS VC F,NA,bagot
+Female,C5,No Target,Control,1285.98,8.63168,69.2032,27.8948,CF05,S10,CSW/DS VC F,NA,bagot
+Female,C16,No Target,Control,1098.68,7.32691,103.605,13.2801,CF06,S10,CSW/DS VC F,NA,bagot
+Female,C5,Target,Control,1000.83,6.69973,93.3275,21.9889,CF05,S10,CSW/DS VC F,NA,bagot
+Female,C16,Target,Control,866.561,5.77895,120.221,9.04246,CF06,S10,CSW/DS VC F,NA,bagot
+Female,W13,No Target,Stress,1433.61,9.56901,91.0252,14.8483,SF11,S10,CSW/DS VC F,NA,bagot
+Female,W14,No Target,Stress,1453.85,9.69545,100.835,17.4509,SF12,S10,CSW/DS VC F,NA,bagot
+Female,W13,Target,Stress,1118.65,7.5052,101.502,11.7452,SF11,S10,CSW/DS VC F,NA,bagot
+Female,W14,Target,Stress,1184.43,7.89877,86.4205,12.3458,SF12,S10,CSW/DS VC F,NA,bagot
+Female,W15,No Target,Stress,1475.66,9.8717,89.9574,14.2143,SF13,S10,CSW/DS VC F,NA,bagot
+Female,W16,No Target,Stress,1562.47,10.4198,95.5631,13.4803,SF14,S10,CSW/DS VC F,NA,bagot
+Female,W15,Target,Stress,1052.78,7.0998,83.7845,10.5106,SF13,S10,CSW/DS VC F,NA,bagot
+Female,W16,Target,Stress,1287.02,8.58291,100.068,7.14054,SF14,S10,CSW/DS VC F,NA,bagot
+Female,W17,No Target,Stress,1564.95,11.1009,68.6026,23.2568,SF15,S10,CSW/DS VC F,NA,bagot
+Female,W18,No Target,Stress,1683.29,11.2682,87.2881,12.8797,SF16,S10,CSW/DS VC F,NA,bagot
+Female,W17,Target,Stress,1153.94,7.79604,95.2628,14.7482,SF15,S10,CSW/DS VC F,NA,bagot
+Female,W18,Target,Stress,1194,7.97854,99.2335,6.8736,SF16,S10,CSW/DS VC F,NA,bagot
+Female,W19,No Target,Stress,1314.45,8.81491,94.0949,12.3124,SF17,S10,CSW/DS VC F,NA,bagot
+Female,W20,No Target,Stress,1214.53,8.09951,104.572,13.9474,SF18,S10,CSW/DS VC F,NA,bagot
+Female,W19,Target,Stress,1045.73,7.00654,95.5297,11.8119,SF17,S10,CSW/DS VC F,NA,bagot
+Female,W20,Target,Stress,1020.02,6.80231,103.404,12.4459,SF18,S10,CSW/DS VC F,NA,bagot
+Female,C17,No Target,Control,1712.14,11.4434,88.2223,15.816,CF07,S10,CSW/DS VC F,NA,bagot
+Female,C18,No Target,Control,1364.96,9.10269,88.9231,15.2821,CF08,S10,CSW/DS VC F,NA,bagot
+Female,C17,Target,Control,995.649,6.64573,105.139,6.20626,CF07,S10,CSW/DS VC F,NA,bagot
+Female,C18,Target,Control,1168.74,7.79412,87.7218,10.1436,CF08,S10,CSW/DS VC F,NA,bagot
+Female,C19,No Target,Control,1672.26,11.28,78.012,20.8544,CF09,S10,CSW/DS VC F,NA,bagot
+Female,C20,No Target,Control,1469.8,9.80185,66.0667,15.7826,CF10,S10,CSW/DS VC F,NA,bagot
+Female,C19,Target,Control,1117.12,7.45318,80.3477,13.6137,CF09,S10,CSW/DS VC F,NA,bagot
+Female,C20,Target,Control,938.114,6.25613,100.802,7.20727,CF10,S10,CSW/DS VC F,NA,bagot
+Male,M1,No Target,Stress,1688.34,11.2592,67.7684,24.7917,SM01,S10,CSW/DS VC M,NA,bagot
+Male,M2,No Target,Stress,1664.83,11.1024,78.279,11.0111,SM02,S10,CSW/DS VC M,NA,bagot
+Male,M1,Target,Stress,1135.31,7.57627,36.3367,46.8473,SM01,S10,CSW/DS VC M,NA,bagot
+Male,M2,Target,Stress,936.933,6.24825,58.3922,57.4913,SM02,S10,CSW/DS VC M,NA,bagot
+Male,M3,No Target,Stress,1610.25,10.7385,98.9665,14.3478,SM03,S10,CSW/DS VC M,NA,bagot
+Male,M4,No Target,Stress,1628.91,10.8629,70.9382,21.8554,SM04,S10,CSW/DS VC M,NA,bagot
+Male,M3,Target,Stress,1019.42,6.79833,103.037,9.8099,SM03,S10,CSW/DS VC M,NA,bagot
+Male,M4,Target,Stress,1134.36,7.56483,52.6865,42.3094,SM04,S10,CSW/DS VC M,NA,bagot
+Male,C6,No Target,Control,1346.4,8.99094,93.194,15.549,CM01,S10,CSW/DS VC M,NA,bagot
+Male,C7,No Target,Control,1519.95,10.1363,81.6157,12.8797,CM02,S10,CSW/DS VC M,NA,bagot
+Male,C6,Target,Control,981.564,6.5825,98.9665,12.9464,CM01,S10,CSW/DS VC M,NA,bagot
+Male,C7,Target,Control,961.225,6.41025,121.956,4.90495,CM02,S10,CSW/DS VC M,NA,bagot
+Male,C8,No Target,Control,1269.46,8.49225,87.2547,19.5864,CM03,S10,CSW/DS VC M,NA,bagot
+Male,C9,No Target,Control,1521.39,10.1459,61.8291,29.1294,CM04,S10,CSW/DS VC M,NA,bagot
+Male,C8,Target,Control,990.3,6.60414,117.519,11.9454,CM03,S10,CSW/DS VC M,NA,bagot
+Male,C9,Target,Control,1097.11,7.31647,92.1263,10.2103,CM04,S10,CSW/DS VC M,NA,bagot
+Male,M5,No Target,Stress,1472.05,9.88063,84.9524,15.0485,SM05,S10,CSW/DS VC M,NA,bagot
+Male,M6,No Target,Stress,1597.12,10.6509,81.6824,14.548,SM06,S10,CSW/DS VC M,NA,bagot
+Male,M5,Target,Stress,1047.89,6.99908,88.6228,8.40848,SM05,S10,CSW/DS VC M,NA,bagot
+Male,M6,Target,Stress,1152.64,7.68675,72.1728,41.1749,SM06,S10,CSW/DS VC M,NA,bagot
+Male,M8,No Target,Stress,1623.21,10.9393,91.0919,13.0799,SM07,S10,CSW/DS VC M,NA,bagot
+Male,M9,No Target,Stress,1662.62,11.0878,75.4094,24.091,SM08,S10,CSW/DS VC M,NA,bagot
+Male,M8,Target,Stress,1140.59,7.66266,107.375,5.70576,SM07,S10,CSW/DS VC M,NA,bagot
+Male,M9,Target,Stress,951.034,6.34228,69.6369,49.0829,SM08,S10,CSW/DS VC M,NA,bagot
+Male,M10,No Target,Stress,1332.57,8.94845,98.9332,12.3124,SM09,S10,CSW/DS VC M,NA,bagot
+Male,M11,No Target,Stress,1337.55,8.91989,75.3093,18.4186,SM10,S10,CSW/DS VC M,NA,bagot
+Male,M10,Target,Stress,918.228,6.12896,122.39,5.43882,SM09,S10,CSW/DS VC M,NA,bagot
+Male,M11,Target,Stress,1159.69,7.73379,64.9989,25.7593,SM10,S10,CSW/DS VC M,NA,bagot
+Male,C10,No Target,Control,1162.08,7.75662,48.1486,27.9949,CM05,S10,CSW/DS VC M,NA,bagot
+Male,C11,No Target,Control,1282.33,8.55163,79.9807,14.0809,CM06,S10,CSW/DS VC M,NA,bagot
+Male,C10,Target,Control,1060.51,7.12625,101.836,7.1739,CM05,S10,CSW/DS VC M,NA,bagot
+Male,C11,Target,Control,1097.14,7.31667,99.4003,10.8776,CM06,S10,CSW/DS VC M,NA,bagot
+Male,C12,No Target,Control,1602.13,10.7345,84.285,19.7533,CM07,S10,CSW/DS VC M,NA,bagot
+Male,C14,No Target,Control,1722.94,11.49,86.1202,17.4176,CM08,S10,CSW/DS VC M,NA,bagot
+Male,C12,Target,Control,985.21,6.57606,107.275,13.3468,CM07,S10,CSW/DS VC M,NA,bagot
+Male,C14,Target,Control,1167.56,7.85795,102.971,4.60465,CM08,S10,CSW/DS VC M,NA,bagot
+Male,M12,No Target,Stress,1418.72,9.47594,90.825,13.3134,SM11,S10,CSW/DS VC M,NA,bagot
+Male,M14,No Target,Stress,1543.82,10.2955,70.7714,16.7836,SM12,S10,CSW/DS VC M,NA,bagot
+Male,M12,Target,Stress,833.7,5.5598,130.532,4.17087,SM11,S10,CSW/DS VC M,NA,bagot
+Male,M14,Target,Stress,1120.17,7.47025,63.1637,34.8018,SM12,S10,CSW/DS VC M,NA,bagot
+Male,M15,No Target,Stress,1361.89,9.09841,84.4185,23.5571,SM13,S10,CSW/DS VC M,NA,bagot
+Male,M16,No Target,Stress,1571.76,10.4818,61.7957,16.7502,SM14,S10,CSW/DS VC M,NA,bagot
+Male,M15,Target,Stress,790.254,5.27712,85.3528,44.3114,SM13,S10,CSW/DS VC M,NA,bagot
+Male,M16,Target,Stress,1302.94,8.68906,70.1041,19.7866,SM14,S10,CSW/DS VC M,NA,bagot
+Male,M17,No Target,Stress,1723.65,11.4999,85.1526,18.1183,SM15,S10,CSW/DS VC M,NA,bagot
+Male,M18,No Target,Stress,1205.28,8.03779,69.9372,10.0768,SM16,S10,CSW/DS VC M,NA,bagot
+Male,M17,Target,Stress,1478.33,9.85871,41.8756,36.003,SM15,S10,CSW/DS VC M,NA,bagot
+Male,M18,Target,Stress,904.522,6.03211,96.3639,12.3458,SM16,S10,CSW/DS VC M,NA,bagot
+Male,C15,No Target,Control,1649.34,11.004,80.3144,16.8503,CM09,S10,CSW/DS VC M,NA,bagot
+Male,C15,Target,Control,1197.88,8.05294,91.9928,15.7826,CM09,S10,CSW/DS VC M,NA,bagot
+Male,M19,No Target,Stress,1216.85,8.11496,62.8301,16.4166,SM17,S10,CSW/DS VC M,NA,bagot
+Male,M19,Target,Stress,937.581,6.25257,20.2204,96.464,SM17,S10,CSW/DS VC M,NA,bagot
 Female,676,No Target,Control,NA,9.195,29.229,NA,CF01,S11,Swiss Webster,NA,newman
 Female,677,No Target,Control,NA,9.209,49.283,NA,CF02,S11,Swiss Webster,NA,newman
 Female,678,No Target,Control,NA,9.374,37.371,NA,CF03,S11,Swiss Webster,NA,newman
@@ -1435,107 +1293,67 @@ Male,1050,Target,Stress,138.2,NA,95.6,NA,SM34,S12,California ,sanchips,trainor
 Male,3063,Target,Stress,28.06,NA,68,NA,SM35,S12,California ,sanchips,trainor
 Male,1315,Target,Stress,120.5,NA,130.4,NA,SM36,S12,California ,sanchips,trainor
 Male,3652,Target,Stress,21.96,NA,138.2,NA,SM37,S12,California ,sanchips,trainor
-Female,6,No Target,Control,891.001,6.12035,54.9221,35.7027,CF01,S13,CSW/DS Fiber,Fiber,bagot
-Female,8,No Target,Control,1299.83,8.88384,82.0161,21.5217,CF02,S13,CSW/DS Fiber,Fiber,bagot
-Female,9,No Target,Control,1069.53,7.44394,86.0201,12.0121,CF03,S13,CSW/DS Fiber,Fiber,bagot
-Female,10,No Target,Stress,1358.16,9.51241,97.098,13.5136,SF01,S13,CSW/DS Fiber,Fiber,bagot
-Female,11,No Target,Stress,1192.24,8.03304,87.188,16.4833,SF02,S13,CSW/DS Fiber,Fiber,bagot
-Female,12,No Target,Stress,1088.46,7.39031,92.1263,15.2821,SF03,S13,CSW/DS Fiber,Fiber,bagot
-Female,13,No Target,Stress,1580.7,10.7544,69.6036,25.8928,SF04,S13,CSW/DS Fiber,Fiber,bagot
-Female,14,No Target,Stress,1365.06,9.26628,93.6612,15.182,SF05,S13,CSW/DS Fiber,Fiber,bagot
-Female,25,No Target,Stress,1278.71,8.69389,83.918,24.2912,SF06,S13,CSW/DS Fiber,Fiber,bagot
-Female,26,No Target,Control,1242.66,8.46413,83.6844,20.0536,CF04,S13,CSW/DS Fiber,Fiber,bagot
-Female,27,No Target,Stress,1051.95,7.08463,88.2557,11.7786,SF07,S13,CSW/DS Fiber,Fiber,bagot
-Female,28,No Target,Stress,1399.04,9.47761,67.3012,33.9342,SF08,S13,CSW/DS Fiber,Fiber,bagot
-Female,29,No Target,Stress,1410.66,9.42635,76.3103,18.0182,SF09,S13,CSW/DS Fiber,Fiber,bagot
-Female,30,No Target,Stress,1636.97,11.1246,81.6824,18.2851,SF10,S13,CSW/DS Fiber,Fiber,bagot
-Female,34,No Target,Control,1112.71,7.62758,58.9261,35.4691,CF05,S13,CSW/DS Fiber,Fiber,bagot
-Female,44,No Target,Control,1113.81,7.53685,103.104,7.87461,CF06,S13,CSW/DS Fiber,Fiber,bagot
-Female,45,No Target,Stress,1439.95,9.85269,86.7876,7.94135,SF11,S13,CSW/DS Fiber,Fiber,bagot
-Female,46,No Target,Stress,1456.65,9.84781,87.8887,22.823,SF12,S13,CSW/DS Fiber,Fiber,bagot
-Female,47,No Target,Stress,1425.18,9.83929,93.6278,15.9161,SF13,S13,CSW/DS Fiber,Fiber,bagot
-Female,48,No Target,Stress,1019.56,7.18628,115.083,7.74114,SF14,S13,CSW/DS Fiber,Fiber,bagot
-Female,6,Target,Control,973.961,6.57122,106.841,2.13549,CF01,S13,CSW/DS Fiber,Fiber,bagot
-Female,8,Target,Control,1179.26,8.04693,90.9251,13.2801,CF02,S13,CSW/DS Fiber,Fiber,bagot
-Female,9,Target,Control,822.286,5.52673,111.112,5.33872,CF03,S13,CSW/DS Fiber,Fiber,bagot
-Female,10,Target,Stress,909.078,6.1307,126.594,2.63599,SF01,S13,CSW/DS Fiber,Fiber,bagot
-Female,11,Target,Stress,850.31,5.72022,85.6197,10.911,SF02,S13,CSW/DS Fiber,Fiber,bagot
-Female,12,Target,Stress,927.561,6.25816,121.89,5.63902,SF03,S13,CSW/DS Fiber,Fiber,bagot
-Female,13,Target,Stress,1215.53,8.3039,88.9231,23.824,SF04,S13,CSW/DS Fiber,Fiber,bagot
-Female,14,Target,Stress,1013,6.94246,121.356,4.17087,SF05,S13,CSW/DS Fiber,Fiber,bagot
-Female,25,Target,Stress,760.872,5.08091,126.995,0.700707,SF06,S13,CSW/DS Fiber,Fiber,bagot
-Female,26,Target,Control,1060.3,7.1489,114.983,7.77451,CF04,S13,CSW/DS Fiber,Fiber,bagot
-Female,27,Target,Stress,1125.45,7.68852,92.0929,21.7887,SF07,S13,CSW/DS Fiber,Fiber,bagot
-Female,28,Target,Stress,1112.23,7.62597,113.014,14.6147,SF08,S13,CSW/DS Fiber,Fiber,bagot
-Female,29,Target,Stress,911.358,6.08582,110.311,10.2437,SF09,S13,CSW/DS Fiber,Fiber,bagot
-Female,30,Target,Stress,1219.59,8.23585,108.776,5.73912,SF10,S13,CSW/DS Fiber,Fiber,bagot
-Female,34,Target,Control,842.859,5.76586,123.458,6.07279,CF05,S13,CSW/DS Fiber,Fiber,bagot
-Female,44,Target,Control,557.301,3.83429,136.371,0.367037,CF06,S13,CSW/DS Fiber,Fiber,bagot
-Female,45,Target,Stress,1249.34,8.74007,95.9969,11.6117,SF11,S13,CSW/DS Fiber,Fiber,bagot
-Female,46,Target,Stress,1154.93,7.77818,112.28,15.6158,SF12,S13,CSW/DS Fiber,Fiber,bagot
-Female,47,Target,Stress,1119.52,7.62888,115.083,12.8129,SF13,S13,CSW/DS Fiber,Fiber,bagot
-Female,48,Target,Stress,1018.41,7.06023,110.044,9.24266,SF14,S13,CSW/DS Fiber,Fiber,bagot
-Male,WM01,No Target,Stress,1064.91,7.20105,75.2426,NA,WM01,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM02,No Target,Stress,1469.21,9.84612,74.6086,NA,WM02,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM01,Target,Stress,1056.85,7.25625,103.137,NA,WM01,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM02,Target,Stress,1223.36,8.69014,57.0242,NA,WM02,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM01,No Target,Control,1484.72,9.93453,81.5823,NA,CM01,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM02,No Target,Control,1452.79,9.74481,78.1455,NA,CM02,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM01,Target,Control,1206.86,8.08073,83.9514,NA,CM01,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM02,Target,Control,1215.2,8.15475,90.6915,NA,CM02,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM03,No Target,Stress,1254.09,8.37264,58.2921,NA,WM03,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM04,No Target,Stress,1672.74,11.2151,68.8028,NA,WM04,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM03,Target,Stress,1034.23,6.90634,77.5115,NA,WM03,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM04,Target,Stress,1294.7,8.68635,105.273,NA,WM04,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM03,No Target,Control,1180.36,7.9121,98.8664,NA,CM03,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM04,No Target,Control,1489.86,9.98227,78.646,NA,CM04,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM03,Target,Control,996.13,6.77416,91.2254,NA,CM03,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM04,Target,Control,1071.47,7.18223,95.4296,NA,CM04,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM05,No Target,Stress,1585.87,10.6255,62.096,NA,WM05,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM06,No Target,Stress,1308.81,8.78692,82.55,NA,WM06,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM05,Target,Stress,1245.77,8.33563,84.4852,NA,WM05,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM06,Target,Stress,1028.08,6.89134,111.913,NA,WM06,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM05,No Target,Control,1568.28,10.4749,64.9989,NA,CM05,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM06,No Target,Control,1536.93,10.3069,53.9544,NA,CM06,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM05,Target,Control,1048.75,7.01576,99.9675,NA,CM05,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM06,Target,Control,1073.44,7.19379,92.3265,NA,CM06,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM07,No Target,Stress,1537.47,10.2966,75.3427,NA,WM07,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM08,No Target,Stress,1601.25,11.572,70.2375,NA,WM08,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM07,Target,Stress,1361.34,9.22221,105.206,NA,WM07,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM08,Target,Stress,1474.26,9.86669,83.918,NA,WM08,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM07,No Target,Control,1321.42,8.83986,66.6339,NA,CM07,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM08,No Target,Control,1591.21,10.6661,51.2517,NA,CM08,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM07,Target,Control,1032.18,6.90955,96.9645,NA,CM07,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM08,Target,Control,1371.23,9.18535,75.5095,NA,CM08,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM09,No Target,Stress,1403.42,9.40524,56.3902,NA,WM09,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM10,No Target,Stress,1411.33,9.83886,79.7805,NA,WM10,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM09,Target,Stress,1091.89,7.293,95.5631,NA,WM09,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM10,Target,Stress,1052.09,7.05546,102.737,NA,WM10,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM09,No Target,Control,1310.06,8.77365,81.7825,NA,CM09,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM10,No Target,Control,1111.76,8.64089,50.3842,NA,CM10,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM09,Target,Control,1049.29,7.02568,66.8007,NA,CM09,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM10,Target,Control,918.32,6.15838,102.604,NA,CM10,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM11,No Target,Stress,1272.96,8.51191,56.0566,NA,WM11,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM12,No Target,Stress,285.952,1.96964,0,NA,WM12,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM11,Target,Stress,1166.74,7.79639,61.6288,NA,WM11,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM12,Target,Stress,1047.76,7.03272,81.6824,NA,WM12,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM11,No Target,Control,1559.63,10.4614,62.6632,NA,CM11,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM12,No Target,Control,1261.21,8.45594,95.3629,NA,CM12,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM11,Target,Control,1145.05,7.67369,90.4246,NA,CM11,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM12,Target,Control,902.785,6.05284,61.9959,NA,CM12,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM13,No Target,Stress,1105.33,7.39597,67.5348,NA,WM13,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM14,No Target,Stress,1232.67,8.2683,44.1445,NA,WM14,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM13,Target,Stress,1059.13,7.11543,69.2032,NA,WM13,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM14,Target,Stress,961.161,6.44712,105.54,NA,WM14,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM13,No Target,Control,1366.83,9.17642,76.9109,NA,CM13,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM14,No Target,Control,1770.6,11.8713,57.5581,NA,CM14,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM13,Target,Control,985.402,6.66191,98.3659,NA,CM13,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM14,Target,Control,1062.53,8.5786,76.1769,NA,CM14,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM15,No Target,Stress,1500.3,10.0321,59.6602,NA,WM15,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM16,No Target,Stress,1451.17,9.72301,54.0545,NA,WM16,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM15,Target,Stress,1102.29,7.37399,90.3245,NA,WM15,S14,CSW/DS Male,MaleWitness,bagot
-Male,WM16,Target,Stress,1004.51,6.73939,104.606,NA,WM16,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM15,No Target,Control,1224.35,8.22354,74.5085,NA,CM15,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM16,No Target,Control,1083.36,8.32936,51.819,NA,CM16,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM15,Target,Control,971.402,6.48822,65.5328,NA,CM15,S14,CSW/DS Male,MaleWitness,bagot
-Male,CM16,Target,Control,1013.44,6.78107,92.5601,NA,CM16,S14,CSW/DS Male,MaleWitness,bagot
+Male,WM01,No Target,Stress,1064.91,7.20105,75.2426,NA,WM01,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM02,No Target,Stress,1469.21,9.84612,74.6086,NA,WM02,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM01,Target,Stress,1056.85,7.25625,103.137,NA,WM01,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM02,Target,Stress,1223.36,8.69014,57.0242,NA,WM02,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM01,No Target,Control,1484.72,9.93453,81.5823,NA,CM01,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM02,No Target,Control,1452.79,9.74481,78.1455,NA,CM02,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM01,Target,Control,1206.86,8.08073,83.9514,NA,CM01,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM02,Target,Control,1215.2,8.15475,90.6915,NA,CM02,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM03,No Target,Stress,1254.09,8.37264,58.2921,NA,WM03,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM04,No Target,Stress,1672.74,11.2151,68.8028,NA,WM04,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM03,Target,Stress,1034.23,6.90634,77.5115,NA,WM03,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM04,Target,Stress,1294.7,8.68635,105.273,NA,WM04,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM03,No Target,Control,1180.36,7.9121,98.8664,NA,CM03,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM04,No Target,Control,1489.86,9.98227,78.646,NA,CM04,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM03,Target,Control,996.13,6.77416,91.2254,NA,CM03,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM04,Target,Control,1071.47,7.18223,95.4296,NA,CM04,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM05,No Target,Stress,1585.87,10.6255,62.096,NA,WM05,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM06,No Target,Stress,1308.81,8.78692,82.55,NA,WM06,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM05,Target,Stress,1245.77,8.33563,84.4852,NA,WM05,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM06,Target,Stress,1028.08,6.89134,111.913,NA,WM06,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM05,No Target,Control,1568.28,10.4749,64.9989,NA,CM05,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM06,No Target,Control,1536.93,10.3069,53.9544,NA,CM06,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM05,Target,Control,1048.75,7.01576,99.9675,NA,CM05,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM06,Target,Control,1073.44,7.19379,92.3265,NA,CM06,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM07,No Target,Stress,1537.47,10.2966,75.3427,NA,WM07,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM08,No Target,Stress,1601.25,11.572,70.2375,NA,WM08,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM07,Target,Stress,1361.34,9.22221,105.206,NA,WM07,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM08,Target,Stress,1474.26,9.86669,83.918,NA,WM08,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM07,No Target,Control,1321.42,8.83986,66.6339,NA,CM07,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM08,No Target,Control,1591.21,10.6661,51.2517,NA,CM08,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM07,Target,Control,1032.18,6.90955,96.9645,NA,CM07,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM08,Target,Control,1371.23,9.18535,75.5095,NA,CM08,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM09,No Target,Stress,1403.42,9.40524,56.3902,NA,WM09,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM10,No Target,Stress,1411.33,9.83886,79.7805,NA,WM10,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM09,Target,Stress,1091.89,7.293,95.5631,NA,WM09,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM10,Target,Stress,1052.09,7.05546,102.737,NA,WM10,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM09,No Target,Control,1310.06,8.77365,81.7825,NA,CM09,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM10,No Target,Control,1111.76,8.64089,50.3842,NA,CM10,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM09,Target,Control,1049.29,7.02568,66.8007,NA,CM09,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM10,Target,Control,918.32,6.15838,102.604,NA,CM10,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM11,No Target,Stress,1272.96,8.51191,56.0566,NA,WM11,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM12,No Target,Stress,285.952,1.96964,0,NA,WM12,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM11,Target,Stress,1166.74,7.79639,61.6288,NA,WM11,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM12,Target,Stress,1047.76,7.03272,81.6824,NA,WM12,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM11,No Target,Control,1559.63,10.4614,62.6632,NA,CM11,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM12,No Target,Control,1261.21,8.45594,95.3629,NA,CM12,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM11,Target,Control,1145.05,7.67369,90.4246,NA,CM11,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM12,Target,Control,902.785,6.05284,61.9959,NA,CM12,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM13,No Target,Stress,1105.33,7.39597,67.5348,NA,WM13,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM14,No Target,Stress,1232.67,8.2683,44.1445,NA,WM14,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM13,Target,Stress,1059.13,7.11543,69.2032,NA,WM13,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM14,Target,Stress,961.161,6.44712,105.54,NA,WM14,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM13,No Target,Control,1366.83,9.17642,76.9109,NA,CM13,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM14,No Target,Control,1770.6,11.8713,57.5581,NA,CM14,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM13,Target,Control,985.402,6.66191,98.3659,NA,CM13,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM14,Target,Control,1062.53,8.5786,76.1769,NA,CM14,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM15,No Target,Stress,1500.3,10.0321,59.6602,NA,WM15,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM16,No Target,Stress,1451.17,9.72301,54.0545,NA,WM16,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM15,Target,Stress,1102.29,7.37399,90.3245,NA,WM15,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,WM16,Target,Stress,1004.51,6.73939,104.606,NA,WM16,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM15,No Target,Control,1224.35,8.22354,74.5085,NA,CM15,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM16,No Target,Control,1083.36,8.32936,51.819,NA,CM16,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM15,Target,Control,971.402,6.48822,65.5328,NA,CM15,S14,CSW/DS Witness M,MaleWitness,bagot
+Male,CM16,Target,Control,1013.44,6.78107,92.5601,NA,CM16,S14,CSW/DS Witness M,MaleWitness,bagot
